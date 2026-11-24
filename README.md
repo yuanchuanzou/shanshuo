@@ -7,7 +7,9 @@
 - 结论与意见：`reports/审阅意见.md`
 - 外部方法审阅：`reports/审查_方法链.md`
 - 分组建议：`reports/分组建议.md`
+- 验证锚点对照表（原文印刷值 + 逐面板读数）：`reports/验证锚点对照表.md`
 - 逐面板对照表：`data/matched_table.csv`
+- 样本清单（每个暴几页、几个面板、有无拟合页）：`data/bursts.csv`
 
 ## 数据从哪来
 

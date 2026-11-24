@@ -1,0 +1,4795 @@
+{
+ "schema_version": "classification_draft/0.1",
+ "status": "draft_for_students_not_final",
+ "generated_at": "2026-11-24T17:54:29+08:00",
+ "inputs": {
+  "matched_table.csv": {
+   "sha256": "82632dcc48d5ee4e1fa144594b0d56f4f7bc981920a36d9695504d85af8b2213",
+   "bytes": 23797
+  },
+  "compare_summary.json": {
+   "sha256": "3407e4f2ab9ac0a76d5c4a114e23218bee0d0c063d41d89f3101533b5ef06482",
+   "bytes": 823
+  },
+  "fits_readings.json": {
+   "sha256": "ccceb8964069c527f63be69891b084e2513d84c5321be5d769b519c824db6d8e",
+   "bytes": 63195
+  },
+  "october_audit.json": {
+   "sha256": "b5f19c24baed222b327f4e1cbdb12fc49e9dda0f93f1989c19fe80efa487e615",
+   "bytes": 4120
+  },
+  "october_tables.json": {
+   "sha256": "5bded4333f2fa71ada9991c483e3f01dce776cc2de7afd7f2af697fbc7698d7d",
+   "bytes": 70509
+  }
+ },
+ "deck": "../20261123/闪烁分析样本.pptx",
+ "n_objects": 43,
+ "rules": {
+  "gates_for_invertible_row": [
+   "agree == True（两次读数一致）",
+   "band == False（单频面板）",
+   "0.15 < F_var/m_p < 1"
+  ],
+  "preview_formula": "theta_s = theta_scatt * (m_p/m)^(6/7); R = D_A * theta_s （scripts/iss.py）",
+  "model_robust_panel": "同一面板在 RISS19 与 NE2025 下都过门，且两模型 preview_theta_s_uas 相差 < 2 倍",
+  "chi2_flag": 10.0,
+  "tp_flag_hr": 24.0,
+  "robust_factor": 2.0,
+  "dimensions_are_independent": true
+ },
+ "dimension_definitions": {
+  "evidence_level": {
+   "E1": "文献确证闪烁（有独立尺寸/尺度约束）",
+   "E2": "实测过门且两模型一致",
+   "E3": "实测过门但仅单模型",
+   "E4": "实测未过门（有模型有数值）",
+   "E5": "有数值无模型",
+   "E6": "仅光变/未探测",
+   "E7": "无拟合页"
+  },
+  "size_feasibility": {
+   "S1": "可反演：≥1 行过门且尺寸天花板有值",
+   "S1θ": "可反演但缺 D_A，只能给角尺寸",
+   "S2": "仅模型天花板 D_A·θ_scatt（与 F_var 无关）",
+   "S3": "待建模：无数值可比的 m_p",
+   "S4": "否"
+  }
+ },
+ "groups": [
+  {
+   "id": "G1",
+   "name": "锚点校准",
+   "priority": 0,
+   "criterion": "文献里有独立的尺寸/膨胀率约束，先用它们检验反演流程，再推广到其它对象",
+   "next_step": "161219B、210702A 可直接用 8.5 GHz / 21.2 GHz 过门行与文献对照；250702B、030329 先补 NE2025/RISS19 预测（含 1–3 GHz 单频拆分），再与 R⊥ 界 / VLBI 膨胀率对照",
+   "n": 4,
+   "bursts": [
+    "161219B",
+    "210702A",
+    "250702B",
+    "030329"
+   ]
+  },
+  {
+   "id": "G2",
+   "name": "两模型同频过门且预览尺寸一致",
+   "priority": 1,
+   "criterion": "至少一个频率在 RISS19 与 NE2025 下同时过门，且两模型预览 θ_s 相差 <2 倍",
+   "next_step": "按 rank 顺序做反演；同时报两模型的 θ_s 与 R；逐行核对光变窗长 ≥ 2 t_p、χ²",
+   "n": 6,
+   "bursts": [
+    "141121A",
+    "970508",
+    "980703",
+    "111215A",
+    "140713A",
+    "070125"
+   ]
+  },
+  {
+   "id": "G3",
+   "name": "仅单模型过门",
+   "priority": 2,
+   "criterion": "过门行只在一个模型下成立（或两模型 θ_s 相差 ≥2 倍），证据依赖电子密度模型",
+   "next_step": "先查该频段的 m_p / θ_scatt 分歧来源（ν0、D_scr、SM），再决定报哪一模型或只报区间",
+   "n": 11,
+   "bursts": [
+    "031203",
+    "000418",
+    "240205B",
+    "980425",
+    "980519",
+    "000301C",
+    "000926",
+    "011121",
+    "020405",
+    "100418A",
+    "220101A"
+   ]
+  },
+  {
+   "id": "G4",
+   "name": "实测未过门",
+   "priority": 3,
+   "criterion": "有模型、有数值，但没有一行落在 (0.15,1)：F_var 超过 m_p 或远低于 m_p",
+   "next_step": "先判断光变是不是 ISS（内禀耀发、去趋势残差、单位），不要给尺寸",
+   "n": 3,
+   "bursts": [
+    "140304A",
+    "160131A",
+    "991208"
+   ]
+  },
+  {
+   "id": "G5",
+   "name": "有数值·无模型",
+   "priority": 4,
+   "criterion": "暴不在十月表内，有 F_var 却没有 m_p 可比",
+   "next_step": "补 NE2025 与 RISS19 的 SM、ν0、D_scr 预测（需 z、DM、银道坐标），补完即按 G2–G4 规则归位",
+   "n": 12,
+   "bursts": [
+    "020819",
+    "160623A",
+    "190829A",
+    "210704A",
+    "221009A",
+    "240529A",
+    "240619A",
+    "241025A",
+    "250419A",
+    "251013C",
+    "990123",
+    "991216"
+   ]
+  },
+  {
+   "id": "G6",
+   "name": "有模型·无读数",
+   "priority": 4,
+   "criterion": "在 deck 与十月表内，但只有总览页、没有拟合页读数",
+   "next_step": "补拟合页并读数（160625B 文献有特殊散射成分，优先）",
+   "n": 3,
+   "bursts": [
+    "130427A",
+    "160625B",
+    "980329"
+   ]
+  },
+  {
+   "id": "G7",
+   "name": "仅光变/未探测",
+   "priority": 5,
+   "criterion": "没有任何 F_var 数值（全部 data only 或 not detected）",
+   "next_step": "暂不做尺寸；可用于样本完整性统计，或在有噪声信息后转为尺寸下界",
+   "n": 4,
+   "bursts": [
+    "000911",
+    "170105A",
+    "171010A",
+    "981226"
+   ]
+  }
+ ],
+ "objects": [
+  {
+   "burst": "000301C",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "7/132"
+   ],
+   "n_panels": 8,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 7,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "8.46 GHz",
+     "page": "7/132",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.27,
+     "tp_hr": 2.31,
+     "theta_scatt_uas": 4.66,
+     "chi2": 2.2,
+     "fvar_pct": 12.0,
+     "ratio": 0.444,
+     "size_ceiling_1e16cm": 12.32,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 9.346,
+     "preview_size_1e16cm": 24.71
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "8.46 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8.46 GHz",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.95,
+     "chi2": 2.2,
+     "fvar_pct": 12.0,
+     "ratio": 0.126,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=0.126 ≤ 0.15"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 1,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 6
+  },
+  {
+   "burst": "000418",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "10/132"
+   ],
+   "n_panels": 5,
+   "n_numeric": 2,
+   "n_not_detected": 0,
+   "n_data_only": 3,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "4.86 GHz",
+     "page": "10/132",
+     "model": "NE2025",
+     "nu": 4.86,
+     "regime": "SR",
+     "mp": 0.87,
+     "tp_hr": 7.84,
+     "theta_scatt_uas": 5.64,
+     "chi2": 42.0,
+     "fvar_pct": 46.0,
+     "ratio": 0.529,
+     "size_ceiling_1e16cm": 14.65,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 9.735,
+     "preview_size_1e16cm": 25.29
+    },
+    {
+     "panel": "8.35-8.46 GHz",
+     "page": "10/132",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.65,
+     "tp_hr": 3.87,
+     "theta_scatt_uas": 2.78,
+     "chi2": 7.9,
+     "fvar_pct": 21.0,
+     "ratio": 0.323,
+     "size_ceiling_1e16cm": 7.23,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 7.324,
+     "preview_size_1e16cm": 19.05
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "4.86 GHz",
+    "8.35-8.46 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "4.86 GHz",
+     "model": "RISS19",
+     "nu": 4.86,
+     "regime": "W",
+     "mp": 0.33,
+     "chi2": 42.0,
+     "fvar_pct": 46.0,
+     "ratio": 1.394,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=1.39 ≥ 1"
+     ]
+    },
+    {
+     "panel": "8.35-8.46 GHz",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.15,
+     "chi2": 7.9,
+     "fvar_pct": 21.0,
+     "ratio": 1.4,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=1.40 ≥ 1"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 2,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 2,
+   "rank_in_group": 2
+  },
+  {
+   "burst": "000911",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "13/132"
+   ],
+   "n_panels": 2,
+   "n_numeric": 0,
+   "n_not_detected": 2,
+   "n_data_only": 0,
+   "evidence_level": "E6",
+   "deck_evidence_level": "E6",
+   "size_feasibility": "S4",
+   "group": "G7",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 1
+  },
+  {
+   "burst": "000926",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "16/132"
+   ],
+   "n_panels": 6,
+   "n_numeric": 1,
+   "n_not_detected": 1,
+   "n_data_only": 4,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "8.46 GHz",
+     "page": "16/132",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "SR",
+     "mp": 0.98,
+     "tp_hr": 5.04,
+     "theta_scatt_uas": 2.43,
+     "chi2": 7.3,
+     "fvar_pct": 44.0,
+     "ratio": 0.449,
+     "size_ceiling_1e16cm": 6.42,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 4.827,
+     "preview_size_1e16cm": 12.75
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "8.46 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8.46 GHz",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.29,
+     "chi2": 7.3,
+     "fvar_pct": 44.0,
+     "ratio": 1.517,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=1.52 ≥ 1"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 1,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 7
+  },
+  {
+   "burst": "011121",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "19/132"
+   ],
+   "n_panels": 2,
+   "n_numeric": 2,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "8.7 GHz",
+     "page": "19/132",
+     "model": "NE2025",
+     "nu": 8.7,
+     "regime": "SR",
+     "mp": 0.54,
+     "tp_hr": 33.03,
+     "theta_scatt_uas": 13.23,
+     "chi2": 3.8,
+     "fvar_pct": 11.0,
+     "ratio": 0.204,
+     "size_ceiling_1e16cm": 21.18,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 51.678,
+     "preview_size_1e16cm": 82.73
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "8.7 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8.7 GHz",
+     "model": "RISS19",
+     "nu": 8.7,
+     "regime": "SR",
+     "mp": 0.9,
+     "chi2": 3.8,
+     "fvar_pct": 11.0,
+     "ratio": 0.122,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=0.122 ≤ 0.15"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [
+    [
+     "19/132",
+     "4.8 GHz"
+    ]
+   ],
+   "n_invertible_rows": 1,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 8
+  },
+  {
+   "burst": "020405",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "22/132"
+   ],
+   "n_panels": 4,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 3,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "8.46 GHz",
+     "page": "22/132",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "SR",
+     "mp": 0.81,
+     "tp_hr": 8.51,
+     "theta_scatt_uas": 4.36,
+     "chi2": 4.2,
+     "fvar_pct": 61.0,
+     "ratio": 0.753,
+     "size_ceiling_1e16cm": 9.83,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 5.56,
+     "preview_size_1e16cm": 12.54
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "8.46 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8.46 GHz",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.35,
+     "chi2": 4.2,
+     "fvar_pct": 61.0,
+     "ratio": 1.743,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=1.74 ≥ 1"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 1,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 9
+  },
+  {
+   "burst": "020819",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "25/132"
+   ],
+   "n_panels": 3,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 2,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "25/132",
+     "8.46 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 1
+  },
+  {
+   "burst": "030329",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "28/132"
+   ],
+   "n_panels": 6,
+   "n_numeric": 6,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G1",
+   "independent_size_constraint": "有 VLBI 膨胀率，可直接对照闪烁尺寸",
+   "literature": "有 VLBI 膨胀率，可直接对照闪烁尺寸",
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "28/132",
+     "1-2 GHz"
+    ],
+    [
+     "28/132",
+     "10-16 GHz"
+    ],
+    [
+     "28/132",
+     "16-25 GHz"
+    ],
+    [
+     "28/132",
+     "2-6 GHz"
+    ],
+    [
+     "28/132",
+     "25-45 GHz"
+    ],
+    [
+     "28/132",
+     "6-10 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 4
+  },
+  {
+   "burst": "031203",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "31/132"
+   ],
+   "n_panels": 4,
+   "n_numeric": 2,
+   "n_not_detected": 0,
+   "n_data_only": 2,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "4.86 GHz",
+     "page": "31/132",
+     "model": "RISS19",
+     "nu": 4.9,
+     "regime": "SR",
+     "mp": 0.37,
+     "tp_hr": 179.59,
+     "theta_scatt_uas": 43.41,
+     "chi2": 3.1,
+     "fvar_pct": 12.0,
+     "ratio": 0.324,
+     "size_ceiling_1e16cm": 26.66,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 114.057,
+     "preview_size_1e16cm": 70.05
+    },
+    {
+     "panel": "4.86 GHz",
+     "page": "31/132",
+     "model": "NE2025",
+     "nu": 4.9,
+     "regime": "SR",
+     "mp": 0.18,
+     "tp_hr": 548.81,
+     "theta_scatt_uas": 1126.76,
+     "chi2": 3.1,
+     "fvar_pct": 12.0,
+     "ratio": 0.667,
+     "size_ceiling_1e16cm": 691.99,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 1594.339,
+     "preview_size_1e16cm": 979.15
+    },
+    {
+     "panel": "8.46 GHz",
+     "page": "31/132",
+     "model": "RISS19",
+     "nu": 8.5,
+     "regime": "SR",
+     "mp": 0.5,
+     "tp_hr": 53.45,
+     "theta_scatt_uas": 12.92,
+     "chi2": 14.0,
+     "fvar_pct": 37.0,
+     "ratio": 0.74,
+     "size_ceiling_1e16cm": 7.94,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 16.724,
+     "preview_size_1e16cm": 10.28
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "4.86 GHz",
+    "8.46 GHz"
+   ],
+   "both_models_but_size_disagree": [
+    "4.86 GHz"
+   ],
+   "failed_rows": [
+    {
+     "panel": "8.46 GHz",
+     "model": "NE2025",
+     "nu": 8.5,
+     "regime": "SR",
+     "mp": 0.24,
+     "chi2": 14.0,
+     "fvar_pct": 37.0,
+     "ratio": 1.542,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=1.54 ≥ 1"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 3,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 2,
+   "rank_in_group": 1
+  },
+  {
+   "burst": "070125",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "34/132"
+   ],
+   "n_panels": 8,
+   "n_numeric": 2,
+   "n_not_detected": 2,
+   "n_data_only": 4,
+   "evidence_level": "E2",
+   "deck_evidence_level": "E2",
+   "size_feasibility": "S1",
+   "group": "G2",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "8.46 GHz",
+     "page": "34/132",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.57,
+     "tp_hr": 2.94,
+     "theta_scatt_uas": 3.67,
+     "chi2": 4.4,
+     "fvar_pct": 8.8,
+     "ratio": 0.154,
+     "size_ceiling_1e16cm": 9.83,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 18.242,
+     "preview_size_1e16cm": 48.86
+    },
+    {
+     "panel": "14.94 GHz",
+     "page": "34/132",
+     "model": "RISS19",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.26,
+     "tp_hr": 2.21,
+     "theta_scatt_uas": 2.75,
+     "chi2": 2.9,
+     "fvar_pct": 15.0,
+     "ratio": 0.577,
+     "size_ceiling_1e16cm": 7.39,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 4.406,
+     "preview_size_1e16cm": 11.84
+    },
+    {
+     "panel": "14.94 GHz",
+     "page": "34/132",
+     "model": "NE2025",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.62,
+     "tp_hr": 3.26,
+     "theta_scatt_uas": 1.86,
+     "chi2": 2.9,
+     "fvar_pct": 15.0,
+     "ratio": 0.242,
+     "size_ceiling_1e16cm": 4.99,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 6.276,
+     "preview_size_1e16cm": 16.84
+    }
+   ],
+   "model_robust_panels": [
+    "14.94 GHz"
+   ],
+   "model_dependent_panels": [
+    "8.46 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8.46 GHz",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "SR",
+     "mp": 0.88,
+     "chi2": 4.4,
+     "fvar_pct": 8.8,
+     "ratio": 0.1,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=0.100 ≤ 0.15"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 3,
+   "n_model_robust_panels": 1,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 6
+  },
+  {
+   "burst": "100418A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "38/132"
+   ],
+   "n_panels": 7,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 6,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "8.43-8.8 GHz",
+     "page": "38/132",
+     "model": "NE2025",
+     "nu": 9.0,
+     "regime": "SR",
+     "mp": 0.88,
+     "tp_hr": 7.57,
+     "theta_scatt_uas": 2.96,
+     "chi2": 68.0,
+     "fvar_pct": 53.0,
+     "ratio": 0.602,
+     "size_ceiling_1e16cm": 6.39,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 4.573,
+     "preview_size_1e16cm": 9.87
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "8.43-8.8 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8.43-8.8 GHz",
+     "model": "RISS19",
+     "nu": 9.0,
+     "regime": "W",
+     "mp": 0.35,
+     "chi2": 68.0,
+     "fvar_pct": 53.0,
+     "ratio": 1.514,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=1.51 ≥ 1"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 1,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 10
+  },
+  {
+   "burst": "111215A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "41/132"
+   ],
+   "n_panels": 3,
+   "n_numeric": 2,
+   "n_not_detected": 0,
+   "n_data_only": 1,
+   "evidence_level": "E2",
+   "deck_evidence_level": "E2",
+   "size_feasibility": "S1",
+   "group": "G2",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "4.8 GHz",
+     "page": "41/132",
+     "model": "RISS19",
+     "nu": 4.9,
+     "regime": "SR",
+     "mp": 0.92,
+     "tp_hr": 4.87,
+     "theta_scatt_uas": 6.25,
+     "chi2": 19.0,
+     "fvar_pct": 32.0,
+     "ratio": 0.348,
+     "size_ceiling_1e16cm": 16.49,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 15.446,
+     "preview_size_1e16cm": 40.75
+    },
+    {
+     "panel": "4.8 GHz",
+     "page": "41/132",
+     "model": "NE2025",
+     "nu": 4.9,
+     "regime": "SR",
+     "mp": 0.66,
+     "tp_hr": 24.16,
+     "theta_scatt_uas": 9.27,
+     "chi2": 19.0,
+     "fvar_pct": 32.0,
+     "ratio": 0.485,
+     "size_ceiling_1e16cm": 24.44,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 17.236,
+     "preview_size_1e16cm": 45.44
+    },
+    {
+     "panel": "15 GHz",
+     "page": "41/132",
+     "model": "RISS19",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.25,
+     "tp_hr": 2.18,
+     "theta_scatt_uas": 2.79,
+     "chi2": 3.1,
+     "fvar_pct": 13.0,
+     "ratio": 0.52,
+     "size_ceiling_1e16cm": 7.37,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 4.887,
+     "preview_size_1e16cm": 12.91
+    },
+    {
+     "panel": "15 GHz",
+     "page": "41/132",
+     "model": "NE2025",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.58,
+     "tp_hr": 3.98,
+     "theta_scatt_uas": 1.53,
+     "chi2": 3.1,
+     "fvar_pct": 13.0,
+     "ratio": 0.224,
+     "size_ceiling_1e16cm": 4.03,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 5.516,
+     "preview_size_1e16cm": 14.53
+    }
+   ],
+   "model_robust_panels": [
+    "4.8 GHz",
+    "15 GHz"
+   ],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 4,
+   "n_model_robust_panels": 2,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 4
+  },
+  {
+   "burst": "130427A",
+   "in_october_table": true,
+   "has_fit_page": false,
+   "pages": [],
+   "n_panels": 0,
+   "n_numeric": 0,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E7",
+   "deck_evidence_level": "E7",
+   "size_feasibility": "S4",
+   "group": "G6",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 1
+  },
+  {
+   "burst": "140304A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "46/132",
+    "47/132"
+   ],
+   "n_panels": 20,
+   "n_numeric": 11,
+   "n_not_detected": 1,
+   "n_data_only": 8,
+   "evidence_level": "E4",
+   "deck_evidence_level": "E4",
+   "size_feasibility": "S2",
+   "group": "G4",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8-10 GHz",
+     "model": "RISS19",
+     "nu": 11.0,
+     "regime": "W",
+     "mp": 0.33,
+     "chi2": 24.0,
+     "fvar_pct": 19.0,
+     "ratio": 0.576,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "8-10 GHz",
+     "model": "NE2025",
+     "nu": 11.0,
+     "regime": "W",
+     "mp": 0.88,
+     "chi2": 24.0,
+     "fvar_pct": 19.0,
+     "ratio": 0.216,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "8-10 GHz",
+     "model": "RISS19",
+     "nu": 11.0,
+     "regime": "W",
+     "mp": 0.33,
+     "chi2": 7.1,
+     "fvar_pct": 22.0,
+     "ratio": 0.667,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "8-10 GHz",
+     "model": "NE2025",
+     "nu": 11.0,
+     "regime": "W",
+     "mp": 0.88,
+     "chi2": 7.1,
+     "fvar_pct": 22.0,
+     "ratio": 0.25,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "10-13 GHz",
+     "model": "RISS19",
+     "nu": 11.0,
+     "regime": "W",
+     "mp": 0.33,
+     "chi2": 16.0,
+     "fvar_pct": 41.0,
+     "ratio": 1.242,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板",
+      "F_var/m_p=1.24 ≥ 1"
+     ]
+    },
+    {
+     "panel": "10-13 GHz",
+     "model": "NE2025",
+     "nu": 11.0,
+     "regime": "W",
+     "mp": 0.88,
+     "chi2": 16.0,
+     "fvar_pct": 41.0,
+     "ratio": 0.466,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [
+    [
+     "46/132",
+     "13-18 GHz"
+    ],
+    [
+     "46/132",
+     "18-27 GHz"
+    ],
+    [
+     "46/132",
+     "4-6 GHz"
+    ],
+    [
+     "46/132",
+     "6-8 GHz"
+    ],
+    [
+     "47/132",
+     "13-18 GHz"
+    ],
+    [
+     "47/132",
+     "18-27 GHz"
+    ],
+    [
+     "47/132",
+     "4-6 GHz"
+    ],
+    [
+     "47/132",
+     "6-8 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 1
+  },
+  {
+   "burst": "140713A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "50/132"
+   ],
+   "n_panels": 5,
+   "n_numeric": 5,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E2",
+   "deck_evidence_level": "E2",
+   "size_feasibility": "S1",
+   "group": "G2",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "4.9 GHz",
+     "page": "50/132",
+     "model": "RISS19",
+     "nu": 4.8,
+     "regime": "SR",
+     "mp": 0.95,
+     "tp_hr": 4.72,
+     "theta_scatt_uas": 5.54,
+     "chi2": 12.0,
+     "fvar_pct": 20.0,
+     "ratio": 0.211,
+     "size_ceiling_1e16cm": 13.85,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 21.023,
+     "preview_size_1e16cm": 52.56
+    },
+    {
+     "panel": "4.9 GHz",
+     "page": "50/132",
+     "model": "NE2025",
+     "nu": 4.8,
+     "regime": "SR",
+     "mp": 0.63,
+     "tp_hr": 30.38,
+     "theta_scatt_uas": 10.16,
+     "chi2": 12.0,
+     "fvar_pct": 20.0,
+     "ratio": 0.317,
+     "size_ceiling_1e16cm": 25.39,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 27.199,
+     "preview_size_1e16cm": 67.97
+    },
+    {
+     "panel": "15.9 GHz",
+     "page": "50/132",
+     "model": "RISS19",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.23,
+     "tp_hr": 2.27,
+     "theta_scatt_uas": 2.67,
+     "chi2": 24.0,
+     "fvar_pct": 16.0,
+     "ratio": 0.696,
+     "size_ceiling_1e16cm": 6.68,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 3.643,
+     "preview_size_1e16cm": 9.11
+    },
+    {
+     "panel": "15.9 GHz",
+     "page": "50/132",
+     "model": "NE2025",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.64,
+     "tp_hr": 4.26,
+     "theta_scatt_uas": 1.43,
+     "chi2": 24.0,
+     "fvar_pct": 16.0,
+     "ratio": 0.25,
+     "size_ceiling_1e16cm": 3.56,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 4.692,
+     "preview_size_1e16cm": 11.68
+    }
+   ],
+   "model_robust_panels": [
+    "4.9 GHz",
+    "15.9 GHz"
+   ],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "50/132",
+     "13.4 GHz"
+    ],
+    [
+     "50/132",
+     "7 GHz"
+    ],
+    [
+     "50/132",
+     "85.5-86.7 GHz"
+    ]
+   ],
+   "n_invertible_rows": 4,
+   "n_model_robust_panels": 2,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 5
+  },
+  {
+   "burst": "141121A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "53/132"
+   ],
+   "n_panels": 6,
+   "n_numeric": 5,
+   "n_not_detected": 0,
+   "n_data_only": 1,
+   "evidence_level": "E2",
+   "deck_evidence_level": "E2",
+   "size_feasibility": "S1",
+   "group": "G2",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "3 GHz",
+     "page": "53/132",
+     "model": "RISS19",
+     "nu": 3.0,
+     "regime": "SR",
+     "mp": 0.63,
+     "tp_hr": 19.52,
+     "theta_scatt_uas": 25.46,
+     "chi2": 2.8,
+     "fvar_pct": 18.0,
+     "ratio": 0.286,
+     "size_ceiling_1e16cm": 68.16,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 74.444,
+     "preview_size_1e16cm": 199.3
+    },
+    {
+     "panel": "3 GHz",
+     "page": "53/132",
+     "model": "NE2025",
+     "nu": 3.0,
+     "regime": "SR",
+     "mp": 0.51,
+     "tp_hr": 56.95,
+     "theta_scatt_uas": 31.5,
+     "chi2": 2.8,
+     "fvar_pct": 18.0,
+     "ratio": 0.353,
+     "size_ceiling_1e16cm": 84.32,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 76.901,
+     "preview_size_1e16cm": 205.85
+    },
+    {
+     "panel": "4.9-5 GHz",
+     "page": "53/132",
+     "model": "RISS19",
+     "nu": 5.0,
+     "regime": "SR",
+     "mp": 0.84,
+     "tp_hr": 6.34,
+     "theta_scatt_uas": 8.27,
+     "chi2": 8.2,
+     "fvar_pct": 25.0,
+     "ratio": 0.298,
+     "size_ceiling_1e16cm": 22.15,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 23.344,
+     "preview_size_1e16cm": 62.52
+    },
+    {
+     "panel": "4.9-5 GHz",
+     "page": "53/132",
+     "model": "NE2025",
+     "nu": 5.0,
+     "regime": "SR",
+     "mp": 0.68,
+     "tp_hr": 18.51,
+     "theta_scatt_uas": 10.24,
+     "chi2": 8.2,
+     "fvar_pct": 25.0,
+     "ratio": 0.368,
+     "size_ceiling_1e16cm": 27.41,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 24.123,
+     "preview_size_1e16cm": 64.57
+    },
+    {
+     "panel": "7 GHz",
+     "page": "53/132",
+     "model": "RISS19",
+     "nu": 7.0,
+     "regime": "W",
+     "mp": 0.96,
+     "tp_hr": 3.16,
+     "theta_scatt_uas": 4.12,
+     "chi2": 9.3,
+     "fvar_pct": 25.0,
+     "ratio": 0.26,
+     "size_ceiling_1e16cm": 11.03,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 13.072,
+     "preview_size_1e16cm": 35.0
+    },
+    {
+     "panel": "7 GHz",
+     "page": "53/132",
+     "model": "NE2025",
+     "nu": 7.0,
+     "regime": "SR",
+     "mp": 0.82,
+     "tp_hr": 8.83,
+     "theta_scatt_uas": 4.88,
+     "chi2": 9.3,
+     "fvar_pct": 25.0,
+     "ratio": 0.305,
+     "size_ceiling_1e16cm": 13.07,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 13.504,
+     "preview_size_1e16cm": 36.17
+    },
+    {
+     "panel": "13 GHz",
+     "page": "53/132",
+     "model": "RISS19",
+     "nu": 13.0,
+     "regime": "W",
+     "mp": 0.4,
+     "tp_hr": 2.32,
+     "theta_scatt_uas": 3.02,
+     "chi2": 3.3,
+     "fvar_pct": 9.7,
+     "ratio": 0.242,
+     "size_ceiling_1e16cm": 8.09,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 10.19,
+     "preview_size_1e16cm": 27.3
+    },
+    {
+     "panel": "15 GHz",
+     "page": "53/132",
+     "model": "RISS19",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.33,
+     "tp_hr": 2.16,
+     "theta_scatt_uas": 2.81,
+     "chi2": 3.6,
+     "fvar_pct": 12.0,
+     "ratio": 0.364,
+     "size_ceiling_1e16cm": 7.54,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 6.682,
+     "preview_size_1e16cm": 17.93
+    },
+    {
+     "panel": "15 GHz",
+     "page": "53/132",
+     "model": "NE2025",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.56,
+     "tp_hr": 3.31,
+     "theta_scatt_uas": 1.83,
+     "chi2": 3.6,
+     "fvar_pct": 12.0,
+     "ratio": 0.214,
+     "size_ceiling_1e16cm": 4.91,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 6.861,
+     "preview_size_1e16cm": 18.41
+    }
+   ],
+   "model_robust_panels": [
+    "3 GHz",
+    "4.9-5 GHz",
+    "7 GHz",
+    "15 GHz"
+   ],
+   "model_dependent_panels": [
+    "13 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "13 GHz",
+     "model": "NE2025",
+     "nu": 13.0,
+     "regime": "W",
+     "mp": 0.69,
+     "chi2": 3.3,
+     "fvar_pct": 9.7,
+     "ratio": 0.141,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=0.141 ≤ 0.15"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 9,
+   "n_model_robust_panels": 4,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 1
+  },
+  {
+   "burst": "160131A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "56/132"
+   ],
+   "n_panels": 10,
+   "n_numeric": 7,
+   "n_not_detected": 0,
+   "n_data_only": 3,
+   "evidence_level": "E4",
+   "deck_evidence_level": "E4",
+   "size_feasibility": "S2",
+   "group": "G4",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8-10 GHz",
+     "model": "RISS19",
+     "nu": 8.93,
+     "regime": "SR",
+     "mp": 0.85,
+     "chi2": 26.0,
+     "fvar_pct": 30.0,
+     "ratio": 0.353,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "8-10 GHz",
+     "model": "NE2025",
+     "nu": 8.93,
+     "regime": "SR",
+     "mp": 0.94,
+     "chi2": 26.0,
+     "fvar_pct": 30.0,
+     "ratio": 0.319,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "10-13 GHz",
+     "model": "RISS19",
+     "nu": 11.4,
+     "regime": "SR",
+     "mp": 0.98,
+     "chi2": 7.3,
+     "fvar_pct": 120.0,
+     "ratio": 1.224,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板",
+      "F_var/m_p=1.22 ≥ 1"
+     ]
+    },
+    {
+     "panel": "10-13 GHz",
+     "model": "NE2025",
+     "nu": 11.4,
+     "regime": "W",
+     "mp": 0.82,
+     "chi2": 7.3,
+     "fvar_pct": 120.0,
+     "ratio": 1.463,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板",
+      "F_var/m_p=1.46 ≥ 1"
+     ]
+    },
+    {
+     "panel": "18-27 GHz",
+     "model": "RISS19",
+     "nu": 24.6,
+     "regime": "W",
+     "mp": 0.35,
+     "chi2": 2.7,
+     "fvar_pct": 7.9,
+     "ratio": 0.226,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "18-27 GHz",
+     "model": "NE2025",
+     "nu": 24.6,
+     "regime": "W",
+     "mp": 0.27,
+     "chi2": 2.7,
+     "fvar_pct": 7.9,
+     "ratio": 0.293,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "27-40 GHz",
+     "model": "RISS19",
+     "nu": 37.1,
+     "regime": "W",
+     "mp": 0.2,
+     "chi2": 2.2,
+     "fvar_pct": 8.2,
+     "ratio": 0.41,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "27-40 GHz",
+     "model": "NE2025",
+     "nu": 37.1,
+     "regime": "W",
+     "mp": 0.15,
+     "chi2": 2.2,
+     "fvar_pct": 8.2,
+     "ratio": 0.547,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [
+    [
+     "56/132",
+     "13-18 GHz"
+    ],
+    [
+     "56/132",
+     "4-6 GHz"
+    ],
+    [
+     "56/132",
+     "6-8 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 2
+  },
+  {
+   "burst": "160623A",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "59/132"
+   ],
+   "n_panels": 1,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "59/132",
+     "15.5 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 2
+  },
+  {
+   "burst": "160625B",
+   "in_october_table": true,
+   "has_fit_page": false,
+   "pages": [],
+   "n_panels": 0,
+   "n_numeric": 0,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E7",
+   "deck_evidence_level": "E7",
+   "size_feasibility": "S4",
+   "group": "G6",
+   "independent_size_constraint": "文献涉及特殊散射相关成分（在 deck 与十月表内，但无拟合页读数）",
+   "literature": "文献涉及特殊散射相关成分（在 deck 与十月表内，但无拟合页读数）",
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 2
+  },
+  {
+   "burst": "161219B",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "64/132"
+   ],
+   "n_panels": 11,
+   "n_numeric": 6,
+   "n_not_detected": 2,
+   "n_data_only": 3,
+   "evidence_level": "E1",
+   "deck_evidence_level": "E2",
+   "size_feasibility": "S1",
+   "group": "G1",
+   "independent_size_constraint": "文献确证 20 GHz 强衍射闪烁，并据此反推源尺寸",
+   "literature": "文献确证 20 GHz 强衍射闪烁，并据此反推源尺寸",
+   "invertible_rows": [
+    {
+     "panel": "8.5 GHz",
+     "page": "64/132",
+     "model": "RISS19",
+     "nu": 8.5,
+     "regime": "W",
+     "mp": 1.0,
+     "tp_hr": 3.22,
+     "theta_scatt_uas": 3.33,
+     "chi2": 50.0,
+     "fvar_pct": 21.0,
+     "ratio": 0.21,
+     "size_ceiling_1e16cm": 2.74,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 12.688,
+     "preview_size_1e16cm": 10.44
+    },
+    {
+     "panel": "8.5 GHz",
+     "page": "64/132",
+     "model": "NE2025",
+     "nu": 8.5,
+     "regime": "SR",
+     "mp": 0.89,
+     "tp_hr": 8.32,
+     "theta_scatt_uas": 2.6,
+     "chi2": 50.0,
+     "fvar_pct": 21.0,
+     "ratio": 0.236,
+     "size_ceiling_1e16cm": 2.13,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 8.963,
+     "preview_size_1e16cm": 7.34
+    }
+   ],
+   "model_robust_panels": [
+    "8.5 GHz"
+   ],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "13.5-16 GHz",
+     "model": "RISS19",
+     "nu": 16.0,
+     "regime": "W",
+     "mp": 0.41,
+     "chi2": 20.0,
+     "fvar_pct": 16.0,
+     "ratio": 0.39,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    },
+    {
+     "panel": "13.5-16 GHz",
+     "model": "NE2025",
+     "nu": 16.0,
+     "regime": "W",
+     "mp": 0.55,
+     "chi2": 20.0,
+     "fvar_pct": 16.0,
+     "ratio": 0.291,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [
+    [
+     "64/132",
+     "11 GHz"
+    ],
+    [
+     "64/132",
+     "19-25 GHz"
+    ],
+    [
+     "64/132",
+     "5 GHz"
+    ],
+    [
+     "64/132",
+     "7.4 GHz"
+    ]
+   ],
+   "n_invertible_rows": 2,
+   "n_model_robust_panels": 1,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 1
+  },
+  {
+   "burst": "170105A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "67/132"
+   ],
+   "n_panels": 5,
+   "n_numeric": 0,
+   "n_not_detected": 1,
+   "n_data_only": 4,
+   "evidence_level": "E6",
+   "deck_evidence_level": "E6",
+   "size_feasibility": "S4",
+   "group": "G7",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 2
+  },
+  {
+   "burst": "171010A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "70/132"
+   ],
+   "n_panels": 6,
+   "n_numeric": 0,
+   "n_not_detected": 1,
+   "n_data_only": 5,
+   "evidence_level": "E6",
+   "deck_evidence_level": "E6",
+   "size_feasibility": "S4",
+   "group": "G7",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 3
+  },
+  {
+   "burst": "190829A",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "73/132"
+   ],
+   "n_panels": 2,
+   "n_numeric": 1,
+   "n_not_detected": 1,
+   "n_data_only": 0,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "73/132",
+     "15.5 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 3
+  },
+  {
+   "burst": "210702A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "76/132"
+   ],
+   "n_panels": 4,
+   "n_numeric": 1,
+   "n_not_detected": 2,
+   "n_data_only": 1,
+   "evidence_level": "E1",
+   "deck_evidence_level": "E2",
+   "size_feasibility": "S1",
+   "group": "G1",
+   "independent_size_constraint": null,
+   "literature": "5 小时射电闪光被原文解释为很可能的一次闪烁周期，m 取检测点 σ/μ",
+   "invertible_rows": [
+    {
+     "panel": "21.2 GHz",
+     "page": "76/132",
+     "model": "RISS19",
+     "nu": 21.2,
+     "regime": "W",
+     "mp": 0.24,
+     "tp_hr": 1.99,
+     "theta_scatt_uas": 2.16,
+     "chi2": 2.3,
+     "fvar_pct": 8.8,
+     "ratio": 0.367,
+     "size_ceiling_1e16cm": 5.66,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 5.1,
+     "preview_size_1e16cm": 13.36
+    },
+    {
+     "panel": "21.2 GHz",
+     "page": "76/132",
+     "model": "NE2025",
+     "nu": 21.2,
+     "regime": "W",
+     "mp": 0.49,
+     "tp_hr": 3.32,
+     "theta_scatt_uas": 1.29,
+     "chi2": 2.3,
+     "fvar_pct": 8.8,
+     "ratio": 0.18,
+     "size_ceiling_1e16cm": 3.38,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 5.61,
+     "preview_size_1e16cm": 14.7
+    }
+   ],
+   "model_robust_panels": [
+    "21.2 GHz"
+   ],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 2,
+   "n_model_robust_panels": 1,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 2
+  },
+  {
+   "burst": "210704A",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "79/132"
+   ],
+   "n_panels": 1,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "79/132",
+     "15.5 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 4
+  },
+  {
+   "burst": "220101A",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "82/132"
+   ],
+   "n_panels": 1,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "15.5 GHz",
+     "page": "82/132",
+     "model": "RISS19",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.17,
+     "tp_hr": 2.05,
+     "theta_scatt_uas": 2.97,
+     "chi2": 2.7,
+     "fvar_pct": 7.8,
+     "ratio": 0.459,
+     "size_ceiling_1e16cm": 6.11,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 2,
+     "preview_theta_s_uas": 5.789,
+     "preview_size_1e16cm": 11.91
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "15.5 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "15.5 GHz",
+     "model": "NE2025",
+     "nu": 15.0,
+     "regime": "W",
+     "mp": 0.52,
+     "chi2": 2.7,
+     "fvar_pct": 7.8,
+     "ratio": 0.15,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=0.150 ≤ 0.15"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 1,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 11
+  },
+  {
+   "burst": "221009A",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "85/132"
+   ],
+   "n_panels": 11,
+   "n_numeric": 6,
+   "n_not_detected": 0,
+   "n_data_only": 5,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "85/132",
+     "0.1-1 GHz"
+    ],
+    [
+     "85/132",
+     "1-2 GHz"
+    ],
+    [
+     "85/132",
+     "12-19 GHz"
+    ],
+    [
+     "85/132",
+     "2-4 GHz"
+    ],
+    [
+     "85/132",
+     "4-7.5 GHz"
+    ],
+    [
+     "85/132",
+     "7.5-12 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 5
+  },
+  {
+   "burst": "240205B",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "88/132"
+   ],
+   "n_panels": 8,
+   "n_numeric": 2,
+   "n_not_detected": 0,
+   "n_data_only": 6,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "5.5 GHz",
+     "page": "88/132",
+     "model": "NE2025",
+     "nu": 5.5,
+     "regime": "SR",
+     "mp": 0.84,
+     "tp_hr": 8.04,
+     "theta_scatt_uas": 5.83,
+     "chi2": 5.3,
+     "fvar_pct": 31.0,
+     "ratio": 0.369,
+     "size_ceiling_1e16cm": 14.02,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 13.702,
+     "preview_size_1e16cm": 32.95
+    },
+    {
+     "panel": "9 GHz",
+     "page": "88/132",
+     "model": "NE2025",
+     "nu": 9.0,
+     "regime": "W",
+     "mp": 0.77,
+     "tp_hr": 3.74,
+     "theta_scatt_uas": 2.71,
+     "chi2": 3.8,
+     "fvar_pct": 68.0,
+     "ratio": 0.883,
+     "size_ceiling_1e16cm": 6.52,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 3.015,
+     "preview_size_1e16cm": 7.25
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "5.5 GHz",
+    "9 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "5.5 GHz",
+     "model": "RISS19",
+     "nu": 5.5,
+     "regime": "W",
+     "mp": 0.19,
+     "chi2": 5.3,
+     "fvar_pct": 31.0,
+     "ratio": 1.632,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=1.63 ≥ 1"
+     ]
+    },
+    {
+     "panel": "9 GHz",
+     "model": "RISS19",
+     "nu": 9.0,
+     "regime": "W",
+     "mp": 0.1,
+     "chi2": 3.8,
+     "fvar_pct": 68.0,
+     "ratio": 6.8,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=6.80 ≥ 1"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 2,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 2,
+   "rank_in_group": 3
+  },
+  {
+   "burst": "240529A",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "91/132"
+   ],
+   "n_panels": 1,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "91/132",
+     "15.5 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 6
+  },
+  {
+   "burst": "240619A",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "94/132"
+   ],
+   "n_panels": 1,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "94/132",
+     "15.5 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 7
+  },
+  {
+   "burst": "241025A",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "97/132"
+   ],
+   "n_panels": 9,
+   "n_numeric": 5,
+   "n_not_detected": 4,
+   "n_data_only": 0,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "97/132",
+     "10 GHz"
+    ],
+    [
+     "97/132",
+     "11 GHz"
+    ],
+    [
+     "97/132",
+     "5 GHz"
+    ],
+    [
+     "97/132",
+     "6 GHz"
+    ],
+    [
+     "97/132",
+     "7 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 8
+  },
+  {
+   "burst": "250419A",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "100/132"
+   ],
+   "n_panels": 8,
+   "n_numeric": 3,
+   "n_not_detected": 1,
+   "n_data_only": 4,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "100/132",
+     "10 GHz"
+    ],
+    [
+     "100/132",
+     "15 GHz"
+    ],
+    [
+     "100/132",
+     "6 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 9
+  },
+  {
+   "burst": "250702B",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "103/132"
+   ],
+   "n_panels": 10,
+   "n_numeric": 7,
+   "n_not_detected": 2,
+   "n_data_only": 1,
+   "evidence_level": "E1",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G1",
+   "independent_size_constraint": "低频（≤3 GHz）变化被解释为 ISS，文献给出 R⊥ 量级界",
+   "literature": "低频（≤3 GHz）变化被解释为 ISS，文献给出 R⊥ 量级界",
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "103/132",
+     "1-2 GHz"
+    ],
+    [
+     "103/132",
+     "12-18 GHz"
+    ],
+    [
+     "103/132",
+     "18-27 GHz"
+    ],
+    [
+     "103/132",
+     "2-4 GHz"
+    ],
+    [
+     "103/132",
+     "27-40 GHz"
+    ],
+    [
+     "103/132",
+     "4-7.5 GHz"
+    ],
+    [
+     "103/132",
+     "7.5-12 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 3
+  },
+  {
+   "burst": "251013C",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "106/132"
+   ],
+   "n_panels": 1,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "106/132",
+     "15.5 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 10
+  },
+  {
+   "burst": "970508",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "109/132"
+   ],
+   "n_panels": 3,
+   "n_numeric": 3,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E2",
+   "deck_evidence_level": "E2",
+   "size_feasibility": "S1",
+   "group": "G2",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "1.43 GHz",
+     "page": "109/132",
+     "model": "RISS19",
+     "nu": 1.43,
+     "regime": "SR",
+     "mp": 0.54,
+     "tp_hr": 44.78,
+     "theta_scatt_uas": 58.16,
+     "chi2": 5.3,
+     "fvar_pct": 28.0,
+     "ratio": 0.519,
+     "size_ceiling_1e16cm": 140.57,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 102.039,
+     "preview_size_1e16cm": 246.62
+    },
+    {
+     "panel": "1.43 GHz",
+     "page": "109/132",
+     "model": "NE2025",
+     "nu": 1.43,
+     "regime": "SR",
+     "mp": 0.33,
+     "tp_hr": 323.51,
+     "theta_scatt_uas": 151.81,
+     "chi2": 5.3,
+     "fvar_pct": 28.0,
+     "ratio": 0.848,
+     "size_ceiling_1e16cm": 366.94,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 174.854,
+     "preview_size_1e16cm": 422.64
+    },
+    {
+     "panel": "4.86 GHz",
+     "page": "109/132",
+     "model": "RISS19",
+     "nu": 4.86,
+     "regime": "W",
+     "mp": 0.83,
+     "tp_hr": 3.8,
+     "theta_scatt_uas": 4.93,
+     "chi2": 10.0,
+     "fvar_pct": 26.0,
+     "ratio": 0.313,
+     "size_ceiling_1e16cm": 11.93,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 13.343,
+     "preview_size_1e16cm": 32.29
+    },
+    {
+     "panel": "4.86 GHz",
+     "page": "109/132",
+     "model": "NE2025",
+     "nu": 4.86,
+     "regime": "SR",
+     "mp": 0.66,
+     "tp_hr": 21.93,
+     "theta_scatt_uas": 10.29,
+     "chi2": 10.0,
+     "fvar_pct": 26.0,
+     "ratio": 0.394,
+     "size_ceiling_1e16cm": 24.87,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 22.863,
+     "preview_size_1e16cm": 55.26
+    },
+    {
+     "panel": "8.46 GHz",
+     "page": "109/132",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.38,
+     "tp_hr": 2.88,
+     "theta_scatt_uas": 3.74,
+     "chi2": 11.0,
+     "fvar_pct": 24.0,
+     "ratio": 0.632,
+     "size_ceiling_1e16cm": 9.04,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 5.542,
+     "preview_size_1e16cm": 13.4
+    },
+    {
+     "panel": "8.46 GHz",
+     "page": "109/132",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "SR",
+     "mp": 0.9,
+     "tp_hr": 6.48,
+     "theta_scatt_uas": 3.04,
+     "chi2": 11.0,
+     "fvar_pct": 24.0,
+     "ratio": 0.267,
+     "size_ceiling_1e16cm": 7.35,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 9.428,
+     "preview_size_1e16cm": 22.8
+    }
+   ],
+   "model_robust_panels": [
+    "1.43 GHz",
+    "4.86 GHz",
+    "8.46 GHz"
+   ],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 6,
+   "n_model_robust_panels": 3,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 2
+  },
+  {
+   "burst": "980329",
+   "in_october_table": true,
+   "has_fit_page": false,
+   "pages": [],
+   "n_panels": 0,
+   "n_numeric": 0,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E7",
+   "deck_evidence_level": "E7",
+   "size_feasibility": "S4",
+   "group": "G6",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 3
+  },
+  {
+   "burst": "980425",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "114/132"
+   ],
+   "n_panels": 4,
+   "n_numeric": 2,
+   "n_not_detected": 0,
+   "n_data_only": 2,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "1.38 GHz",
+     "page": "114/132",
+     "model": "NE2025",
+     "nu": 1.4,
+     "regime": "SR",
+     "mp": 0.28,
+     "tp_hr": 532.25,
+     "theta_scatt_uas": 275.46,
+     "chi2": 3.2,
+     "fvar_pct": 4.4,
+     "ratio": 0.157,
+     "size_ceiling_1e16cm": 15.36,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 1346.751,
+     "preview_size_1e16cm": 75.1
+    },
+    {
+     "panel": "2.49 GHz",
+     "page": "114/132",
+     "model": "NE2025",
+     "nu": 2.3,
+     "regime": "SR",
+     "mp": 0.37,
+     "tp_hr": 178.56,
+     "theta_scatt_uas": 92.41,
+     "chi2": 9.0,
+     "fvar_pct": 6.6,
+     "ratio": 0.178,
+     "size_ceiling_1e16cm": 5.15,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 405.71,
+     "preview_size_1e16cm": 22.61
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "1.38 GHz",
+    "2.49 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "1.38 GHz",
+     "model": "RISS19",
+     "nu": 1.4,
+     "regime": "SR",
+     "mp": 0.49,
+     "chi2": 3.2,
+     "fvar_pct": 4.4,
+     "ratio": 0.09,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=0.090 ≤ 0.15"
+     ]
+    },
+    {
+     "panel": "2.49 GHz",
+     "model": "RISS19",
+     "nu": 2.3,
+     "regime": "SR",
+     "mp": 0.65,
+     "chi2": 9.0,
+     "fvar_pct": 6.6,
+     "ratio": 0.102,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=0.102 ≤ 0.15"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 2,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 2,
+   "rank_in_group": 4
+  },
+  {
+   "burst": "980519",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "117/132"
+   ],
+   "n_panels": 4,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 3,
+   "evidence_level": "E3",
+   "deck_evidence_level": "E3",
+   "size_feasibility": "S1θ",
+   "group": "G3",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "8.46 GHz",
+     "page": "117/132",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.67,
+     "tp_hr": 3.76,
+     "theta_scatt_uas": 2.86,
+     "chi2": 4.5,
+     "fvar_pct": 37.0,
+     "ratio": 0.552,
+     "size_ceiling_1e16cm": null,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 4.759,
+     "preview_size_1e16cm": null
+    },
+    {
+     "panel": "8.46 GHz",
+     "page": "117/132",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "SR",
+     "mp": 0.65,
+     "tp_hr": 21.78,
+     "theta_scatt_uas": 6.75,
+     "chi2": 4.5,
+     "fvar_pct": 37.0,
+     "ratio": 0.569,
+     "size_ceiling_1e16cm": null,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 10.945,
+     "preview_size_1e16cm": null
+    }
+   ],
+   "model_robust_panels": [],
+   "model_dependent_panels": [
+    "8.46 GHz"
+   ],
+   "both_models_but_size_disagree": [
+    "8.46 GHz"
+   ],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 2,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 5
+  },
+  {
+   "burst": "980703",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "120/132"
+   ],
+   "n_panels": 3,
+   "n_numeric": 3,
+   "n_not_detected": 0,
+   "n_data_only": 0,
+   "evidence_level": "E2",
+   "deck_evidence_level": "E2",
+   "size_feasibility": "S1",
+   "group": "G2",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [
+    {
+     "panel": "1.43 GHz",
+     "page": "120/132",
+     "model": "RISS19",
+     "nu": 1.43,
+     "regime": "SR",
+     "mp": 0.62,
+     "tp_hr": 21.82,
+     "theta_scatt_uas": 49.71,
+     "chi2": 1.6,
+     "fvar_pct": 17.0,
+     "ratio": 0.274,
+     "size_ceiling_1e16cm": 125.22,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 150.79,
+     "preview_size_1e16cm": 379.84
+    },
+    {
+     "panel": "1.43 GHz",
+     "page": "120/132",
+     "model": "NE2025",
+     "nu": 1.43,
+     "regime": "SR",
+     "mp": 0.39,
+     "tp_hr": 158.08,
+     "theta_scatt_uas": 107.73,
+     "chi2": 1.6,
+     "fvar_pct": 17.0,
+     "ratio": 0.436,
+     "size_ceiling_1e16cm": 271.36,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 219.456,
+     "preview_size_1e16cm": 552.79
+    },
+    {
+     "panel": "4.86 GHz",
+     "page": "120/132",
+     "model": "RISS19",
+     "nu": 4.86,
+     "regime": "W",
+     "mp": 0.58,
+     "tp_hr": 2.87,
+     "theta_scatt_uas": 6.54,
+     "chi2": 17.0,
+     "fvar_pct": 38.0,
+     "ratio": 0.655,
+     "size_ceiling_1e16cm": 16.46,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 9.399,
+     "preview_size_1e16cm": 23.66
+    },
+    {
+     "panel": "4.86 GHz",
+     "page": "120/132",
+     "model": "NE2025",
+     "nu": 4.86,
+     "regime": "SR",
+     "mp": 0.79,
+     "tp_hr": 10.72,
+     "theta_scatt_uas": 7.3,
+     "chi2": 17.0,
+     "fvar_pct": 38.0,
+     "ratio": 0.481,
+     "size_ceiling_1e16cm": 18.39,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 13.67,
+     "preview_size_1e16cm": 34.44
+    },
+    {
+     "panel": "8.46 GHz",
+     "page": "120/132",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.26,
+     "tp_hr": 2.17,
+     "theta_scatt_uas": 4.95,
+     "chi2": 2.7,
+     "fvar_pct": 8.9,
+     "ratio": 0.342,
+     "size_ceiling_1e16cm": 12.48,
+     "invertible": true,
+     "band": false,
+     "agree": true,
+     "fit_variants": 1,
+     "preview_theta_s_uas": 12.417,
+     "preview_size_1e16cm": 31.31
+    }
+   ],
+   "model_robust_panels": [
+    "1.43 GHz",
+    "4.86 GHz"
+   ],
+   "model_dependent_panels": [
+    "8.46 GHz"
+   ],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "8.46 GHz",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.83,
+     "chi2": 2.7,
+     "fvar_pct": 8.9,
+     "ratio": 0.107,
+     "band": false,
+     "fail_reasons": [
+      "F_var/m_p=0.107 ≤ 0.15"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 5,
+   "n_model_robust_panels": 2,
+   "n_model_dependent_panels": 1,
+   "rank_in_group": 3
+  },
+  {
+   "burst": "981226",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "123/132"
+   ],
+   "n_panels": 2,
+   "n_numeric": 0,
+   "n_not_detected": 1,
+   "n_data_only": 1,
+   "evidence_level": "E6",
+   "deck_evidence_level": "E6",
+   "size_feasibility": "S4",
+   "group": "G7",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 4
+  },
+  {
+   "burst": "990123",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "126/132"
+   ],
+   "n_panels": 4,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 3,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "126/132",
+     "8.46 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 11
+  },
+  {
+   "burst": "991208",
+   "in_october_table": true,
+   "has_fit_page": true,
+   "pages": [
+    "129/132"
+   ],
+   "n_panels": 8,
+   "n_numeric": 1,
+   "n_not_detected": 1,
+   "n_data_only": 6,
+   "evidence_level": "E4",
+   "deck_evidence_level": "E4",
+   "size_feasibility": "S2",
+   "group": "G4",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [
+    {
+     "panel": "5-9 GHz",
+     "model": "RISS19",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.25,
+     "chi2": 25.0,
+     "fvar_pct": 29.0,
+     "ratio": 1.16,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板",
+      "F_var/m_p=1.16 ≥ 1"
+     ]
+    },
+    {
+     "panel": "5-9 GHz",
+     "model": "NE2025",
+     "nu": 8.46,
+     "regime": "W",
+     "mp": 0.97,
+     "chi2": 25.0,
+     "fvar_pct": 29.0,
+     "ratio": 0.299,
+     "band": true,
+     "fail_reasons": [
+      "多频带面板"
+     ]
+    }
+   ],
+   "numeric_panels_without_model": [],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 3
+  },
+  {
+   "burst": "991216",
+   "in_october_table": false,
+   "has_fit_page": true,
+   "pages": [
+    "132/132"
+   ],
+   "n_panels": 6,
+   "n_numeric": 1,
+   "n_not_detected": 0,
+   "n_data_only": 5,
+   "evidence_level": "E5",
+   "deck_evidence_level": "E5",
+   "size_feasibility": "S3",
+   "group": "G5",
+   "independent_size_constraint": null,
+   "literature": null,
+   "invertible_rows": [],
+   "model_robust_panels": [],
+   "model_dependent_panels": [],
+   "both_models_but_size_disagree": [],
+   "failed_rows": [],
+   "numeric_panels_without_model": [
+    [
+     "132/132",
+     "8.42-8.46 GHz"
+    ]
+   ],
+   "n_invertible_rows": 0,
+   "n_model_robust_panels": 0,
+   "n_model_dependent_panels": 0,
+   "rank_in_group": 12
+  }
+ ],
+ "critiques": [
+  {
+   "scope": "row",
+   "issue": "ratio_le_015",
+   "burst": "000301C",
+   "panel": "8.46 GHz",
+   "model": "NE2025",
+   "detail": "000301C 8.46 GHz NE2025: F_var/m_p=0.126 ≤ 0.15，闪烁证据不足或 m_p 高估",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "000301C",
+   "panel": "4.86 GHz",
+   "model": null,
+   "detail": "000301C 4.86 GHz: 状态“data only”，但模型 m_p=RISS19 0.6, NE2025 0.75，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "000418",
+   "panel": "4.86 GHz",
+   "model": "RISS19",
+   "detail": "000418 4.86 GHz RISS19: F_var=46.0% > m_p=0.33（比值 1.39），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "000418",
+   "panel": "4.86 GHz",
+   "model": "RISS19",
+   "detail": "000418 4.86 GHz RISS19: χ²=42.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "000418",
+   "panel": "8.35-8.46 GHz",
+   "model": "RISS19",
+   "detail": "000418 8.35-8.46 GHz RISS19: F_var=21.0% > m_p=0.15（比值 1.40），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "000418",
+   "panel": "4.86 GHz",
+   "model": "NE2025",
+   "detail": "000418 4.86 GHz NE2025: 过门行 χ²=42.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "000911",
+   "panel": "4.86 GHz",
+   "model": null,
+   "detail": "000911 4.86 GHz: 状态“not detected”，但模型 m_p=NE2025 0.78，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "000911",
+   "panel": "8.46 GHz",
+   "model": null,
+   "detail": "000911 8.46 GHz: 状态“not detected”，但模型 m_p=NE2025 0.84，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "000926",
+   "panel": "8.46 GHz",
+   "model": "RISS19",
+   "detail": "000926 8.46 GHz RISS19: F_var=44.0% > m_p=0.29（比值 1.52），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "000926",
+   "panel": "4.86 GHz",
+   "model": null,
+   "detail": "000926 4.86 GHz: 状态“not detected”，但模型 m_p=RISS19 0.63, NE2025 0.71，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "reader_disagreement",
+   "burst": "000926",
+   "panel": "22.5 GHz",
+   "model": null,
+   "detail": "000926 22.5 GHz: 两次读数不一致（其中一个通道读成 %），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "reader_disagreement",
+   "burst": "000926",
+   "panel": "98.48 GHz",
+   "model": null,
+   "detail": "000926 98.48 GHz: 两次读数不一致（其中一个通道读成 44.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "011121",
+   "panel": "4.8 GHz",
+   "model": null,
+   "detail": "011121 4.8 GHz: F_var=12.0%, χ²=10.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_le_015",
+   "burst": "011121",
+   "panel": "8.7 GHz",
+   "model": "RISS19",
+   "detail": "011121 8.7 GHz RISS19: F_var/m_p=0.122 ≤ 0.15，闪烁证据不足或 m_p 高估",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "011121",
+   "panel": "8.7 GHz",
+   "model": "NE2025",
+   "detail": "011121 8.7 GHz NE2025: 过门行 t_p=33.03 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "theta_scatt_model_disagree",
+   "burst": "011121",
+   "panel": "8.7 GHz",
+   "model": null,
+   "detail": "011121 8.7 GHz: 两模型 θ_scatt 相差 3.6 倍（RISS19 3.66 μas vs NE2025 13.23 μas），尺寸天花板随之相差同倍；该面板过门，反演尺寸不可信",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "020405",
+   "panel": "8.46 GHz",
+   "model": "RISS19",
+   "detail": "020405 8.46 GHz RISS19: F_var=61.0% > m_p=0.35（比值 1.74），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "020819",
+   "panel": "8.46 GHz",
+   "model": null,
+   "detail": "020819 8.46 GHz: F_var=18.0%, χ²=5.3，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "031203",
+   "panel": "8.46 GHz",
+   "model": "NE2025",
+   "detail": "031203 8.46 GHz NE2025: F_var=37.0% > m_p=0.24（比值 1.54），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "031203",
+   "panel": "8.46 GHz",
+   "model": "NE2025",
+   "detail": "031203 8.46 GHz NE2025: χ²=14.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "031203",
+   "panel": "4.86 GHz",
+   "model": "RISS19",
+   "detail": "031203 4.86 GHz RISS19: 过门行 t_p=179.59 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "031203",
+   "panel": "4.86 GHz",
+   "model": "NE2025",
+   "detail": "031203 4.86 GHz NE2025: 过门行 t_p=548.81 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "031203",
+   "panel": "8.46 GHz",
+   "model": "RISS19",
+   "detail": "031203 8.46 GHz RISS19: 过门行 χ²=14.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "031203",
+   "panel": "8.46 GHz",
+   "model": "RISS19",
+   "detail": "031203 8.46 GHz RISS19: 过门行 t_p=53.45 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "theta_scatt_model_disagree",
+   "burst": "031203",
+   "panel": "4.86 GHz",
+   "model": null,
+   "detail": "031203 4.86 GHz: 两模型 θ_scatt 相差 26.0 倍（RISS19 43.41 μas vs NE2025 1126.76 μas），尺寸天花板随之相差同倍；该面板过门，反演尺寸不可信",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "theta_scatt_model_disagree",
+   "burst": "031203",
+   "panel": "8.46 GHz",
+   "model": null,
+   "detail": "031203 8.46 GHz: 两模型 θ_scatt 相差 26.0 倍（RISS19 12.92 μas vs NE2025 335.38 μas），尺寸天花板随之相差同倍；该面板过门，反演尺寸不可信",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "031203",
+   "panel": "22.5 GHz",
+   "model": null,
+   "detail": "031203 22.5 GHz: 状态“data only”，但模型 m_p=RISS19 0.87，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_le_015",
+   "burst": "070125",
+   "panel": "8.46 GHz",
+   "model": "NE2025",
+   "detail": "070125 8.46 GHz NE2025: F_var/m_p=0.100 ≤ 0.15，闪烁证据不足或 m_p 高估",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_marginal",
+   "burst": "070125",
+   "panel": "8.46 GHz",
+   "model": "RISS19",
+   "detail": "070125 8.46 GHz RISS19: F_var/m_p=0.154，贴门限（0.15 或 1），门限 ±0.01 即翻转",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "070125",
+   "panel": "4.86 GHz",
+   "model": null,
+   "detail": "070125 4.86 GHz: 状态“not detected”，但模型 m_p=RISS19 0.91, NE2025 0.64，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "100418A",
+   "panel": "8.43-8.8 GHz",
+   "model": "RISS19",
+   "detail": "100418A 8.43-8.8 GHz RISS19: F_var=53.0% > m_p=0.35（比值 1.51），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "100418A",
+   "panel": "8.43-8.8 GHz",
+   "model": "RISS19",
+   "detail": "100418A 8.43-8.8 GHz RISS19: χ²=68.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "100418A",
+   "panel": "8.43-8.8 GHz",
+   "model": "NE2025",
+   "detail": "100418A 8.43-8.8 GHz NE2025: 过门行 χ²=68.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "100418A",
+   "panel": "4.95 GHz",
+   "model": "RISS19",
+   "detail": "100418A 4.95 GHz RISS19: 面板频带 [4.95,4.95] GHz 被匹配到 ν=4.8 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "100418A",
+   "panel": "4.95 GHz",
+   "model": "NE2025",
+   "detail": "100418A 4.95 GHz NE2025: 面板频带 [4.95,4.95] GHz 被匹配到 ν=4.8 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "100418A",
+   "panel": "8.4 GHz",
+   "model": "RISS19",
+   "detail": "100418A 8.4 GHz RISS19: 面板频带 [8.4,8.4] GHz 被匹配到 ν=9 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "100418A",
+   "panel": "8.4 GHz",
+   "model": "NE2025",
+   "detail": "100418A 8.4 GHz NE2025: 面板频带 [8.4,8.4] GHz 被匹配到 ν=9 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "100418A",
+   "panel": "4.9 GHz",
+   "model": null,
+   "detail": "100418A 4.9 GHz: 状态“data only”，但模型 m_p=RISS19 0.84, NE2025 0.61，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "100418A",
+   "panel": "4.95 GHz",
+   "model": null,
+   "detail": "100418A 4.95 GHz: 状态“data only”，但模型 m_p=RISS19 0.84, NE2025 0.61，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "100418A",
+   "panel": "8.4 GHz",
+   "model": null,
+   "detail": "100418A 8.4 GHz: 状态“data only”，但模型 m_p=NE2025 0.88，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "100418A",
+   "panel": "9 GHz",
+   "model": null,
+   "detail": "100418A 9 GHz: 状态“data only”，但模型 m_p=NE2025 0.88，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "111215A",
+   "panel": "4.8 GHz",
+   "model": "RISS19",
+   "detail": "111215A 4.8 GHz RISS19: 过门行 χ²=19.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "111215A",
+   "panel": "4.8 GHz",
+   "model": "NE2025",
+   "detail": "111215A 4.8 GHz NE2025: 过门行 χ²=19.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "111215A",
+   "panel": "4.8 GHz",
+   "model": "NE2025",
+   "detail": "111215A 4.8 GHz NE2025: 过门行 t_p=24.16 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "RISS19",
+   "detail": "140304A 8-10 GHz RISS19: F_var/m_p=0.58 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "RISS19",
+   "detail": "140304A 8-10 GHz RISS19: χ²=24.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "NE2025",
+   "detail": "140304A 8-10 GHz NE2025: F_var/m_p=0.22 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "NE2025",
+   "detail": "140304A 8-10 GHz NE2025: χ²=24.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "RISS19",
+   "detail": "140304A 8-10 GHz RISS19: F_var/m_p=0.67 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "NE2025",
+   "detail": "140304A 8-10 GHz NE2025: F_var/m_p=0.25 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "140304A",
+   "panel": "10-13 GHz",
+   "model": "RISS19",
+   "detail": "140304A 10-13 GHz RISS19: F_var=41.0% > m_p=0.33（比值 1.24），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "140304A",
+   "panel": "10-13 GHz",
+   "model": "RISS19",
+   "detail": "140304A 10-13 GHz RISS19: χ²=16.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "140304A",
+   "panel": "10-13 GHz",
+   "model": "NE2025",
+   "detail": "140304A 10-13 GHz NE2025: F_var/m_p=0.47 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "140304A",
+   "panel": "10-13 GHz",
+   "model": "NE2025",
+   "detail": "140304A 10-13 GHz NE2025: χ²=16.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "RISS19",
+   "detail": "140304A 8-10 GHz RISS19: 面板频带 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "NE2025",
+   "detail": "140304A 8-10 GHz NE2025: 面板频带 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "RISS19",
+   "detail": "140304A 8-10 GHz RISS19: 面板频带 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "140304A",
+   "panel": "8-10 GHz",
+   "model": "NE2025",
+   "detail": "140304A 8-10 GHz NE2025: 面板频带 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "140304A",
+   "panel": "10-13 GHz",
+   "model": null,
+   "detail": "140304A 10-13 GHz: 状态“not detected”，但模型 m_p=NE2025 0.88，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "140713A",
+   "panel": "7 GHz",
+   "model": null,
+   "detail": "140713A 7 GHz: F_var=1.1%, χ²=53.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "140713A",
+   "panel": "13.4 GHz",
+   "model": null,
+   "detail": "140713A 13.4 GHz: F_var=23.0%, χ²=56.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "140713A",
+   "panel": "85.5-86.7 GHz",
+   "model": null,
+   "detail": "140713A 85.5-86.7 GHz: F_var=17.0%, χ²=3.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "140713A",
+   "panel": "4.9 GHz",
+   "model": "RISS19",
+   "detail": "140713A 4.9 GHz RISS19: 过门行 χ²=12.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "140713A",
+   "panel": "4.9 GHz",
+   "model": "NE2025",
+   "detail": "140713A 4.9 GHz NE2025: 过门行 χ²=12.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "140713A",
+   "panel": "4.9 GHz",
+   "model": "NE2025",
+   "detail": "140713A 4.9 GHz NE2025: 过门行 t_p=30.38 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "140713A",
+   "panel": "15.9 GHz",
+   "model": "RISS19",
+   "detail": "140713A 15.9 GHz RISS19: 过门行 χ²=24.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "140713A",
+   "panel": "15.9 GHz",
+   "model": "NE2025",
+   "detail": "140713A 15.9 GHz NE2025: 过门行 χ²=24.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "140713A",
+   "panel": "15.9 GHz",
+   "model": "RISS19",
+   "detail": "140713A 15.9 GHz RISS19: 面板频带 [15.9,15.9] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "140713A",
+   "panel": "15.9 GHz",
+   "model": "NE2025",
+   "detail": "140713A 15.9 GHz NE2025: 面板频带 [15.9,15.9] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_le_015",
+   "burst": "141121A",
+   "panel": "13 GHz",
+   "model": "NE2025",
+   "detail": "141121A 13 GHz NE2025: F_var/m_p=0.141 ≤ 0.15，闪烁证据不足或 m_p 高估",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "141121A",
+   "panel": "3 GHz",
+   "model": "NE2025",
+   "detail": "141121A 3 GHz NE2025: 过门行 t_p=56.95 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "160131A",
+   "panel": "8-10 GHz",
+   "model": "RISS19",
+   "detail": "160131A 8-10 GHz RISS19: F_var/m_p=0.35 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "160131A",
+   "panel": "8-10 GHz",
+   "model": "RISS19",
+   "detail": "160131A 8-10 GHz RISS19: χ²=26.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "160131A",
+   "panel": "8-10 GHz",
+   "model": "NE2025",
+   "detail": "160131A 8-10 GHz NE2025: F_var/m_p=0.32 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "160131A",
+   "panel": "8-10 GHz",
+   "model": "NE2025",
+   "detail": "160131A 8-10 GHz NE2025: χ²=26.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "160131A",
+   "panel": "10-13 GHz",
+   "model": "RISS19",
+   "detail": "160131A 10-13 GHz RISS19: F_var=120.0% > m_p=0.98（比值 1.22），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_unphysical",
+   "burst": "160131A",
+   "panel": "10-13 GHz",
+   "model": "RISS19",
+   "detail": "160131A 10-13 GHz RISS19: F_var=120.0% > 100%，不可能是 ISS 调制（m ≤ 1），疑为耀发或单位问题",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "160131A",
+   "panel": "10-13 GHz",
+   "model": "NE2025",
+   "detail": "160131A 10-13 GHz NE2025: F_var=120.0% > m_p=0.82（比值 1.46），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_unphysical",
+   "burst": "160131A",
+   "panel": "10-13 GHz",
+   "model": "NE2025",
+   "detail": "160131A 10-13 GHz NE2025: F_var=120.0% > 100%，不可能是 ISS 调制（m ≤ 1），疑为耀发或单位问题",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "160131A",
+   "panel": "18-27 GHz",
+   "model": "RISS19",
+   "detail": "160131A 18-27 GHz RISS19: F_var/m_p=0.23 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "160131A",
+   "panel": "18-27 GHz",
+   "model": "NE2025",
+   "detail": "160131A 18-27 GHz NE2025: F_var/m_p=0.29 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "160131A",
+   "panel": "27-40 GHz",
+   "model": "RISS19",
+   "detail": "160131A 27-40 GHz RISS19: F_var/m_p=0.41 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "160131A",
+   "panel": "27-40 GHz",
+   "model": "NE2025",
+   "detail": "160131A 27-40 GHz NE2025: F_var/m_p=0.55 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_multi_match",
+   "burst": "160131A",
+   "panel": "27-40 GHz",
+   "model": null,
+   "detail": "160131A 27-40 GHz: 频带面板同时匹配到模型频率 [24.6, 30.4, 37.1] GHz，用哪个 ν 不明确",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "160131A",
+   "panel": "27-40 GHz",
+   "model": "RISS19",
+   "detail": "160131A 27-40 GHz RISS19: 面板频带 [27,40] GHz 被匹配到 ν=24.6 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "160131A",
+   "panel": "27-40 GHz",
+   "model": "NE2025",
+   "detail": "160131A 27-40 GHz NE2025: 面板频带 [27,40] GHz 被匹配到 ν=24.6 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "burst",
+   "issue": "fit_variant_unflagged",
+   "burst": "160131A",
+   "panel": null,
+   "model": null,
+   "detail": "160131A: 同一面板有两个拟合变体（SPL/SBPL），读数 F_var=8.2%/χ²=2.2 vs F_var=7.9%/χ²=2.7 vs F_var=30.0%/χ²=26.0 vs F_var=120.0%/χ²=7.3，表内未标 variant",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "160623A",
+   "panel": "15.5 GHz",
+   "model": null,
+   "detail": "160623A 15.5 GHz: F_var=72.0%, χ²=7.4，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "161219B",
+   "panel": "5 GHz",
+   "model": null,
+   "detail": "161219B 5 GHz: F_var=13.0%, χ²=15.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "161219B",
+   "panel": "7.4 GHz",
+   "model": null,
+   "detail": "161219B 7.4 GHz: F_var=7.8%, χ²=4.8，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "161219B",
+   "panel": "11 GHz",
+   "model": null,
+   "detail": "161219B 11 GHz: F_var=32.0%, χ²=53.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "161219B",
+   "panel": "13.5-16 GHz",
+   "model": "RISS19",
+   "detail": "161219B 13.5-16 GHz RISS19: F_var/m_p=0.39 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "161219B",
+   "panel": "13.5-16 GHz",
+   "model": "RISS19",
+   "detail": "161219B 13.5-16 GHz RISS19: χ²=20.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "161219B",
+   "panel": "13.5-16 GHz",
+   "model": "NE2025",
+   "detail": "161219B 13.5-16 GHz NE2025: F_var/m_p=0.29 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "161219B",
+   "panel": "13.5-16 GHz",
+   "model": "NE2025",
+   "detail": "161219B 13.5-16 GHz NE2025: χ²=20.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "161219B",
+   "panel": "8.5 GHz",
+   "model": "RISS19",
+   "detail": "161219B 8.5 GHz RISS19: 过门行 χ²=50.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "161219B",
+   "panel": "8.5 GHz",
+   "model": "NE2025",
+   "detail": "161219B 8.5 GHz NE2025: 过门行 χ²=50.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "161219B",
+   "panel": "2-4 GHz",
+   "model": null,
+   "detail": "161219B 2-4 GHz: 状态“data only”，但模型 m_p=RISS19 0.6, NE2025 0.53，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "190829A",
+   "panel": "15.5 GHz",
+   "model": null,
+   "detail": "190829A 15.5 GHz: F_var=33.0%, χ²=20.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_marginal",
+   "burst": "210702A",
+   "panel": "21.2 GHz",
+   "model": "NE2025",
+   "detail": "210702A 21.2 GHz NE2025: F_var/m_p=0.180，贴门限（0.15 或 1），门限 ±0.01 即翻转",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "210702A",
+   "panel": "5.5 GHz",
+   "model": null,
+   "detail": "210702A 5.5 GHz: 状态“data only”，但模型 m_p=RISS19 0.83, NE2025 0.62，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "210702A",
+   "panel": "9 GHz",
+   "model": null,
+   "detail": "210702A 9 GHz: 状态“not detected”，但模型 m_p=RISS19 0.8, NE2025 0.82，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "210702A",
+   "panel": "16.7 GHz",
+   "model": null,
+   "detail": "210702A 16.7 GHz: 状态“not detected”，但模型 m_p=NE2025 0.68，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "210704A",
+   "panel": "15.5 GHz",
+   "model": null,
+   "detail": "210704A 15.5 GHz: F_var=28.0%, χ²=12.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_le_015",
+   "burst": "220101A",
+   "panel": "15.5 GHz",
+   "model": "NE2025",
+   "detail": "220101A 15.5 GHz NE2025: F_var/m_p=0.150 ≤ 0.15，闪烁证据不足或 m_p 高估",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "220101A",
+   "panel": "15.5 GHz",
+   "model": "RISS19",
+   "detail": "220101A 15.5 GHz RISS19: 面板频带 [15.5,15.5] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "220101A",
+   "panel": "15.5 GHz",
+   "model": "NE2025",
+   "detail": "220101A 15.5 GHz NE2025: 面板频带 [15.5,15.5] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "220101A",
+   "panel": "15.5 GHz",
+   "model": "RISS19",
+   "detail": "220101A 15.5 GHz RISS19: 面板频带 [15.5,15.5] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "220101A",
+   "panel": "15.5 GHz",
+   "model": "NE2025",
+   "detail": "220101A 15.5 GHz NE2025: 面板频带 [15.5,15.5] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "burst",
+   "issue": "fit_variant_unflagged",
+   "burst": "220101A",
+   "panel": null,
+   "model": null,
+   "detail": "220101A: 同一面板有两个拟合变体（SPL/SBPL），读数 F_var=6.5%/χ²=1.4 vs F_var=7.8%/χ²=2.7，表内未标 variant",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "240205B",
+   "panel": "5.5 GHz",
+   "model": "RISS19",
+   "detail": "240205B 5.5 GHz RISS19: F_var=31.0% > m_p=0.19（比值 1.63），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "240205B",
+   "panel": "9 GHz",
+   "model": "RISS19",
+   "detail": "240205B 9 GHz RISS19: F_var=68.0% > m_p=0.1（比值 6.80），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_marginal",
+   "burst": "240205B",
+   "panel": "9 GHz",
+   "model": "NE2025",
+   "detail": "240205B 9 GHz NE2025: F_var/m_p=0.883，贴门限（0.15 或 1），门限 ±0.01 即翻转",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "240529A",
+   "panel": "15.5 GHz",
+   "model": null,
+   "detail": "240529A 15.5 GHz: F_var=14.0%, χ²=61.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "240619A",
+   "panel": "15.5 GHz",
+   "model": null,
+   "detail": "240619A 15.5 GHz: F_var=17.0%, χ²=8.5，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "241025A",
+   "panel": "5 GHz",
+   "model": null,
+   "detail": "241025A 5 GHz: F_var=34.0%, χ²=14.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "241025A",
+   "panel": "6 GHz",
+   "model": null,
+   "detail": "241025A 6 GHz: F_var=12.0%, χ²=6.6，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "241025A",
+   "panel": "7 GHz",
+   "model": null,
+   "detail": "241025A 7 GHz: F_var=4.4%, χ²=4.8，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "241025A",
+   "panel": "10 GHz",
+   "model": null,
+   "detail": "241025A 10 GHz: F_var=9.3%, χ²=9.3，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "241025A",
+   "panel": "11 GHz",
+   "model": null,
+   "detail": "241025A 11 GHz: F_var=12.0%, χ²=8.4，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "reader_disagreement",
+   "burst": "241025A",
+   "panel": "15 GHz",
+   "model": null,
+   "detail": "241025A 15 GHz: 两次读数不一致（其中一个通道读成 9.3%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "reader_disagreement",
+   "burst": "241025A",
+   "panel": "17 GHz",
+   "model": null,
+   "detail": "241025A 17 GHz: 两次读数不一致（其中一个通道读成 12.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "250419A",
+   "panel": "6 GHz",
+   "model": null,
+   "detail": "250419A 6 GHz: F_var=30.0%, χ²=60.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "250419A",
+   "panel": "10 GHz",
+   "model": null,
+   "detail": "250419A 10 GHz: F_var=57.0%, χ²=49.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "250419A",
+   "panel": "15 GHz",
+   "model": null,
+   "detail": "250419A 15 GHz: F_var=23.0%, χ²=12.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "reader_disagreement",
+   "burst": "250419A",
+   "panel": "86 GHz",
+   "model": null,
+   "detail": "250419A 86 GHz: 两次读数不一致（其中一个通道读成 23.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "251013C",
+   "panel": "15.5 GHz",
+   "model": null,
+   "detail": "251013C 15.5 GHz: F_var=29.0%, χ²=35.0，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "970508",
+   "panel": "1.43 GHz",
+   "model": "RISS19",
+   "detail": "970508 1.43 GHz RISS19: 过门行 t_p=44.78 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "970508",
+   "panel": "1.43 GHz",
+   "model": "NE2025",
+   "detail": "970508 1.43 GHz NE2025: 过门行 t_p=323.51 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "970508",
+   "panel": "8.46 GHz",
+   "model": "RISS19",
+   "detail": "970508 8.46 GHz RISS19: 过门行 χ²=11.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "970508",
+   "panel": "8.46 GHz",
+   "model": "NE2025",
+   "detail": "970508 8.46 GHz NE2025: 过门行 χ²=11.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_le_015",
+   "burst": "980425",
+   "panel": "1.38 GHz",
+   "model": "RISS19",
+   "detail": "980425 1.38 GHz RISS19: F_var/m_p=0.090 ≤ 0.15，闪烁证据不足或 m_p 高估",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_le_015",
+   "burst": "980425",
+   "panel": "2.49 GHz",
+   "model": "RISS19",
+   "detail": "980425 2.49 GHz RISS19: F_var/m_p=0.102 ≤ 0.15，闪烁证据不足或 m_p 高估",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_marginal",
+   "burst": "980425",
+   "panel": "1.38 GHz",
+   "model": "NE2025",
+   "detail": "980425 1.38 GHz NE2025: F_var/m_p=0.157，贴门限（0.15 或 1），门限 ±0.01 即翻转",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "980425",
+   "panel": "1.38 GHz",
+   "model": "NE2025",
+   "detail": "980425 1.38 GHz NE2025: 过门行 t_p=532.25 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_marginal",
+   "burst": "980425",
+   "panel": "2.49 GHz",
+   "model": "NE2025",
+   "detail": "980425 2.49 GHz NE2025: F_var/m_p=0.178，贴门限（0.15 或 1），门限 ±0.01 即翻转",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "980425",
+   "panel": "2.49 GHz",
+   "model": "NE2025",
+   "detail": "980425 2.49 GHz NE2025: 过门行 t_p=178.56 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "theta_scatt_model_disagree",
+   "burst": "980425",
+   "panel": "1.38 GHz",
+   "model": null,
+   "detail": "980425 1.38 GHz: 两模型 θ_scatt 相差 3.4 倍（RISS19 80.31 μas vs NE2025 275.46 μas），尺寸天花板随之相差同倍；该面板过门，反演尺寸不可信",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "theta_scatt_model_disagree",
+   "burst": "980425",
+   "panel": "2.49 GHz",
+   "model": null,
+   "detail": "980425 2.49 GHz: 两模型 θ_scatt 相差 3.4 倍（RISS19 26.94 μas vs NE2025 92.41 μas），尺寸天花板随之相差同倍；该面板过门，反演尺寸不可信",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "980425",
+   "panel": "2.49 GHz",
+   "model": "RISS19",
+   "detail": "980425 2.49 GHz RISS19: 面板频带 [2.49,2.49] GHz 被匹配到 ν=2.3 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "980425",
+   "panel": "2.49 GHz",
+   "model": "NE2025",
+   "detail": "980425 2.49 GHz NE2025: 面板频带 [2.49,2.49] GHz 被匹配到 ν=2.3 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "980425",
+   "panel": "4.8 GHz",
+   "model": "RISS19",
+   "detail": "980425 4.8 GHz RISS19: 面板频带 [4.8,4.8] GHz 被匹配到 ν=5 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "980425",
+   "panel": "4.8 GHz",
+   "model": "NE2025",
+   "detail": "980425 4.8 GHz NE2025: 面板频带 [4.8,4.8] GHz 被匹配到 ν=5 GHz（10% 容差），超出频带",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "980425",
+   "panel": "4.8 GHz",
+   "model": null,
+   "detail": "980425 4.8 GHz: 状态“data only”，但模型 m_p=RISS19 0.99, NE2025 0.57，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "size_column_missing",
+   "burst": "980519",
+   "panel": "8.46 GHz",
+   "model": "RISS19",
+   "detail": "980519 8.46 GHz RISS19: 过门（比值 0.55）但尺寸列为 −−，缺 D_A（疑 z 未知），只能给角尺寸 θ_s≈4.759 μas",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "size_column_missing",
+   "burst": "980519",
+   "panel": "8.46 GHz",
+   "model": "NE2025",
+   "detail": "980519 8.46 GHz NE2025: 过门（比值 0.57）但尺寸列为 −−，缺 D_A（疑 z 未知），只能给角尺寸 θ_s≈10.945 μas",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "ratio_le_015",
+   "burst": "980703",
+   "panel": "8.46 GHz",
+   "model": "NE2025",
+   "detail": "980703 8.46 GHz NE2025: F_var/m_p=0.107 ≤ 0.15，闪烁证据不足或 m_p 高估",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "tp_longer_than_day",
+   "burst": "980703",
+   "panel": "1.43 GHz",
+   "model": "NE2025",
+   "detail": "980703 1.43 GHz NE2025: 过门行 t_p=158.08 h，需核对光变窗长 ≥ 2 t_p，否则 F_var 会低估真实调制",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "980703",
+   "panel": "4.86 GHz",
+   "model": "RISS19",
+   "detail": "980703 4.86 GHz RISS19: 过门行 χ²=17.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2_on_invertible",
+   "burst": "980703",
+   "panel": "4.86 GHz",
+   "model": "NE2025",
+   "detail": "980703 4.86 GHz NE2025: 过门行 χ²=17.0，拟合差，F_var 可靠性需核",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "981226",
+   "panel": "8.46 GHz",
+   "model": null,
+   "detail": "981226 8.46 GHz: 状态“not detected”，但模型 m_p=NE2025 0.75，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "990123",
+   "panel": "8.46 GHz",
+   "model": null,
+   "detail": "990123 8.46 GHz: F_var=50.0%, χ²=3.1，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "row",
+   "issue": "fvar_exceeds_mp",
+   "burst": "991208",
+   "panel": "5-9 GHz",
+   "model": "RISS19",
+   "detail": "991208 5-9 GHz RISS19: F_var=29.0% > m_p=0.25（比值 1.16），点源 ISS 不足以解释，须排除或核查 m_p",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "991208",
+   "panel": "5-9 GHz",
+   "model": "RISS19",
+   "detail": "991208 5-9 GHz RISS19: χ²=25.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_panel_in_range",
+   "burst": "991208",
+   "panel": "5-9 GHz",
+   "model": "NE2025",
+   "detail": "991208 5-9 GHz NE2025: F_var/m_p=0.30 落在 (0.15,1)，但为多频带面板，不能作单频反演",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "high_chi2",
+   "burst": "991208",
+   "panel": "5-9 GHz",
+   "model": "NE2025",
+   "detail": "991208 5-9 GHz NE2025: χ²=25.0",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "band_multi_match",
+   "burst": "991208",
+   "panel": "5-9 GHz",
+   "model": null,
+   "detail": "991208 5-9 GHz: 频带面板同时匹配到模型频率 [4.86, 8.46] GHz，用哪个 ν 不明确",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "991208",
+   "panel": "1-2 GHz",
+   "model": null,
+   "detail": "991208 1-2 GHz: 状态“not detected”，但模型 m_p=RISS19 0.64，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "row",
+   "issue": "no_reading_but_strong_iss_predicted",
+   "burst": "991208",
+   "panel": "4-6 GHz",
+   "model": null,
+   "detail": "991208 4-6 GHz: 状态“data only”，但模型 m_p=RISS19 0.55, NE2025 0.74，本应看到强闪烁，建议复读",
+   "severity": "todo"
+  },
+  {
+   "scope": "burst",
+   "issue": "fit_variant_unflagged",
+   "burst": "991208",
+   "panel": null,
+   "model": null,
+   "detail": "991208: 同一面板有两个拟合变体（SPL/SBPL），读数 F_var=%/χ²= vs F_var=29.0%/χ²=25.0，表内未标 variant",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "numeric_no_model",
+   "burst": "991216",
+   "panel": "8.42-8.46 GHz",
+   "model": null,
+   "detail": "991216 8.42-8.46 GHz: F_var=38.0%, χ²=1.7，暴不在十月表，无 m_p 可比",
+   "severity": "blocker"
+  },
+  {
+   "scope": "global",
+   "issue": "size_column_independent_of_fvar",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "matched_table 的 size_1e16cm 对每个暴恒等于 k×θ_scatt_uas（k=D_A(z) 的换算因子，如 980425 k=0.056、031203 0.614、161219B 0.822、141121A 2.68），与实测 F_var 无关；它只是点源天花板 D_A·θ_scatt，不是反演值。反演须另算 θ_s=θ_scatt·(m_p/m)^{6/7}（iss.py），本草案的 preview 列即此公式，仅作预览",
+   "severity": "blocker"
+  },
+  {
+   "scope": "global",
+   "issue": "ratio_gate_is_necessary_not_sufficient",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "“两模型同频过门”只保证 F_var/m_p 都落在 (0.15,1)，不保证尺寸一致：θ_scatt 本身在两模型间可差很多（见 theta_scatt_model_disagree 行）。本草案把“预览 θ_s 相差 <2 倍”作为进入 G2 的附加条件",
+   "severity": "warn"
+  },
+  {
+   "scope": "global",
+   "issue": "model_dependence_at_8_9GHz",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "8–9 GHz 处 RISS19 与 NE2025 的 m_p 常差 2–3 倍：000418 8.35–8.46 GHz (0.15 vs 0.65)、000926 8.46 GHz (0.29 vs 0.98)、020405 8.46 GHz (0.35 vs 0.81)、100418A 8.43–8.8 GHz (0.35 vs 0.88)、240205B 9 GHz (0.10 vs 0.77)；反向的有 031203 8.46 GHz (0.50 vs 0.24)、000301C 8.46 GHz (0.27 vs 0.95)、980703 8.46 GHz (0.26 vs 0.83)、141121A 13 GHz (0.40 vs 0.69)。G3 的全部对象都卡在这里",
+   "severity": "blocker"
+  },
+  {
+   "scope": "global",
+   "issue": "fvar_exceeds_mp_rows",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "共 12 行 F_var > m_p：000418 4.86 GHz RISS19 比值 1.39；000418 8.35-8.46 GHz RISS19 比值 1.40；000926 8.46 GHz RISS19 比值 1.52；020405 8.46 GHz RISS19 比值 1.74；031203 8.46 GHz NE2025 比值 1.54；100418A 8.43-8.8 GHz RISS19 比值 1.51；140304A 10-13 GHz RISS19 比值 1.24；160131A 10-13 GHz RISS19 比值 1.22；160131A 10-13 GHz NE2025 比值 1.46；240205B 5.5 GHz RISS19 比值 1.63；240205B 9 GHz RISS19 比值 6.80；991208 5-9 GHz RISS19 比值 1.16。这些行的光变不能被点源 ISS 解释，要么是内禀变化，要么模型 m_p 偏低，不能静默地只标 invertible=False",
+   "severity": "blocker"
+  },
+  {
+   "scope": "global",
+   "issue": "no_chi2_or_window_gate",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "现行三门（agree、单频、0.15<比值<1）不含 χ² 与光变窗长；过门行中 χ²>10 的有 000418 4.86 GHz NE2025 χ²=42、031203 8.46 GHz RISS19 χ²=14、100418A 8.43-8.8 GHz NE2025 χ²=68、111215A 4.8 GHz RISS19 χ²=19、111215A 4.8 GHz NE2025 χ²=19、140713A 4.9 GHz RISS19 χ²=12、140713A 4.9 GHz NE2025 χ²=12、140713A 15.9 GHz RISS19 χ²=24、140713A 15.9 GHz NE2025 χ²=24、161219B 8.5 GHz RISS19 χ²=50、161219B 8.5 GHz NE2025 χ²=50、970508 8.46 GHz RISS19 χ²=11、970508 8.46 GHz NE2025 χ²=11、980703 4.86 GHz RISS19 χ²=17、980703 4.86 GHz NE2025 χ²=17。建议补第 4 门（窗长 ≥ 2·max(t_p)）与第 5 门（χ² 上限）",
+   "severity": "warn"
+  },
+  {
+   "scope": "global",
+   "issue": "one_third_without_model",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "14 个暴（32%）不在十月表内，连 m_p 都算不出；其中 030329（VLBI 锚点）与 250702B（ISS 锚点）最该先补",
+   "severity": "blocker"
+  },
+  {
+   "scope": "global",
+   "issue": "disagreements_are_reader_offset",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "5 处读数冲突的“数值”通道都重复了相邻面板的值（000926 98.48 GHz 44% = 其 8.46 GHz；241025A 15 GHz 9.3/9.3 = 其 10 GHz；241025A 17 GHz 8.4/12.0 = 其 11 GHz；250419A 86 GHz 12.0/23.0 = 其 15 GHz），是通道错位而非真实歧义；5 行均未过门，不影响 53 行可反演集",
+   "severity": "note"
+  },
+  {
+   "scope": "global",
+   "issue": "audit_C_size_mismatch_rounding",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "october_audit C 项 22 条尺寸不符全部在 SD 制度且 rel 0.03–1.0（031203 NE2025 1.4 GHz SD rel=1.0；980425 NE2025 1.4 GHz SD rel=0.41），是 0.01 量级的四舍五入放大，不影响 SR/W 行，但说明 SD 行的尺寸列不能按两位有效数字引用",
+   "severity": "note"
+  },
+  {
+   "scope": "global",
+   "issue": "data_files_changing",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "matched_table.csv / compare_summary.json / fits_readings.json 在本次分析期间（17:46:53）被更新：新增 220101A（82/132，SPL 与 SBPL 两页）。本草案基于 sha256 见 inputs 的快照；若上游继续补页，G5/G6 可能迁移",
+   "severity": "note"
+  }
+ ],
+ "summary_counts": {
+  "by_group": {
+   "G1": 4,
+   "G2": 6,
+   "G3": 11,
+   "G4": 3,
+   "G5": 12,
+   "G6": 3,
+   "G7": 4
+  },
+  "by_evidence_level": {
+   "E3": 11,
+   "E6": 4,
+   "E5": 13,
+   "E2": 6,
+   "E7": 3,
+   "E4": 3,
+   "E1": 3
+  },
+  "by_size_feasibility": {
+   "S1": 18,
+   "S4": 7,
+   "S3": 14,
+   "S2": 3,
+   "S1θ": 1
+  },
+  "rows": 293,
+  "invertible_rows": 52,
+  "bursts_with_invertible_row": 19,
+  "bursts_with_model_robust_panel": 8,
+  "fvar_exceeds_mp_rows": 12
+ }
+}
