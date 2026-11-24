@@ -29,7 +29,8 @@ python -m pip install pillow
 python scripts/extract_deck.py "../20261123/闪烁分析样本.pptx" data/sample
 python scripts/extract_deck.py "../20261123/利用ISS来限制源尺度的理论以及初步样本.pptx" data/theory
 
-# 2) 读拟合图：每张图读三遍（整图/上半/下半），三遍一致才采信
+# 2) 读拟合图：每张图读三遍（整图/上半/下半），取多数一致值；有一遍常因裁剪返回 UNCLEAR，
+#    故实际保证是「至少两遍独立读到同一个数」，矛盾的面板标 agree=false 不入结论
 export ZHIPU_API_KEY=...          # 只有这一步需要网络与 key
 python scripts/read_fits.py 4     # 4 个并发；遇到 HTTP 429 自动指数退避
 
@@ -59,6 +60,7 @@ python scripts/compare.py         # → data/matched_table.csv, data/compare_sum
 
 ## 已知限制
 
-- 图里的数字来自大模型读图。三遍一致只保证「读得稳」，不等于「读得对」；关键数值请对照原图复核。
+- 图里的数字来自大模型读图。两/三遍一致只保证「读得稳」，不等于「读得对」；关键数值请对照原图复核。
+- `read_fits.py` 的三遍里常有一遍返回 UNCLEAR（裁剪没覆盖到框），175/214 个面板因此只有两遍给出数值。
 - 43 个暴里有 3 个没有拟合页（980329、130427A、160625B），本仓库不替它们补数。
 - 十月那份 PDF 的实测列与本次 F_var 不是同一个统计量，两者的差异在 `reports/审阅意见.md` 第二节有专门讨论。
