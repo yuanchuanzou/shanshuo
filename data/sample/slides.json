@@ -1,0 +1,2393 @@
+{
+ "deck": "../20261123/闪烁分析样本.pptx",
+ "slide_count": 131,
+ "slides": [
+  {
+   "index": 1,
+   "part": "ppt/slides/slide1.xml",
+   "page_label": "107/132",
+   "title": "GRB 970508：光变曲线总览",
+   "texts": [
+    "GRB 970508：光变曲线总览",
+    "107/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB970508\\GRB970508_Frail2000_overview.png\nSHA256: 4b5a3e169c5feac94d622dc131e67ced75f22cffefa496f92b59e70711f062ad",
+   "images": [
+    {
+     "media": "ppt/media/image1.png",
+     "rel": "rId1",
+     "exported": "media/s001_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "part": "ppt/slides/slide2.xml",
+   "page_label": "108/132",
+   "title": "GRB 970508：分波段总览",
+   "texts": [
+    "GRB 970508：分波段总览",
+    "108/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB970508\\GRB970508_Frail2000_connected.png\nSHA256: ded042684dbe7fbf1198d9a543976eb70a21c165b6fa73dd5ffd5ff8bd701a05",
+   "images": [
+    {
+     "media": "ppt/media/image2.png",
+     "rel": "rId1",
+     "exported": "media/s002_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "part": "ppt/slides/slide3.xml",
+   "page_label": "109/132",
+   "title": "GRB 970508：拟合总览",
+   "texts": [
+    "GRB 970508：拟合总览",
+    "109/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB970508\\GRB970508_SBPL_fit_overview.png\nSHA256: fc7f49559a6e3604b23c3e5e303b5fb0fb4d5afbb9bb5821b99e2be1da3c4593",
+   "images": [
+    {
+     "media": "ppt/media/image3.png",
+     "rel": "rId1",
+     "exported": "media/s003_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "part": "ppt/slides/slide4.xml",
+   "page_label": "110/132",
+   "title": "GRB 980329：光变曲线总览",
+   "texts": [
+    "GRB 980329：光变曲线总览",
+    "110/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980329\\GRB980329_0204141v2_overview.png\nSHA256: 98f5ff4adaec62fd8ac28a6b4ce968976694863812862e5f53f141e22d16a43b",
+   "images": [
+    {
+     "media": "ppt/media/image4.png",
+     "rel": "rId1",
+     "exported": "media/s004_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "part": "ppt/slides/slide5.xml",
+   "page_label": "111/132",
+   "title": "GRB 980329：分波段总览",
+   "texts": [
+    "GRB 980329：分波段总览",
+    "111/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980329\\GRB980329_0204141v2_connected.png\nSHA256: 7d0c414576c3dccbb6330bee0c7e343daccb42cfd5c1a8727ae6a09ac6481a25",
+   "images": [
+    {
+     "media": "ppt/media/image5.png",
+     "rel": "rId1",
+     "exported": "media/s005_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "part": "ppt/slides/slide6.xml",
+   "page_label": "112/132",
+   "title": "GRB 980425：光变曲线总览",
+   "texts": [
+    "GRB 980425：光变曲线总览",
+    "112/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980425\\GRB980425_9807001v1_overview.png\nSHA256: 4b13945dc5786aa0eb50dfba49d811aa2c1dd86f37d27aa4b3bb08bf36036379",
+   "images": [
+    {
+     "media": "ppt/media/image6.png",
+     "rel": "rId1",
+     "exported": "media/s006_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "part": "ppt/slides/slide7.xml",
+   "page_label": "113/132",
+   "title": "GRB 980425：分波段总览",
+   "texts": [
+    "GRB 980425：分波段总览",
+    "113/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980425\\GRB980425_9807001v1_connected.png\nSHA256: 19da6c80b0a186a0fd99943c70742f9db02a46d222de545a0e964eddfe334de1",
+   "images": [
+    {
+     "media": "ppt/media/image7.png",
+     "rel": "rId1",
+     "exported": "media/s007_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "part": "ppt/slides/slide8.xml",
+   "page_label": "114/132",
+   "title": "GRB 980425：拟合总览",
+   "texts": [
+    "GRB 980425：拟合总览",
+    "114/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980425\\GRB980425_SBPL_fit_overview.png\nSHA256: 2deaa603687405cfd714c082b3461b634ba0529d0755d0bf123b14483a458eae",
+   "images": [
+    {
+     "media": "ppt/media/image8.png",
+     "rel": "rId1",
+     "exported": "media/s008_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "part": "ppt/slides/slide9.xml",
+   "page_label": "115/132",
+   "title": "GRB 980519：光变曲线总览",
+   "texts": [
+    "GRB 980519：光变曲线总览",
+    "115/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980519\\GRB980519_9910060v1_overview.png\nSHA256: e97d82279cc7945bcdf6348cee5115f9d2887f65596b6c2ad1ddd249d8ddde7b",
+   "images": [
+    {
+     "media": "ppt/media/image9.png",
+     "rel": "rId1",
+     "exported": "media/s009_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "part": "ppt/slides/slide10.xml",
+   "page_label": "116/132",
+   "title": "GRB 980519：分波段总览",
+   "texts": [
+    "GRB 980519：分波段总览",
+    "116/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980519\\GRB980519_9910060v1_connected.png\nSHA256: 8d75a1482791279938a7395802d6ffaf6e963d3466d204b0b14c11685a51fa00",
+   "images": [
+    {
+     "media": "ppt/media/image10.png",
+     "rel": "rId1",
+     "exported": "media/s010_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "part": "ppt/slides/slide11.xml",
+   "page_label": "117/132",
+   "title": "GRB 980519：拟合总览",
+   "texts": [
+    "GRB 980519：拟合总览",
+    "117/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980519\\GRB980519_SBPL_fit_overview.png\nSHA256: fd4563b9191e1a413fe01a062539b11642fa5abd05e8f0d92e5de3a0bcb50357",
+   "images": [
+    {
+     "media": "ppt/media/image11.png",
+     "rel": "rId1",
+     "exported": "media/s011_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "part": "ppt/slides/slide12.xml",
+   "page_label": "118/132",
+   "title": "GRB 980703：光变曲线总览",
+   "texts": [
+    "GRB 980703：光变曲线总览",
+    "118/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980703\\GRB980703_0301421v1_overview.png\nSHA256: 2327f8db355103c1a29df6a7615854cdb7dcb63e268eefd8a086602c7f6130de",
+   "images": [
+    {
+     "media": "ppt/media/image12.png",
+     "rel": "rId1",
+     "exported": "media/s012_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "part": "ppt/slides/slide13.xml",
+   "page_label": "119/132",
+   "title": "GRB 980703：分波段总览",
+   "texts": [
+    "GRB 980703：分波段总览",
+    "119/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980703\\GRB980703_0301421v1_connected.png\nSHA256: a08dea5cfe16ed682c4576f1d36a4efe8ded3d2db4ebb574f3b73ce21433fee5",
+   "images": [
+    {
+     "media": "ppt/media/image13.png",
+     "rel": "rId1",
+     "exported": "media/s013_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "part": "ppt/slides/slide14.xml",
+   "page_label": "120/132",
+   "title": "GRB 980703：拟合总览",
+   "texts": [
+    "GRB 980703：拟合总览",
+    "120/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB980703\\GRB980703_SBPL_fit_overview.png\nSHA256: 644d32a3409d9c0b533faae52a8e2690995144f4527323876c3436287a771d6b",
+   "images": [
+    {
+     "media": "ppt/media/image14.png",
+     "rel": "rId1",
+     "exported": "media/s014_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "part": "ppt/slides/slide15.xml",
+   "page_label": "121/132",
+   "title": "GRB 981226：光变曲线总览",
+   "texts": [
+    "GRB 981226：光变曲线总览",
+    "121/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB981226\\GRB981226_9909407v1_Table1_overview.png\nSHA256: a79eff729016bbd6214696e0327b3cfcb8ce6ab7b0f0357b36bee10a92c6506f",
+   "images": [
+    {
+     "media": "ppt/media/image15.png",
+     "rel": "rId1",
+     "exported": "media/s015_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "part": "ppt/slides/slide16.xml",
+   "page_label": "122/132",
+   "title": "GRB 981226：分波段总览",
+   "texts": [
+    "GRB 981226：分波段总览",
+    "122/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB981226\\GRB981226_9909407v1_Table1_connected.png\nSHA256: 29f64fc41d7ae519bb2e7ca91f982454df836e06517b6dad6d7dafd5c9001f2b",
+   "images": [
+    {
+     "media": "ppt/media/image16.png",
+     "rel": "rId1",
+     "exported": "media/s016_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "part": "ppt/slides/slide17.xml",
+   "page_label": "123/132",
+   "title": "GRB 981226：拟合总览",
+   "texts": [
+    "GRB 981226：拟合总览",
+    "123/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB981226\\GRB981226_SBPL_fit_overview.png\nSHA256: 19d238866a207d6fa30b321a7bd1245a17136d4798b57e80f0163a5abbc5bfe0",
+   "images": [
+    {
+     "media": "ppt/media/image17.png",
+     "rel": "rId1",
+     "exported": "media/s017_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "part": "ppt/slides/slide18.xml",
+   "page_label": "124/132",
+   "title": "GRB 990123：光变曲线总览",
+   "texts": [
+    "GRB 990123：光变曲线总览",
+    "124/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB990123\\GRB990123_9903441v2_overview.png\nSHA256: e4312ea24fd4fc8d754d4e46ef17c55d07234bf0e1d33d3395eda4b8816b953f",
+   "images": [
+    {
+     "media": "ppt/media/image18.png",
+     "rel": "rId1",
+     "exported": "media/s018_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "part": "ppt/slides/slide19.xml",
+   "page_label": "125/132",
+   "title": "GRB 990123：分波段总览",
+   "texts": [
+    "GRB 990123：分波段总览",
+    "125/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB990123\\GRB990123_9903441v2_connected.png\nSHA256: 45042a23274f67a8a8d51811391acb79e5248a415be9b145da9fa8b179d5f782",
+   "images": [
+    {
+     "media": "ppt/media/image19.png",
+     "rel": "rId1",
+     "exported": "media/s019_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "part": "ppt/slides/slide20.xml",
+   "page_label": "126/132",
+   "title": "GRB 990123：拟合总览",
+   "texts": [
+    "GRB 990123：拟合总览",
+    "126/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB990123\\GRB990123_SPL_fit_overview.png\nSHA256: a8ea3d220a63b0da060c9e13ce7bafe698fcd5387c3c7debc018c36917d97e11",
+   "images": [
+    {
+     "media": "ppt/media/image20.png",
+     "rel": "rId1",
+     "exported": "media/s020_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "part": "ppt/slides/slide21.xml",
+   "page_label": "127/132",
+   "title": "GRB 991208：光变曲线总览",
+   "texts": [
+    "GRB 991208：光变曲线总览",
+    "127/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB991208\\GRB991208_combined_0006201_0211221_overview.png\nSHA256: 61aa9948fa000866a59e72146a0e50a78ad9a940d5a6fcc3d5d25892b7ac478c",
+   "images": [
+    {
+     "media": "ppt/media/image21.png",
+     "rel": "rId1",
+     "exported": "media/s021_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "part": "ppt/slides/slide22.xml",
+   "page_label": "128/132",
+   "title": "GRB 991208：分波段总览",
+   "texts": [
+    "GRB 991208：分波段总览",
+    "128/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB991208\\GRB991208_combined_0006201_0211221_connected.png\nSHA256: 22e3fc724ff6a1f620d8c47fbc80f3fd0b3b33a54ac392c5ded752ad791c02ab",
+   "images": [
+    {
+     "media": "ppt/media/image22.png",
+     "rel": "rId1",
+     "exported": "media/s022_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "part": "ppt/slides/slide23.xml",
+   "page_label": "129/132",
+   "title": "GRB 991208：拟合总览",
+   "texts": [
+    "GRB 991208：拟合总览",
+    "129/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB991208\\GRB991208_Selected_fit_overview.png\nSHA256: c57056c6188e6c5f67906ba2f5431f1c337cea4f17242edde7fb55f1decaeb3e",
+   "images": [
+    {
+     "media": "ppt/media/image23.png",
+     "rel": "rId1",
+     "exported": "media/s023_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "part": "ppt/slides/slide24.xml",
+   "page_label": "130/132",
+   "title": "GRB 991216：光变曲线总览",
+   "texts": [
+    "GRB 991216：光变曲线总览",
+    "130/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB991216\\GRB991216_0003138v1_Table1_overview.png\nSHA256: 3294030aae4c512e2b1d525df62ef721f79f2f4c245c2d6e84a74dfa5d2ee738",
+   "images": [
+    {
+     "media": "ppt/media/image24.png",
+     "rel": "rId1",
+     "exported": "media/s024_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "part": "ppt/slides/slide25.xml",
+   "page_label": "131/132",
+   "title": "GRB 991216：分波段总览",
+   "texts": [
+    "GRB 991216：分波段总览",
+    "131/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB991216\\GRB991216_0003138v1_Table1_connected.png\nSHA256: 2570a96b0bb912ee1e69cf96539fce468cbe2b00dae5f7a5053fd00d3e6e86d7",
+   "images": [
+    {
+     "media": "ppt/media/image25.png",
+     "rel": "rId1",
+     "exported": "media/s025_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "part": "ppt/slides/slide26.xml",
+   "page_label": "132/132",
+   "title": "GRB 991216：拟合总览",
+   "texts": [
+    "GRB 991216：拟合总览",
+    "132/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB991216\\GRB991216_SPL_fit_overview.png\nSHA256: 133fa4556ad783512f46a972943695547b56eb2242f93cab8b4f204010b7fcc4",
+   "images": [
+    {
+     "media": "ppt/media/image26.png",
+     "rel": "rId1",
+     "exported": "media/s026_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "part": "ppt/slides/slide27.xml",
+   "page_label": "5/132",
+   "title": "GRB 000301C：光变曲线总览",
+   "texts": [
+    "GRB 000301C：光变曲线总览",
+    "5/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000301C\\GRB000301C_0005465v1_overview.png\nSHA256: effe0a12267080c9ff679d9e62ec3d8c2d4b8e5b0077b17722420e32fba3d770",
+   "images": [
+    {
+     "media": "ppt/media/image27.png",
+     "rel": "rId1",
+     "exported": "media/s027_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 28,
+   "part": "ppt/slides/slide28.xml",
+   "page_label": "6/132",
+   "title": "GRB 000301C：分波段总览",
+   "texts": [
+    "GRB 000301C：分波段总览",
+    "6/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000301C\\GRB000301C_0005465v1_connected.png\nSHA256: 66eb45a67ac6af82da808ed04e0540966cb784d052af4c46c3d553623c4c90ef",
+   "images": [
+    {
+     "media": "ppt/media/image28.png",
+     "rel": "rId1",
+     "exported": "media/s028_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "part": "ppt/slides/slide29.xml",
+   "page_label": "7/132",
+   "title": "GRB 000301C：拟合总览",
+   "texts": [
+    "GRB 000301C：拟合总览",
+    "7/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000301C\\GRB000301C_SBPL_fit_overview.png\nSHA256: 7058321a3a0bab73bcc5695af32cd2c7050a18bfccec323c8957dbf6027f8c79",
+   "images": [
+    {
+     "media": "ppt/media/image29.png",
+     "rel": "rId1",
+     "exported": "media/s029_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "part": "ppt/slides/slide30.xml",
+   "page_label": "8/132",
+   "title": "GRB 000418：光变曲线总览",
+   "texts": [
+    "GRB 000418：光变曲线总览",
+    "8/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000418\\GRB000418_0102278v1_overview.png\nSHA256: 5cd031005bdd03fb51a46d6e663680313eb21f09c4a2284a81d303a258544d13",
+   "images": [
+    {
+     "media": "ppt/media/image30.png",
+     "rel": "rId1",
+     "exported": "media/s030_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 31,
+   "part": "ppt/slides/slide31.xml",
+   "page_label": "9/132",
+   "title": "GRB 000418：分波段总览",
+   "texts": [
+    "GRB 000418：分波段总览",
+    "9/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000418\\GRB000418_0102278v1_connected.png\nSHA256: c3b917927cede80e4e9a74621120549643d0c38d3fc592d30e69b307f3175ca9",
+   "images": [
+    {
+     "media": "ppt/media/image31.png",
+     "rel": "rId1",
+     "exported": "media/s031_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 32,
+   "part": "ppt/slides/slide32.xml",
+   "page_label": "10/132",
+   "title": "GRB 000418：拟合总览",
+   "texts": [
+    "GRB 000418：拟合总览",
+    "10/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000418\\GRB000418_SBPL_fit_overview.png\nSHA256: f4a215ddbfce88554a82fb8aeb6f106c7985b7c6bbb2c9cf8fbb19083fb2d77f",
+   "images": [
+    {
+     "media": "ppt/media/image32.png",
+     "rel": "rId1",
+     "exported": "media/s032_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "part": "ppt/slides/slide33.xml",
+   "page_label": "11/132",
+   "title": "GRB 000911：光变曲线总览",
+   "texts": [
+    "GRB 000911：光变曲线总览",
+    "11/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000911\\GRB000911_0110315v1_overview.png\nSHA256: 0c32a9d15ce7f8848727fc93fe1093b973a2aa8b0ce5fa69f8b06b481829297f",
+   "images": [
+    {
+     "media": "ppt/media/image33.png",
+     "rel": "rId1",
+     "exported": "media/s033_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 34,
+   "part": "ppt/slides/slide34.xml",
+   "page_label": "12/132",
+   "title": "GRB 000911：分波段总览",
+   "texts": [
+    "GRB 000911：分波段总览",
+    "12/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000911\\GRB000911_0110315v1_connected.png\nSHA256: 8cf715bc1b804719d99b41df8ce1ce3af7f61b47d3aa9eebfd2025ccf3fc22c9",
+   "images": [
+    {
+     "media": "ppt/media/image34.png",
+     "rel": "rId1",
+     "exported": "media/s034_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "part": "ppt/slides/slide35.xml",
+   "page_label": "13/132",
+   "title": "GRB 000911：拟合总览",
+   "texts": [
+    "GRB 000911：拟合总览",
+    "13/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000911\\GRB000911_Selected_fit_overview.png\nSHA256: 876e43182f5411fa162c1601b6084d0d8cac33a3422ac08d9458c3a30003b9a6",
+   "images": [
+    {
+     "media": "ppt/media/image35.png",
+     "rel": "rId1",
+     "exported": "media/s035_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 36,
+   "part": "ppt/slides/slide36.xml",
+   "page_label": "14/132",
+   "title": "GRB 000926：光变曲线总览",
+   "texts": [
+    "GRB 000926：光变曲线总览",
+    "14/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000926\\GRB000926_Harrison2001_overview.png\nSHA256: c693f3bd8f3b20a7db36376e1ccb0debe4b0e60f71241cc434f6aa0d4dfe9631",
+   "images": [
+    {
+     "media": "ppt/media/image36.png",
+     "rel": "rId1",
+     "exported": "media/s036_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 37,
+   "part": "ppt/slides/slide37.xml",
+   "page_label": "15/132",
+   "title": "GRB 000926：分波段总览",
+   "texts": [
+    "GRB 000926：分波段总览",
+    "15/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000926\\GRB000926_Harrison2001_connected.png\nSHA256: 80e02ceb5d626aa761442eb090b62a9f1b493697434861ffaaed46fe5464f3b8",
+   "images": [
+    {
+     "media": "ppt/media/image37.png",
+     "rel": "rId1",
+     "exported": "media/s037_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 38,
+   "part": "ppt/slides/slide38.xml",
+   "page_label": "16/132",
+   "title": "GRB 000926：拟合总览",
+   "texts": [
+    "GRB 000926：拟合总览",
+    "16/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB000926\\GRB000926_SBPL_fit_overview.png\nSHA256: 70576f5ad3946771f56ed7f2c514de7a3404bd59a5b699b5d9fd8e61c716a432",
+   "images": [
+    {
+     "media": "ppt/media/image38.png",
+     "rel": "rId1",
+     "exported": "media/s038_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 39,
+   "part": "ppt/slides/slide39.xml",
+   "page_label": "17/132",
+   "title": "GRB 011121：光变曲线总览",
+   "texts": [
+    "GRB 011121：光变曲线总览",
+    "17/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB011121\\GRB011121_0203467v1_overview.png\nSHA256: 9451d3785a2799366c64f0c78c45fd49356f7c9a30b711846d730629e6e67919",
+   "images": [
+    {
+     "media": "ppt/media/image39.png",
+     "rel": "rId1",
+     "exported": "media/s039_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 40,
+   "part": "ppt/slides/slide40.xml",
+   "page_label": "18/132",
+   "title": "GRB 011121：分波段总览",
+   "texts": [
+    "GRB 011121：分波段总览",
+    "18/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB011121\\GRB011121_0203467v1_connected.png\nSHA256: 0ba4550fe34d31418173f57e5b5d92b52208a4d879a92202838a3a79f747d090",
+   "images": [
+    {
+     "media": "ppt/media/image40.png",
+     "rel": "rId1",
+     "exported": "media/s040_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 41,
+   "part": "ppt/slides/slide41.xml",
+   "page_label": "19/132",
+   "title": "GRB 011121：拟合总览",
+   "texts": [
+    "GRB 011121：拟合总览",
+    "19/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB011121\\GRB011121_SBPL_fit_overview.png\nSHA256: ab1e162c658feb088f057c806ffd9511a2188fe54f29a05cad52573486a7b917",
+   "images": [
+    {
+     "media": "ppt/media/image41.png",
+     "rel": "rId1",
+     "exported": "media/s041_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 42,
+   "part": "ppt/slides/slide42.xml",
+   "page_label": "20/132",
+   "title": "GRB 020405：光变曲线总览",
+   "texts": [
+    "GRB 020405：光变曲线总览",
+    "20/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB020405\\GRB020405_Berger_Table1_overview.png\nSHA256: de2501e9bb39f9bbd4628ada529f5505b80a7b52b8b111dfc9982f5ef46c24e9",
+   "images": [
+    {
+     "media": "ppt/media/image42.png",
+     "rel": "rId1",
+     "exported": "media/s042_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 43,
+   "part": "ppt/slides/slide43.xml",
+   "page_label": "21/132",
+   "title": "GRB 020405：分波段总览",
+   "texts": [
+    "GRB 020405：分波段总览",
+    "21/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB020405\\GRB020405_Berger_Table1_connected.png\nSHA256: 81b1736973bbee4ff9990889ead7f1b910237ae1d2c791655742b47fe46cb84d",
+   "images": [
+    {
+     "media": "ppt/media/image43.png",
+     "rel": "rId1",
+     "exported": "media/s043_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 44,
+   "part": "ppt/slides/slide44.xml",
+   "page_label": "22/132",
+   "title": "GRB 020405：拟合总览",
+   "texts": [
+    "GRB 020405：拟合总览",
+    "22/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB020405\\GRB020405_SPL_fit_overview.png\nSHA256: ca1f0fbe5fab6e64d5acdf60ae18d2c89ddfa0d8ee3dc723f0b8db4d5ac85564",
+   "images": [
+    {
+     "media": "ppt/media/image44.png",
+     "rel": "rId1",
+     "exported": "media/s044_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 45,
+   "part": "ppt/slides/slide45.xml",
+   "page_label": "23/132",
+   "title": "GRB 020819：光变曲线总览",
+   "texts": [
+    "GRB 020819：光变曲线总览",
+    "23/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB020819\\GRB020819_Jakobsson_Table2_overview.png\nSHA256: 566da4aa67d504a9fe51671bfe91640ea0ce8926c9e981e3d6386a4ee3a96f75",
+   "images": [
+    {
+     "media": "ppt/media/image45.png",
+     "rel": "rId1",
+     "exported": "media/s045_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 46,
+   "part": "ppt/slides/slide46.xml",
+   "page_label": "24/132",
+   "title": "GRB 020819：分波段总览",
+   "texts": [
+    "GRB 020819：分波段总览",
+    "24/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB020819\\GRB020819_Jakobsson_Table2_connected.png\nSHA256: 7bf0569b9c2a90e7504e0f1771d672b830c0d62521266cdadc12b0af653f6786",
+   "images": [
+    {
+     "media": "ppt/media/image46.png",
+     "rel": "rId1",
+     "exported": "media/s046_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 47,
+   "part": "ppt/slides/slide47.xml",
+   "page_label": "25/132",
+   "title": "GRB 020819：拟合总览",
+   "texts": [
+    "GRB 020819：拟合总览",
+    "25/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB020819\\GRB020819_SPL_fit_overview.png\nSHA256: db7478d4220ea09afebcc6311f6f2ab9546e1ded8ce4b419a3fe11aab6bf0279",
+   "images": [
+    {
+     "media": "ppt/media/image47.png",
+     "rel": "rId1",
+     "exported": "media/s047_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 48,
+   "part": "ppt/slides/slide48.xml",
+   "page_label": "26/132",
+   "title": "GRB 030329：光变曲线总览",
+   "texts": [
+    "GRB 030329：光变曲线总览",
+    "26/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB030329\\GRB030329_Berger_Frail_overview.png\nSHA256: a8213a7e84e81d3499f006e927923ac21c8d5340f1d4a179038d29d9531d36de",
+   "images": [
+    {
+     "media": "ppt/media/image48.png",
+     "rel": "rId1",
+     "exported": "media/s048_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 49,
+   "part": "ppt/slides/slide49.xml",
+   "page_label": "27/132",
+   "title": "GRB 030329：分波段总览",
+   "texts": [
+    "GRB 030329：分波段总览",
+    "27/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB030329\\GRB030329_Berger_Frail_connected.png\nSHA256: ac34adedbaaa8284a39bb430471cc08c1b112e24f5a0e5e8402bf5cf2d89a6aa",
+   "images": [
+    {
+     "media": "ppt/media/image49.png",
+     "rel": "rId1",
+     "exported": "media/s049_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 50,
+   "part": "ppt/slides/slide50.xml",
+   "page_label": "28/132",
+   "title": "GRB 030329：拟合总览",
+   "texts": [
+    "GRB 030329：拟合总览",
+    "28/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB030329\\GRB030329_SBPL_fit_overview.png\nSHA256: d48bd2edaed6a81480a1800e3f5816706eeea7bd3af3cb3d591f96d028c4c06c",
+   "images": [
+    {
+     "media": "ppt/media/image50.png",
+     "rel": "rId1",
+     "exported": "media/s050_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 51,
+   "part": "ppt/slides/slide51.xml",
+   "page_label": "29/132",
+   "title": "GRB 031203：光变曲线总览",
+   "texts": [
+    "GRB 031203：光变曲线总览",
+    "29/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB031203\\GRB031203_0408096v1_overview.png\nSHA256: 50df056061bd3c8656174a39b869b35a8d09781f85feb43b81b812c84f984558",
+   "images": [
+    {
+     "media": "ppt/media/image51.png",
+     "rel": "rId1",
+     "exported": "media/s051_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 52,
+   "part": "ppt/slides/slide52.xml",
+   "page_label": "30/132",
+   "title": "GRB 031203：分波段总览",
+   "texts": [
+    "GRB 031203：分波段总览",
+    "30/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB031203\\GRB031203_0408096v1_connected.png\nSHA256: fc10c07dfe80199053ffbe180ac9c7fce74ef29849271073c9df690d37e793cb",
+   "images": [
+    {
+     "media": "ppt/media/image52.png",
+     "rel": "rId1",
+     "exported": "media/s052_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 53,
+   "part": "ppt/slides/slide53.xml",
+   "page_label": "31/132",
+   "title": "GRB 031203：拟合总览",
+   "texts": [
+    "GRB 031203：拟合总览",
+    "31/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB031203\\GRB031203_SPL_fit_overview.png\nSHA256: 51e9991264c1ce6f3de0801c60ebe530f268e27bb93cb7220d525ba3799588bf",
+   "images": [
+    {
+     "media": "ppt/media/image53.png",
+     "rel": "rId1",
+     "exported": "media/s053_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 54,
+   "part": "ppt/slides/slide54.xml",
+   "page_label": "32/132",
+   "title": "GRB 070125：光变曲线总览",
+   "texts": [
+    "GRB 070125：光变曲线总览",
+    "32/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB070125\\GRB070125_0802.2748v2_overview.png\nSHA256: d1d3062d8f66cf7d71baebfe6e26fcb16d07665ac0c3d3e98c5638684fcbbda3",
+   "images": [
+    {
+     "media": "ppt/media/image54.png",
+     "rel": "rId1",
+     "exported": "media/s054_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 55,
+   "part": "ppt/slides/slide55.xml",
+   "page_label": "33/132",
+   "title": "GRB 070125：分波段总览",
+   "texts": [
+    "GRB 070125：分波段总览",
+    "33/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB070125\\GRB070125_0802.2748v2_connected.png\nSHA256: 1e1d45ebcfa15fc94b008cd8ee9cac776ea391c069995d9612198b4fc3de7ee1",
+   "images": [
+    {
+     "media": "ppt/media/image55.png",
+     "rel": "rId1",
+     "exported": "media/s055_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 56,
+   "part": "ppt/slides/slide56.xml",
+   "page_label": "34/132",
+   "title": "GRB 070125：SBPL 拟合总览（常规）",
+   "texts": [
+    "GRB 070125：SBPL 拟合总览（常规）",
+    "34/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB070125\\GRB070125_SBPL_fit_overview.png\nSHA256: 6882aa66a070e77d5ef53ff67aacd3a2b0460c70e6a6be3444743c7ff6c7ed7f",
+   "images": [
+    {
+     "media": "ppt/media/image56.png",
+     "rel": "rId1",
+     "exported": "media/s056_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 57,
+   "part": "ppt/slides/slide57.xml",
+   "page_label": "36/132",
+   "title": "GRB 100418A：光变曲线总览",
+   "texts": [
+    "GRB 100418A：光变曲线总览",
+    "36/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB100418A\\GRB100418A_Moin_Table1_overview.png\nSHA256: 04d3bc64eb5d7bbd424ec49e6b35d58512965505dcdd1610969db8fa58e95036",
+   "images": [
+    {
+     "media": "ppt/media/image57.png",
+     "rel": "rId1",
+     "exported": "media/s057_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 58,
+   "part": "ppt/slides/slide58.xml",
+   "page_label": "37/132",
+   "title": "GRB 100418A：分波段总览",
+   "texts": [
+    "GRB 100418A：分波段总览",
+    "37/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB100418A\\GRB100418A_Moin_Table1_connected.png\nSHA256: 85cd2f2040b1691471cd93fefa3d429388aba9cf5a0809e37f9f447b7eba23c8",
+   "images": [
+    {
+     "media": "ppt/media/image58.png",
+     "rel": "rId1",
+     "exported": "media/s058_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 59,
+   "part": "ppt/slides/slide59.xml",
+   "page_label": "38/132",
+   "title": "GRB 100418A：拟合总览",
+   "texts": [
+    "GRB 100418A：拟合总览",
+    "38/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB100418A\\GRB100418A_SBPL_fit_overview.png\nSHA256: 2807f0ae3a2368df7583542b29209103c75a5efe568babbcabab904ce34d2ebc",
+   "images": [
+    {
+     "media": "ppt/media/image59.png",
+     "rel": "rId1",
+     "exported": "media/s059_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 60,
+   "part": "ppt/slides/slide60.xml",
+   "page_label": "39/132",
+   "title": "GRB 111215A：光变曲线总览",
+   "texts": [
+    "GRB 111215A：光变曲线总览",
+    "39/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB111215A\\GRB111215A_1408.3923v2_overview.png\nSHA256: db17e348f255b1581c2bc9a472e15ba947e61b2679142b71de74bfec809cde90",
+   "images": [
+    {
+     "media": "ppt/media/image60.png",
+     "rel": "rId1",
+     "exported": "media/s060_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 61,
+   "part": "ppt/slides/slide61.xml",
+   "page_label": "40/132",
+   "title": "GRB 111215A：分波段总览",
+   "texts": [
+    "GRB 111215A：分波段总览",
+    "40/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB111215A\\GRB111215A_1408.3923v2_connected.png\nSHA256: 3a3c330e7325a0871d46bf586f533392150d44d500c387f11e919c07a656c614",
+   "images": [
+    {
+     "media": "ppt/media/image61.png",
+     "rel": "rId1",
+     "exported": "media/s061_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 62,
+   "part": "ppt/slides/slide62.xml",
+   "page_label": "41/132",
+   "title": "GRB 111215A：拟合总览",
+   "texts": [
+    "GRB 111215A：拟合总览",
+    "41/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB111215A\\GRB111215A_SBPL_fit_overview.png\nSHA256: e704ade75c06372e2ddba1d97936e82b267b9341a119d34a8e0de353b0bfd883",
+   "images": [
+    {
+     "media": "ppt/media/image62.png",
+     "rel": "rId1",
+     "exported": "media/s062_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 63,
+   "part": "ppt/slides/slide63.xml",
+   "page_label": "42/132",
+   "title": "GRB 130427A：光变曲线总览",
+   "texts": [
+    "GRB 130427A：光变曲线总览",
+    "42/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB130427A\\GRB130427A_WSRT_EVN_AMI_combined_overview.png\nSHA256: 2955e6c3627f419c6b0128cd95527cea519d2e413d20daf2dda56184722b7e64",
+   "images": [
+    {
+     "media": "ppt/media/image63.png",
+     "rel": "rId1",
+     "exported": "media/s063_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 64,
+   "part": "ppt/slides/slide64.xml",
+   "page_label": "43/132",
+   "title": "GRB 130427A：分波段总览",
+   "texts": [
+    "GRB 130427A：分波段总览",
+    "43/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB130427A\\GRB130427A_WSRT_EVN_AMI_combined_connected.png\nSHA256: 0041dd7ae5dfd0f26359da9bee246db9181de2a650857bfaef02954867302586",
+   "images": [
+    {
+     "media": "ppt/media/image64.png",
+     "rel": "rId1",
+     "exported": "media/s064_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 65,
+   "part": "ppt/slides/slide65.xml",
+   "page_label": "44/132",
+   "title": "GRB 140304A：光变曲线总览",
+   "texts": [
+    "GRB 140304A：光变曲线总览",
+    "44/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB140304A\\GRB140304A_Laskar2018_Table4_overview.png\nSHA256: 681b6a6ebccfbd66355ce9e058fcdd709f7f685cf13220742a4867a8102dec2f",
+   "images": [
+    {
+     "media": "ppt/media/image65.png",
+     "rel": "rId1",
+     "exported": "media/s065_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 66,
+   "part": "ppt/slides/slide66.xml",
+   "page_label": "45/132",
+   "title": "GRB 140304A：分波段总览",
+   "texts": [
+    "GRB 140304A：分波段总览",
+    "45/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB140304A\\GRB140304A_Laskar2018_Table4_connected.png\nSHA256: 2d1c9a0060fce4c4a1ea52930aadb283718f804ba741697bc08b31847e038176",
+   "images": [
+    {
+     "media": "ppt/media/image66.png",
+     "rel": "rId1",
+     "exported": "media/s066_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 67,
+   "part": "ppt/slides/slide67.xml",
+   "page_label": "46/132",
+   "title": "GRB 140304A：SBPL 拟合总览",
+   "texts": [
+    "GRB 140304A：SBPL 拟合总览",
+    "46/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB140304A\\GRB140304A_SBPL_fit_overview.png\nSHA256: ac79079377fa505335721dd9aac9cecbd6b736353c520c224c0ff54e4d2d9f89",
+   "images": [
+    {
+     "media": "ppt/media/image67.png",
+     "rel": "rId1",
+     "exported": "media/s067_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 68,
+   "part": "ppt/slides/slide68.xml",
+   "page_label": "47/132",
+   "title": "GRB 140304A：SPL 拟合总览",
+   "texts": [
+    "GRB 140304A：SPL 拟合总览",
+    "47/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB140304A\\GRB140304A_SPL_fit_overview.png\nSHA256: c1527a33673f98153dd9e65a32b38219c28cadd2bec2108418795923620b65de",
+   "images": [
+    {
+     "media": "ppt/media/image68.png",
+     "rel": "rId1",
+     "exported": "media/s068_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 69,
+   "part": "ppt/slides/slide69.xml",
+   "page_label": "48/132",
+   "title": "GRB 140713A：光变曲线总览",
+   "texts": [
+    "GRB 140713A：光变曲线总览",
+    "48/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB140713A\\GRB140713A_Schroeder_TableA2_overview.png\nSHA256: c66dedc52e5d99f1cf03d3885e11865a0c5d1c4cd368fcfbe62af86805e211d4",
+   "images": [
+    {
+     "media": "ppt/media/image69.png",
+     "rel": "rId1",
+     "exported": "media/s069_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 70,
+   "part": "ppt/slides/slide70.xml",
+   "page_label": "49/132",
+   "title": "GRB 140713A：分波段总览",
+   "texts": [
+    "GRB 140713A：分波段总览",
+    "49/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB140713A\\GRB140713A_Schroeder_TableA2_connected.png\nSHA256: 084b6dc7d83f5fc7dcb574fd3c6b839f4cf27b4fec7ca0d07d0ec0a1d785dd6d",
+   "images": [
+    {
+     "media": "ppt/media/image70.png",
+     "rel": "rId1",
+     "exported": "media/s070_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 71,
+   "part": "ppt/slides/slide71.xml",
+   "page_label": "50/132",
+   "title": "GRB 140713A：拟合总览",
+   "texts": [
+    "GRB 140713A：拟合总览",
+    "50/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB140713A\\GRB140713A_SBPL_fit_overview.png\nSHA256: 3b847dfaa29f8f3fdb557b1c8b06a19e6e1c03fe3bf3666a6b141d31b0d461ac",
+   "images": [
+    {
+     "media": "ppt/media/image71.png",
+     "rel": "rId1",
+     "exported": "media/s071_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 72,
+   "part": "ppt/slides/slide72.xml",
+   "page_label": "51/132",
+   "title": "GRB 141121A：光变曲线总览",
+   "texts": [
+    "GRB 141121A：光变曲线总览",
+    "51/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB141121A\\GRB141121A_1510.00996v1_overview.png\nSHA256: 0154c7ff86bd4ee4e562e6b30206c8b155461fea7e6fa4a96b3b071f54c7f452",
+   "images": [
+    {
+     "media": "ppt/media/image72.png",
+     "rel": "rId1",
+     "exported": "media/s072_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 73,
+   "part": "ppt/slides/slide73.xml",
+   "page_label": "52/132",
+   "title": "GRB 141121A：分波段总览",
+   "texts": [
+    "GRB 141121A：分波段总览",
+    "52/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB141121A\\GRB141121A_1510.00996v1_connected.png\nSHA256: d03d30a11bdf05d886b33b652da110df7e12922505427ba140969aa2b2d68f73",
+   "images": [
+    {
+     "media": "ppt/media/image73.png",
+     "rel": "rId1",
+     "exported": "media/s073_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 74,
+   "part": "ppt/slides/slide74.xml",
+   "page_label": "53/132",
+   "title": "GRB 141121A：SPL 拟合总览（仅拟合 5 天后）",
+   "texts": [
+    "GRB 141121A：SPL 拟合总览（仅拟合 5 天后）",
+    "53/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB141121A\\GRB141121A_SPL_fit_overview_t_gt5d.png\nSHA256: d35255c62de08905ea325f397570c4f1a7dd3f1308d93f407d2f85a21652b6f5",
+   "images": [
+    {
+     "media": "ppt/media/image74.png",
+     "rel": "rId1",
+     "exported": "media/s074_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 75,
+   "part": "ppt/slides/slide75.xml",
+   "page_label": "54/132",
+   "title": "GRB 160131A：光变曲线总览",
+   "texts": [
+    "GRB 160131A：光变曲线总览",
+    "54/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB160131A\\GRB160131A_2111.00359v2_Table3_overview.png\nSHA256: 0198911dd499020f65229b33f4e7e7a0109445a5891c6c4dd1b89a5debcf3421",
+   "images": [
+    {
+     "media": "ppt/media/image75.png",
+     "rel": "rId1",
+     "exported": "media/s075_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 76,
+   "part": "ppt/slides/slide76.xml",
+   "page_label": "55/132",
+   "title": "GRB 160131A：分波段总览",
+   "texts": [
+    "GRB 160131A：分波段总览",
+    "55/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB160131A\\GRB160131A_2111.00359v2_Table3_connected.png\nSHA256: 941a7905380af0b6b43dda8e685b87abd0fa92f9bd4bf3f6acbd4b59b010a35a",
+   "images": [
+    {
+     "media": "ppt/media/image76.png",
+     "rel": "rId1",
+     "exported": "media/s076_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 77,
+   "part": "ppt/slides/slide77.xml",
+   "page_label": "56/132",
+   "title": "GRB 160131A：拟合总览",
+   "texts": [
+    "GRB 160131A：拟合总览",
+    "56/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB160131A\\GRB160131A_SBPL_fit_overview.png\nSHA256: 43f7912ac9f795c9a003bfaf7f262b8658a19d721fab24557b80fc5f89077070",
+   "images": [
+    {
+     "media": "ppt/media/image77.png",
+     "rel": "rId1",
+     "exported": "media/s077_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 78,
+   "part": "ppt/slides/slide78.xml",
+   "page_label": "57/132",
+   "title": "GRB 160623A：单波段原始连线图",
+   "texts": [
+    "GRB 160623A：单波段原始连线图",
+    "57/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB160623A\\GRB160623A_AMI-LA_15p5GHz_AMI-GRB-2_connected.png\nSHA256: 1b42dc3afa09eca0b7dc7a3ab791875f538961a0e930b58d3dd67239e674168f",
+   "images": [
+    {
+     "media": "ppt/media/image78.png",
+     "rel": "rId1",
+     "exported": "media/s078_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 79,
+   "part": "ppt/slides/slide79.xml",
+   "page_label": "58/132",
+   "title": "GRB 160623A：单波段原始散点图",
+   "texts": [
+    "GRB 160623A：单波段原始散点图",
+    "58/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB160623A\\GRB160623A_AMI-LA_15p5GHz_AMI-GRB-2_scatter.png\nSHA256: 37f4fec6416f8930e2e39c60c4154a00663476e6e1d75c98867ae57eda84521e",
+   "images": [
+    {
+     "media": "ppt/media/image79.png",
+     "rel": "rId1",
+     "exported": "media/s079_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 80,
+   "part": "ppt/slides/slide80.xml",
+   "page_label": "59/132",
+   "title": "GRB 160623A：拟合总览",
+   "texts": [
+    "GRB 160623A：拟合总览",
+    "59/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB160623A\\GRB160623A_SBPL_fit_overview.png\nSHA256: ea573bd870c9f82c1323dc2be7fecc7420df265fa7901bfb899159ffac12a2eb",
+   "images": [
+    {
+     "media": "ppt/media/image80.png",
+     "rel": "rId1",
+     "exported": "media/s080_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 81,
+   "part": "ppt/slides/slide81.xml",
+   "page_label": "60/132",
+   "title": "GRB 160625B：光变曲线总览",
+   "texts": [
+    "GRB 160625B：光变曲线总览",
+    "60/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB160625B\\GRB160625B_1705.08455v2_overview.png\nSHA256: 56350c71dd9df3d28660ab90091005a3d679af421c0169d919780b7eb270721d",
+   "images": [
+    {
+     "media": "ppt/media/image81.png",
+     "rel": "rId1",
+     "exported": "media/s081_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 82,
+   "part": "ppt/slides/slide82.xml",
+   "page_label": "61/132",
+   "title": "GRB 160625B：分波段总览",
+   "texts": [
+    "GRB 160625B：分波段总览",
+    "61/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB160625B\\GRB160625B_1705.08455v2_connected.png\nSHA256: 3f8cdf1536d43a1d1359e0b975a69f461d0407784164cdd656f632ffd52c8781",
+   "images": [
+    {
+     "media": "ppt/media/image82.png",
+     "rel": "rId1",
+     "exported": "media/s082_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 83,
+   "part": "ppt/slides/slide83.xml",
+   "page_label": "62/132",
+   "title": "GRB 161219B：光变曲线总览",
+   "texts": [
+    "GRB 161219B：光变曲线总览",
+    "62/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB161219B\\GRB161219B_LAB18_VizieR_overview.png\nSHA256: 89948a8b10277eac9920e9a2ce659d38e00ca7b4befbd30c12b8df21fb4ec0b7",
+   "images": [
+    {
+     "media": "ppt/media/image83.png",
+     "rel": "rId1",
+     "exported": "media/s083_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 84,
+   "part": "ppt/slides/slide84.xml",
+   "page_label": "63/132",
+   "title": "GRB 161219B：分波段总览",
+   "texts": [
+    "GRB 161219B：分波段总览",
+    "63/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB161219B\\GRB161219B_LAB18_VizieR_connected.png\nSHA256: d068f5fc190052675506318bab2fffe4d104bd46a14d1a1e2ef9d98c7288d8f1",
+   "images": [
+    {
+     "media": "ppt/media/image84.png",
+     "rel": "rId1",
+     "exported": "media/s084_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 85,
+   "part": "ppt/slides/slide85.xml",
+   "page_label": "64/132",
+   "title": "GRB 161219B：拟合总览",
+   "texts": [
+    "GRB 161219B：拟合总览",
+    "64/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB161219B\\GRB161219B_SBPL_fit_overview.png\nSHA256: 647e5abe8c3e1d9d102b53abbbdd54fe917527d418e8e904b263b0453c8ce8c7",
+   "images": [
+    {
+     "media": "ppt/media/image85.png",
+     "rel": "rId1",
+     "exported": "media/s085_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 86,
+   "part": "ppt/slides/slide86.xml",
+   "page_label": "65/132",
+   "title": "GRB 170105A：光变曲线总览",
+   "texts": [
+    "GRB 170105A：光变曲线总览",
+    "65/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB170105A\\GRB170105A_1706.00024v2_overview.png\nSHA256: acb41bb77f47fe144ca26ca6e8740bda0593ea03ebe872505455fbfca2c2080f",
+   "images": [
+    {
+     "media": "ppt/media/image86.png",
+     "rel": "rId1",
+     "exported": "media/s086_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 87,
+   "part": "ppt/slides/slide87.xml",
+   "page_label": "66/132",
+   "title": "GRB 170105A：分波段总览",
+   "texts": [
+    "GRB 170105A：分波段总览",
+    "66/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB170105A\\GRB170105A_1706.00024v2_connected.png\nSHA256: 77b9c5938d3272d64f6e40debcd4358282bb5f96ea6dfebc12bccbcd4029f214",
+   "images": [
+    {
+     "media": "ppt/media/image87.png",
+     "rel": "rId1",
+     "exported": "media/s087_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 88,
+   "part": "ppt/slides/slide88.xml",
+   "page_label": "67/132",
+   "title": "GRB 170105A：拟合总览",
+   "texts": [
+    "GRB 170105A：拟合总览",
+    "67/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB170105A\\GRB170105A_SBPL_fit_overview.png\nSHA256: e56dc1fd41ab074f936edb5814974f90db27c684402dd6534b812cc0d0de3b05",
+   "images": [
+    {
+     "media": "ppt/media/image88.png",
+     "rel": "rId1",
+     "exported": "media/s088_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 89,
+   "part": "ppt/slides/slide89.xml",
+   "page_label": "68/132",
+   "title": "GRB 171010A：光变曲线总览",
+   "texts": [
+    "GRB 171010A：光变曲线总览",
+    "68/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB171010A\\GRB171010A_1904.00039v1_overview.png\nSHA256: b03be23ea44b63fca20e2bbda3dd24512f4e56df8349eabd642d9adeafc196da",
+   "images": [
+    {
+     "media": "ppt/media/image89.png",
+     "rel": "rId1",
+     "exported": "media/s089_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 90,
+   "part": "ppt/slides/slide90.xml",
+   "page_label": "69/132",
+   "title": "GRB 171010A：分波段总览",
+   "texts": [
+    "GRB 171010A：分波段总览",
+    "69/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB171010A\\GRB171010A_1904.00039v1_connected.png\nSHA256: b6286656c9b942011816ac7ff0d856322bec6d136443f2d00b3aaca3dbe1ca00",
+   "images": [
+    {
+     "media": "ppt/media/image90.png",
+     "rel": "rId1",
+     "exported": "media/s090_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 91,
+   "part": "ppt/slides/slide91.xml",
+   "page_label": "70/132",
+   "title": "GRB 171010A：拟合总览",
+   "texts": [
+    "GRB 171010A：拟合总览",
+    "70/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB171010A\\GRB171010A_SBPL_fit_overview.png\nSHA256: 13687bb35c947de33e18868ab33892e51f82285f94b581847dfbc6e4fdd30f96",
+   "images": [
+    {
+     "media": "ppt/media/image91.png",
+     "rel": "rId1",
+     "exported": "media/s091_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 92,
+   "part": "ppt/slides/slide92.xml",
+   "page_label": "71/132",
+   "title": "GRB 190829A：光变曲线总览",
+   "texts": [
+    "GRB 190829A：光变曲线总览",
+    "71/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB190829A\\GRB190829A_Rhodes_AMI-GRB-2_merged_overview.png\nSHA256: 3d77ff127aa30e2ecc2bc203a295c04fd0be6d0f15d8e999775b13d2c37695c0",
+   "images": [
+    {
+     "media": "ppt/media/image92.png",
+     "rel": "rId1",
+     "exported": "media/s092_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 93,
+   "part": "ppt/slides/slide93.xml",
+   "page_label": "72/132",
+   "title": "GRB 190829A：分波段总览",
+   "texts": [
+    "GRB 190829A：分波段总览",
+    "72/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB190829A\\GRB190829A_Rhodes_AMI-GRB-2_merged_connected.png\nSHA256: ad9d0b95ecb50ad0efae076114e8031f5104b12d70e86aaaee028ebe33b1e0e2",
+   "images": [
+    {
+     "media": "ppt/media/image93.png",
+     "rel": "rId1",
+     "exported": "media/s093_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 94,
+   "part": "ppt/slides/slide94.xml",
+   "page_label": "73/132",
+   "title": "GRB 190829A：拟合总览",
+   "texts": [
+    "GRB 190829A：拟合总览",
+    "73/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB190829A\\GRB190829A_SBPL_fit_overview.png\nSHA256: 16cd6fac2000bf0dfb47817dd637e44cf5dc95cf3a5e879f1187f3d1f25525ba",
+   "images": [
+    {
+     "media": "ppt/media/image94.png",
+     "rel": "rId1",
+     "exported": "media/s094_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 95,
+   "part": "ppt/slides/slide95.xml",
+   "page_label": "74/132",
+   "title": "GRB 210702A：光变曲线总览",
+   "texts": [
+    "GRB 210702A：光变曲线总览",
+    "74/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB210702A\\GRB210702A_Anderson_TableA1_overview.png\nSHA256: f7e117c1df92143abcc1200b899ea4a04ff7e5d4a621233f256be0e6a08341eb",
+   "images": [
+    {
+     "media": "ppt/media/image95.png",
+     "rel": "rId1",
+     "exported": "media/s095_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 96,
+   "part": "ppt/slides/slide96.xml",
+   "page_label": "75/132",
+   "title": "GRB 210702A：分波段总览",
+   "texts": [
+    "GRB 210702A：分波段总览",
+    "75/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB210702A\\GRB210702A_Anderson_TableA1_connected.png\nSHA256: b369db2b60a9e5a698884bb9e39137325b82c5ea1e8b9694ba5e037552a52b0b",
+   "images": [
+    {
+     "media": "ppt/media/image96.png",
+     "rel": "rId1",
+     "exported": "media/s096_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 97,
+   "part": "ppt/slides/slide97.xml",
+   "page_label": "76/132",
+   "title": "GRB 210702A：拟合总览",
+   "texts": [
+    "GRB 210702A：拟合总览",
+    "76/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB210702A\\GRB210702A_SBPL_fit_overview.png\nSHA256: 375f25212cedf6cc5bd80351fa832fe62cb29b87a0a0362c69bd84423bd28f70",
+   "images": [
+    {
+     "media": "ppt/media/image97.png",
+     "rel": "rId1",
+     "exported": "media/s097_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 98,
+   "part": "ppt/slides/slide98.xml",
+   "page_label": "77/132",
+   "title": "GRB 210704A：单波段原始连线图",
+   "texts": [
+    "GRB 210704A：单波段原始连线图",
+    "77/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB210704A\\GRB210704A_AMI-LA_15p5GHz_AMI-GRB-2_connected.png\nSHA256: fbad0338e14147a5137062aeab129182ac846bb3e2b2903602fe2a1ba0129c70",
+   "images": [
+    {
+     "media": "ppt/media/image98.png",
+     "rel": "rId1",
+     "exported": "media/s098_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 99,
+   "part": "ppt/slides/slide99.xml",
+   "page_label": "78/132",
+   "title": "GRB 210704A：单波段原始散点图",
+   "texts": [
+    "GRB 210704A：单波段原始散点图",
+    "78/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB210704A\\GRB210704A_AMI-LA_15p5GHz_AMI-GRB-2_scatter.png\nSHA256: a472f5811b3459617c7359ee16598c1e3b42a8453c5ed815cafd41e4a9934a63",
+   "images": [
+    {
+     "media": "ppt/media/image99.png",
+     "rel": "rId1",
+     "exported": "media/s099_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 100,
+   "part": "ppt/slides/slide100.xml",
+   "page_label": "79/132",
+   "title": "GRB 210704A：拟合总览",
+   "texts": [
+    "GRB 210704A：拟合总览",
+    "79/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB210704A\\GRB210704A_SBPL_fit_overview.png\nSHA256: dba5225c57a2dd8dc5a726664be6abf527f6e6e325709b045c8cc8c435726c14",
+   "images": [
+    {
+     "media": "ppt/media/image100.png",
+     "rel": "rId1",
+     "exported": "media/s100_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 101,
+   "part": "ppt/slides/slide101.xml",
+   "page_label": "80/132",
+   "title": "GRB 220101A：单波段原始连线图",
+   "texts": [
+    "GRB 220101A：单波段原始连线图",
+    "80/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB220101A\\GRB220101A_AMI-LA_15p5GHz_AMI-GRB-2_connected.png\nSHA256: 6d32a7cb3ea864dcdc83314ad2f470995958c27f5df0aa1ad57cbee0b2caebfa",
+   "images": [
+    {
+     "media": "ppt/media/image101.png",
+     "rel": "rId1",
+     "exported": "media/s101_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 102,
+   "part": "ppt/slides/slide102.xml",
+   "page_label": "81/132",
+   "title": "GRB 220101A：单波段原始散点图",
+   "texts": [
+    "GRB 220101A：单波段原始散点图",
+    "81/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB220101A\\GRB220101A_AMI-LA_15p5GHz_AMI-GRB-2_scatter.png\nSHA256: eab650fef0802d52264596797b54233e6238e3a48bc6a8dec15e2d77c05073f4",
+   "images": [
+    {
+     "media": "ppt/media/image102.png",
+     "rel": "rId1",
+     "exported": "media/s102_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 103,
+   "part": "ppt/slides/slide103.xml",
+   "page_label": "82/132",
+   "title": "SPL",
+   "texts": [
+    "SPL",
+    "SBPL",
+    "GRB 220101A：拟合对比：SPL 与 SBPL",
+    "82/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB220101A\\GRB220101A_SPL_fit_overview.png\nSHA256: 4a3d8809ad1d4b923abeae8bfd3f6babaeb8f6c3577cd9463e36a1bac108cc42\nSource image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB220101A\\GRB220101A_SBPL_fit_overview.png\nSHA256: 3e00363483ff86d2692bd4e34ff90b24cbbf53d50cc6ea2b3a2bfd9356802d22",
+   "images": [
+    {
+     "media": "ppt/media/image104.png",
+     "rel": "rId2",
+     "exported": "media/s103_rId2.png"
+    },
+    {
+     "media": "ppt/media/image103.png",
+     "rel": "rId1",
+     "exported": "media/s103_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 104,
+   "part": "ppt/slides/slide104.xml",
+   "page_label": "83/132",
+   "title": "GRB 221009A：光变曲线总览",
+   "texts": [
+    "GRB 221009A：光变曲线总览",
+    "83/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB221009A\\GRB221009A_Rhodes_stae2050_overview.png\nSHA256: 9430bd30c2e93de74d755ad7a51e1f5c27b9ba23712f2ce8c85d128fa1f1207e",
+   "images": [
+    {
+     "media": "ppt/media/image105.png",
+     "rel": "rId1",
+     "exported": "media/s104_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 105,
+   "part": "ppt/slides/slide105.xml",
+   "page_label": "84/132",
+   "title": "GRB 221009A：分波段总览",
+   "texts": [
+    "GRB 221009A：分波段总览",
+    "84/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB221009A\\GRB221009A_Rhodes_stae2050_connected.png\nSHA256: 21188f18cde9941d0af44ce78e6060dec7d06f7b2c8742efa18a14e7b24706bf",
+   "images": [
+    {
+     "media": "ppt/media/image106.png",
+     "rel": "rId1",
+     "exported": "media/s105_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 106,
+   "part": "ppt/slides/slide106.xml",
+   "page_label": "85/132",
+   "title": "GRB 221009A：拟合总览",
+   "texts": [
+    "GRB 221009A：拟合总览",
+    "85/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB221009A\\GRB221009A_SBPL_fit_overview.png\nSHA256: f867434e6a0558cddf4e3b72d858eb3bebda6d176f97f362eb3b17669c70511d",
+   "images": [
+    {
+     "media": "ppt/media/image107.png",
+     "rel": "rId1",
+     "exported": "media/s106_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 107,
+   "part": "ppt/slides/slide107.xml",
+   "page_label": "86/132",
+   "title": "GRB 240205B：光变曲线总览",
+   "texts": [
+    "GRB 240205B：光变曲线总览",
+    "86/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240205B\\GRB240205B_Chastain_overview.png\nSHA256: c5fc71005d0ca48141481d304469b113a69ec4ab03538f17b7e748cb9e304acb",
+   "images": [
+    {
+     "media": "ppt/media/image108.png",
+     "rel": "rId1",
+     "exported": "media/s107_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 108,
+   "part": "ppt/slides/slide108.xml",
+   "page_label": "87/132",
+   "title": "GRB 240205B：分波段总览",
+   "texts": [
+    "GRB 240205B：分波段总览",
+    "87/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240205B\\GRB240205B_Chastain_connected.png\nSHA256: edef39fb9b74d90b40d2ee0b9b5b56badc7c9240929661e1de56b538c8b5f835",
+   "images": [
+    {
+     "media": "ppt/media/image109.png",
+     "rel": "rId1",
+     "exported": "media/s108_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 109,
+   "part": "ppt/slides/slide109.xml",
+   "page_label": "88/132",
+   "title": "GRB 240205B：拟合总览",
+   "texts": [
+    "GRB 240205B：拟合总览",
+    "88/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240205B\\GRB240205B_SBPL_fit_overview.png\nSHA256: a7dd01c4c8f45f8795e8bc45599562cebe6692a881cf3eb5093efcab682e7ad1",
+   "images": [
+    {
+     "media": "ppt/media/image110.png",
+     "rel": "rId1",
+     "exported": "media/s109_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 110,
+   "part": "ppt/slides/slide110.xml",
+   "page_label": "89/132",
+   "title": "GRB 240529A：单波段原始连线图",
+   "texts": [
+    "GRB 240529A：单波段原始连线图",
+    "89/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240529A\\GRB240529A_AMI-LA_15p5GHz_AMI-GRB-2_connected.png\nSHA256: 885af2a4c5ad56a3927bd031789b83626a7018d744f4e127f5ee713cd48de41a",
+   "images": [
+    {
+     "media": "ppt/media/image111.png",
+     "rel": "rId1",
+     "exported": "media/s110_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 111,
+   "part": "ppt/slides/slide111.xml",
+   "page_label": "90/132",
+   "title": "GRB 240529A：单波段原始散点图",
+   "texts": [
+    "GRB 240529A：单波段原始散点图",
+    "90/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240529A\\GRB240529A_AMI-LA_15p5GHz_AMI-GRB-2_scatter.png\nSHA256: 483f018354be2a109b01ffc0cc2a51a6e4b0642d6af5b897ac823a16293b2a22",
+   "images": [
+    {
+     "media": "ppt/media/image112.png",
+     "rel": "rId1",
+     "exported": "media/s111_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 112,
+   "part": "ppt/slides/slide112.xml",
+   "page_label": "91/132",
+   "title": "GRB 240529A：拟合总览",
+   "texts": [
+    "GRB 240529A：拟合总览",
+    "91/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240529A\\GRB240529A_SBPL_fit_overview.png\nSHA256: bd0a57cd09a82ac63f50fb27a41cffe8af3bdc6a23cc0122a21562f918e7d092",
+   "images": [
+    {
+     "media": "ppt/media/image113.png",
+     "rel": "rId1",
+     "exported": "media/s112_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 113,
+   "part": "ppt/slides/slide113.xml",
+   "page_label": "92/132",
+   "title": "GRB 240619A：单波段原始连线图",
+   "texts": [
+    "GRB 240619A：单波段原始连线图",
+    "92/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240619A\\GRB240619A_AMI-LA_15p5GHz_AMI-GRB-2_connected.png\nSHA256: bee5a0e1f15cfd60ad5e9927639740cb411c886ce9d9e6836fd703307790d1f7",
+   "images": [
+    {
+     "media": "ppt/media/image114.png",
+     "rel": "rId1",
+     "exported": "media/s113_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 114,
+   "part": "ppt/slides/slide114.xml",
+   "page_label": "93/132",
+   "title": "GRB 240619A：单波段原始散点图",
+   "texts": [
+    "GRB 240619A：单波段原始散点图",
+    "93/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240619A\\GRB240619A_AMI-LA_15p5GHz_AMI-GRB-2_scatter.png\nSHA256: dc7502e74cd51b7abe1127f0461ab27acd60002a2fbd89960f88d873742010c5",
+   "images": [
+    {
+     "media": "ppt/media/image115.png",
+     "rel": "rId1",
+     "exported": "media/s114_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 115,
+   "part": "ppt/slides/slide115.xml",
+   "page_label": "94/132",
+   "title": "GRB 240619A：拟合总览",
+   "texts": [
+    "GRB 240619A：拟合总览",
+    "94/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB240619A\\GRB240619A_SPL_fit_overview.png\nSHA256: 19cac56d09554c094d17cb51280f4b343fe29405a820c52c5e71ee826a8138e1",
+   "images": [
+    {
+     "media": "ppt/media/image116.png",
+     "rel": "rId1",
+     "exported": "media/s115_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 116,
+   "part": "ppt/slides/slide116.xml",
+   "page_label": "95/132",
+   "title": "GRB 241025A：光变曲线总览",
+   "texts": [
+    "GRB 241025A：光变曲线总览",
+    "95/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB241025A\\GRB241025A_VLA_Giarratana_TableA1_reference.png\nSHA256: ee8385fdbf13acd8a02f131db1f07066ec3747a18098af83cf326cb09a913752",
+   "images": [
+    {
+     "media": "ppt/media/image117.png",
+     "rel": "rId1",
+     "exported": "media/s116_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 117,
+   "part": "ppt/slides/slide117.xml",
+   "page_label": "96/132",
+   "title": "GRB 241025A：分波段总览",
+   "texts": [
+    "GRB 241025A：分波段总览",
+    "96/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB241025A\\GRB241025A_VLA_Giarratana_TableA1_connected.png\nSHA256: ff8cf29de9d4a45fcef62a095069d3f507f231638f20578d960a896781fe0a66",
+   "images": [
+    {
+     "media": "ppt/media/image118.png",
+     "rel": "rId1",
+     "exported": "media/s117_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 118,
+   "part": "ppt/slides/slide118.xml",
+   "page_label": "97/132",
+   "title": "GRB 241025A：拟合总览",
+   "texts": [
+    "GRB 241025A：拟合总览",
+    "97/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB241025A\\GRB241025A_SBPL_fit_overview.png\nSHA256: 165fda6690730d578133f851bc3066b26ae968789d3d3d1c91a30c88d5b5bff8",
+   "images": [
+    {
+     "media": "ppt/media/image119.png",
+     "rel": "rId1",
+     "exported": "media/s118_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 119,
+   "part": "ppt/slides/slide119.xml",
+   "page_label": "98/132",
+   "title": "GRB 250419A：光变曲线总览",
+   "texts": [
+    "GRB 250419A：光变曲线总览",
+    "98/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB250419A\\GRB250419A_radio_lightcurve_reference.png\nSHA256: ef2e7b69a4ea0609cfb710a83f2e31190dc66d3d5d2a57909ebc9255d6d2d038",
+   "images": [
+    {
+     "media": "ppt/media/image120.png",
+     "rel": "rId1",
+     "exported": "media/s119_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 120,
+   "part": "ppt/slides/slide120.xml",
+   "page_label": "99/132",
+   "title": "GRB 250419A：分波段总览",
+   "texts": [
+    "GRB 250419A：分波段总览",
+    "99/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB250419A\\GRB250419A_radio_lightcurve_connected.png\nSHA256: c38e5b52861cfccf553947228aaf93e9acf276eccd970ee2eec9f5c1a6c2e3f9",
+   "images": [
+    {
+     "media": "ppt/media/image121.png",
+     "rel": "rId1",
+     "exported": "media/s120_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 121,
+   "part": "ppt/slides/slide121.xml",
+   "page_label": "100/132",
+   "title": "GRB 250419A：拟合总览",
+   "texts": [
+    "GRB 250419A：拟合总览",
+    "100/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB250419A\\GRB250419A_SBPL_fit_overview.png\nSHA256: bdf2dcd6ce85252d563288fdc1beb5161059b3540dc4f381ea33b53d59ac1e66",
+   "images": [
+    {
+     "media": "ppt/media/image122.png",
+     "rel": "rId1",
+     "exported": "media/s121_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 122,
+   "part": "ppt/slides/slide122.xml",
+   "page_label": "101/132",
+   "title": "GRB 250702B：光变曲线总览",
+   "texts": [
+    "GRB 250702B：光变曲线总览",
+    "101/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB250702B\\GRB250702B_Goodwin_TableD1_reference.png\nSHA256: efcd9391035b020da91cb312ac2898e2bd8b34c1480cbb5532b39bbe31113504",
+   "images": [
+    {
+     "media": "ppt/media/image123.png",
+     "rel": "rId1",
+     "exported": "media/s122_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 123,
+   "part": "ppt/slides/slide123.xml",
+   "page_label": "102/132",
+   "title": "GRB 250702B：分波段总览",
+   "texts": [
+    "GRB 250702B：分波段总览",
+    "102/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB250702B\\GRB250702B_Goodwin_grouped_connected.png\nSHA256: 9fa2cba5fd551dd6fa75afb83a66abc28b4e9c7516f527a278ae417b1e8d3260",
+   "images": [
+    {
+     "media": "ppt/media/image124.png",
+     "rel": "rId1",
+     "exported": "media/s123_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 124,
+   "part": "ppt/slides/slide124.xml",
+   "page_label": "103/132",
+   "title": "GRB 250702B：拟合总览",
+   "texts": [
+    "GRB 250702B：拟合总览",
+    "103/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB250702B\\GRB250702B_SBPL_fit_overview.png\nSHA256: 011aefad23a32c4704dfcc10900055f9fdcf92f5c42e6a7110ace1b507422995",
+   "images": [
+    {
+     "media": "ppt/media/image125.png",
+     "rel": "rId1",
+     "exported": "media/s124_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 125,
+   "part": "ppt/slides/slide125.xml",
+   "page_label": "104/132",
+   "title": "GRB 251013C：单波段原始连线图",
+   "texts": [
+    "GRB 251013C：单波段原始连线图",
+    "104/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB251013C\\GRB251013C_AMI-LA_15p5GHz_AMI-GRB-2_connected.png\nSHA256: 9fc3125765183c3a91bec8694b43d5c12120bef54c5a5c24a5aa305651e3775f",
+   "images": [
+    {
+     "media": "ppt/media/image126.png",
+     "rel": "rId1",
+     "exported": "media/s125_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 126,
+   "part": "ppt/slides/slide126.xml",
+   "page_label": "105/132",
+   "title": "GRB 251013C：单波段原始散点图",
+   "texts": [
+    "GRB 251013C：单波段原始散点图",
+    "105/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB251013C\\GRB251013C_AMI-LA_15p5GHz_AMI-GRB-2_scatter.png\nSHA256: 334717b887df878cd191852eb754601b134fd8ced4bddd3c58d46e998af732a4",
+   "images": [
+    {
+     "media": "ppt/media/image127.png",
+     "rel": "rId1",
+     "exported": "media/s126_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 127,
+   "part": "ppt/slides/slide127.xml",
+   "page_label": "106/132",
+   "title": "GRB 251013C：拟合总览",
+   "texts": [
+    "GRB 251013C：拟合总览",
+    "106/132"
+   ],
+   "notes": "Source image: D:\\研究生\\工作Ⅱ：利用伽马暴射电余辉星际闪烁限制源尺度\\闪烁分析样本\\GRB251013C\\GRB251013C_SBPL_fit_overview.png\nSHA256: c69363aea334854c751be48f6cbfd71f137d9528815c3dcfe07e8ded3378388f",
+   "images": [
+    {
+     "media": "ppt/media/image128.png",
+     "rel": "rId1",
+     "exported": "media/s127_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 128,
+   "part": "ppt/slides/slide128.xml",
+   "page_label": "1/132",
+   "title": "SPL：",
+   "texts": [
+    "SPL：",
+    "拟合方法与结果说明",
+    "1/132",
+    "A：t = 1 天时的模型流量密度（mJy）",
+    "拟合与展示方式",
+    "使用 emcee 进行 MCMC 采样；上限不参与拟合。",
+    "SBPL：",
+    "当前设置：ω = 2，B = 0"
+   ],
+   "notes": "公式与实现：重新寻找样本/拟合程序/fit_spl.py；ami_mcmc.py。代码使用以天为单位的数值 t，F=A*t**alpha。各参数后验中位数组合并非最小卡方参数，也不一定对应后验中的一个实际样本。",
+   "images": [
+    {
+     "media": "ppt/media/image130.png",
+     "rel": "rId2",
+     "exported": "media/s128_rId2.png"
+    },
+    {
+     "media": "ppt/media/image129.png",
+     "rel": "rId1",
+     "exported": "media/s128_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 129,
+   "part": "ppt/slides/slide129.xml",
+   "page_label": "3/132",
+   "title": "：去除趋势后的分数超额变幅",
+   "texts": [
+    "：去除趋势后的分数超额变幅",
+    "拟合方法与结果说明",
+    "3/132"
+   ],
+   "notes": "使用样本方差 ddof=1 和平均误差方差。参考超额方差定义：Vaughan et al. (2003), MNRAS 345,1271, https://doi.org/10.1046/j.1365-2966.2003.07042.x ，https://arxiv.org/abs/astro-ph/0307420 。本程序把该估计量应用于 Fi/Fmodel 的去趋势序列。not detected 对应估计超额方差<=0，而非检测显著性阈值。",
+   "images": [
+    {
+     "media": "ppt/media/image132.png",
+     "rel": "rId2",
+     "exported": "media/s129_rId2.png"
+    },
+    {
+     "media": "ppt/media/image131.png",
+     "rel": "rId1",
+     "exported": "media/s129_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 130,
+   "part": "ppt/slides/slide130.xml",
+   "page_label": "",
+   "title": "：去除趋势后的分数超额变幅",
+   "texts": [
+    "：去除趋势后的分数超额变幅"
+   ],
+   "notes": "",
+   "images": [
+    {
+     "media": "ppt/media/image131.png",
+     "rel": "rId2",
+     "exported": "media/s130_rId2.png"
+    },
+    {
+     "media": "ppt/media/image133.png",
+     "rel": "rId1",
+     "exported": "media/s130_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 131,
+   "part": "ppt/slides/slide131.xml",
+   "page_label": "4/132",
+   "title": "Exploratory: <50τ：MCMC 链长检查",
+   "texts": [
+    "Exploratory: <50τ：MCMC 链长检查",
+    "拟合方法与结果说明",
+    "4/132",
+    "L ≥ 50 × max(τ)",
+    "L：每条 walker 链舍弃 burn-in 后的步数\nτ：各参数的积分自相关时间，单位为采样步数\n此处的 τ 与星际闪烁的物理时间尺度无关。",
+    "为何出现这个标记？",
+    "保留链长不足最大 τ 的 50 倍，或 τ 无法可靠估计。\n常见原因：采样步数不足、参数相关性强、后验多峰、数据约束较弱。",
+    "如何理解和处理？",
+    "中位数和可信区间可能随继续采样而变化，应作为探索性结果。\n可延长采样、检查轨迹与 τ 的稳定性，并采用有物理依据的先验。\n50τ 是经验检查标准；通过它也不能单独保证收敛。"
+   ],
+   "notes": "代码：tau=sampler.get_autocorr_time(discard=burn,tol=0)；通过条件为 all(isfinite(tau)) and len(chain)>=50*max(tau)。L不是walkers数乘以链长。官方说明：https://emcee.readthedocs.io/en/stable/tutorials/autocorr/ 。不应仅为消除标记而任意收窄先验。",
+   "images": []
+  }
+ ]
+}

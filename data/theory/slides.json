@@ -1,0 +1,1049 @@
+{
+ "deck": "../20261123/利用ISS来限制源尺度的理论以及初步样本.pptx",
+ "slide_count": 48,
+ "slides": [
+  {
+   "index": 1,
+   "part": "ppt/slides/slide1.xml",
+   "page_label": "",
+   "title": "伽马暴射电余辉光变曲线与星际闪烁源尺寸约束",
+   "texts": [
+    "伽马暴射电余辉光变曲线与星际闪烁源尺寸约束",
+    "数据版本：35个射电余辉中带有闪烁特征的伽马暴光变曲线与 RISS19/SM2025计算结果",
+    "2026 年 10 月",
+    "星际介质中的电子密度起伏会使GRB的射电余辉发生闪烁，而闪烁的强度及其随时间的演化，可以反过来测量射电辐射区域的角尺寸。"
+   ],
+   "notes": "老师，这是我在已发表的论文中搜集的光变带有射电闪烁特征并且数据点较为丰富的伽马暴样本，PPT中展示了它们在各个观测波段下的光变曲线。前面部分先进行了一些基础射电理论的介绍，所有样本的射电各波段的光变放在了后面。",
+   "images": []
+  },
+  {
+   "index": 2,
+   "part": "ppt/slides/slide2.xml",
+   "page_label": "",
+   "title": "为什么可以利用星际闪烁来限制源的尺寸？",
+   "texts": [
+    "为什么可以利用星际闪烁来限制源的尺寸？"
+   ],
+   "notes": "根据射电闪烁的理论，出现闪烁现象就必须满足源的角大小要小于特征角。如果源的角大小大于特征角，那么闪烁就会猝灭。",
+   "images": [
+    {
+     "media": "ppt/media/image4.png",
+     "rel": "rId4",
+     "exported": "media/s002_rId4.png"
+    },
+    {
+     "media": "ppt/media/image3.png",
+     "rel": "rId3",
+     "exported": "media/s002_rId3.png"
+    },
+    {
+     "media": "ppt/media/image2.png",
+     "rel": "rId2",
+     "exported": "media/s002_rId2.png"
+    },
+    {
+     "media": "ppt/media/image1.png",
+     "rel": "rId1",
+     "exported": "media/s002_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "part": "ppt/slides/slide3.xml",
+   "page_label": "",
+   "title": "",
+   "texts": [],
+   "notes": "这篇文章中对射电闪烁理论做了一个简单明了的叙述（左侧为原文中的4.2.闪烁一节；右侧是方便查看的翻译版本以及dscr的示意图），我对所有闪烁样本的处理也参照了这篇文章中的形式。",
+   "images": [
+    {
+     "media": "ppt/media/image8.png",
+     "rel": "rId4",
+     "exported": "media/s003_rId4.png"
+    },
+    {
+     "media": "ppt/media/image7.png",
+     "rel": "rId3",
+     "exported": "media/s003_rId3.png"
+    },
+    {
+     "media": "ppt/media/image6.png",
+     "rel": "rId2",
+     "exported": "media/s003_rId2.png"
+    },
+    {
+     "media": "ppt/media/image5.png",
+     "rel": "rId1",
+     "exported": "media/s003_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "part": "ppt/slides/slide4.xml",
+   "page_label": "",
+   "title": "用于计算闪烁的关键参数",
+   "texts": [
+    "用于计算闪烁的关键参数",
+    "散射量（SM）\n衍射屏距离（）\n转换频率（）",
+    "它描述沿着 GRB 视线的\nelectron-density turbulence 强度",
+    "由银河系电子密度模型推断的主导散射屏的位置",
+    "Diffractive Interstellar Scintillation（衍射型星际闪烁）",
+    "Refractive Interstellar Scintillation（折射型星际闪烁）"
+   ],
+   "notes": "上面提到了三个重要的参数：SM（散射量）、v0（转换频率）以及Dscr（散射屏距离）。其中v0区分了两种散射状态-强散射和弱散射，强散射状态下又会出现两种不同的闪烁类型-衍射闪烁与折射闪烁。不同散射状态下的理论公式有所不同，但都需要依赖SM（散射量）、v0（转换频率）以及Dscr（散射屏距离）来计算。",
+   "images": [
+    {
+     "media": "ppt/media/image17.png",
+     "rel": "rId9",
+     "exported": "media/s004_rId9.png"
+    },
+    {
+     "media": "ppt/media/image16.png",
+     "rel": "rId8",
+     "exported": "media/s004_rId8.png"
+    },
+    {
+     "media": "ppt/media/image15.png",
+     "rel": "rId7",
+     "exported": "media/s004_rId7.png"
+    },
+    {
+     "media": "ppt/media/image14.png",
+     "rel": "rId6",
+     "exported": "media/s004_rId6.png"
+    },
+    {
+     "media": "ppt/media/image13.png",
+     "rel": "rId5",
+     "exported": "media/s004_rId5.png"
+    },
+    {
+     "media": "ppt/media/image12.png",
+     "rel": "rId4",
+     "exported": "media/s004_rId4.png"
+    },
+    {
+     "media": "ppt/media/image11.png",
+     "rel": "rId3",
+     "exported": "media/s004_rId3.png"
+    },
+    {
+     "media": "ppt/media/image10.png",
+     "rel": "rId2",
+     "exported": "media/s004_rId2.png"
+    },
+    {
+     "media": "ppt/media/image18.png",
+     "rel": "rId10",
+     "exported": "media/s004_rId10.png"
+    },
+    {
+     "media": "ppt/media/image9.png",
+     "rel": "rId1",
+     "exported": "media/s004_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "part": "ppt/slides/slide5.xml",
+   "page_label": "",
+   "title": "用于计算闪烁的关键参数",
+   "texts": [
+    "用于计算闪烁的关键参数"
+   ],
+   "notes": "不同散射区域下的特征角度、调制指数以及闪烁时标的理论值。对于【调制指数】以及【闪烁时标】的解释在下一页。",
+   "images": [
+    {
+     "media": "ppt/media/image20.png",
+     "rel": "rId2",
+     "exported": "media/s005_rId2.png"
+    },
+    {
+     "media": "ppt/media/image19.png",
+     "rel": "rId1",
+     "exported": "media/s005_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "part": "ppt/slides/slide6.xml",
+   "page_label": "",
+   "title": "用于计算闪烁的关键参数",
+   "texts": [
+    "用于计算闪烁的关键参数"
+   ],
+   "notes": "对于【调制指数】以及【闪烁时标】两个物理概念的解释。值得一提的是，闪烁时标会受到Viss取值的影响，因此取不同的速度值时，理论预测的闪烁时标会有区别，我经过查阅发现有些文章中采用的是30km/s，因此目前结果中的时标是用这个数值去计算的。而GRB 210702A文章表格中的结果应该是采用的50km/s得到的（文章中没有提及，利用公式反推得到的）",
+   "images": [
+    {
+     "media": "ppt/media/image24.png",
+     "rel": "rId4",
+     "exported": "media/s006_rId4.png"
+    },
+    {
+     "media": "ppt/media/image23.png",
+     "rel": "rId3",
+     "exported": "media/s006_rId3.png"
+    },
+    {
+     "media": "ppt/media/image22.png",
+     "rel": "rId2",
+     "exported": "media/s006_rId2.png"
+    },
+    {
+     "media": "ppt/media/image21.png",
+     "rel": "rId1",
+     "exported": "media/s006_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "part": "ppt/slides/slide7.xml",
+   "page_label": "",
+   "title": "用于计算闪烁的关键参数",
+   "texts": [
+    "用于计算闪烁的关键参数"
+   ],
+   "notes": "闪烁时标会受到Viss取值的影响，我在计算过程中采取的是30km/s，GRB 210702A那篇文章中采用的是50km/s（并未提及，是反推公式得到的。此前的分析射电闪烁的文章中很少有提到Viss的取值的。）下面的GRB 970508是个例子，在得到了SM、v0和Dscr之后我们便可以区分每个观测频率所处的散射状态以及分别计算它们对应点源时的理论值。非点源还有不同的计算公式，但是一般文章中都是采用点源的计算公式进行计算。",
+   "images": [
+    {
+     "media": "ppt/media/image26.png",
+     "rel": "rId2",
+     "exported": "media/s007_rId2.png"
+    },
+    {
+     "media": "ppt/media/image25.png",
+     "rel": "rId1",
+     "exported": "media/s007_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "part": "ppt/slides/slide8.xml",
+   "page_label": "",
+   "title": "用于计算闪烁的关键模型",
+   "texts": [
+    "用于计算闪烁的关键模型",
+    "散射量（SM）\n衍射屏距离（）\n转换频率（）",
+    "NE2001（以及其更新版本NE2025）是一个用于描述银河系自由电子密度分布的多成分模型。它通过整合脉冲星的距离、色散量（DM）和散射测量数据，构建了银河系内电子密度的大尺度结构，并利用这些结构来正向模拟射电波的传播效应，包括色散、散射和闪烁。",
+    "它不需要先建立与 NE2001 一样详细的三维自由电子密度模型，而是使用全天 Hα 辐射图，估计沿视线的发射量（Emission Measure，EM），再转换为 SM。"
+   ],
+   "notes": "目前主流的用来获得SM、v0和Dscr的两类模型。两类模型对于这些散射量的计算原理不同，NE系列模型是利用已观测到的脉冲星数据进行建模然后再计算SM；RISS19则是利用全天的Hα辐射图来计算EM再通过关系计算SM。在RISS19模型出现之前的文章几乎都是利用NE2001模型来计算SM等散射参数的，而NE2001模型具有一定的局限性，就是其建模用到的脉冲星数据主要集中在银盘附近，对于银纬较高的区域其预测的结果可能较差，RISS19由于没有这个缺陷所以在后期的文章中被利用的多一些，但是更新后的NE2025模型目前还未看到有关于闪烁的文章研究使用。",
+   "images": [
+    {
+     "media": "ppt/media/image35.png",
+     "rel": "rId9",
+     "exported": "media/s008_rId9.png"
+    },
+    {
+     "media": "ppt/media/image34.png",
+     "rel": "rId8",
+     "exported": "media/s008_rId8.png"
+    },
+    {
+     "media": "ppt/media/image33.png",
+     "rel": "rId7",
+     "exported": "media/s008_rId7.png"
+    },
+    {
+     "media": "ppt/media/image32.png",
+     "rel": "rId6",
+     "exported": "media/s008_rId6.png"
+    },
+    {
+     "media": "ppt/media/image31.png",
+     "rel": "rId5",
+     "exported": "media/s008_rId5.png"
+    },
+    {
+     "media": "ppt/media/image30.png",
+     "rel": "rId4",
+     "exported": "media/s008_rId4.png"
+    },
+    {
+     "media": "ppt/media/image29.png",
+     "rel": "rId3",
+     "exported": "media/s008_rId3.png"
+    },
+    {
+     "media": "ppt/media/image28.png",
+     "rel": "rId2",
+     "exported": "media/s008_rId2.png"
+    },
+    {
+     "media": "ppt/media/image39.png",
+     "rel": "rId13",
+     "exported": "media/s008_rId13.png"
+    },
+    {
+     "media": "ppt/media/image38.png",
+     "rel": "rId12",
+     "exported": "media/s008_rId12.png"
+    },
+    {
+     "media": "ppt/media/image37.png",
+     "rel": "rId11",
+     "exported": "media/s008_rId11.png"
+    },
+    {
+     "media": "ppt/media/image36.png",
+     "rel": "rId10",
+     "exported": "media/s008_rId10.png"
+    },
+    {
+     "media": "ppt/media/image27.png",
+     "rel": "rId1",
+     "exported": "media/s008_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "part": "ppt/slides/slide9.xml",
+   "page_label": "",
+   "title": "",
+   "texts": [],
+   "notes": "左图为我利用两种模型（RISS19和NE2025）对我们所有样本生成的散射量SM、转换频率v0、散射屏距离Dscr的结果。可以看到两个模型之间的差异较大，我们应该如何处理两个模型的结果？GRB 210702A文章中其实也分别利用RISS19和NE2001来输出了散射量、但最终采用RISS19的输出来限制结果是出于两个原因：1.【主要原因】RISS19具有更广的天空覆盖，而这个暴所在的位置恰好脉冲星覆盖非常稀少。2.模型预测的转变频率与观测更加贴合，RISS19 预测的转变频率为 7.66 GHz，而 NE2001 预测为 14.4 GHz。实际观测显示，GRB 210702A 在 9 GHz 波段出现最明显的快速射电变化，该频率更接近 RISS19 的预测。",
+   "images": [
+    {
+     "media": "ppt/media/image42.png",
+     "rel": "rId3",
+     "exported": "media/s009_rId3.png"
+    },
+    {
+     "media": "ppt/media/image41.png",
+     "rel": "rId2",
+     "exported": "media/s009_rId2.png"
+    },
+    {
+     "media": "ppt/media/image40.png",
+     "rel": "rId1",
+     "exported": "media/s009_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "part": "ppt/slides/slide10.xml",
+   "page_label": "",
+   "title": "",
+   "texts": [],
+   "notes": "在NE2025: An Updated Electron Density Model for the Galactic Interstellar Medium文章中给出的图像，从图中可以看出，与 NE2001 相比，NE2025 使用的视差测量明显增加，样本在银河经度和纬度上的覆盖也更加广泛，尤其是高银河纬度方向的约束有所改善。",
+   "images": [
+    {
+     "media": "ppt/media/image43.png",
+     "rel": "rId1",
+     "exported": "media/s010_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "part": "ppt/slides/slide11.xml",
+   "page_label": "",
+   "title": "当 GRB 210702A 未被探测到时（SNR < 3），我们将拟合位置固定在 UVOT 给出的最佳已知源位置。这产生了一个力拟合的流量密度和误差测量，而不是仅仅给出 3σ 上限，其优点是考虑了附近源的存在以及图像中的噪声变化。",
+   "texts": [
+    "当 GRB 210702A 未被探测到时（SNR < 3），我们将拟合位置固定在 UVOT 给出的最佳已知源位置。这产生了一个力拟合的流量密度和误差测量，而不是仅仅给出 3σ 上限，其优点是考虑了附近源的存在以及图像中的噪声变化。"
+   ],
+   "notes": "我们利用两个模型输出的限制结果的表格形式是仿照着关于GRB 210702A这篇文章中的形式来的，文章中除了展示了利用RISS19模型限制的各个观测频率下的特征角、调制指数、闪烁时标以及源尺寸以外，还有自己测量的调制指数和闪烁时标，我觉得这个形式不错，想对我们所有的样本也做一做，但是发现我们大多数样本的数据间隔太久，而且能体现出良好的规律扰动性的样本很少，导致对于闪烁时标的估计上存在难度。并且由于样本数据之间间隔过大，会导致我们计算出的调制指数m_obs不精准，无法排除掉射电余辉本征的演化带来的影响。",
+   "images": [
+    {
+     "media": "ppt/media/image46.png",
+     "rel": "rId3",
+     "exported": "media/s011_rId3.png"
+    },
+    {
+     "media": "ppt/media/image45.png",
+     "rel": "rId2",
+     "exported": "media/s011_rId2.png"
+    },
+    {
+     "media": "ppt/media/image44.png",
+     "rel": "rId1",
+     "exported": "media/s011_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "part": "ppt/slides/slide12.xml",
+   "page_label": "",
+   "title": "",
+   "texts": [],
+   "notes": "这是GRB 210702A文章中进行源尺寸估计部分的翻译版本，我也采用了同样的方式进行了源尺寸的限制，部分缺少红移信息的样本就没有再进行这一步。我们的结果放在了pdf中供您查看。可以看到，我们实际约束的尺寸是爆炸波在天空平面上的直径。",
+   "images": [
+    {
+     "media": "ppt/media/image47.png",
+     "rel": "rId1",
+     "exported": "media/s012_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "part": "ppt/slides/slide13.xml",
+   "page_label": "",
+   "title": "",
+   "texts": [],
+   "notes": "文章中还进行了一步比较，由于文章是在 GRB 210702A 爆发后 13 小时（0.56 天）获得的尺寸约束，是截至本文发表时通过 ISS 对 GRB 获得的最早期尺寸限制，因此作者认为在如此早期的观测阶段，余辉尚未发生喷流拐折，可以与正向激波模型的理论预测去比较。",
+   "images": [
+    {
+     "media": "ppt/media/image48.png",
+     "rel": "rId1",
+     "exported": "media/s013_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "part": "ppt/slides/slide14.xml",
+   "page_label": "",
+   "title": "",
+   "texts": [],
+   "notes": "我们是否也可以参考这一步骤对我们的结果进行检验？",
+   "images": [
+    {
+     "media": "ppt/media/image49.png",
+     "rel": "rId1",
+     "exported": "media/s014_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "part": "ppt/slides/slide15.xml",
+   "page_label": "",
+   "title": "初步筛选后的GRB样本",
+   "texts": [
+    "初步筛选后的GRB样本",
+    "注：呈现的光变曲线并非全部的观测数据，仅仅选择了数据较为丰富的观测频率进行了作图以及分析计算结果。"
+   ],
+   "notes": "",
+   "images": []
+  },
+  {
+   "index": 16,
+   "part": "ppt/slides/slide16.xml",
+   "page_label": "",
+   "title": "GRB 970508：分波段射电光变曲线",
+   "texts": [
+    "GRB 970508：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_970508_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image50.png",
+     "rel": "rId1",
+     "exported": "media/s016_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "part": "ppt/slides/slide17.xml",
+   "page_label": "",
+   "title": "GRB 980329：分波段射电光变曲线",
+   "texts": [
+    "GRB 980329：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_980329_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image51.png",
+     "rel": "rId1",
+     "exported": "media/s017_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "part": "ppt/slides/slide18.xml",
+   "page_label": "",
+   "title": "GRB 980425：分波段射电光变曲线",
+   "texts": [
+    "GRB 980425：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_980425_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image52.png",
+     "rel": "rId1",
+     "exported": "media/s018_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "part": "ppt/slides/slide19.xml",
+   "page_label": "",
+   "title": "GRB 980519：分波段射电光变曲线",
+   "texts": [
+    "GRB 980519：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_980519_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image53.png",
+     "rel": "rId1",
+     "exported": "media/s019_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "part": "ppt/slides/slide20.xml",
+   "page_label": "",
+   "title": "GRB 980703：分波段射电光变曲线",
+   "texts": [
+    "GRB 980703：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_980703_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image54.png",
+     "rel": "rId1",
+     "exported": "media/s020_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "part": "ppt/slides/slide21.xml",
+   "page_label": "",
+   "title": "GRB 981226：分波段射电光变曲线",
+   "texts": [
+    "GRB 981226：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_981226_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image55.png",
+     "rel": "rId1",
+     "exported": "media/s021_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "part": "ppt/slides/slide22.xml",
+   "page_label": "",
+   "title": "GRB 991208：分波段射电光变曲线",
+   "texts": [
+    "GRB 991208：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_991208_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image56.png",
+     "rel": "rId1",
+     "exported": "media/s022_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "part": "ppt/slides/slide23.xml",
+   "page_label": "",
+   "title": "GRB 000301C：分波段射电光变曲线",
+   "texts": [
+    "GRB 000301C：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_000301C_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image57.png",
+     "rel": "rId1",
+     "exported": "media/s023_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "part": "ppt/slides/slide24.xml",
+   "page_label": "",
+   "title": "GRB 000418：分波段射电光变曲线",
+   "texts": [
+    "GRB 000418：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_000418_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image58.png",
+     "rel": "rId1",
+     "exported": "media/s024_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "part": "ppt/slides/slide25.xml",
+   "page_label": "",
+   "title": "GRB 000911：分波段射电光变曲线",
+   "texts": [
+    "GRB 000911：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_000911_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image59.png",
+     "rel": "rId1",
+     "exported": "media/s025_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "part": "ppt/slides/slide26.xml",
+   "page_label": "",
+   "title": "GRB 000926：分波段射电光变曲线",
+   "texts": [
+    "GRB 000926：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_000926_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image60.png",
+     "rel": "rId1",
+     "exported": "media/s026_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 27,
+   "part": "ppt/slides/slide27.xml",
+   "page_label": "",
+   "title": "GRB 011121：分波段射电光变曲线",
+   "texts": [
+    "GRB 011121：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_011121_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image61.png",
+     "rel": "rId1",
+     "exported": "media/s027_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 28,
+   "part": "ppt/slides/slide28.xml",
+   "page_label": "",
+   "title": "GRB 020405：分波段射电光变曲线",
+   "texts": [
+    "GRB 020405：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_020405_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image62.png",
+     "rel": "rId1",
+     "exported": "media/s028_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "part": "ppt/slides/slide29.xml",
+   "page_label": "",
+   "title": "GRB 031203：分波段射电光变曲线",
+   "texts": [
+    "GRB 031203：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_031203_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image63.png",
+     "rel": "rId1",
+     "exported": "media/s029_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 30,
+   "part": "ppt/slides/slide30.xml",
+   "page_label": "",
+   "title": "GRB 051022：分波段射电光变曲线",
+   "texts": [
+    "GRB 051022：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_051022_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image64.png",
+     "rel": "rId1",
+     "exported": "media/s030_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 31,
+   "part": "ppt/slides/slide31.xml",
+   "page_label": "",
+   "title": "GRB 070125：分波段射电光变曲线",
+   "texts": [
+    "GRB 070125：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_070125_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image65.png",
+     "rel": "rId1",
+     "exported": "media/s031_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 32,
+   "part": "ppt/slides/slide32.xml",
+   "page_label": "",
+   "title": "GRB 100418A：分波段射电光变曲线",
+   "texts": [
+    "GRB 100418A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_100418A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image66.png",
+     "rel": "rId1",
+     "exported": "media/s032_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 33,
+   "part": "ppt/slides/slide33.xml",
+   "page_label": "",
+   "title": "GRB 111215A：分波段射电光变曲线",
+   "texts": [
+    "GRB 111215A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_111215A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image67.png",
+     "rel": "rId1",
+     "exported": "media/s033_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 34,
+   "part": "ppt/slides/slide34.xml",
+   "page_label": "",
+   "title": "GRB 140304A：分波段射电光变曲线",
+   "texts": [
+    "GRB 140304A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_140304A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image68.png",
+     "rel": "rId1",
+     "exported": "media/s034_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "part": "ppt/slides/slide35.xml",
+   "page_label": "",
+   "title": "GRB 140713A：分波段射电光变曲线",
+   "texts": [
+    "GRB 140713A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_140713A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image69.png",
+     "rel": "rId1",
+     "exported": "media/s035_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 36,
+   "part": "ppt/slides/slide36.xml",
+   "page_label": "",
+   "title": "GRB 141121A：分波段射电光变曲线",
+   "texts": [
+    "GRB 141121A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_141121A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image70.png",
+     "rel": "rId1",
+     "exported": "media/s036_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 37,
+   "part": "ppt/slides/slide37.xml",
+   "page_label": "",
+   "title": "GRB 160131A：分波段射电光变曲线",
+   "texts": [
+    "GRB 160131A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_160131A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image71.png",
+     "rel": "rId1",
+     "exported": "media/s037_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 38,
+   "part": "ppt/slides/slide38.xml",
+   "page_label": "",
+   "title": "GRB 160625B：分波段射电光变曲线",
+   "texts": [
+    "GRB 160625B：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_160625B_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image72.png",
+     "rel": "rId1",
+     "exported": "media/s038_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 39,
+   "part": "ppt/slides/slide39.xml",
+   "page_label": "",
+   "title": "GRB 161219B：分波段射电光变曲线",
+   "texts": [
+    "GRB 161219B：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_161219B_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image73.png",
+     "rel": "rId1",
+     "exported": "media/s039_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 40,
+   "part": "ppt/slides/slide40.xml",
+   "page_label": "",
+   "title": "GRB 170105A：分波段射电光变曲线",
+   "texts": [
+    "GRB 170105A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_170105A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image74.png",
+     "rel": "rId1",
+     "exported": "media/s040_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 41,
+   "part": "ppt/slides/slide41.xml",
+   "page_label": "",
+   "title": "GRB 171010A：分波段射电光变曲线",
+   "texts": [
+    "GRB 171010A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_171010A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image75.png",
+     "rel": "rId1",
+     "exported": "media/s041_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 42,
+   "part": "ppt/slides/slide42.xml",
+   "page_label": "",
+   "title": "GRB 171205A：分波段射电光变曲线",
+   "texts": [
+    "GRB 171205A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_171205A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image76.png",
+     "rel": "rId1",
+     "exported": "media/s042_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 43,
+   "part": "ppt/slides/slide43.xml",
+   "page_label": "",
+   "title": "GRB 210702A：分波段射电光变曲线",
+   "texts": [
+    "GRB 210702A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_210702A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image77.png",
+     "rel": "rId1",
+     "exported": "media/s043_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 44,
+   "part": "ppt/slides/slide44.xml",
+   "page_label": "",
+   "title": "GRB 210726A：分波段射电光变曲线",
+   "texts": [
+    "GRB 210726A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_210726A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image78.png",
+     "rel": "rId1",
+     "exported": "media/s044_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 45,
+   "part": "ppt/slides/slide45.xml",
+   "page_label": "",
+   "title": "GRB 220101A：分波段射电光变曲线",
+   "texts": [
+    "GRB 220101A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_220101A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image79.png",
+     "rel": "rId1",
+     "exported": "media/s045_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 46,
+   "part": "ppt/slides/slide46.xml",
+   "page_label": "",
+   "title": "GRB 230217A：分波段射电光变曲线",
+   "texts": [
+    "GRB 230217A：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_230217A_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image80.png",
+     "rel": "rId1",
+     "exported": "media/s046_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 47,
+   "part": "ppt/slides/slide47.xml",
+   "page_label": "",
+   "title": "GRB 240205B：分波段射电光变曲线",
+   "texts": [
+    "GRB 240205B：分波段射电光变曲线",
+    "横轴：触发后观测者系时间（d），纵轴：流量密度（μJy），均为对数坐标",
+    "仅展示已有的分开波段图。图中为正检测点，未绘制上限数据。来源：GRB_radio_lightcurves_final_PDF"
+   ],
+   "notes": "图像来源：GRB_radio_lightcurves_final_PDF/GRB_240205B_radio_lightcurve.pdf。",
+   "images": [
+    {
+     "media": "ppt/media/image81.png",
+     "rel": "rId1",
+     "exported": "media/s047_rId1.png"
+    }
+   ]
+  },
+  {
+   "index": 48,
+   "part": "ppt/slides/slide48.xml",
+   "page_label": "",
+   "title": "问题汇总",
+   "texts": [
+    "问题汇总",
+    "目前遇到的问题有以下几点：\n1.我们无法很好的确定样本中这些光变曲线中的扰动就是源自射电闪烁现象。部分伽马暴样本在此前的研究中做过能谱或者多波段的分析来确定有没有可能受到闪烁影响。但也有部分伽马暴是之前研究中没有具体讨论过闪烁情况的，会在文章中表明假设光变数据的扰动是受到闪烁的影响，然后进行闪烁分析。\n2.部分样本数据采样间隔较大，很少有展示出分钟/小时级别的扰动，因此我们如果想仿照GRB 210702A文中那样估算观测数据的闪烁时标有困难。此外还会影响我们对于数据调制指数的计算，较长的时间间隔导致我们在计算调制指数过程中无法忽略余辉本征演化带来的影响。\n3.我分别利用了RISS19和NE2025输出了样本中伽马暴的散射参数，并且对两种模型不同的输出结果都进行了源尺寸的限制，我们该如何处理RISS19与NE2025模型输出结果之间的差异？"
+   ],
+   "notes": "",
+   "images": []
+  }
+ ]
+}

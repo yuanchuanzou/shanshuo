@@ -1,0 +1,7 @@
+# 从 pptx 解出来的图，可随时重建（体积大）
+data/*/media/
+# 读图缓存按内容哈希命名，可保留以便复现；如需瘦身可删
+# data/cache/
+__pycache__/
+*.pyc
+.DS_Store

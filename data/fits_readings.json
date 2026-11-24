@@ -1,0 +1,3671 @@
+[
+ {
+  "slide": 3,
+  "page": "109/132",
+  "burst": "970508",
+  "variant": "SBPL",
+  "image": "media/s003_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "number",
+    "chi2": 5.3,
+    "fvar_pct": 28.0,
+    "fvar_text": "28%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:28%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "number",
+    "chi2": 10.0,
+    "fvar_pct": 26.0,
+    "fvar_text": "26%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:26%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 11.0,
+    "fvar_pct": 24.0,
+    "fvar_text": "24%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:24%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 8,
+  "page": "114/132",
+  "burst": "980425",
+  "variant": "SBPL",
+  "image": "media/s008_rId1.png",
+  "panels": [
+   {
+    "freq": "1.38 GHz",
+    "status": "number",
+    "chi2": 3.2,
+    "fvar_pct": 4.4,
+    "fvar_text": "4.4%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:4.4%",
+     "top:4.4%"
+    ]
+   },
+   {
+    "freq": "2.49 GHz",
+    "status": "number",
+    "chi2": 9.0,
+    "fvar_pct": 6.6,
+    "fvar_text": "6.6%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:6.6%",
+     "top:6.6%"
+    ]
+   },
+   {
+    "freq": "4.8 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "8.64 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 11,
+  "page": "117/132",
+  "burst": "980519",
+  "variant": "SBPL",
+  "image": "media/s011_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 4.5,
+    "fvar_pct": 37.0,
+    "fvar_text": "37%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:37%",
+     "top:37%"
+    ]
+   },
+   {
+    "freq": "100 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 14,
+  "page": "120/132",
+  "burst": "980703",
+  "variant": "SBPL",
+  "image": "media/s014_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "number",
+    "chi2": 1.6,
+    "fvar_pct": 17.0,
+    "fvar_text": "17%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:17%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "number",
+    "chi2": 17.0,
+    "fvar_pct": 38.0,
+    "fvar_text": "38%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:38%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 2.7,
+    "fvar_pct": 8.9,
+    "fvar_text": "8.9%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:8.9%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 17,
+  "page": "123/132",
+  "burst": "981226",
+  "variant": "SBPL",
+  "image": "media/s017_rId1.png",
+  "panels": [
+   {
+    "freq": "4.86 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 20,
+  "page": "126/132",
+  "burst": "990123",
+  "variant": "SPL",
+  "image": "media/s020_rId1.png",
+  "panels": [
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 3.1,
+    "fvar_pct": 50.0,
+    "fvar_text": "50%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:50%",
+     "top:50%"
+    ]
+   },
+   {
+    "freq": "99.98 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "222 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "350 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 23,
+  "page": "129/132",
+  "burst": "991208",
+  "variant": "Selected",
+  "image": "media/s023_rId1.png",
+  "panels": [
+   {
+    "freq": "1-2 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:not detected"
+    ]
+   },
+   {
+    "freq": "4-6 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "5-9 GHz",
+    "status": "number",
+    "chi2": 25.0,
+    "fvar_pct": 29.0,
+    "fvar_text": "29%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:29%",
+     "top:29%"
+    ]
+   },
+   {
+    "freq": "13-18 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "22.49 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "30 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "86.24 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "100-300 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 26,
+  "page": "132/132",
+  "burst": "991216",
+  "variant": "SPL",
+  "image": "media/s026_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "8.42-8.46 GHz",
+    "status": "number",
+    "chi2": 1.7,
+    "fvar_pct": 38.0,
+    "fvar_text": "38%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:38%",
+     "top:38%"
+    ]
+   },
+   {
+    "freq": "15 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "99.9 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "350 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 29,
+  "page": "7/132",
+  "burst": "000301C",
+  "variant": "SBPL",
+  "image": "media/s029_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 2.2,
+    "fvar_pct": 12.0,
+    "fvar_text": "12%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:12%",
+     "top:12%"
+    ]
+   },
+   {
+    "freq": "15 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "22.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "100 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "250 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "350 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 32,
+  "page": "10/132",
+  "burst": "000418",
+  "variant": "SBPL",
+  "image": "media/s032_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "number",
+    "chi2": 42.0,
+    "fvar_pct": 46.0,
+    "fvar_text": "46%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:46%",
+     "top:46%"
+    ]
+   },
+   {
+    "freq": "8.35-8.46 GHz",
+    "status": "number",
+    "chi2": 7.9,
+    "fvar_pct": 21.0,
+    "fvar_text": "21%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:21%",
+     "top:21%"
+    ]
+   },
+   {
+    "freq": "15 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "22.46 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 35,
+  "page": "13/132",
+  "burst": "000911",
+  "variant": "Selected",
+  "image": "media/s035_rId1.png",
+  "panels": [
+   {
+    "freq": "4.86 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 38,
+  "page": "16/132",
+  "burst": "000926",
+  "variant": "SBPL",
+  "image": "media/s038_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:not detected"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 7.3,
+    "fvar_pct": 44.0,
+    "fvar_text": "44%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:44%",
+     "top:44%"
+    ]
+   },
+   {
+    "freq": "15 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "22.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": false,
+    "spread_fvar": 0.0,
+    "n_reads": 4,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:not detected",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "98.48 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": 44.0,
+    "fvar_text": "44%",
+    "agree": false,
+    "spread_fvar": 0.0,
+    "n_reads": 4,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:44%",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 41,
+  "page": "19/132",
+  "burst": "011121",
+  "variant": "SBPL",
+  "image": "media/s041_rId1.png",
+  "panels": [
+   {
+    "freq": "4.8 GHz",
+    "status": "number",
+    "chi2": 10.0,
+    "fvar_pct": 12.0,
+    "fvar_text": "12%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:12%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "8.7 GHz",
+    "status": "number",
+    "chi2": 3.8,
+    "fvar_pct": 11.0,
+    "fvar_text": "11%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:11%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 44,
+  "page": "22/132",
+  "burst": "020405",
+  "variant": "SPL",
+  "image": "media/s044_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 4.2,
+    "fvar_pct": 61.0,
+    "fvar_text": "61%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:61%",
+     "top:61%"
+    ]
+   },
+   {
+    "freq": "22.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 47,
+  "page": "25/132",
+  "burst": "020819",
+  "variant": "SPL",
+  "image": "media/s047_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 5.3,
+    "fvar_pct": 18.0,
+    "fvar_text": "18%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:18%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 50,
+  "page": "28/132",
+  "burst": "030329",
+  "variant": "SBPL",
+  "image": "media/s050_rId1.png",
+  "panels": [
+   {
+    "freq": "1-2 GHz",
+    "status": "number",
+    "chi2": 82.0,
+    "fvar_pct": 28.0,
+    "fvar_text": "28%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:28%",
+     "top:28%"
+    ]
+   },
+   {
+    "freq": "2-6 GHz",
+    "status": "number",
+    "chi2": 140.0,
+    "fvar_pct": 22.0,
+    "fvar_text": "22%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:22%",
+     "top:22%"
+    ]
+   },
+   {
+    "freq": "6-10 GHz",
+    "status": "number",
+    "chi2": 300.0,
+    "fvar_pct": 17.0,
+    "fvar_text": "17%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:17%",
+     "top:17%"
+    ]
+   },
+   {
+    "freq": "10-16 GHz",
+    "status": "number",
+    "chi2": 21.0,
+    "fvar_pct": 5.6,
+    "fvar_text": "5.6%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:5.6%",
+     "bottom:5.6%"
+    ]
+   },
+   {
+    "freq": "16-25 GHz",
+    "status": "number",
+    "chi2": 130.0,
+    "fvar_pct": 7.1,
+    "fvar_text": "7.1%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:7.1%",
+     "bottom:7.1%"
+    ]
+   },
+   {
+    "freq": "25-45 GHz",
+    "status": "number",
+    "chi2": 42.0,
+    "fvar_pct": 10.0,
+    "fvar_text": "10%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:10%",
+     "bottom:10%"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 53,
+  "page": "31/132",
+  "burst": "031203",
+  "variant": "SPL",
+  "image": "media/s053_rId1.png",
+  "panels": [
+   {
+    "freq": "1.43 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "number",
+    "chi2": 3.1,
+    "fvar_pct": 12.0,
+    "fvar_text": "12%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:12%",
+     "top:12%"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 14.0,
+    "fvar_pct": 37.0,
+    "fvar_text": "37%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:37%",
+     "top:37%"
+    ]
+   },
+   {
+    "freq": "22.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 56,
+  "page": "34/132",
+  "burst": "070125",
+  "variant": "SBPL",
+  "image": "media/s056_rId1.png",
+  "panels": [
+   {
+    "freq": "0.61 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "1.46 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.86 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:not detected"
+    ]
+   },
+   {
+    "freq": "8.46 GHz",
+    "status": "number",
+    "chi2": 4.4,
+    "fvar_pct": 8.8,
+    "fvar_text": "8.8%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:8.8%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "14.94 GHz",
+    "status": "number",
+    "chi2": 2.9,
+    "fvar_pct": 15.0,
+    "fvar_text": "15%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:15%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "22.5 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "95 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "250 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 59,
+  "page": "38/132",
+  "burst": "100418A",
+  "variant": "SBPL",
+  "image": "media/s059_rId1.png",
+  "panels": [
+   {
+    "freq": "4.9 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4.95 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "5.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "7.9 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "8.4 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "8.43-8.8 GHz",
+    "status": "number",
+    "chi2": 68.0,
+    "fvar_pct": 53.0,
+    "fvar_text": "53%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:53%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "9 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 62,
+  "page": "41/132",
+  "burst": "111215A",
+  "variant": "SBPL",
+  "image": "media/s062_rId1.png",
+  "panels": [
+   {
+    "freq": "1.4 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 1,
+    "variants": [
+     "whole:Data only"
+    ]
+   },
+   {
+    "freq": "4.8 GHz",
+    "status": "number",
+    "chi2": 19.0,
+    "fvar_pct": 32.0,
+    "fvar_text": "32%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 1,
+    "variants": [
+     "whole:32%"
+    ]
+   },
+   {
+    "freq": "15 GHz",
+    "status": "number",
+    "chi2": 3.1,
+    "fvar_pct": 13.0,
+    "fvar_text": "13%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 1,
+    "variants": [
+     "whole:13%"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 67,
+  "page": "46/132",
+  "burst": "140304A",
+  "variant": "SBPL",
+  "image": "media/s067_rId1.png",
+  "panels": [
+   {
+    "freq": "1.45 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "2-4 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4-6 GHz",
+    "status": "number",
+    "chi2": 22.0,
+    "fvar_pct": 32.0,
+    "fvar_text": "32%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:32%",
+     "top:32%"
+    ]
+   },
+   {
+    "freq": "6-8 GHz",
+    "status": "number",
+    "chi2": 55.0,
+    "fvar_pct": 54.0,
+    "fvar_text": "54%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:54%",
+     "top:54%"
+    ]
+   },
+   {
+    "freq": "8-10 GHz",
+    "status": "number",
+    "chi2": 24.0,
+    "fvar_pct": 19.0,
+    "fvar_text": "19%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:19%",
+     "top:19%"
+    ]
+   },
+   {
+    "freq": "10-13 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:not detected"
+    ]
+   },
+   {
+    "freq": "13-18 GHz",
+    "status": "number",
+    "chi2": 2.2,
+    "fvar_pct": 13.0,
+    "fvar_text": "13%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:13%",
+     "top:UNCLEAR",
+     "bottom:13%"
+    ]
+   },
+   {
+    "freq": "18-27 GHz",
+    "status": "number",
+    "chi2": 2.6,
+    "fvar_pct": 22.0,
+    "fvar_text": "22%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:22%",
+     "top:UNCLEAR",
+     "bottom:22%"
+    ]
+   },
+   {
+    "freq": "27-40 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "85.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 68,
+  "page": "47/132",
+  "burst": "140304A",
+  "variant": "SPL",
+  "image": "media/s068_rId1.png",
+  "panels": [
+   {
+    "freq": "1.45 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "2-4 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4-6 GHz",
+    "status": "number",
+    "chi2": 27.0,
+    "fvar_pct": 75.0,
+    "fvar_text": "75%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:75%",
+     "top:75%"
+    ]
+   },
+   {
+    "freq": "6-8 GHz",
+    "status": "number",
+    "chi2": 75.0,
+    "fvar_pct": 76.0,
+    "fvar_text": "76%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:76%",
+     "top:76%"
+    ]
+   },
+   {
+    "freq": "8-10 GHz",
+    "status": "number",
+    "chi2": 7.1,
+    "fvar_pct": 22.0,
+    "fvar_text": "22%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:22%",
+     "top:22%"
+    ]
+   },
+   {
+    "freq": "10-13 GHz",
+    "status": "number",
+    "chi2": 16.0,
+    "fvar_pct": 41.0,
+    "fvar_text": "41%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:41%",
+     "top:41%"
+    ]
+   },
+   {
+    "freq": "13-18 GHz",
+    "status": "number",
+    "chi2": 31.0,
+    "fvar_pct": 41.0,
+    "fvar_text": "41%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:41%",
+     "top:UNCLEAR",
+     "bottom:41%"
+    ]
+   },
+   {
+    "freq": "18-27 GHz",
+    "status": "number",
+    "chi2": 12.0,
+    "fvar_pct": 37.0,
+    "fvar_text": "37%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:37%",
+     "top:UNCLEAR",
+     "bottom:37%"
+    ]
+   },
+   {
+    "freq": "27-40 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "85.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 71,
+  "page": "50/132",
+  "burst": "140713A",
+  "variant": "SBPL",
+  "image": "media/s071_rId1.png",
+  "panels": [
+   {
+    "freq": "4.9 GHz",
+    "status": "number",
+    "chi2": 12.0,
+    "fvar_pct": 20.0,
+    "fvar_text": "20%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:20%",
+     "top:20%"
+    ]
+   },
+   {
+    "freq": "7 GHz",
+    "status": "number",
+    "chi2": 53.0,
+    "fvar_pct": 1.1,
+    "fvar_text": "1.1e + 02%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:1.1e + 02%",
+     "top:1.1e + 02%"
+    ]
+   },
+   {
+    "freq": "13.4 GHz",
+    "status": "number",
+    "chi2": 56.0,
+    "fvar_pct": 23.0,
+    "fvar_text": "23%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:23%",
+     "top:23%"
+    ]
+   },
+   {
+    "freq": "15.9 GHz",
+    "status": "number",
+    "chi2": 24.0,
+    "fvar_pct": 16.0,
+    "fvar_text": "16%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:16%",
+     "top:UNCLEAR",
+     "bottom:16%"
+    ]
+   },
+   {
+    "freq": "85.5-86.7 GHz",
+    "status": "number",
+    "chi2": 3.0,
+    "fvar_pct": 17.0,
+    "fvar_text": "17%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:17%",
+     "top:UNCLEAR",
+     "bottom:17%"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 74,
+  "page": "53/132",
+  "burst": "141121A",
+  "variant": "SPL",
+  "image": "media/s074_rId1.png",
+  "panels": [
+   {
+    "freq": "3 GHz",
+    "status": "number",
+    "chi2": 2.8,
+    "fvar_pct": 18.0,
+    "fvar_text": "18%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:18%",
+     "top:18%"
+    ]
+   },
+   {
+    "freq": "4.9-5 GHz",
+    "status": "number",
+    "chi2": 8.2,
+    "fvar_pct": 25.0,
+    "fvar_text": "25%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:25%",
+     "top:25%"
+    ]
+   },
+   {
+    "freq": "7 GHz",
+    "status": "number",
+    "chi2": 9.3,
+    "fvar_pct": 25.0,
+    "fvar_text": "25%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:25%",
+     "top:25%"
+    ]
+   },
+   {
+    "freq": "13 GHz",
+    "status": "number",
+    "chi2": 3.3,
+    "fvar_pct": 9.7,
+    "fvar_text": "9.7%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:9.7%",
+     "bottom:9.7%"
+    ]
+   },
+   {
+    "freq": "15 GHz",
+    "status": "number",
+    "chi2": 3.6,
+    "fvar_pct": 12.0,
+    "fvar_text": "12%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:12%",
+     "bottom:12%"
+    ]
+   },
+   {
+    "freq": "93 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 77,
+  "page": "56/132",
+  "burst": "160131A",
+  "variant": "SBPL",
+  "image": "media/s077_rId1.png",
+  "panels": [
+   {
+    "freq": "0.61 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "1-2 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "4-6 GHz",
+    "status": "number",
+    "chi2": 1.9,
+    "fvar_pct": 36.0,
+    "fvar_text": "36%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:36%",
+     "top:36%"
+    ]
+   },
+   {
+    "freq": "6-8 GHz",
+    "status": "number",
+    "chi2": 57.0,
+    "fvar_pct": 460.0,
+    "fvar_text": "4.6e+02%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:4.6e+02%",
+     "top:4.6e+02%"
+    ]
+   },
+   {
+    "freq": "8-10 GHz",
+    "status": "number",
+    "chi2": 26.0,
+    "fvar_pct": 30.0,
+    "fvar_text": "30%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:30%",
+     "top:30%"
+    ]
+   },
+   {
+    "freq": "10-13 GHz",
+    "status": "number",
+    "chi2": 7.3,
+    "fvar_pct": 120.0,
+    "fvar_text": "1.2e+02%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:1.2e+02%",
+     "top:1.2e+02%"
+    ]
+   },
+   {
+    "freq": "13-18 GHz",
+    "status": "number",
+    "chi2": 9.1,
+    "fvar_pct": 4.2,
+    "fvar_text": "4.2%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:4.2%",
+     "top:UNCLEAR",
+     "bottom:4.2%"
+    ]
+   },
+   {
+    "freq": "18-27 GHz",
+    "status": "number",
+    "chi2": 2.7,
+    "fvar_pct": 7.9,
+    "fvar_text": "7.9%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:7.9%",
+     "top:UNCLEAR",
+     "bottom:7.9%"
+    ]
+   },
+   {
+    "freq": "27-40 GHz",
+    "status": "number",
+    "chi2": 2.2,
+    "fvar_pct": 8.2,
+    "fvar_text": "8.2%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:8.2%",
+     "top:UNCLEAR",
+     "bottom:8.2%"
+    ]
+   },
+   {
+    "freq": "92.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 80,
+  "page": "59/132",
+  "burst": "160623A",
+  "variant": "SBPL",
+  "image": "media/s080_rId1.png",
+  "panels": [
+   {
+    "freq": "15.5 GHz",
+    "status": "number",
+    "chi2": 7.4,
+    "fvar_pct": 72.0,
+    "fvar_text": "72%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 1,
+    "variants": [
+     "whole:72%"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 85,
+  "page": "64/132",
+  "burst": "161219B",
+  "variant": "SBPL",
+  "image": "media/s085_rId1.png",
+  "panels": [
+   {
+    "freq": "1-2 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "2-4 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "5 GHz",
+    "status": "number",
+    "chi2": 15.0,
+    "fvar_pct": 13.0,
+    "fvar_text": "13%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:13%",
+     "top:13%"
+    ]
+   },
+   {
+    "freq": "7.4 GHz",
+    "status": "number",
+    "chi2": 4.8,
+    "fvar_pct": 7.8,
+    "fvar_text": "7.8%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:7.8%",
+     "top:7.8%"
+    ]
+   },
+   {
+    "freq": "8.5 GHz",
+    "status": "number",
+    "chi2": 50.0,
+    "fvar_pct": 21.0,
+    "fvar_text": "21%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:21%",
+     "top:21%"
+    ]
+   },
+   {
+    "freq": "11 GHz",
+    "status": "number",
+    "chi2": 53.0,
+    "fvar_pct": 32.0,
+    "fvar_text": "32%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:32%",
+     "top:32%"
+    ]
+   },
+   {
+    "freq": "13.5-16 GHz",
+    "status": "number",
+    "chi2": 20.0,
+    "fvar_pct": 16.0,
+    "fvar_text": "16%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:16%",
+     "top:UNCLEAR",
+     "bottom:16%"
+    ]
+   },
+   {
+    "freq": "19-25 GHz",
+    "status": "number",
+    "chi2": 15.0,
+    "fvar_pct": 22.0,
+    "fvar_text": "22%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:22%",
+     "top:UNCLEAR",
+     "bottom:22%"
+    ]
+   },
+   {
+    "freq": "27-40 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "91.5 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "bottom:not detected"
+    ]
+   },
+   {
+    "freq": "103.5 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "bottom:not detected"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 88,
+  "page": "67/132",
+  "burst": "170105A",
+  "variant": "SBPL",
+  "image": "media/s088_rId1.png",
+  "panels": [
+   {
+    "freq": "2.8 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "7.4 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "9 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "14-15.5 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:not detected",
+     "top:UNCLEAR",
+     "bottom:not detected"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 91,
+  "page": "70/132",
+  "burst": "171010A",
+  "variant": "SBPL",
+  "image": "media/s091_rId1.png",
+  "panels": [
+   {
+    "freq": "4-6 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "6-8 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "8-10 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "10-13 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "15.5 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "bottom:not detected"
+    ]
+   },
+   {
+    "freq": "18-27 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 94,
+  "page": "73/132",
+  "burst": "190829A",
+  "variant": "SBPL",
+  "image": "media/s094_rId1.png",
+  "panels": [
+   {
+    "freq": "1.3 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "15.5 GHz",
+    "status": "number",
+    "chi2": 20.0,
+    "fvar_pct": 33.0,
+    "fvar_text": "33%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:33%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 97,
+  "page": "76/132",
+  "burst": "210702A",
+  "variant": "SBPL",
+  "image": "media/s097_rId1.png",
+  "panels": [
+   {
+    "freq": "5.5 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "9 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:not detected"
+    ]
+   },
+   {
+    "freq": "16.7 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:not detected"
+    ]
+   },
+   {
+    "freq": "21.2 GHz",
+    "status": "number",
+    "chi2": 2.3,
+    "fvar_pct": 8.8,
+    "fvar_text": "8.8%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:8.8%",
+     "bottom:8.8%"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 100,
+  "page": "79/132",
+  "burst": "210704A",
+  "variant": "SBPL",
+  "image": "media/s100_rId1.png",
+  "panels": [
+   {
+    "freq": "15.5 GHz",
+    "status": "number",
+    "chi2": 12.0,
+    "fvar_pct": 28.0,
+    "fvar_text": "28%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:28%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 103,
+  "page": "82/132",
+  "burst": "220101A",
+  "variant": "SPL",
+  "image": "media/s103_rId2.png",
+  "panels": [
+   {
+    "freq": "15.5 GHz",
+    "status": "number",
+    "chi2": 2.7,
+    "fvar_pct": 7.8,
+    "fvar_text": "7.8%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:7.8%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 103,
+  "page": "82/132",
+  "burst": "220101A",
+  "variant": "SBPL",
+  "image": "media/s103_rId1.png",
+  "panels": [
+   {
+    "freq": "15.5 GHz",
+    "status": "number",
+    "chi2": 1.4,
+    "fvar_pct": 6.5,
+    "fvar_text": "6.5%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:6.5%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 106,
+  "page": "85/132",
+  "burst": "221009A",
+  "variant": "SBPL",
+  "image": "media/s106_rId1.png",
+  "panels": [
+   {
+    "freq": "0.1-1 GHz",
+    "status": "number",
+    "chi2": 3.9,
+    "fvar_pct": 12.0,
+    "fvar_text": "12%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:12%",
+     "top:12%"
+    ]
+   },
+   {
+    "freq": "1-2 GHz",
+    "status": "number",
+    "chi2": 16.0,
+    "fvar_pct": 17.0,
+    "fvar_text": "17%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:17%",
+     "top:17%"
+    ]
+   },
+   {
+    "freq": "2-4 GHz",
+    "status": "number",
+    "chi2": 2.7,
+    "fvar_pct": 9.2,
+    "fvar_text": "9.2%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:9.2%",
+     "top:9.2%"
+    ]
+   },
+   {
+    "freq": "4-7.5 GHz",
+    "status": "number",
+    "chi2": 5.0,
+    "fvar_pct": 28.0,
+    "fvar_text": "28%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:28%",
+     "top:28%"
+    ]
+   },
+   {
+    "freq": "7.5-12 GHz",
+    "status": "number",
+    "chi2": 6.2,
+    "fvar_pct": 23.0,
+    "fvar_text": "23%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:23%",
+     "top:23%"
+    ]
+   },
+   {
+    "freq": "12-19 GHz",
+    "status": "number",
+    "chi2": 5.3,
+    "fvar_pct": 21.0,
+    "fvar_text": "21%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:21%",
+     "top:21%"
+    ]
+   },
+   {
+    "freq": "21.2 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "27-40 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "40-100 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "100-300 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "341 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 109,
+  "page": "88/132",
+  "burst": "240205B",
+  "variant": "SBPL",
+  "image": "media/s109_rId1.png",
+  "panels": [
+   {
+    "freq": "1.3 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "1.6 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "2.6 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "3.1 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "5.5 GHz",
+    "status": "number",
+    "chi2": 5.3,
+    "fvar_pct": 31.0,
+    "fvar_text": "31%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:31%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "9 GHz",
+    "status": "number",
+    "chi2": 3.8,
+    "fvar_pct": 68.0,
+    "fvar_text": "68%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:68%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "16.7 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   },
+   {
+    "freq": "21.2 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 112,
+  "page": "91/132",
+  "burst": "240529A",
+  "variant": "SBPL",
+  "image": "media/s112_rId1.png",
+  "panels": [
+   {
+    "freq": "15.5 GHz",
+    "status": "number",
+    "chi2": 61.0,
+    "fvar_pct": 14.0,
+    "fvar_text": "14%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:14%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 115,
+  "page": "94/132",
+  "burst": "240619A",
+  "variant": "SPL",
+  "image": "media/s115_rId1.png",
+  "panels": [
+   {
+    "freq": "15.5 GHz",
+    "status": "number",
+    "chi2": 8.5,
+    "fvar_pct": 17.0,
+    "fvar_text": "17%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:17%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 118,
+  "page": "97/132",
+  "burst": "241025A",
+  "variant": "SBPL",
+  "image": "media/s118_rId1.png",
+  "panels": [
+   {
+    "freq": "5 GHz",
+    "status": "number",
+    "chi2": 14.0,
+    "fvar_pct": 34.0,
+    "fvar_text": "34%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:34%",
+     "top:34%"
+    ]
+   },
+   {
+    "freq": "6 GHz",
+    "status": "number",
+    "chi2": 6.6,
+    "fvar_pct": 12.0,
+    "fvar_text": "12%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:12%",
+     "top:12%"
+    ]
+   },
+   {
+    "freq": "7 GHz",
+    "status": "number",
+    "chi2": 4.8,
+    "fvar_pct": 4.4,
+    "fvar_text": "4.4%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:4.4%",
+     "top:4.4%"
+    ]
+   },
+   {
+    "freq": "9 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "10 GHz",
+    "status": "number",
+    "chi2": 9.3,
+    "fvar_pct": 9.3,
+    "fvar_text": "9.3%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:9.3%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "11 GHz",
+    "status": "number",
+    "chi2": 8.4,
+    "fvar_pct": 12.0,
+    "fvar_text": "12%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:12%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "13 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:not detected",
+     "bottom:not detected",
+     "bottom:not detected"
+    ]
+   },
+   {
+    "freq": "15 GHz",
+    "status": "not detected",
+    "chi2": 9.3,
+    "fvar_pct": 9.3,
+    "fvar_text": "not detected",
+    "agree": false,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:not detected",
+     "bottom:9.3%",
+     "bottom:not detected"
+    ]
+   },
+   {
+    "freq": "17 GHz",
+    "status": "not detected",
+    "chi2": 8.4,
+    "fvar_pct": 12.0,
+    "fvar_text": "not detected",
+    "agree": false,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:not detected",
+     "bottom:12%",
+     "bottom:not detected"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 121,
+  "page": "100/132",
+  "burst": "250419A",
+  "variant": "SBPL",
+  "image": "media/s121_rId1.png",
+  "panels": [
+   {
+    "freq": "3 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "top:not detected"
+    ]
+   },
+   {
+    "freq": "6 GHz",
+    "status": "number",
+    "chi2": 60.0,
+    "fvar_pct": 30.0,
+    "fvar_text": "30%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:30%",
+     "top:30%"
+    ]
+   },
+   {
+    "freq": "10 GHz",
+    "status": "number",
+    "chi2": 49.0,
+    "fvar_pct": 57.0,
+    "fvar_text": "57%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:57%",
+     "top:57%"
+    ]
+   },
+   {
+    "freq": "15 GHz",
+    "status": "number",
+    "chi2": 12.0,
+    "fvar_pct": 23.0,
+    "fvar_text": "23%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:23%",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "22 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "33 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:UNCLEAR"
+    ]
+   },
+   {
+    "freq": "86 GHz",
+    "status": "data only",
+    "chi2": 12.0,
+    "fvar_pct": 23.0,
+    "fvar_text": "23%",
+    "agree": false,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:23%"
+    ]
+   },
+   {
+    "freq": "102 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "bottom:Data only"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 124,
+  "page": "103/132",
+  "burst": "250702B",
+  "variant": "SBPL",
+  "image": "media/s124_rId1.png",
+  "panels": [
+   {
+    "freq": "0.65 GHz",
+    "status": "data only",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:Data only",
+     "top:Data only"
+    ]
+   },
+   {
+    "freq": "1-2 GHz",
+    "status": "number",
+    "chi2": 1.7,
+    "fvar_pct": 12.0,
+    "fvar_text": "12%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:12%",
+     "top:12%"
+    ]
+   },
+   {
+    "freq": "2-4 GHz",
+    "status": "number",
+    "chi2": 2.2,
+    "fvar_pct": 4.5,
+    "fvar_text": "4.5%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:4.5%",
+     "top:4.5%"
+    ]
+   },
+   {
+    "freq": "4-7.5 GHz",
+    "status": "number",
+    "chi2": 3.1,
+    "fvar_pct": 14.0,
+    "fvar_text": "14%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:14%",
+     "top:14%"
+    ]
+   },
+   {
+    "freq": "7.5-12 GHz",
+    "status": "number",
+    "chi2": 3.9,
+    "fvar_pct": 13.0,
+    "fvar_text": "13%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:13%",
+     "top:13%"
+    ]
+   },
+   {
+    "freq": "12-18 GHz",
+    "status": "number",
+    "chi2": 5.0,
+    "fvar_pct": 15.0,
+    "fvar_text": "15%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:15%",
+     "top:15%"
+    ]
+   },
+   {
+    "freq": "18-27 GHz",
+    "status": "number",
+    "chi2": 4.9,
+    "fvar_pct": 16.0,
+    "fvar_text": "16%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:16%",
+     "top:UNCLEAR",
+     "bottom:16%"
+    ]
+   },
+   {
+    "freq": "27-40 GHz",
+    "status": "number",
+    "chi2": 1.9,
+    "fvar_pct": 57.0,
+    "fvar_text": "57%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:57%",
+     "top:UNCLEAR",
+     "bottom:57%"
+    ]
+   },
+   {
+    "freq": "80-115 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 3,
+    "variants": [
+     "whole:not detected",
+     "top:UNCLEAR",
+     "bottom:not detected"
+    ]
+   },
+   {
+    "freq": "180-250 GHz",
+    "status": "not detected",
+    "chi2": null,
+    "fvar_pct": null,
+    "fvar_text": "not detected",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:not detected",
+     "bottom:not detected"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 127,
+  "page": "106/132",
+  "burst": "251013C",
+  "variant": "SBPL",
+  "image": "media/s127_rId1.png",
+  "panels": [
+   {
+    "freq": "15.5 GHz",
+    "status": "number",
+    "chi2": 35.0,
+    "fvar_pct": 29.0,
+    "fvar_text": "29%",
+    "agree": true,
+    "spread_fvar": 0.0,
+    "n_reads": 2,
+    "variants": [
+     "whole:29%",
+     "top:UNCLEAR"
+    ]
+   }
+  ],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 128,
+  "page": "1/132",
+  "burst": "SPL：",
+  "variant": "",
+  "image": "media/s128_rId2.png",
+  "panels": [],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 128,
+  "page": "1/132",
+  "burst": "SPL：",
+  "variant": "",
+  "image": "media/s128_rId1.png",
+  "panels": [],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 129,
+  "page": "3/132",
+  "burst": "：去除趋势后的分数超额变",
+  "variant": "",
+  "image": "media/s129_rId2.png",
+  "panels": [],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ },
+ {
+  "slide": 129,
+  "page": "3/132",
+  "burst": "：去除趋势后的分数超额变",
+  "variant": "",
+  "image": "media/s129_rId1.png",
+  "panels": [],
+  "passes_ok": [
+   "whole",
+   "top",
+   "bottom"
+  ]
+ }
+]

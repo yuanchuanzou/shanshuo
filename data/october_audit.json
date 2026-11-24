@@ -1,0 +1,283 @@
+{
+ "A_measured_differs_between_models": [
+  {
+   "grb": "980425",
+   "nu": 1.4,
+   "values": {
+    "RISS19": [
+     0.16,
+     122.4,
+     "SD"
+    ],
+    "NE2025": [
+     0.41,
+     816.0,
+     "SD"
+    ]
+   }
+  },
+  {
+   "grb": "210702A",
+   "nu": 21.2,
+   "values": {
+    "RISS19": [
+     0.28,
+     1.6,
+     "W"
+    ],
+    "NE2025": [
+     0.24,
+     1.6,
+     "W"
+    ]
+   }
+  },
+  {
+   "grb": "210702A",
+   "nu": 16.7,
+   "values": {
+    "RISS19": [
+     0.3,
+     3.1,
+     "W"
+    ],
+    "NE2025": [
+     0.29,
+     3.1,
+     "W"
+    ]
+   }
+  },
+  {
+   "grb": "240205B",
+   "nu": 9.0,
+   "values": {
+    "RISS19": [
+     0.24,
+     1.62,
+     "W"
+    ],
+    "NE2025": [
+     0.24,
+     4.72,
+     "W"
+    ]
+   }
+  }
+ ],
+ "A_measured_in_one_model_only": [
+  {
+   "grb": "970508",
+   "nu": 1.43,
+   "measured_in": "NE2025"
+  },
+  {
+   "grb": "031203",
+   "nu": 8.5,
+   "measured_in": "NE2025"
+  }
+ ],
+ "B_theta_mismatch": [],
+ "B_mp_mismatch": [],
+ "B_checked": 222,
+ "C_size_mismatch": [
+  {
+   "grb": "980425",
+   "model": "RISS19",
+   "nu": 10.0,
+   "regime": "W",
+   "size_tab": 0.2,
+   "size_exp": 0.21,
+   "rel": 0.035
+  },
+  {
+   "grb": "980425",
+   "model": "RISS19",
+   "nu": 5.0,
+   "regime": "W",
+   "size_tab": 0.28,
+   "size_exp": 0.29,
+   "rel": 0.045
+  },
+  {
+   "grb": "980425",
+   "model": "RISS19",
+   "nu": 2.3,
+   "regime": "SR",
+   "size_tab": 1.5,
+   "size_exp": 1.6,
+   "rel": 0.06
+  },
+  {
+   "grb": "980425",
+   "model": "RISS19",
+   "nu": 2.3,
+   "regime": "SD",
+   "size_tab": 0.11,
+   "size_exp": 0.12,
+   "rel": 0.057
+  },
+  {
+   "grb": "980425",
+   "model": "RISS19",
+   "nu": 1.4,
+   "regime": "SR",
+   "size_tab": 4.48,
+   "size_exp": 4.76,
+   "rel": 0.058
+  },
+  {
+   "grb": "980425",
+   "model": "RISS19",
+   "nu": 1.4,
+   "regime": "SD",
+   "size_tab": 0.06,
+   "size_exp": 0.06,
+   "rel": 0.071
+  },
+  {
+   "grb": "031203",
+   "model": "RISS19",
+   "nu": 8.5,
+   "regime": "SD",
+   "size_tab": 0.12,
+   "size_exp": 0.12,
+   "rel": 0.026
+  },
+  {
+   "grb": "031203",
+   "model": "RISS19",
+   "nu": 4.9,
+   "regime": "SD",
+   "size_tab": 0.06,
+   "size_exp": 0.06,
+   "rel": 0.026
+  },
+  {
+   "grb": "031203",
+   "model": "RISS19",
+   "nu": 1.4,
+   "regime": "SD",
+   "size_tab": 0.01,
+   "size_exp": 0.01,
+   "rel": 0.189
+  },
+  {
+   "grb": "980329",
+   "model": "NE2025",
+   "nu": 1.43,
+   "regime": "SD",
+   "size_tab": 0.17,
+   "size_exp": 0.16,
+   "rel": 0.051
+  },
+  {
+   "grb": "980425",
+   "model": "NE2025",
+   "nu": 10.0,
+   "regime": "SR",
+   "size_tab": 0.2,
+   "size_exp": 0.22,
+   "rel": 0.072
+  },
+  {
+   "grb": "980425",
+   "model": "NE2025",
+   "nu": 10.0,
+   "regime": "SD",
+   "size_tab": 0.07,
+   "size_exp": 0.08,
+   "rel": 0.084
+  },
+  {
+   "grb": "980425",
+   "model": "NE2025",
+   "nu": 5.0,
+   "regime": "SR",
+   "size_tab": 0.93,
+   "size_exp": 0.99,
+   "rel": 0.062
+  },
+  {
+   "grb": "980425",
+   "model": "NE2025",
+   "nu": 5.0,
+   "regime": "SD",
+   "size_tab": 0.03,
+   "size_exp": 0.03,
+   "rel": 0.095
+  },
+  {
+   "grb": "980425",
+   "model": "NE2025",
+   "nu": 2.3,
+   "regime": "SR",
+   "size_tab": 5.15,
+   "size_exp": 5.47,
+   "rel": 0.059
+  },
+  {
+   "grb": "980425",
+   "model": "NE2025",
+   "nu": 2.3,
+   "regime": "SD",
+   "size_tab": 0.01,
+   "size_exp": 0.01,
+   "rel": 0.233
+  },
+  {
+   "grb": "980425",
+   "model": "NE2025",
+   "nu": 1.4,
+   "regime": "SR",
+   "size_tab": 15.36,
+   "size_exp": 16.31,
+   "rel": 0.058
+  },
+  {
+   "grb": "980425",
+   "model": "NE2025",
+   "nu": 1.4,
+   "regime": "SD",
+   "size_tab": 0.01,
+   "size_exp": 0.01,
+   "rel": 0.407
+  },
+  {
+   "grb": "031203",
+   "model": "NE2025",
+   "nu": 8.5,
+   "regime": "SD",
+   "size_tab": 0.04,
+   "size_exp": 0.04,
+   "rel": 0.073
+  },
+  {
+   "grb": "031203",
+   "model": "NE2025",
+   "nu": 4.9,
+   "regime": "SD",
+   "size_tab": 0.02,
+   "size_exp": 0.02,
+   "rel": 0.082
+  },
+  {
+   "grb": "031203",
+   "model": "NE2025",
+   "nu": 1.4,
+   "regime": "SD",
+   "size_tab": 0.0,
+   "size_exp": 0.01,
+   "rel": 1.0
+  },
+  {
+   "grb": "140713A",
+   "model": "NE2025",
+   "nu": 1.4,
+   "regime": "SD",
+   "size_tab": 0.36,
+   "size_exp": 0.35,
+   "rel": 0.028
+  }
+ ]
+}
