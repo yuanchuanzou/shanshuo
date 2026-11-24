@@ -1,7 +1,7 @@
 {
  "schema_version": "classification_draft/0.1",
  "status": "draft_for_students_not_final",
- "generated_at": "2026-11-24T17:54:29+08:00",
+ "generated_at": "2026-11-24T17:58:25+08:00",
  "inputs": {
   "matched_table.csv": {
    "sha256": "82632dcc48d5ee4e1fa144594b0d56f4f7bc981920a36d9695504d85af8b2213",
@@ -84,8 +84,8 @@
     "970508",
     "980703",
     "111215A",
-    "140713A",
-    "070125"
+    "070125",
+    "140713A"
    ]
   },
   {
@@ -152,8 +152,8 @@
    "next_step": "补拟合页并读数（160625B 文献有特殊散射成分，优先）",
    "n": 3,
    "bursts": [
-    "130427A",
     "160625B",
+    "130427A",
     "980329"
    ]
   },
@@ -181,6 +181,13 @@
     "7/132"
    ],
    "n_panels": 8,
+   "n_freq_panels": 8,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "7/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 7,
@@ -236,8 +243,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 1,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 6
+   "rank_in_group": 6,
+   "notes": []
   },
   {
    "burst": "000418",
@@ -247,6 +257,13 @@
     "10/132"
    ],
    "n_panels": 5,
+   "n_freq_panels": 5,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "10/132"
+    ]
+   ],
    "n_numeric": 2,
    "n_not_detected": 0,
    "n_data_only": 3,
@@ -337,8 +354,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 2,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 2,
-   "rank_in_group": 2
+   "rank_in_group": 2,
+   "notes": []
   },
   {
    "burst": "000911",
@@ -348,6 +368,13 @@
     "13/132"
    ],
    "n_panels": 2,
+   "n_freq_panels": 2,
+   "fit_variant_pages": [
+    [
+     "Selected",
+     "13/132"
+    ]
+   ],
    "n_numeric": 0,
    "n_not_detected": 2,
    "n_data_only": 0,
@@ -365,8 +392,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 1
+   "rank_in_group": 1,
+   "notes": []
   },
   {
    "burst": "000926",
@@ -376,6 +406,13 @@
     "16/132"
    ],
    "n_panels": 6,
+   "n_freq_panels": 6,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "16/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 1,
    "n_data_only": 4,
@@ -431,8 +468,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 1,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 7
+   "rank_in_group": 7,
+   "notes": []
   },
   {
    "burst": "011121",
@@ -442,6 +482,13 @@
     "19/132"
    ],
    "n_panels": 2,
+   "n_freq_panels": 2,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "19/132"
+    ]
+   ],
    "n_numeric": 2,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -502,8 +549,11 @@
    ],
    "n_invertible_rows": 1,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 8
+   "rank_in_group": 8,
+   "notes": []
   },
   {
    "burst": "020405",
@@ -513,6 +563,13 @@
     "22/132"
    ],
    "n_panels": 4,
+   "n_freq_panels": 4,
+   "fit_variant_pages": [
+    [
+     "SPL",
+     "22/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 3,
@@ -568,8 +625,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 1,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 9
+   "rank_in_group": 9,
+   "notes": []
   },
   {
    "burst": "020819",
@@ -579,6 +639,13 @@
     "25/132"
    ],
    "n_panels": 3,
+   "n_freq_panels": 3,
+   "fit_variant_pages": [
+    [
+     "SPL",
+     "25/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 2,
@@ -601,8 +668,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 1
+   "rank_in_group": 1,
+   "notes": [
+    "[blocker] numeric_no_model: 020819: 1 个数值面板（8.46 GHz F_var=18.0%/χ²=5.3）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "030329",
@@ -612,6 +684,13 @@
     "28/132"
    ],
    "n_panels": 6,
+   "n_freq_panels": 6,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "28/132"
+    ]
+   ],
    "n_numeric": 6,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -654,8 +733,15 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 4
+   "rank_in_group": 4,
+   "notes": [
+    "[blocker] numeric_no_model: 030329: 6 个数值面板（1-2 GHz F_var=28.0%/χ²=82.0；10-16 GHz F_var=5.6%/χ²=21.0；16-25 GHz F_var=7.1%/χ²=130.0；2-6 GHz F_var=22.0%/χ²=140.0；25-45 GHz F_var=10.0%/χ²=42.0；6-10 GHz F_var=17.0%/χ²=300.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
+    "[note] anchor_note: 6 个频带面板（1–45 GHz）有数值、无模型行；χ²=21–300（6–10 GHz 300）说明趋势拟合失败，F_var 5.6–28% 可靠性低",
+    "[note] anchor_note: 补模型后须用 VLBI 膨胀率去耦内禀变化（晚期余辉可能有能量注入），不能只凭 F_var 反演"
+   ]
   },
   {
    "burst": "031203",
@@ -665,6 +751,13 @@
     "31/132"
    ],
    "n_panels": 4,
+   "n_freq_panels": 4,
+   "fit_variant_pages": [
+    [
+     "SPL",
+     "31/132"
+    ]
+   ],
    "n_numeric": 2,
    "n_not_detected": 0,
    "n_data_only": 2,
@@ -763,8 +856,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 3,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 2,
-   "rank_in_group": 1
+   "rank_in_group": 1,
+   "notes": []
   },
   {
    "burst": "070125",
@@ -774,6 +870,13 @@
     "34/132"
    ],
    "n_panels": 8,
+   "n_freq_panels": 8,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "34/132"
+    ]
+   ],
    "n_numeric": 2,
    "n_not_detected": 2,
    "n_data_only": 4,
@@ -871,8 +974,15 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 3,
    "n_model_robust_panels": 1,
+   "clean_model_robust_panels": [
+    "14.94 GHz"
+   ],
+   "n_clean_model_robust_panels": 1,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 6
+   "rank_in_group": 5,
+   "notes": [
+    "[warn] 另有 1 个面板仅单模型过门（8.46 GHz），不要混用"
+   ]
   },
   {
    "burst": "100418A",
@@ -882,6 +992,13 @@
     "38/132"
    ],
    "n_panels": 7,
+   "n_freq_panels": 7,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "38/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 6,
@@ -937,8 +1054,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 1,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 10
+   "rank_in_group": 10,
+   "notes": []
   },
   {
    "burst": "111215A",
@@ -948,6 +1068,13 @@
     "41/132"
    ],
    "n_panels": 3,
+   "n_freq_panels": 3,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "41/132"
+    ]
+   ],
    "n_numeric": 2,
    "n_not_detected": 0,
    "n_data_only": 1,
@@ -1049,8 +1176,13 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 4,
    "n_model_robust_panels": 2,
+   "clean_model_robust_panels": [
+    "15 GHz"
+   ],
+   "n_clean_model_robust_panels": 1,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 4
+   "rank_in_group": 4,
+   "notes": []
   },
   {
    "burst": "130427A",
@@ -1058,6 +1190,8 @@
    "has_fit_page": false,
    "pages": [],
    "n_panels": 0,
+   "n_freq_panels": 0,
+   "fit_variant_pages": [],
    "n_numeric": 0,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -1075,8 +1209,13 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 1
+   "rank_in_group": 2,
+   "notes": [
+    "[todo] deck 内只有总览页（光变曲线总览/分波段总览），没有拟合页；十月表已有预测，补拟合页即可归位"
+   ]
   },
   {
    "burst": "140304A",
@@ -1087,6 +1226,17 @@
     "47/132"
    ],
    "n_panels": 20,
+   "n_freq_panels": 10,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "46/132"
+    ],
+    [
+     "SPL",
+     "47/132"
+    ]
+   ],
    "n_numeric": 11,
    "n_not_detected": 1,
    "n_data_only": 8,
@@ -1223,8 +1373,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 1
+   "rank_in_group": 1,
+   "notes": [
+    "[blocker] fit_variant_unflagged: 140304A: 同一组面板用两种趋势模型去趋势（SBPL 46/132、SPL 47/132），F_var 差异：4-6 GHz SBPL 32%/χ²=22 vs SPL 75%/χ²=27；6-8 GHz SBPL 54%/χ²=55 vs SPL 76%/χ²=75；8-10 GHz SBPL 19%/χ²=24 vs SPL 22%/χ²=7.1；10-13 GHz SBPL not detected vs SPL 41%/χ²=16；13-18 GHz SBPL 13%/χ²=2.2 vs SPL 41%/χ²=31；18-27 GHz SBPL 22%/χ²=2.6 vs SPL 37%/χ²=12。matched_table 未标 variant，门限也不含趋势模型敏感性"
+   ]
   },
   {
    "burst": "140713A",
@@ -1234,6 +1389,13 @@
     "50/132"
    ],
    "n_panels": 5,
+   "n_freq_panels": 5,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "50/132"
+    ]
+   ],
    "n_numeric": 5,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -1348,8 +1510,11 @@
    ],
    "n_invertible_rows": 4,
    "n_model_robust_panels": 2,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 5
+   "rank_in_group": 6,
+   "notes": []
   },
   {
    "burst": "141121A",
@@ -1359,6 +1524,13 @@
     "53/132"
    ],
    "n_panels": 6,
+   "n_freq_panels": 6,
+   "fit_variant_pages": [
+    [
+     "SPL",
+     "53/132"
+    ]
+   ],
    "n_numeric": 5,
    "n_not_detected": 0,
    "n_data_only": 1,
@@ -1579,8 +1751,18 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 9,
    "n_model_robust_panels": 4,
+   "clean_model_robust_panels": [
+    "3 GHz",
+    "4.9-5 GHz",
+    "7 GHz",
+    "15 GHz"
+   ],
+   "n_clean_model_robust_panels": 4,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 1
+   "rank_in_group": 1,
+   "notes": [
+    "[warn] 另有 1 个面板仅单模型过门（13 GHz），不要混用"
+   ]
   },
   {
    "burst": "160131A",
@@ -1590,6 +1772,13 @@
     "56/132"
    ],
    "n_panels": 10,
+   "n_freq_panels": 10,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "56/132"
+    ]
+   ],
    "n_numeric": 7,
    "n_not_detected": 0,
    "n_data_only": 3,
@@ -1735,8 +1924,11 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 2
+   "rank_in_group": 2,
+   "notes": []
   },
   {
    "burst": "160623A",
@@ -1746,6 +1938,13 @@
     "59/132"
    ],
    "n_panels": 1,
+   "n_freq_panels": 1,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "59/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -1768,8 +1967,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 2
+   "rank_in_group": 2,
+   "notes": [
+    "[blocker] numeric_no_model: 160623A: 1 个数值面板（15.5 GHz F_var=72.0%/χ²=7.4）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "160625B",
@@ -1777,6 +1981,8 @@
    "has_fit_page": false,
    "pages": [],
    "n_panels": 0,
+   "n_freq_panels": 0,
+   "fit_variant_pages": [],
    "n_numeric": 0,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -1794,8 +2000,14 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 2
+   "rank_in_group": 1,
+   "notes": [
+    "[todo] deck 内只有总览页（光变曲线总览/分波段总览），没有拟合页；十月表已有预测，补拟合页即可归位",
+    "[note] 文献涉及特殊散射相关成分，是 G6 中最该优先补读的对象"
+   ]
   },
   {
    "burst": "161219B",
@@ -1805,6 +2017,13 @@
     "64/132"
    ],
    "n_panels": 11,
+   "n_freq_panels": 11,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "64/132"
+    ]
+   ],
    "n_numeric": 6,
    "n_not_detected": 2,
    "n_data_only": 3,
@@ -1911,8 +2130,15 @@
    ],
    "n_invertible_rows": 2,
    "n_model_robust_panels": 1,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 1
+   "rank_in_group": 1,
+   "notes": [
+    "[note] anchor_note: 8.5 GHz 两模型都过门且预览 θ_s 一致（≈13 vs 9.5 μas），但 χ²=50，须先核拟合再与文献 20 GHz 尺寸对照",
+    "[note] anchor_note: 文献的 20 GHz 强衍射闪烁对应 deck 的 19–25 GHz 面板（F_var=22%），十月表没有该频段模型行，应优先补 22 GHz 预测",
+    "[note] anchor_note: 13.5–16 GHz 两模型比值 0.39/0.29 落在 (0.15,1)，但为频带面板，按规则不能反演；5/7.4/11 GHz 有数值无模型行；91.5/103.5 GHz not detected"
+   ]
   },
   {
    "burst": "170105A",
@@ -1922,6 +2148,13 @@
     "67/132"
    ],
    "n_panels": 5,
+   "n_freq_panels": 5,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "67/132"
+    ]
+   ],
    "n_numeric": 0,
    "n_not_detected": 1,
    "n_data_only": 4,
@@ -1939,8 +2172,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 2
+   "rank_in_group": 2,
+   "notes": []
   },
   {
    "burst": "171010A",
@@ -1950,6 +2186,13 @@
     "70/132"
    ],
    "n_panels": 6,
+   "n_freq_panels": 6,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "70/132"
+    ]
+   ],
    "n_numeric": 0,
    "n_not_detected": 1,
    "n_data_only": 5,
@@ -1967,8 +2210,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 3
+   "rank_in_group": 3,
+   "notes": []
   },
   {
    "burst": "190829A",
@@ -1978,6 +2224,13 @@
     "73/132"
    ],
    "n_panels": 2,
+   "n_freq_panels": 2,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "73/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 1,
    "n_data_only": 0,
@@ -2000,8 +2253,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 3
+   "rank_in_group": 3,
+   "notes": [
+    "[blocker] numeric_no_model: 190829A: 1 个数值面板（15.5 GHz F_var=33.0%/χ²=20.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "210702A",
@@ -2011,6 +2269,13 @@
     "76/132"
    ],
    "n_panels": 4,
+   "n_freq_panels": 4,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "76/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 2,
    "n_data_only": 1,
@@ -2071,8 +2336,16 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 2,
    "n_model_robust_panels": 1,
+   "clean_model_robust_panels": [
+    "21.2 GHz"
+   ],
+   "n_clean_model_robust_panels": 1,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 2
+   "rank_in_group": 2,
+   "notes": [
+    "[note] anchor_note: 21.2 GHz 两模型过门，预览 θ_s≈5.3 vs 5.8 μas 一致；t_p=2.0/3.3 h，与文献“5 小时闪光≈一次闪烁周期”相符，可作锚点",
+    "[note] anchor_note: 9 GHz、16.7 GHz not detected，但 NE2025 预测 m_p=0.82/0.68，本应看到强闪烁，建议复读；5.5 GHz 仅光变"
+   ]
   },
   {
    "burst": "210704A",
@@ -2082,6 +2355,13 @@
     "79/132"
    ],
    "n_panels": 1,
+   "n_freq_panels": 1,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "79/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -2104,8 +2384,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 4
+   "rank_in_group": 4,
+   "notes": [
+    "[blocker] numeric_no_model: 210704A: 1 个数值面板（15.5 GHz F_var=28.0%/χ²=12.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "220101A",
@@ -2115,6 +2400,17 @@
     "82/132"
    ],
    "n_panels": 1,
+   "n_freq_panels": 1,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "82/132"
+    ],
+    [
+     "SPL",
+     "82/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -2170,8 +2466,13 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 1,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 11
+   "rank_in_group": 11,
+   "notes": [
+    "[warn] fit_variant_unflagged: 220101A: 同一组面板用两种趋势模型去趋势（SBPL 82/132、SPL 82/132），F_var 差异：15.5 GHz SBPL 6.5%/χ²=1.4 vs SPL 7.8%/χ²=2.7。matched_table 未标 variant，门限也不含趋势模型敏感性"
+   ]
   },
   {
    "burst": "221009A",
@@ -2181,6 +2482,13 @@
     "85/132"
    ],
    "n_panels": 11,
+   "n_freq_panels": 11,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "85/132"
+    ]
+   ],
    "n_numeric": 6,
    "n_not_detected": 0,
    "n_data_only": 5,
@@ -2223,8 +2531,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 5
+   "rank_in_group": 5,
+   "notes": [
+    "[blocker] numeric_no_model: 221009A: 6 个数值面板（0.1-1 GHz F_var=12.0%/χ²=3.9；1-2 GHz F_var=17.0%/χ²=16.0；12-19 GHz F_var=21.0%/χ²=5.3；2-4 GHz F_var=9.2%/χ²=2.7；4-7.5 GHz F_var=28.0%/χ²=5.0；7.5-12 GHz F_var=23.0%/χ²=6.2）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "240205B",
@@ -2234,6 +2547,13 @@
     "88/132"
    ],
    "n_panels": 8,
+   "n_freq_panels": 8,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "88/132"
+    ]
+   ],
    "n_numeric": 2,
    "n_not_detected": 0,
    "n_data_only": 6,
@@ -2324,8 +2644,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 2,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 2,
-   "rank_in_group": 3
+   "rank_in_group": 3,
+   "notes": []
   },
   {
    "burst": "240529A",
@@ -2335,6 +2658,13 @@
     "91/132"
    ],
    "n_panels": 1,
+   "n_freq_panels": 1,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "91/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -2357,8 +2687,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 6
+   "rank_in_group": 6,
+   "notes": [
+    "[blocker] numeric_no_model: 240529A: 1 个数值面板（15.5 GHz F_var=14.0%/χ²=61.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "240619A",
@@ -2368,6 +2703,13 @@
     "94/132"
    ],
    "n_panels": 1,
+   "n_freq_panels": 1,
+   "fit_variant_pages": [
+    [
+     "SPL",
+     "94/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -2390,8 +2732,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 7
+   "rank_in_group": 7,
+   "notes": [
+    "[blocker] numeric_no_model: 240619A: 1 个数值面板（15.5 GHz F_var=17.0%/χ²=8.5）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "241025A",
@@ -2401,6 +2748,13 @@
     "97/132"
    ],
    "n_panels": 9,
+   "n_freq_panels": 9,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "97/132"
+    ]
+   ],
    "n_numeric": 5,
    "n_not_detected": 4,
    "n_data_only": 0,
@@ -2439,8 +2793,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 8
+   "rank_in_group": 8,
+   "notes": [
+    "[blocker] numeric_no_model: 241025A: 5 个数值面板（10 GHz F_var=9.3%/χ²=9.3；11 GHz F_var=12.0%/χ²=8.4；5 GHz F_var=34.0%/χ²=14.0；6 GHz F_var=12.0%/χ²=6.6；7 GHz F_var=4.4%/χ²=4.8）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "250419A",
@@ -2450,6 +2809,13 @@
     "100/132"
    ],
    "n_panels": 8,
+   "n_freq_panels": 8,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "100/132"
+    ]
+   ],
    "n_numeric": 3,
    "n_not_detected": 1,
    "n_data_only": 4,
@@ -2480,8 +2846,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 9
+   "rank_in_group": 9,
+   "notes": [
+    "[blocker] numeric_no_model: 250419A: 3 个数值面板（10 GHz F_var=57.0%/χ²=49.0；15 GHz F_var=23.0%/χ²=12.0；6 GHz F_var=30.0%/χ²=60.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "250702B",
@@ -2491,6 +2862,13 @@
     "103/132"
    ],
    "n_panels": 10,
+   "n_freq_panels": 10,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "103/132"
+    ]
+   ],
    "n_numeric": 7,
    "n_not_detected": 2,
    "n_data_only": 1,
@@ -2537,8 +2915,16 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 3
+   "rank_in_group": 3,
+   "notes": [
+    "[blocker] numeric_no_model: 250702B: 7 个数值面板（1-2 GHz F_var=12.0%/χ²=1.7；12-18 GHz F_var=15.0%/χ²=5.0；18-27 GHz F_var=16.0%/χ²=4.9；2-4 GHz F_var=4.5%/χ²=2.2；27-40 GHz F_var=57.0%/χ²=1.9；4-7.5 GHz F_var=14.0%/χ²=3.1；7.5-12 GHz F_var=13.0%/χ²=3.9）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
+    "[note] anchor_note: 全部为频带面板（1–40 GHz）且暴不在十月表，无 m_p 可比；文献 ISS 在 ≤3 GHz，对应 deck 1–2 GHz F_var=12%（χ²=1.7）、2–4 GHz 4.5%",
+    "[note] anchor_note: 27–40 GHz F_var=57%（χ²=1.9）远高于该频段可能的 ISS 调制，应视为内禀变化剔除；80–250 GHz not detected",
+    "[note] anchor_note: 补模型时需把 1–2、2–4 GHz 频带拆成单频（文献用 1.25/3 GHz），才能与 R⊥ 界逐点对照"
+   ]
   },
   {
    "burst": "251013C",
@@ -2548,6 +2934,13 @@
     "106/132"
    ],
    "n_panels": 1,
+   "n_freq_panels": 1,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "106/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -2570,8 +2963,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 10
+   "rank_in_group": 10,
+   "notes": [
+    "[blocker] numeric_no_model: 251013C: 1 个数值面板（15.5 GHz F_var=29.0%/χ²=35.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "970508",
@@ -2581,6 +2979,13 @@
     "109/132"
    ],
    "n_panels": 3,
+   "n_freq_panels": 3,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "109/132"
+    ]
+   ],
    "n_numeric": 3,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -2723,8 +3128,14 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 6,
    "n_model_robust_panels": 3,
+   "clean_model_robust_panels": [
+    "1.43 GHz",
+    "4.86 GHz"
+   ],
+   "n_clean_model_robust_panels": 2,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 2
+   "rank_in_group": 2,
+   "notes": []
   },
   {
    "burst": "980329",
@@ -2732,6 +3143,8 @@
    "has_fit_page": false,
    "pages": [],
    "n_panels": 0,
+   "n_freq_panels": 0,
+   "fit_variant_pages": [],
    "n_numeric": 0,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -2749,8 +3162,13 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 3
+   "rank_in_group": 3,
+   "notes": [
+    "[todo] deck 内只有总览页（光变曲线总览/分波段总览），没有拟合页；十月表已有预测，补拟合页即可归位"
+   ]
   },
   {
    "burst": "980425",
@@ -2760,6 +3178,13 @@
     "114/132"
    ],
    "n_panels": 4,
+   "n_freq_panels": 4,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "114/132"
+    ]
+   ],
    "n_numeric": 2,
    "n_not_detected": 0,
    "n_data_only": 2,
@@ -2850,8 +3275,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 2,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 2,
-   "rank_in_group": 4
+   "rank_in_group": 4,
+   "notes": []
   },
   {
    "burst": "980519",
@@ -2861,6 +3289,13 @@
     "117/132"
    ],
    "n_panels": 4,
+   "n_freq_panels": 4,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "117/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 3,
@@ -2923,8 +3358,13 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 2,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 5
+   "rank_in_group": 5,
+   "notes": [
+    "[blocker] 过门但尺寸列 −−，缺 z/D_A，只能给角尺寸"
+   ]
   },
   {
    "burst": "980703",
@@ -2934,6 +3374,13 @@
     "120/132"
    ],
    "n_panels": 3,
+   "n_freq_panels": 3,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "120/132"
+    ]
+   ],
    "n_numeric": 3,
    "n_not_detected": 0,
    "n_data_only": 0,
@@ -3072,8 +3519,15 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 5,
    "n_model_robust_panels": 2,
+   "clean_model_robust_panels": [
+    "1.43 GHz"
+   ],
+   "n_clean_model_robust_panels": 1,
    "n_model_dependent_panels": 1,
-   "rank_in_group": 3
+   "rank_in_group": 3,
+   "notes": [
+    "[warn] 另有 1 个面板仅单模型过门（8.46 GHz），不要混用"
+   ]
   },
   {
    "burst": "981226",
@@ -3083,6 +3537,13 @@
     "123/132"
    ],
    "n_panels": 2,
+   "n_freq_panels": 2,
+   "fit_variant_pages": [
+    [
+     "SBPL",
+     "123/132"
+    ]
+   ],
    "n_numeric": 0,
    "n_not_detected": 1,
    "n_data_only": 1,
@@ -3100,8 +3561,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 4
+   "rank_in_group": 4,
+   "notes": []
   },
   {
    "burst": "990123",
@@ -3111,6 +3575,13 @@
     "126/132"
    ],
    "n_panels": 4,
+   "n_freq_panels": 4,
+   "fit_variant_pages": [
+    [
+     "SPL",
+     "126/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 3,
@@ -3133,8 +3604,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 11
+   "rank_in_group": 11,
+   "notes": [
+    "[blocker] numeric_no_model: 990123: 1 个数值面板（8.46 GHz F_var=50.0%/χ²=3.1）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   },
   {
    "burst": "991208",
@@ -3144,6 +3620,13 @@
     "129/132"
    ],
    "n_panels": 8,
+   "n_freq_panels": 8,
+   "fit_variant_pages": [
+    [
+     "Selected",
+     "129/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 1,
    "n_data_only": 6,
@@ -3191,8 +3674,11 @@
    "numeric_panels_without_model": [],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 3
+   "rank_in_group": 3,
+   "notes": []
   },
   {
    "burst": "991216",
@@ -3202,6 +3688,13 @@
     "132/132"
    ],
    "n_panels": 6,
+   "n_freq_panels": 6,
+   "fit_variant_pages": [
+    [
+     "SPL",
+     "132/132"
+    ]
+   ],
    "n_numeric": 1,
    "n_not_detected": 0,
    "n_data_only": 5,
@@ -3224,8 +3717,13 @@
    ],
    "n_invertible_rows": 0,
    "n_model_robust_panels": 0,
+   "clean_model_robust_panels": [],
+   "n_clean_model_robust_panels": 0,
    "n_model_dependent_panels": 0,
-   "rank_in_group": 12
+   "rank_in_group": 12,
+   "notes": [
+    "[blocker] numeric_no_model: 991216: 1 个数值面板（8.42-8.46 GHz F_var=38.0%/χ²=1.7）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测"
+   ]
   }
  ],
  "critiques": [
@@ -3280,8 +3778,8 @@
    "burst": "000418",
    "panel": "4.86 GHz",
    "model": "NE2025",
-   "detail": "000418 4.86 GHz NE2025: 过门行 χ²=42.0，拟合差，F_var 可靠性需核",
-   "severity": "warn"
+   "detail": "000418 4.86 GHz NE2025: 过门行 χ²=42.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，暂不可作尺寸（先核趋势拟合）",
+   "severity": "blocker"
   },
   {
    "scope": "row",
@@ -3325,7 +3823,7 @@
    "burst": "000926",
    "panel": "22.5 GHz",
    "model": null,
-   "detail": "000926 22.5 GHz: 两次读数不一致（其中一个通道读成 %），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "detail": "000926 22.5 GHz: 两次读数不一致（状态 data only，另一通道读成 not detected），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
    "severity": "warn"
   },
   {
@@ -3334,17 +3832,17 @@
    "burst": "000926",
    "panel": "98.48 GHz",
    "model": null,
-   "detail": "000926 98.48 GHz: 两次读数不一致（其中一个通道读成 44.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "detail": "000926 98.48 GHz: 两次读数不一致（状态 data only，另一通道读成 44.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
    "severity": "warn"
   },
   {
    "scope": "row",
-   "issue": "numeric_no_model",
+   "issue": "numeric_no_model_row",
    "burst": "011121",
    "panel": "4.8 GHz",
    "model": null,
-   "detail": "011121 4.8 GHz: F_var=12.0%, χ²=10.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
+   "detail": "011121 4.8 GHz: F_var=12.0%，χ²=10.0，十月表没有该频率的模型行，无法算 m_p",
+   "severity": "todo"
   },
   {
    "scope": "row",
@@ -3383,12 +3881,21 @@
    "severity": "blocker"
   },
   {
-   "scope": "row",
+   "scope": "burst",
    "issue": "numeric_no_model",
    "burst": "020819",
-   "panel": "8.46 GHz",
+   "panel": null,
    "model": null,
-   "detail": "020819 8.46 GHz: F_var=18.0%, χ²=5.3，暴不在十月表，无 m_p 可比",
+   "detail": "020819: 1 个数值面板（8.46 GHz F_var=18.0%/χ²=5.3）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
+   "severity": "blocker"
+  },
+  {
+   "scope": "burst",
+   "issue": "numeric_no_model",
+   "burst": "030329",
+   "panel": null,
+   "model": null,
+   "detail": "030329: 6 个数值面板（1-2 GHz F_var=28.0%/χ²=82.0；10-16 GHz F_var=5.6%/χ²=21.0；16-25 GHz F_var=7.1%/χ²=130.0；2-6 GHz F_var=22.0%/χ²=140.0；25-45 GHz F_var=10.0%/χ²=42.0；6-10 GHz F_var=17.0%/χ²=300.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
@@ -3433,7 +3940,7 @@
    "burst": "031203",
    "panel": "8.46 GHz",
    "model": "RISS19",
-   "detail": "031203 8.46 GHz RISS19: 过门行 χ²=14.0，拟合差，F_var 可靠性需核",
+   "detail": "031203 8.46 GHz RISS19: 过门行 χ²=14.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -3523,44 +4030,8 @@
    "burst": "100418A",
    "panel": "8.43-8.8 GHz",
    "model": "NE2025",
-   "detail": "100418A 8.43-8.8 GHz NE2025: 过门行 χ²=68.0，拟合差，F_var 可靠性需核",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "100418A",
-   "panel": "4.95 GHz",
-   "model": "RISS19",
-   "detail": "100418A 4.95 GHz RISS19: 面板频带 [4.95,4.95] GHz 被匹配到 ν=4.8 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "100418A",
-   "panel": "4.95 GHz",
-   "model": "NE2025",
-   "detail": "100418A 4.95 GHz NE2025: 面板频带 [4.95,4.95] GHz 被匹配到 ν=4.8 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "100418A",
-   "panel": "8.4 GHz",
-   "model": "RISS19",
-   "detail": "100418A 8.4 GHz RISS19: 面板频带 [8.4,8.4] GHz 被匹配到 ν=9 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "100418A",
-   "panel": "8.4 GHz",
-   "model": "NE2025",
-   "detail": "100418A 8.4 GHz NE2025: 面板频带 [8.4,8.4] GHz 被匹配到 ν=9 GHz（10% 容差），超出频带",
-   "severity": "warn"
+   "detail": "100418A 8.43-8.8 GHz NE2025: 过门行 χ²=68.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，暂不可作尺寸（先核趋势拟合）",
+   "severity": "blocker"
   },
   {
    "scope": "row",
@@ -3604,7 +4075,7 @@
    "burst": "111215A",
    "panel": "4.8 GHz",
    "model": "RISS19",
-   "detail": "111215A 4.8 GHz RISS19: 过门行 χ²=19.0，拟合差，F_var 可靠性需核",
+   "detail": "111215A 4.8 GHz RISS19: 过门行 χ²=19.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -3613,7 +4084,7 @@
    "burst": "111215A",
    "panel": "4.8 GHz",
    "model": "NE2025",
-   "detail": "111215A 4.8 GHz NE2025: 过门行 χ²=19.0，拟合差，F_var 可靠性需核",
+   "detail": "111215A 4.8 GHz NE2025: 过门行 χ²=19.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -3721,7 +4192,7 @@
    "burst": "140304A",
    "panel": "8-10 GHz",
    "model": "RISS19",
-   "detail": "140304A 8-10 GHz RISS19: 面板频带 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），超出频带",
+   "detail": "140304A 8-10 GHz RISS19: 频带面板 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），ν 在频带之外",
    "severity": "warn"
   },
   {
@@ -3730,25 +4201,7 @@
    "burst": "140304A",
    "panel": "8-10 GHz",
    "model": "NE2025",
-   "detail": "140304A 8-10 GHz NE2025: 面板频带 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "140304A",
-   "panel": "8-10 GHz",
-   "model": "RISS19",
-   "detail": "140304A 8-10 GHz RISS19: 面板频带 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "140304A",
-   "panel": "8-10 GHz",
-   "model": "NE2025",
-   "detail": "140304A 8-10 GHz NE2025: 面板频带 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），超出频带",
+   "detail": "140304A 8-10 GHz NE2025: 频带面板 [8,10] GHz 被匹配到 ν=11 GHz（10% 容差），ν 在频带之外",
    "severity": "warn"
   },
   {
@@ -3761,31 +4214,40 @@
    "severity": "todo"
   },
   {
+   "scope": "burst",
+   "issue": "fit_variant_unflagged",
+   "burst": "140304A",
+   "panel": null,
+   "model": null,
+   "detail": "140304A: 同一组面板用两种趋势模型去趋势（SBPL 46/132、SPL 47/132），F_var 差异：4-6 GHz SBPL 32%/χ²=22 vs SPL 75%/χ²=27；6-8 GHz SBPL 54%/χ²=55 vs SPL 76%/χ²=75；8-10 GHz SBPL 19%/χ²=24 vs SPL 22%/χ²=7.1；10-13 GHz SBPL not detected vs SPL 41%/χ²=16；13-18 GHz SBPL 13%/χ²=2.2 vs SPL 41%/χ²=31；18-27 GHz SBPL 22%/χ²=2.6 vs SPL 37%/χ²=12。matched_table 未标 variant，门限也不含趋势模型敏感性",
+   "severity": "blocker"
+  },
+  {
    "scope": "row",
-   "issue": "numeric_no_model",
+   "issue": "numeric_no_model_row",
    "burst": "140713A",
    "panel": "7 GHz",
    "model": null,
-   "detail": "140713A 7 GHz: F_var=1.1%, χ²=53.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
+   "detail": "140713A 7 GHz: F_var=1.1%，χ²=53.0，十月表没有该频率的模型行，无法算 m_p",
+   "severity": "todo"
   },
   {
    "scope": "row",
-   "issue": "numeric_no_model",
+   "issue": "numeric_no_model_row",
    "burst": "140713A",
    "panel": "13.4 GHz",
    "model": null,
-   "detail": "140713A 13.4 GHz: F_var=23.0%, χ²=56.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
+   "detail": "140713A 13.4 GHz: F_var=23.0%，χ²=56.0，十月表没有该频率的模型行，无法算 m_p",
+   "severity": "todo"
   },
   {
    "scope": "row",
-   "issue": "numeric_no_model",
+   "issue": "numeric_no_model_row",
    "burst": "140713A",
    "panel": "85.5-86.7 GHz",
    "model": null,
-   "detail": "140713A 85.5-86.7 GHz: F_var=17.0%, χ²=3.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
+   "detail": "140713A 85.5-86.7 GHz: F_var=17.0%，χ²=3.0，十月表没有该频率的模型行，无法算 m_p",
+   "severity": "todo"
   },
   {
    "scope": "row",
@@ -3793,7 +4255,7 @@
    "burst": "140713A",
    "panel": "4.9 GHz",
    "model": "RISS19",
-   "detail": "140713A 4.9 GHz RISS19: 过门行 χ²=12.0，拟合差，F_var 可靠性需核",
+   "detail": "140713A 4.9 GHz RISS19: 过门行 χ²=12.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -3802,7 +4264,7 @@
    "burst": "140713A",
    "panel": "4.9 GHz",
    "model": "NE2025",
-   "detail": "140713A 4.9 GHz NE2025: 过门行 χ²=12.0，拟合差，F_var 可靠性需核",
+   "detail": "140713A 4.9 GHz NE2025: 过门行 χ²=12.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -3820,8 +4282,8 @@
    "burst": "140713A",
    "panel": "15.9 GHz",
    "model": "RISS19",
-   "detail": "140713A 15.9 GHz RISS19: 过门行 χ²=24.0，拟合差，F_var 可靠性需核",
-   "severity": "warn"
+   "detail": "140713A 15.9 GHz RISS19: 过门行 χ²=24.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，暂不可作尺寸（先核趋势拟合）",
+   "severity": "blocker"
   },
   {
    "scope": "row",
@@ -3829,26 +4291,8 @@
    "burst": "140713A",
    "panel": "15.9 GHz",
    "model": "NE2025",
-   "detail": "140713A 15.9 GHz NE2025: 过门行 χ²=24.0，拟合差，F_var 可靠性需核",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "140713A",
-   "panel": "15.9 GHz",
-   "model": "RISS19",
-   "detail": "140713A 15.9 GHz RISS19: 面板频带 [15.9,15.9] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "140713A",
-   "panel": "15.9 GHz",
-   "model": "NE2025",
-   "detail": "140713A 15.9 GHz NE2025: 面板频带 [15.9,15.9] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
-   "severity": "warn"
+   "detail": "140713A 15.9 GHz NE2025: 过门行 χ²=24.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，暂不可作尺寸（先核趋势拟合）",
+   "severity": "blocker"
   },
   {
    "scope": "row",
@@ -3991,7 +4435,7 @@
    "burst": "160131A",
    "panel": "27-40 GHz",
    "model": "RISS19",
-   "detail": "160131A 27-40 GHz RISS19: 面板频带 [27,40] GHz 被匹配到 ν=24.6 GHz（10% 容差），超出频带",
+   "detail": "160131A 27-40 GHz RISS19: 频带面板 [27,40] GHz 被匹配到 ν=24.6 GHz（10% 容差），ν 在频带之外",
    "severity": "warn"
   },
   {
@@ -4000,53 +4444,44 @@
    "burst": "160131A",
    "panel": "27-40 GHz",
    "model": "NE2025",
-   "detail": "160131A 27-40 GHz NE2025: 面板频带 [27,40] GHz 被匹配到 ν=24.6 GHz（10% 容差），超出频带",
+   "detail": "160131A 27-40 GHz NE2025: 频带面板 [27,40] GHz 被匹配到 ν=24.6 GHz（10% 容差），ν 在频带之外",
    "severity": "warn"
   },
   {
    "scope": "burst",
-   "issue": "fit_variant_unflagged",
-   "burst": "160131A",
-   "panel": null,
-   "model": null,
-   "detail": "160131A: 同一面板有两个拟合变体（SPL/SBPL），读数 F_var=8.2%/χ²=2.2 vs F_var=7.9%/χ²=2.7 vs F_var=30.0%/χ²=26.0 vs F_var=120.0%/χ²=7.3，表内未标 variant",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
    "issue": "numeric_no_model",
    "burst": "160623A",
-   "panel": "15.5 GHz",
+   "panel": null,
    "model": null,
-   "detail": "160623A 15.5 GHz: F_var=72.0%, χ²=7.4，暴不在十月表，无 m_p 可比",
+   "detail": "160623A: 1 个数值面板（15.5 GHz F_var=72.0%/χ²=7.4）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
    "scope": "row",
-   "issue": "numeric_no_model",
+   "issue": "numeric_no_model_row",
    "burst": "161219B",
    "panel": "5 GHz",
    "model": null,
-   "detail": "161219B 5 GHz: F_var=13.0%, χ²=15.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
+   "detail": "161219B 5 GHz: F_var=13.0%，χ²=15.0，十月表没有该频率的模型行，无法算 m_p",
+   "severity": "todo"
   },
   {
    "scope": "row",
-   "issue": "numeric_no_model",
+   "issue": "numeric_no_model_row",
    "burst": "161219B",
    "panel": "7.4 GHz",
    "model": null,
-   "detail": "161219B 7.4 GHz: F_var=7.8%, χ²=4.8，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
+   "detail": "161219B 7.4 GHz: F_var=7.8%，χ²=4.8，十月表没有该频率的模型行，无法算 m_p",
+   "severity": "todo"
   },
   {
    "scope": "row",
-   "issue": "numeric_no_model",
+   "issue": "numeric_no_model_row",
    "burst": "161219B",
    "panel": "11 GHz",
    "model": null,
-   "detail": "161219B 11 GHz: F_var=32.0%, χ²=53.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
+   "detail": "161219B 11 GHz: F_var=32.0%，χ²=53.0，十月表没有该频率的模型行，无法算 m_p",
+   "severity": "todo"
   },
   {
    "scope": "row",
@@ -4090,8 +4525,8 @@
    "burst": "161219B",
    "panel": "8.5 GHz",
    "model": "RISS19",
-   "detail": "161219B 8.5 GHz RISS19: 过门行 χ²=50.0，拟合差，F_var 可靠性需核",
-   "severity": "warn"
+   "detail": "161219B 8.5 GHz RISS19: 过门行 χ²=50.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，暂不可作尺寸（先核趋势拟合）",
+   "severity": "blocker"
   },
   {
    "scope": "row",
@@ -4099,8 +4534,8 @@
    "burst": "161219B",
    "panel": "8.5 GHz",
    "model": "NE2025",
-   "detail": "161219B 8.5 GHz NE2025: 过门行 χ²=50.0，拟合差，F_var 可靠性需核",
-   "severity": "warn"
+   "detail": "161219B 8.5 GHz NE2025: 过门行 χ²=50.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，暂不可作尺寸（先核趋势拟合）",
+   "severity": "blocker"
   },
   {
    "scope": "row",
@@ -4112,12 +4547,12 @@
    "severity": "todo"
   },
   {
-   "scope": "row",
+   "scope": "burst",
    "issue": "numeric_no_model",
    "burst": "190829A",
-   "panel": "15.5 GHz",
+   "panel": null,
    "model": null,
-   "detail": "190829A 15.5 GHz: F_var=33.0%, χ²=20.0，暴不在十月表，无 m_p 可比",
+   "detail": "190829A: 1 个数值面板（15.5 GHz F_var=33.0%/χ²=20.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
@@ -4157,12 +4592,12 @@
    "severity": "todo"
   },
   {
-   "scope": "row",
+   "scope": "burst",
    "issue": "numeric_no_model",
    "burst": "210704A",
-   "panel": "15.5 GHz",
+   "panel": null,
    "model": null,
-   "detail": "210704A 15.5 GHz: F_var=28.0%, χ²=12.0，暴不在十月表，无 m_p 可比",
+   "detail": "210704A: 1 个数值面板（15.5 GHz F_var=28.0%/χ²=12.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
@@ -4175,49 +4610,22 @@
    "severity": "warn"
   },
   {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "220101A",
-   "panel": "15.5 GHz",
-   "model": "RISS19",
-   "detail": "220101A 15.5 GHz RISS19: 面板频带 [15.5,15.5] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "220101A",
-   "panel": "15.5 GHz",
-   "model": "NE2025",
-   "detail": "220101A 15.5 GHz NE2025: 面板频带 [15.5,15.5] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "220101A",
-   "panel": "15.5 GHz",
-   "model": "RISS19",
-   "detail": "220101A 15.5 GHz RISS19: 面板频带 [15.5,15.5] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "220101A",
-   "panel": "15.5 GHz",
-   "model": "NE2025",
-   "detail": "220101A 15.5 GHz NE2025: 面板频带 [15.5,15.5] GHz 被匹配到 ν=15 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
    "scope": "burst",
    "issue": "fit_variant_unflagged",
    "burst": "220101A",
    "panel": null,
    "model": null,
-   "detail": "220101A: 同一面板有两个拟合变体（SPL/SBPL），读数 F_var=6.5%/χ²=1.4 vs F_var=7.8%/χ²=2.7，表内未标 variant",
+   "detail": "220101A: 同一组面板用两种趋势模型去趋势（SBPL 82/132、SPL 82/132），F_var 差异：15.5 GHz SBPL 6.5%/χ²=1.4 vs SPL 7.8%/χ²=2.7。matched_table 未标 variant，门限也不含趋势模型敏感性",
    "severity": "warn"
+  },
+  {
+   "scope": "burst",
+   "issue": "numeric_no_model",
+   "burst": "221009A",
+   "panel": null,
+   "model": null,
+   "detail": "221009A: 6 个数值面板（0.1-1 GHz F_var=12.0%/χ²=3.9；1-2 GHz F_var=17.0%/χ²=16.0；12-19 GHz F_var=21.0%/χ²=5.3；2-4 GHz F_var=9.2%/χ²=2.7；4-7.5 GHz F_var=28.0%/χ²=5.0；7.5-12 GHz F_var=23.0%/χ²=6.2）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
+   "severity": "blocker"
   },
   {
    "scope": "row",
@@ -4247,66 +4655,21 @@
    "severity": "warn"
   },
   {
-   "scope": "row",
+   "scope": "burst",
    "issue": "numeric_no_model",
    "burst": "240529A",
-   "panel": "15.5 GHz",
+   "panel": null,
    "model": null,
-   "detail": "240529A 15.5 GHz: F_var=14.0%, χ²=61.0，暴不在十月表，无 m_p 可比",
+   "detail": "240529A: 1 个数值面板（15.5 GHz F_var=14.0%/χ²=61.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
-   "scope": "row",
+   "scope": "burst",
    "issue": "numeric_no_model",
    "burst": "240619A",
-   "panel": "15.5 GHz",
+   "panel": null,
    "model": null,
-   "detail": "240619A 15.5 GHz: F_var=17.0%, χ²=8.5，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
-  },
-  {
-   "scope": "row",
-   "issue": "numeric_no_model",
-   "burst": "241025A",
-   "panel": "5 GHz",
-   "model": null,
-   "detail": "241025A 5 GHz: F_var=34.0%, χ²=14.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
-  },
-  {
-   "scope": "row",
-   "issue": "numeric_no_model",
-   "burst": "241025A",
-   "panel": "6 GHz",
-   "model": null,
-   "detail": "241025A 6 GHz: F_var=12.0%, χ²=6.6，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
-  },
-  {
-   "scope": "row",
-   "issue": "numeric_no_model",
-   "burst": "241025A",
-   "panel": "7 GHz",
-   "model": null,
-   "detail": "241025A 7 GHz: F_var=4.4%, χ²=4.8，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
-  },
-  {
-   "scope": "row",
-   "issue": "numeric_no_model",
-   "burst": "241025A",
-   "panel": "10 GHz",
-   "model": null,
-   "detail": "241025A 10 GHz: F_var=9.3%, χ²=9.3，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
-  },
-  {
-   "scope": "row",
-   "issue": "numeric_no_model",
-   "burst": "241025A",
-   "panel": "11 GHz",
-   "model": null,
-   "detail": "241025A 11 GHz: F_var=12.0%, χ²=8.4，暴不在十月表，无 m_p 可比",
+   "detail": "240619A: 1 个数值面板（15.5 GHz F_var=17.0%/χ²=8.5）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
@@ -4315,7 +4678,7 @@
    "burst": "241025A",
    "panel": "15 GHz",
    "model": null,
-   "detail": "241025A 15 GHz: 两次读数不一致（其中一个通道读成 9.3%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "detail": "241025A 15 GHz: 两次读数不一致（状态 not detected，另一通道读成 9.3%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
    "severity": "warn"
   },
   {
@@ -4324,34 +4687,16 @@
    "burst": "241025A",
    "panel": "17 GHz",
    "model": null,
-   "detail": "241025A 17 GHz: 两次读数不一致（其中一个通道读成 12.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "detail": "241025A 17 GHz: 两次读数不一致（状态 not detected，另一通道读成 12.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
    "severity": "warn"
   },
   {
-   "scope": "row",
+   "scope": "burst",
    "issue": "numeric_no_model",
-   "burst": "250419A",
-   "panel": "6 GHz",
+   "burst": "241025A",
+   "panel": null,
    "model": null,
-   "detail": "250419A 6 GHz: F_var=30.0%, χ²=60.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
-  },
-  {
-   "scope": "row",
-   "issue": "numeric_no_model",
-   "burst": "250419A",
-   "panel": "10 GHz",
-   "model": null,
-   "detail": "250419A 10 GHz: F_var=57.0%, χ²=49.0，暴不在十月表，无 m_p 可比",
-   "severity": "blocker"
-  },
-  {
-   "scope": "row",
-   "issue": "numeric_no_model",
-   "burst": "250419A",
-   "panel": "15 GHz",
-   "model": null,
-   "detail": "250419A 15 GHz: F_var=23.0%, χ²=12.0，暴不在十月表，无 m_p 可比",
+   "detail": "241025A: 5 个数值面板（10 GHz F_var=9.3%/χ²=9.3；11 GHz F_var=12.0%/χ²=8.4；5 GHz F_var=34.0%/χ²=14.0；6 GHz F_var=12.0%/χ²=6.6；7 GHz F_var=4.4%/χ²=4.8）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
@@ -4360,16 +4705,34 @@
    "burst": "250419A",
    "panel": "86 GHz",
    "model": null,
-   "detail": "250419A 86 GHz: 两次读数不一致（其中一个通道读成 23.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
+   "detail": "250419A 86 GHz: 两次读数不一致（状态 data only，另一通道读成 23.0%），数值与相邻面板重复，疑为通道错位；不影响任何过门行",
    "severity": "warn"
   },
   {
-   "scope": "row",
+   "scope": "burst",
+   "issue": "numeric_no_model",
+   "burst": "250419A",
+   "panel": null,
+   "model": null,
+   "detail": "250419A: 3 个数值面板（10 GHz F_var=57.0%/χ²=49.0；15 GHz F_var=23.0%/χ²=12.0；6 GHz F_var=30.0%/χ²=60.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
+   "severity": "blocker"
+  },
+  {
+   "scope": "burst",
+   "issue": "numeric_no_model",
+   "burst": "250702B",
+   "panel": null,
+   "model": null,
+   "detail": "250702B: 7 个数值面板（1-2 GHz F_var=12.0%/χ²=1.7；12-18 GHz F_var=15.0%/χ²=5.0；18-27 GHz F_var=16.0%/χ²=4.9；2-4 GHz F_var=4.5%/χ²=2.2；27-40 GHz F_var=57.0%/χ²=1.9；4-7.5 GHz F_var=14.0%/χ²=3.1；7.5-12 GHz F_var=13.0%/χ²=3.9）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
+   "severity": "blocker"
+  },
+  {
+   "scope": "burst",
    "issue": "numeric_no_model",
    "burst": "251013C",
-   "panel": "15.5 GHz",
+   "panel": null,
    "model": null,
-   "detail": "251013C 15.5 GHz: F_var=29.0%, χ²=35.0，暴不在十月表，无 m_p 可比",
+   "detail": "251013C: 1 个数值面板（15.5 GHz F_var=29.0%/χ²=35.0）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
@@ -4396,7 +4759,7 @@
    "burst": "970508",
    "panel": "8.46 GHz",
    "model": "RISS19",
-   "detail": "970508 8.46 GHz RISS19: 过门行 χ²=11.0，拟合差，F_var 可靠性需核",
+   "detail": "970508 8.46 GHz RISS19: 过门行 χ²=11.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -4405,7 +4768,7 @@
    "burst": "970508",
    "panel": "8.46 GHz",
    "model": "NE2025",
-   "detail": "970508 8.46 GHz NE2025: 过门行 χ²=11.0，拟合差，F_var 可靠性需核",
+   "detail": "970508 8.46 GHz NE2025: 过门行 χ²=11.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -4482,42 +4845,6 @@
   },
   {
    "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "980425",
-   "panel": "2.49 GHz",
-   "model": "RISS19",
-   "detail": "980425 2.49 GHz RISS19: 面板频带 [2.49,2.49] GHz 被匹配到 ν=2.3 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "980425",
-   "panel": "2.49 GHz",
-   "model": "NE2025",
-   "detail": "980425 2.49 GHz NE2025: 面板频带 [2.49,2.49] GHz 被匹配到 ν=2.3 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "980425",
-   "panel": "4.8 GHz",
-   "model": "RISS19",
-   "detail": "980425 4.8 GHz RISS19: 面板频带 [4.8,4.8] GHz 被匹配到 ν=5 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
-   "issue": "match_outside_band",
-   "burst": "980425",
-   "panel": "4.8 GHz",
-   "model": "NE2025",
-   "detail": "980425 4.8 GHz NE2025: 面板频带 [4.8,4.8] GHz 被匹配到 ν=5 GHz（10% 容差），超出频带",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
    "issue": "no_reading_but_strong_iss_predicted",
    "burst": "980425",
    "panel": "4.8 GHz",
@@ -4567,7 +4894,7 @@
    "burst": "980703",
    "panel": "4.86 GHz",
    "model": "RISS19",
-   "detail": "980703 4.86 GHz RISS19: 过门行 χ²=17.0，拟合差，F_var 可靠性需核",
+   "detail": "980703 4.86 GHz RISS19: 过门行 χ²=17.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -4576,7 +4903,7 @@
    "burst": "980703",
    "panel": "4.86 GHz",
    "model": "NE2025",
-   "detail": "980703 4.86 GHz NE2025: 过门行 χ²=17.0，拟合差，F_var 可靠性需核",
+   "detail": "980703 4.86 GHz NE2025: 过门行 χ²=17.0，趋势拟合差，残差 F_var 可能含未扣除的趋势，F_var 可靠性需核",
    "severity": "warn"
   },
   {
@@ -4589,12 +4916,12 @@
    "severity": "todo"
   },
   {
-   "scope": "row",
+   "scope": "burst",
    "issue": "numeric_no_model",
    "burst": "990123",
-   "panel": "8.46 GHz",
+   "panel": null,
    "model": null,
-   "detail": "990123 8.46 GHz: F_var=50.0%, χ²=3.1，暴不在十月表，无 m_p 可比",
+   "detail": "990123: 1 个数值面板（8.46 GHz F_var=50.0%/χ²=3.1）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
   },
   {
@@ -4644,6 +4971,24 @@
   },
   {
    "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "991208",
+   "panel": "5-9 GHz",
+   "model": "RISS19",
+   "detail": "991208 5-9 GHz RISS19: 频带面板 [5,9] GHz 被匹配到 ν=4.86 GHz（10% 容差），ν 在频带之外",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
+   "issue": "match_outside_band",
+   "burst": "991208",
+   "panel": "5-9 GHz",
+   "model": "NE2025",
+   "detail": "991208 5-9 GHz NE2025: 频带面板 [5,9] GHz 被匹配到 ν=4.86 GHz（10% 容差），ν 在频带之外",
+   "severity": "warn"
+  },
+  {
+   "scope": "row",
    "issue": "no_reading_but_strong_iss_predicted",
    "burst": "991208",
    "panel": "1-2 GHz",
@@ -4662,21 +5007,102 @@
   },
   {
    "scope": "burst",
-   "issue": "fit_variant_unflagged",
-   "burst": "991208",
-   "panel": null,
-   "model": null,
-   "detail": "991208: 同一面板有两个拟合变体（SPL/SBPL），读数 F_var=%/χ²= vs F_var=29.0%/χ²=25.0，表内未标 variant",
-   "severity": "warn"
-  },
-  {
-   "scope": "row",
    "issue": "numeric_no_model",
    "burst": "991216",
-   "panel": "8.42-8.46 GHz",
+   "panel": null,
    "model": null,
-   "detail": "991216 8.42-8.46 GHz: F_var=38.0%, χ²=1.7，暴不在十月表，无 m_p 可比",
+   "detail": "991216: 1 个数值面板（8.42-8.46 GHz F_var=38.0%/χ²=1.7）但暴不在十月表，无 m_p/θ_scatt 可比，先补 NE2025/RISS19 预测",
    "severity": "blocker"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "161219B",
+   "panel": null,
+   "model": null,
+   "detail": "8.5 GHz 两模型都过门且预览 θ_s 一致（≈13 vs 9.5 μas），但 χ²=50，须先核拟合再与文献 20 GHz 尺寸对照",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "161219B",
+   "panel": null,
+   "model": null,
+   "detail": "文献的 20 GHz 强衍射闪烁对应 deck 的 19–25 GHz 面板（F_var=22%），十月表没有该频段模型行，应优先补 22 GHz 预测",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "161219B",
+   "panel": null,
+   "model": null,
+   "detail": "13.5–16 GHz 两模型比值 0.39/0.29 落在 (0.15,1)，但为频带面板，按规则不能反演；5/7.4/11 GHz 有数值无模型行；91.5/103.5 GHz not detected",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "210702A",
+   "panel": null,
+   "model": null,
+   "detail": "21.2 GHz 两模型过门，预览 θ_s≈5.3 vs 5.8 μas 一致；t_p=2.0/3.3 h，与文献“5 小时闪光≈一次闪烁周期”相符，可作锚点",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "210702A",
+   "panel": null,
+   "model": null,
+   "detail": "9 GHz、16.7 GHz not detected，但 NE2025 预测 m_p=0.82/0.68，本应看到强闪烁，建议复读；5.5 GHz 仅光变",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "250702B",
+   "panel": null,
+   "model": null,
+   "detail": "全部为频带面板（1–40 GHz）且暴不在十月表，无 m_p 可比；文献 ISS 在 ≤3 GHz，对应 deck 1–2 GHz F_var=12%（χ²=1.7）、2–4 GHz 4.5%",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "250702B",
+   "panel": null,
+   "model": null,
+   "detail": "27–40 GHz F_var=57%（χ²=1.9）远高于该频段可能的 ISS 调制，应视为内禀变化剔除；80–250 GHz not detected",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "250702B",
+   "panel": null,
+   "model": null,
+   "detail": "补模型时需把 1–2、2–4 GHz 频带拆成单频（文献用 1.25/3 GHz），才能与 R⊥ 界逐点对照",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "030329",
+   "panel": null,
+   "model": null,
+   "detail": "6 个频带面板（1–45 GHz）有数值、无模型行；χ²=21–300（6–10 GHz 300）说明趋势拟合失败，F_var 5.6–28% 可靠性低",
+   "severity": "note"
+  },
+  {
+   "scope": "burst",
+   "issue": "anchor_note",
+   "burst": "030329",
+   "panel": null,
+   "model": null,
+   "detail": "补模型后须用 VLBI 膨胀率去耦内禀变化（晚期余辉可能有能量注入），不能只凭 F_var 反演",
+   "severity": "note"
   },
   {
    "scope": "global",
@@ -4734,6 +5160,15 @@
   },
   {
    "scope": "global",
+   "issue": "single_freq_nearest_match",
+   "burst": null,
+   "panel": null,
+   "model": null,
+   "detail": "单频面板按 10% 容差匹配到最近的十月表频率，最大偏差 980425 2.49 GHz→2.3 GHz（8%）；100418A 8.4 GHz→9 GHz（7%）；100418A 8.43-8.8 GHz→9 GHz（7%）；m_p 随 ν 幂律变化，这一偏差带来 ≲10% 的 m_p 系统差，可在报告里注明",
+   "severity": "note"
+  },
+  {
+   "scope": "global",
    "issue": "disagreements_are_reader_offset",
    "burst": null,
    "panel": null,
@@ -4787,7 +5222,8 @@
    "S1θ": 1
   },
   "rows": 293,
-  "invertible_rows": 52,
+  "invertible_rows_raw": 53,
+  "invertible_rows_dedup_by_panel_model": 52,
   "bursts_with_invertible_row": 19,
   "bursts_with_model_robust_panel": 8,
   "fvar_exceeds_mp_rows": 12

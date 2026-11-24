@@ -1,0 +1,382 @@
+{
+ "970508": {
+  "n_freq": 2,
+  "n_rows": 3,
+  "theta_min": 13.333,
+  "theta_max": 102.12,
+  "spread": 7.66,
+  "rows": [
+   {
+    "panel": "1.43 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 102.12,
+    "size_inv_1e16cm": 247.3,
+    "ratio": 0.519
+   },
+   {
+    "panel": "4.86 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 13.333,
+    "size_inv_1e16cm": 32.29,
+    "ratio": 0.313
+   },
+   {
+    "panel": "4.86 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 22.866,
+    "size_inv_1e16cm": 55.37,
+    "ratio": 0.394
+   }
+  ]
+ },
+ "980425": {
+  "n_freq": 2,
+  "n_rows": 2,
+  "theta_min": 404.973,
+  "theta_max": 1345.702,
+  "spread": 3.32,
+  "rows": [
+   {
+    "panel": "1.38 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 1345.702,
+    "size_inv_1e16cm": 79.7,
+    "ratio": 0.157
+   },
+   {
+    "panel": "2.49 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 404.973,
+    "size_inv_1e16cm": 23.98,
+    "ratio": 0.178
+   }
+  ]
+ },
+ "980519": {
+  "n_freq": 1,
+  "n_rows": 2,
+  "theta_min": 4.758,
+  "theta_max": 10.941,
+  "spread": 2.3,
+  "rows": [
+   {
+    "panel": "8.46 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 4.758,
+    "size_inv_1e16cm": "",
+    "ratio": 0.552
+   },
+   {
+    "panel": "8.46 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 10.941,
+    "size_inv_1e16cm": "",
+    "ratio": 0.569
+   }
+  ]
+ },
+ "980703": {
+  "n_freq": 2,
+  "n_rows": 3,
+  "theta_min": 12.407,
+  "theta_max": 219.501,
+  "spread": 17.69,
+  "rows": [
+   {
+    "panel": "1.43 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 150.699,
+    "size_inv_1e16cm": 380.24,
+    "ratio": 0.274
+   },
+   {
+    "panel": "1.43 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 219.501,
+    "size_inv_1e16cm": 553.84,
+    "ratio": 0.436
+   },
+   {
+    "panel": "8.46 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 12.407,
+    "size_inv_1e16cm": 31.31,
+    "ratio": 0.342
+   }
+  ]
+ },
+ "000301C": {
+  "n_freq": 1,
+  "n_rows": 1,
+  "theta_min": 9.338,
+  "theta_max": 9.338,
+  "spread": 1.0,
+  "rows": [
+   {
+    "panel": "8.46 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 9.338,
+    "size_inv_1e16cm": 24.69,
+    "ratio": 0.444
+   }
+  ]
+ },
+ "000418": {
+  "n_freq": 1,
+  "n_rows": 1,
+  "theta_min": 7.322,
+  "theta_max": 7.322,
+  "spread": 1.0,
+  "rows": [
+   {
+    "panel": "8.35-8.46 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 7.322,
+    "size_inv_1e16cm": 19.06,
+    "ratio": 0.323
+   }
+  ]
+ },
+ "000926": {
+  "n_freq": 1,
+  "n_rows": 1,
+  "theta_min": 4.827,
+  "theta_max": 4.827,
+  "spread": 1.0,
+  "rows": [
+   {
+    "panel": "8.46 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 4.827,
+    "size_inv_1e16cm": 12.74,
+    "ratio": 0.449
+   }
+  ]
+ },
+ "011121": {
+  "n_freq": 1,
+  "n_rows": 1,
+  "theta_min": 51.742,
+  "theta_max": 51.742,
+  "spread": 1.0,
+  "rows": [
+   {
+    "panel": "8.7 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 51.742,
+    "size_inv_1e16cm": 83.09,
+    "ratio": 0.204
+   }
+  ]
+ },
+ "031203": {
+  "n_freq": 1,
+  "n_rows": 2,
+  "theta_min": 113.959,
+  "theta_max": 1595.022,
+  "spread": 14.0,
+  "rows": [
+   {
+    "panel": "4.86 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 113.959,
+    "size_inv_1e16cm": 70.24,
+    "ratio": 0.324
+   },
+   {
+    "panel": "4.86 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 1595.022,
+    "size_inv_1e16cm": 983.05,
+    "ratio": 0.667
+   }
+  ]
+ },
+ "070125": {
+  "n_freq": 2,
+  "n_rows": 3,
+  "theta_min": 4.406,
+  "theta_max": 18.203,
+  "spread": 4.13,
+  "rows": [
+   {
+    "panel": "8.46 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 18.203,
+    "size_inv_1e16cm": 48.85,
+    "ratio": 0.154
+   },
+   {
+    "panel": "14.94 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 4.406,
+    "size_inv_1e16cm": 11.83,
+    "ratio": 0.577
+   },
+   {
+    "panel": "14.94 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 6.277,
+    "size_inv_1e16cm": 16.85,
+    "ratio": 0.242
+   }
+  ]
+ },
+ "111215A": {
+  "n_freq": 1,
+  "n_rows": 2,
+  "theta_min": 4.887,
+  "theta_max": 5.513,
+  "spread": 1.13,
+  "rows": [
+   {
+    "panel": "15 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 4.887,
+    "size_inv_1e16cm": 12.9,
+    "ratio": 0.52
+   },
+   {
+    "panel": "15 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 5.513,
+    "size_inv_1e16cm": 14.55,
+    "ratio": 0.224
+   }
+  ]
+ },
+ "141121A": {
+  "n_freq": 5,
+  "n_rows": 9,
+  "theta_min": 6.688,
+  "theta_max": 76.912,
+  "spread": 11.5,
+  "rows": [
+   {
+    "panel": "3 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 74.508,
+    "size_inv_1e16cm": 199.7,
+    "ratio": 0.286
+   },
+   {
+    "panel": "3 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 76.912,
+    "size_inv_1e16cm": 206.14,
+    "ratio": 0.353
+   },
+   {
+    "panel": "4.9-5 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 23.37,
+    "size_inv_1e16cm": 62.64,
+    "ratio": 0.298
+   },
+   {
+    "panel": "4.9-5 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 24.143,
+    "size_inv_1e16cm": 64.71,
+    "ratio": 0.368
+   },
+   {
+    "panel": "7 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 13.054,
+    "size_inv_1e16cm": 34.99,
+    "ratio": 0.26
+   },
+   {
+    "panel": "7 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 13.508,
+    "size_inv_1e16cm": 36.2,
+    "ratio": 0.305
+   },
+   {
+    "panel": "13 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 10.172,
+    "size_inv_1e16cm": 27.26,
+    "ratio": 0.242
+   },
+   {
+    "panel": "15 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 6.688,
+    "size_inv_1e16cm": 17.92,
+    "ratio": 0.364
+   },
+   {
+    "panel": "15 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 6.853,
+    "size_inv_1e16cm": 18.37,
+    "ratio": 0.214
+   }
+  ]
+ },
+ "210702A": {
+  "n_freq": 1,
+  "n_rows": 2,
+  "theta_min": 5.104,
+  "theta_max": 5.62,
+  "spread": 1.1,
+  "rows": [
+   {
+    "panel": "21.2 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 5.104,
+    "size_inv_1e16cm": 13.37,
+    "ratio": 0.367
+   },
+   {
+    "panel": "21.2 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 5.62,
+    "size_inv_1e16cm": 14.72,
+    "ratio": 0.18
+   }
+  ]
+ },
+ "220101A": {
+  "n_freq": 1,
+  "n_rows": 2,
+  "theta_min": 5.791,
+  "theta_max": 6.771,
+  "spread": 1.17,
+  "rows": [
+   {
+    "panel": "15.5 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 5.791,
+    "size_inv_1e16cm": 11.92,
+    "ratio": 0.459
+   },
+   {
+    "panel": "15.5 GHz",
+    "model": "RISS19",
+    "theta_s_uas": 6.771,
+    "size_inv_1e16cm": 13.94,
+    "ratio": 0.382
+   }
+  ]
+ },
+ "240205B": {
+  "n_freq": 1,
+  "n_rows": 1,
+  "theta_min": 13.701,
+  "theta_max": 13.701,
+  "spread": 1.0,
+  "rows": [
+   {
+    "panel": "5.5 GHz",
+    "model": "NE2025",
+    "theta_s_uas": 13.701,
+    "size_inv_1e16cm": 33.04,
+    "ratio": 0.369
+   }
+  ]
+ }
+}

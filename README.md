@@ -58,7 +58,12 @@ python scripts/compare.py         # → data/matched_table.csv, data/compare_sum
 - `parse_october.py` / `audit_october.py`：把 PDF 表格解析成行，然后检查三件事——
   实测列是否随模型变、预测列能否由 SM/ν0/Dsc 复算、Size 是否等于 D_A·θ_scatt。
 - `compare.py`：把面板读数与十月预测按频率匹配（单频 10% 容差；宽频箱内所有频率都匹配并标 `band`），
-  给出 `fvar_over_mp` 与 `invertible`。
+  算出 `fvar_over_mp`，并给每行一个 `verdict`：
+  `fit_failed`（χ²_red>10）/ `incompatible`（F_var≥m_p）/ `ceiling`（0.7≤比值<1）/ `invertible`（0.15<比值<0.7，
+  单频、读数一致、拟合合格，此时才填 `theta_s_uas` 与 `size_inv_1e16cm`）/ `dilute`（≤0.15）/ `unresolved` /
+  `not_detected` / `data_only` / `no_prediction`。
+  同时输出 `data/size_consistency.json`：同一暴各频率反解的 θ_s 必须一致，否则说明 F_var 不是纯闪烁调制。
+- `size_consistency.json` 里 5 个能做检验的暴全部不过（θ_s 相差 3.3–17.7 倍），这是本次重做最硬的一条发现。
 
 ## 已知限制
 
@@ -66,3 +71,7 @@ python scripts/compare.py         # → data/matched_table.csv, data/compare_sum
 - `read_fits.py` 的三遍里常有一遍返回 UNCLEAR（裁剪没覆盖到框），175/214 个面板因此只有两遍给出数值。
 - 43 个暴里有 3 个没有拟合页（980329、130427A、160625B），本仓库不替它们补数。
 - 十月那份 PDF 的实测列与本次 F_var 不是同一个统计量，两者的差异在 `reports/审阅意见.md` 第二节有专门讨论。
+- `iss.py --test` 的 250702B 行把原文 θ_F=0.5 µas 当输入再用它反推 D_scr，是循环论证（见 `reports/审查_方法链.md`）；
+  它只说明代数自洽，不说明原文数值物理自洽。
+- `reports/分组建议.md` 与 `data/classification_draft.json` 是审阅模型按旧版 `matched_table`（可反演 53 行）生成的草案，
+  文首已加快照说明；按暴分组仍可用，E 级请按新 `verdict` 列重读。

@@ -1,0 +1,977 @@
+{
+  "generated": "2026-11-24",
+  "purpose": "中文审阅意见的可核查引用锚点：GRB 250702B（arXiv:2608.03205v2）§3.1.2 ISS 分析所依赖/对照的文献。每条 quote_en 已在本地全文缓存中逐字核对（空白归一化）；PDF 文本层与 OUP/ar5iv 渲染的符号伪影在 locator 中注明。",
+  "status_semantics": {
+    "verified_fulltext": "引文已在获取到的全文（ar5iv/OUP/PDF 文本层）中逐字匹配",
+    "abstract_only": "仅摘要可及，引文来自摘要",
+    "not_found": "给定标识无法对应到所述论文；见 locator 说明"
+  },
+  "identifier_notes": [
+    "GRB 250702B 论文第一作者为 A. J. Goodwin（非 Berger）；arXiv:2608.03205 v1 2026-08-04，v2 2026-11-10（本台账基于 v2 的 ar5iv 渲染）。",
+    "用户给定 'GRB 160625B, ApJ 862,94 (2018), DOI 10.3847/1538-4357/aa8a76' 不自洽：DOI → Alexander+2017 ApJ 848, 69（arXiv:1705.08455，GRB 160625B RS 论文）；ApJ 862, 94 → Laskar+2018 GRB 161219B ALMA 论文（DOI 10.3847/1538-4357/aacbcc）。",
+    "GRB 030329 的 VLBI 直接测尺寸以 Taylor+2004（astro-ph/0405300, ApJ 609, L1）为原始文献；Mesler+2012（1208.3643）给出与 ISS 15 d 点的对照；Mesler & Pihlström 2013（1304.3858）只把 ISS 当误差项。",
+    "Walker 1998 = MNRAS 294, 307–311, DOI 10.1046/j.1365-8711.1998.01238.x；另有 2001 年勘误 MNRAS 321, 176（Eq.1 数值因子 √π；ν0 ×1.9、θ_F0 ×0.7；§3 标度关系不受影响）。",
+    "NE2025 = Ocker & Cordes 2026, ApJ 1002, 3, arXiv:2602.11838；250702B 视线的 ν0=6.7 GHz、θ_F=0.5 µas 不能从 NE2025 原文核实，需用 NE2025 代码复算。"
+  ],
+  "sources_cached_under": {
+    "main_paper": "/home/xiaochenai/.hermes/cache/web/ar5iv.labs.arxiv.org-5a7d581edd.md",
+    "literature_dir": "/home/xiaochenai/.hermes/cache/scratch/lit",
+    "walker1998_fulltext": "/home/xiaochenai/.hermes/cache/web/doi.org-32792c3215.md",
+    "walker2001_erratum": "/home/xiaochenai/.hermes/cache/scratch/lit/walker1998_erratum.md",
+    "210702A_pdf": "/mnt/d/OneDrive/Dropbox/work/2026XinSJ-GRB-environment/20261123/Rapid radio brightening of GRB 210702A.pdf (arXiv:2211.11212v2)"
+  },
+  "anchors": [
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "论文明确采用 Walker (1998) 的 ISS 框架来推断闪变性质与源尺寸。",
+      "quote_en": "We implement the ISS formalism derived by Walker (1998) as appropriate for compact extra-galactic radio sources to infer the scintillation properties at different observing frequencies and source sizes.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Interstellar Scintillation 第2段首句（ar5iv 渲染；下标在渲染文本中写作 X_(sub)）",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "作者自述：银河电子密度模型以银道面脉冲星定标、对河外源可能不准，并点名 GRB 161219B 出现超预测闪变；因此尺寸约束应视为量级估计。",
+      "quote_en": "the constraints on the source size obtained via this scintillation analysis are potentially subject to large systematic error and should be considered order of magnitude estimates.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 第2段末句",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "作者承认宿主星系（尘埃异常多）内电子分布对闪变的贡献不可量化。",
+      "quote_en": "there is an unknown and unquantifiable distribution of electrons in the host galaxy that the radio emission is also likely passing through before reaching our detectors",
+      "locator": "arXiv:2608.03205v2 §3.1.2 第2段（同段引 Gompertz+2026 指宿主尘埃异常）",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "NE2025 参数：转变频率 6.7 GHz、第一菲涅尔区角尺寸 0.5 µas（Goodwin+ 用 NE2025 模型对 GRB 250702B 视线计算；NE2025 原文无法核实此视线值）。",
+      "quote_en": "the NE2025 electron density model (Ocker and Cordes 2026) predicts a transition frequency between strong and weak scintillation regimes of 6.7 GHz and angular size of the first Fresnel zone of θ_F=0.5 μas.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Eq.(4) 后一段",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "强折射区点源调制指数 Eq.(2) m_p=(ν_obs/ν_0)^(17/30)，时标 Eq.(3) t_scint=2(ν_0/ν_obs)^(11/5) hr，散射盘 Eq.(4) θ_scatt=θ_F(ν_0/ν_obs)^(11/5) µas，三式均归于 Walker (1998)。",
+      "quote_en": "Following Walker (1998), in the strong, refractive scintillation regime the modulation index is given by",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Eq.(2)–(4) 及 Eq.(4) 后一句",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "源大于散射盘时调制指数按 (θ_scatt/θ_s)^(7/6) 压低、时标按 θ_s/θ_scatt 拉长——这是把 m_p,obs 反演为 θ_s 的唯一依据（与 Walker 1998 §3.2.1 一致）。",
+      "quote_en": "In the scenario in which the source size θ_s>θ_(scatt), the modulation index is reduced by a factor (θ_(scatt)/θ_s)^(7/6) and the timescale for variability increases as θ_s/θ_(scatt).",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Eq.(4) 后一句",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "残差 Eq.(5) r_i=(F_obs,i−F_model,i)/F_model,i，模型为 §3.1 的 model-agnostic 平滑折断幂律光变拟合。",
+      "quote_en": "To quantify any excess variability around the broken power-law model that could potentially be due to ISS, we first calculate the fractional residual of the flux densities using",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Eq.(5) 引出句；Eq.(5) r_i=(F_obs,i−F_model,i)/F_model,i，其后注明 F_model 来自 Section 3.1 的折断幂律拟合",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "作者明确承认通常做法（Walker 1998）是以观测均值的 RMS 分数涨落定义调制指数，但因源有内禀演化而改用模型残差的调制指数作替代。",
+      "quote_en": "we instead measure the modulation index of the model residuals as a proxy for measuring the excess variability above the model.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Eq.(5) 后第2段",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "通常定义（Walker 1998）：取观测均值、计算 RMS 分数通量涨落——不依赖任何光变模型。",
+      "quote_en": "Whilst the usual approach to measuring the modulation index in scintillation analyses is to take the mean of the observations and calculate the root-mean-square fractional flux variation (Walker 1998)",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Eq.(5) 后第2段首句",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "m_p,obs 即残差 RMS：Eq.(6) m_p,obs=√(1/N Σ r_i²)，式中无测量噪声方差扣除项（非 m²=m_obs²−m_noise² 形式）。",
+      "quote_en": "Therefore, to estimate the modulation index of the fractional residuals we take the residual standard error, i.e.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Eq.(6) 引出句；Eq.(6) 后句 'where N is the number of data points.'",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "误差处理仅把观测误差与模型不确定度传播进 m_p,obs 的误差（10^5 次 MC 抽样），属误差估计而非偏差校正。",
+      "quote_en": "This approach ensures that the estimated modulation fraction accounts for error in both the data and the model",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Eq.(6) 后第2段（随机在误差棒内抽 F_obs、从 MCMC 最高 50% 似然 walkers 抽 F_model，100,000 次）",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "3 GHz：强散射区预期调制 0.63、时标 11.7 h、θ_scatt=3 µas；1.25 GHz 预期 0.39/80 h/20 µas；>6.7 GHz 弱散射区几乎无调制。",
+      "quote_en": "In the strong scintillation regime, we expect a scintillation modulation fraction of 0.63 on a timescale of 11.7 hrs at 3 GHz.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Table 2 前一段",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "用 3 GHz 残差调制指数 0.3 反演 θ_s≈5.67 µas（Table 2：m_p,obs=0.26±0.02，R_⟂≈1.5×10^17 cm）。",
+      "quote_en": "We find an observed modulation fraction of 0.3 implies θ_s≈5.67μas.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Figure 4 后一段；Table 2 第2行",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "1.25 GHz 残差调制与点源理论值一致→源未被闪变分辨→上限 θ_s≲20 µas（R_⟂≲5×10^17 cm）。",
+      "quote_en": "At 1.25 GHz, the observed modulation fraction is consistent within error of the theoretical modulation fraction, suggesting the source is unresolved to scintillation and placing an upper bound on the source size of θ_s≲20μas.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Figure 4 后一段；Table 2 第1行",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "5.5 GHz 几乎无调制且远低于理论值 0.89→源已被闪变分辨→下限 θ_s≳0.77 µas（R_⟂≳2×10^16 cm）。",
+      "quote_en": "This therefore implies that the source is mostly resolved to scintillation at 5.5 GHz, suggesting a lower limit on the source size of θ_s≳0.77μas.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Figure 4 后一段；Table 2 第3行",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "作者再次强调尺寸估计为量级估计。",
+      "quote_en": "We emphasise that these source size estimates should be considered an order of magnitude estimate due to the numerous assumptions made in predicting and observing the scintillation properties.",
+      "locator": "arXiv:2608.03205v2 §3.1.2 末段（Table 2 前）",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "摘要给出 ISS 尺寸范围 1.2×10^16≲R_⟂≲5×10^17 cm，措辞为 approximate bound。",
+      "quote_en": "We detect significant variability in the low frequency (≤3 GHz) light curves which we interpret as interstellar scintillation, placing an approximate bound on the blast wave image size of 1.2×10^(16)≲R_⟂≲5×10^(17) cm.",
+      "locator": "arXiv:2608.03205v2 Abstract（渲染文本中上标写作 10^(16)）",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "Table 2 数值：ν=1.25/3/5.5 GHz；m_p,obs=0.3±0.1/0.26±0.02/0.12±0.03；θ_scatt=20/3/0.77 µas；m_p=0.39/0.63/0.89；t_scint=80/11.7/3 h；θ_source=≲20/≈5.67/≳0.77 µas；R_⟂=≲5×10^17/≈1.5×10^17/≳2×10^16 cm。",
+      "quote_en": "Table 2: The observed and predicted ISS properties at the given observing frequencies, and the resulting constraints on the blast wave image radius.",
+      "locator": "arXiv:2608.03205v2 Table 2 标题及表体",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "同日 VLA/MeerKAT 相隔 2.5 h 的 3 GHz 通量 60±11→124±15 µJy 被作为 ISS 的额外证据。",
+      "quote_en": "Further evidence for ISS is seen in VLA and MeerKAT observations taken on the same day (2025-07-09) 2.5 hours apart",
+      "locator": "arXiv:2608.03205v2 §3.1.2 末段（2025-07-09 VLA→MeerKAT）",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "论文把 ISS 的 θ_scatt·D_A 当作爆激波像尺寸上限（Granot+2005），D_A=5.288×10^27 cm（z=1.036）。",
+      "quote_en": "ISS provides a constraint on the maximum size of the jet front image on the sky, which we assume is a proxy for the blastwave image in the plane of the sky (Granot et al. 2005).",
+      "locator": "arXiv:2608.03205v2 §3.1.2 Table 2 后一段",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 250702B (Goodwin+2026, arXiv:2608.03205v2)",
+      "claim_zh": "论文引用的前人 ISS 尺寸工作：Chandra+2008b; van der Horst+2014; Alexander+2017a（GRB 160625B）; Anderson+2023b（GRB 210702A）。",
+      "quote_en": "Previous studies of GRBs have found evidence for ISS induced variability, which can sometimes be used to place upper limits on the radio-emitting region size",
+      "locator": "arXiv:2608.03205v2 §3.1.2 首段",
+      "url": "https://arxiv.org/abs/2608.03205v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "观测设置：ATCA 11 h 后启动，5 h 跟踪、~15 min 采样、9.0/16.7/21.2 GHz。",
+      "quote_en": "tracking early-time radio variability over a 5 hr period on ∼ 15 min timescales at 9.0, 16.7, and 21.2 GHz",
+      "locator": "arXiv:2211.11212v2 Abstract 第1句后（本地 PDF 文本层；行已合并）",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "9.0 GHz 5 h 耀发峰值 0.4±0.1 mJy，约 13 h。",
+      "quote_en": "A broken power law fit to the 9.0 GHz light curve showed that the 5 h flare peaked at a flux density of 0.4 ± 0.1 mJy at ∼ 13 h post-burst.",
+      "locator": "arXiv:2211.11212v2 Abstract",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "调制指数用原始光变直接计算：取 SNR≳3 的检测点，m=σ/μ（标准偏差/均值）——把耀发本身当作闪变，而非模型残差。",
+      "quote_en": "we use all flux density measurements with a SNR≳ 3 to measure the modulation index",
+      "locator": "arXiv:2211.11212v2 §4.2 Scintillation 第2段（其后括号内公式 m=σ/μ 以 PDF 数学字体排印）",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "9.0 GHz 时标≈5 h 被解释为观测到一个完整闪变周期。",
+      "quote_en": "Given the very clear rise, peak and decline in the emission at 9.0 GHz, it is possible we observed a single predominant scintillation cycle where we estimate the timescale to be ∼ 5 h",
+      "locator": "arXiv:2211.11212v2 §4.2 第2段（Figure 3）",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "选 RISS19 而非 NE2001 的理由之一：GRB 210702A 所在天区 NE2001 脉冲星覆盖极少。",
+      "quote_en": "Note that the location of GRB 210702A is in a part of the sky for which there is minimal pulsar coverage in NE2001 (see figure 4 of Cordes & Lazio 2002), thus our choice to use RISS19 instead.",
+      "locator": "arXiv:2211.11212v2 §4.2 第3段",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "选 RISS19 的理由之二：Hα 图全天覆盖优于依赖脉冲星的 NE2001，在高银纬给出更好的 SM（PDF 数学字体 Hα、SM）。",
+      "quote_en": "As the 𝐻 𝛼 maps have a much broader sky coverage than NE2001, which is dependent on known pulsars that cluster in the Galactic Plane, RISS19 provides better information about the 𝑆𝑀 at higher Galactic latitudes.",
+      "locator": "arXiv:2211.11212v2 §4.2 第3段",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "RISS19 ν0=7.66 GHz vs NE2001 ν0=14.4 GHz；9.0 GHz 变化最强→支持 RISS19。",
+      "quote_en": "Given we observe the strongest variability at 9.0 GHz from GRB 210702A, which is closer to the RISS19 transition frequency of 7.66 GHz, our results seem to favour the RISS19 Galactic free electron model over NE2001.",
+      "locator": "arXiv:2211.11212v2 §4.2 第4段",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "各频段所处的散射区：9.0 GHz 近转变频率（弱区），16.7/21.2 GHz 弱区，5.5 GHz 强区。",
+      "quote_en": "This places 9.0 GHz near the transition frequency in the weak regime, 16.7 and 21.2 GHz in the weak scattering regime, with 5.5 GHz in the strong scattering regime (either refractive or diffractive).",
+      "locator": "arXiv:2211.11212v2 §4.2 第4段（RISS19: SM=1.06±0.35×10^-3 kpc m^-20/3, D=0.66 kpc）",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "Table 1 脚注引用 Walker (1998) Eq.(15) 计算 5.5 GHz 的 DISS 去相关带宽 1.8 GHz。",
+      "quote_en": "At 5.5 GHz, diffractive scintillation is active over a 1.8 GHz bandwidth using equation 15 from Walker (1998).",
+      "locator": "arXiv:2211.11212v2 Table 1 脚注 a",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "Table 1 的预测采用 Granot & van der Horst (2014) 表 1 的 ISS 关系（W/SR/SD 三区）。",
+      "quote_en": "following scintillation relations summarised by Granot & van der Horst (2014) depending on the regime (W = weak, SR = strong refractive and SD = strong diffractive)",
+      "locator": "arXiv:2211.11212v2 Table 1 标题",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "尺寸反演假设：若变化由 ISS 主导，则射电余辉角尺寸不能显著大于散射盘 θ_scatt。",
+      "quote_en": "If we assume that the source of variability is dominated by ISS, it means the radio afterglow of GRB 210702A could not have had an angular size much larger than the size of the scattering disk",
+      "locator": "arXiv:2211.11212v2 §4.3 Source size estimates 首句（z=1.160, D_A=1750 Mpc）",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "≲6×10^16 cm（13 h）的上限，作者自估约 50% 不确定度。",
+      "quote_en": "note that for such an estimate we expect uncertainties of ∼ 50%",
+      "locator": "arXiv:2211.11212v2 §4.3 第1段（PDF 文本层中 10^16 显示为 '1016'）",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "13 h 的 ISS 尺寸约束被称为迄今最早的 GRB ISS 尺寸约束。",
+      "quote_en": "Our size measurement of GRB 210702A at 13 h (0.56 d) post-burst is therefore the earliest ISS size constraint on any GRB to date",
+      "locator": "arXiv:2211.11212v2 §4.3 第2段",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "结论：实测调制指数与时标和 RISS19 预测在 ~2 倍内一致，闪变是最可能解释。",
+      "quote_en": "scintillation is the most likely explanation for the observed radio variability at early times from GRB 210702A.",
+      "locator": "arXiv:2211.11212v2 §4.2 末段（'to within a fac-tor of ∼ 2' 跨页断字）",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "预测关系来源：Goodman (1997); Walker (1998)，经 Granot & van der Horst (2014) 表 1 汇总。",
+      "quote_en": "we compared the measured timescale and modulation index at each frequency to predictions based on relations presented by Goodman (1997); Walker (1998) (which are summarised in table 1 of Granot & van der Horst 2014)",
+      "locator": "arXiv:2211.11212v2 §4.2 第3段",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "NE2001（pyne2001）对比值：SM=5.5×10^-4 kpc m^-20/3，ν0=14.4 GHz（PDF 数学字体 ν）。",
+      "quote_en": "and a transition frequency of 𝜈0 = 14.4 GHz for an extragalactic source beyond 30 kpc",
+      "locator": "arXiv:2211.11212v2 §4.2 第4段",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 210702A (Anderson+2023, arXiv:2211.11212v2 = MNRAS 523, 4992)",
+      "claim_zh": "摘要中的尺寸上限 ≲6×10^16 cm（PDF 文本层 10^16 显示为 '1016'）。",
+      "quote_en": "to place an upper limit on the size of the blast wave of ≲ 6 × 1016 cm in the plane of the sky",
+      "locator": "arXiv:2211.11212v2 Abstract",
+      "url": "https://arxiv.org/abs/2211.11212v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "20 GHz 附近分钟级大幅变化，归因于银河系 ISM 的 DISS+RISS。",
+      "quote_en": "We attribute this behavior to scattering of the radio emission by the turbulent ionized Galactic interstellar medium (ISM), including both diffractive and refractive scintillation.",
+      "locator": "arXiv:1806.08017v2 Abstract（ar5iv 渲染，公式为 LaTeX alttext）",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "观测现象：尖谱峰与以 20 GHz 为中心、分钟时标、大幅的通量变化（1–37 GHz）。",
+      "quote_en": "The data exhibit unusual behavior, including sharp spectral peaks and minutes-timescale large-amplitude variability centered at $20$ GHz and spanning the full frequency range.",
+      "locator": "arXiv:1806.08017v2 Abstract",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "由变化时标与去相关带宽推出 SM≈(8–70)×10^-4 kpc m^-20/3（最高为 NE2001 的 25 倍）、屏距 0.2–3 kpc。",
+      "quote_en": "from the measured variability timescale and decorrelation bandwidth we infer a scattering measure of $SM\\approx{(8-70)\\times 10^{-4}}$ kpc m-20/3 (up to ${25}$ times larger than predicted in NE2001) and a scattering screen distance of $d_{\\rm scr}\\approx{0.2-3}$ kpc.",
+      "locator": "arXiv:1806.08017v2 Abstract",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "源尺寸 θ_s≈0.9–4 µas（≈1–4×10^16 cm）@≈4 d；8 d 前比模型小一个量级。",
+      "quote_en": "We infer an emission region size of $\\theta_{s}\\approx{0.9-4}$ $\\mu$ as ( $\\approx{(1-4)}\\times 10^{16}$ cm) at $\\approx 4$ days",
+      "locator": "arXiv:1806.08017v2 Abstract",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "NE2001 对该视线不可靠，作者改为直接由观测量估算 SM 与 d_scr。",
+      "quote_en": "We therefore conclude that the NE2001 model is unreliable for the line of sight to GRB 161219B",
+      "locator": "arXiv:1806.08017v2 §3 Analytic Scattering Model 首段末（NE2001: SM_-3.5≈0.8, ν_ss=12.1 GHz, d_scr≈2.1 kpc vs 观测 ν_ss,obs≈20–25 GHz）",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "NE2001 预测与观测明显不符：epoch 2 的大幅变化要求强散射区延伸到 20–25 GHz。",
+      "quote_en": "This is clearly inconsistent with our observations, as the large flux variations in epoch 2 imply that the strong scattering regime extends up to",
+      "locator": "arXiv:1806.08017v2 §3 首段（句末数学：ν_ss,obs≈20–25 GHz，Figure 3）",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "电子密度模型主要受脉冲星约束，远离银道面处可靠性较低。",
+      "quote_en": "As this model is constrained largely by pulsar observations, it is less reliable away from the Galactic plane.",
+      "locator": "arXiv:1806.08017v2 §3 首段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "DISS 判据：变化时标短且幅度大（前两个 epoch 单频 15–45 min 内通量变化达 4 倍）。",
+      "quote_en": "The rapid timescale of these variations along with their large amplitude implies that they are caused by DISS.",
+      "locator": "arXiv:1806.08017v2 §3.1 Diffractive ISS 首段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "作者承认未对任何单一接收机观测足够久以测得完整变化周期，每频只见单调升降——因此 t_diff 只能给下限。",
+      "quote_en": "Unfortunately, we do not observe with any single receiver long enough to measure a complete variability cycle; for each frequency we see only monotonic increases or decreases in flux density in each epoch, not random oscillations about a mean value.",
+      "locator": "arXiv:1806.08017v2 §3.1 第2段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "由 t_diff 下限推出 SM 上限（而非直接测量）。",
+      "quote_en": "Therefore, we can only place lower limits on $t_{\\rm diff}$ as a function of frequency, giving an upper limit on the scattering measure.",
+      "locator": "arXiv:1806.08017v2 §3.1 第2段（Eq.2 t_diff 定义）",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "最紧约束：epoch 2 X 波段 t_diff≳17 min @8–9 GHz → SM_-3.5≲40，d_scr≳0.1 kpc。",
+      "quote_en": "The tightest constraint comes from our $X$ band observations in epoch 2, where we have $t_{\\rm diff}\\gtrsim 17$ min at $8-9$ GHz, or $SM_{-3.5}\\lesssim 40$",
+      "locator": "arXiv:1806.08017v2 §3.1 第2段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "利用 ν_ss 附近 Δν/ν≈1 的相干性连接相邻频带：t_diff≳70 min @21 GHz → SM_-3.5≲20，d_scr≳0.2 kpc；此后假设 SM、d_scr 不随时间变化。",
+      "quote_en": "We therefore can constrain $t_{\\rm diff}\\gtrsim 70$ min at $\\nu\\approx 21$ GHz. From equations 1 and 2, this gives $SM_{-3.5}\\lesssim 20$ and $d_{\\rm scr}\\gtrsim 0.2$ kpc",
+      "locator": "arXiv:1806.08017v2 §3.1 第3段（Eq.3 去相关带宽 Δν≈7.6 ν10^{22/5}(SM_-3.5)^{-6/5} d_scr,kpc^{-1} GHz）",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "尺寸反演假设：只有角尺寸 θ_s 满足 Eq.(6) θ_s≲2.25 ν10^{6/5}(SM_-3.5)^{-3/5} d_scr,kpc^{-1} µas 时 DISS 才产生可观测变化（Goodman 1997）。",
+      "quote_en": "DISS can only produce observable flux variations if the source angular size, $\\theta_{s}$ , satisfies (Goodman 1997)",
+      "locator": "arXiv:1806.08017v2 §4 ISS Constraints on Source Size and Outflow Geometry 首段，Eq.(6)",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "epoch 2 观测到 DISS 延续到 ≈8 GHz → 1.5 d 时 θ_s≲1 µas（SM_-3.5=20, d_scr=0.2 kpc；其他参数组合可低至 0.3 µas）。",
+      "quote_en": "In epoch 2 we observe clear variability down to $\\approx 8$ GHz. We can therefore set a limit of $\\theta_{s}\\lesssim{1}$ $\\mu$ as at 1.5 days",
+      "locator": "arXiv:1806.08017v2 §4 第2段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "DISS 在 t_crit≈4 d 淬灭 → θ_s≈0.9–4 µas@4 d（Eq.7 θ_crit）。",
+      "quote_en": "suggesting that DISS quenches at $t_{\\rm crit}\\approx 4$ days, and hence $\\theta_{s}\\approx{0.9-4}$ $\\mu$ as at 4 days",
+      "locator": "arXiv:1806.08017v2 §4 第3段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "8.5 d 用 RISS 峰频率 ν_p,ref≈4–8 GHz（Eq.8）得 θ_s≈3–50 µas。",
+      "quote_en": "This suggests that the afterglow size is $\\theta_{s}\\approx{3-50}$ $\\mu$ as at 8.5 days.",
+      "locator": "arXiv:1806.08017v2 §4 第4段，Eq.(8)",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "各 epoch 的 θ_s 上限由观测直接决定、不依赖银河结构假设；下限依赖 d_scr 上限的先验。",
+      "quote_en": "Therefore, the maximum ${\\theta_{s}}$ in each epoch is directly determined by our observations and does not depend on any assumptions made about Galactic structure",
+      "locator": "arXiv:1806.08017v2 §4 第5段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "SM 比 NE2001 高 4–25 倍，说明远离银道面的电离物质分布约束很差。",
+      "quote_en": "The scattering measure is a factor of $\\approx{4-25}$ higher than predicted by the NE2001 model, illustrating that the distribution of ionized material in the ISM is poorly constrained away from the Galactic plane.",
+      "locator": "arXiv:1806.08017v2 §5 Summary and Conclusions 第1段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "ISS 尺寸与 VLBI 尺寸的唯一交叉检验：GRB 030329 15 d 的 ISS 估计（Berger+2003）小于 VLBI 外推；可能源于像几何（环/偏轴）。",
+      "quote_en": "Pihlström et al. (2007) note that the ISS size estimate at 15 days presented by Berger et al. (2003) is also smaller than an extrapolation of their VLBI observations would suggest.",
+      "locator": "arXiv:1806.08017v2 §4 末段（Figure 7 讨论）",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "像几何修正：均匀盘→完美环，修正因子可达 ~2。",
+      "quote_en": "The correction factor is larger at both higher frequencies and later times, and may be up to a factor of $\\approx 2$ for a perfect ring.",
+      "locator": "arXiv:1806.08017v2 §4 末段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "早期源尺寸比 LAB18 FS+RS 模型小 ~10 倍，8.5 d 时与模型一致。",
+      "quote_en": "We find that the source size is initially $\\sim 10$ times smaller than the prediction based on FS and RS modeling presented in LAB18",
+      "locator": "arXiv:1806.08017v2 §5 第2段",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 161219B (Alexander+2019, arXiv:1806.08017v2 = ApJ 870, 67)",
+      "claim_zh": "假设：忽略宿主星系与 IGM 的散射，只考虑银河系 ISM（Goodman 1997）——与 250702B 对尘埃宿主的保留态度形成对照。",
+      "quote_en": "In the following discussion we ignore scattering within the GRB host galaxy and in the intergalactic medium, as these are expected to be negligible compared to scattering by the Milky Way ISM (Goodman 1997).",
+      "locator": "arXiv:1806.08017v2 §3 首段第2句",
+      "url": "https://arxiv.org/abs/1806.08017v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "射电由两个额外成分主导：第一成分为反向激波（Γ0≳100），第二成分谱/时标演化异常，最可能是银河系 ISM 散射。",
+      "quote_en": "The second component exhibits peculiar spectral and temporal evolution and is most likely the result of scattering of the radio emission by the turbulent Milky Way interstellar medium (ISM).",
+      "locator": "arXiv:1705.08455v2 Abstract",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "第一成分：反向激波，初始洛伦兹因子 Γ0≳100。",
+      "quote_en": "The first component is consistent with emission from a reverse shock, indicating an initial Lorentz factor of $\\Gamma_{0}\\gtrsim 100$",
+      "locator": "arXiv:1705.08455v2 Abstract",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "RS 不能解释全部数据，故同时考虑银河系 ISM 闪变——即 RS 与散射成分的区分是建模层面的事。",
+      "quote_en": "As a RS alone cannot explain all of the data, we also consider how propagation through the interstellar medium of the Galaxy affects the radio emission via scintillation.",
+      "locator": "arXiv:1705.08455v2 §5 Multiple radio components 首段",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "标准图像：所有散射发生在单一薄屏，屏距由 NE2001 给出（高银纬典型 ~1 kpc）。",
+      "quote_en": "In the standard picture, all scattering is assumed to occur at a single “thin screen”",
+      "locator": "arXiv:1705.08455v2 §5.2.2 Interstellar Scintillation 首段",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "标准 ISS 处理无法解释 12 d 与 22 d 低频峰的全部幅度；该成分幅度之大指向 DISS 而非折射式 ISS。",
+      "quote_en": "Clearly, the standard approach cannot explain the full amplitude of the low-frequency peak at 12 d and 22 d, although some of the deviations from the RS models explored in Section 5.1 are likely explained by ISS.",
+      "locator": "arXiv:1705.08455v2 §5.2.2 第1段（Figure 6 阴影带）",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "尺寸反演假设：DISS 只对致密源有效，故可用变化持续时间独立估计发光区尺寸；2.7 GHz 最大角尺寸 ≈20 µas（d_scr=20 pc）。",
+      "quote_en": "Since diffractive ISS is only effective for compact sources, we can use the duration of the observed variability to obtain an independent estimate of the size of the emitting region.",
+      "locator": "arXiv:1705.08455v2 §5.2.2 第2段（θ_s=94(ν/10 GHz)^{6/5}(d_scr/kpc)^{-1}≈20 µas, Goodman 1997）",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "末个 epoch 不再有强变化→假设 22–48 d 间源角尺寸超过 θ_s（FS 模型 22 d 40 µas、48 d 60 µas）。",
+      "quote_en": "The strong variability is not present in our final epoch, so we assume that the angular size of the afterglow increased past $\\theta_{s}$ sometime between 22 d and 48 d.",
+      "locator": "arXiv:1705.08455v2 §5.2.2 第2段",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "在 FS 模型拟合中直接剔除早期（t<12 d）及 <7 GHz 的射电数据，因其被其他成分（RS/散射）主导。",
+      "quote_en": "We exclude the radio data at early times ( $t<12$ d) and all data at frequencies below 7 GHz because other components dominate this emission (Section 5).",
+      "locator": "arXiv:1705.08455v2 §5.2.2 末段（FS 拟合）",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "观测带宽 ~1 GHz，因此只有靠近转变频率 ν_T 处 DISS 才对变化有显著贡献。",
+      "quote_en": "Since the typical bandwidth of our radio observations is about 1 GHz, we only expect diffractive scintillation to contribute significantly to the observed variability near $\\nu_{T}$ .",
+      "locator": "arXiv:1705.08455v2 §5.2.2 第1段",
+      "url": "https://arxiv.org/abs/1705.08455v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 160625B (Alexander+2017, arXiv:1705.08455v2 = ApJ 848, 69, DOI 10.3847/1538-4357/aa8a76)",
+      "claim_zh": "用户给定标识 'GRB 160625B, ApJ 862,94 (2018), DOI 10.3847/1538-4357/aa8a76' 内部不一致：DOI aa8a76 = Alexander+2017 ApJ 848, 69（GRB 160625B RS 论文）；ApJ 862, 94 (2018) = Laskar+2018 'First ALMA Light Curve … GRB 161219B'（DOI 10.3847/1538-4357/aacbcc），是 GRB 161219B 论文。引用时须二选一。",
+      "quote_en": "",
+      "locator": "标识核对（Crossref/arXiv API，2026-11-24）：DOI 10.3847/1538-4357/aa8a76 → ApJ 848, 69 (2017)；Crossref 'Laskar 2018 ApJ 862 94' → 10.3847/1538-4357/aacbcc, 'First ALMA Light Curve Constrains Refreshed Reverse Shocks and Jet Magnetization in GRB 161219B'",
+      "url": "https://doi.org/10.3847/1538-4357/aa8a76",
+      "status": "not_found"
+    },
+    {
+      "burst": "GRB 230217A (Anderson+2024, arXiv:2409.07686v2 = ApJL 975, L13)",
+      "claim_zh": "原文对 ISS 的表述：先检验射电通量是否可能受 ISS 影响（引 Goodman 1997），并点名多个长暴已有 ISS。",
+      "quote_en": "We first investigate whether the flux density measurements of GRB 230217A could be affected by interstellar scintillation [ISS; 36] as has been seen in the radio afterglows of several long GRBs",
+      "locator": "arXiv:2409.07686v2 §3 Radio afterglow analysis（ISS 段；ref [36]=Goodman 1997）",
+      "url": "https://arxiv.org/abs/2409.07686v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 230217A (Anderson+2024, arXiv:2409.07686v2 = ApJL 975, L13)",
+      "claim_zh": "RISS19 给出 ν0=8.9 GHz（D=1.3 kpc, SM=9±1×10^-4, θ_F=2.38 µas）。",
+      "quote_en": "The all-sky model for refractive interstellar scintillation [RISS19; 39] returns a transition frequency of $\\nu_{0}=8.9$ GHz,",
+      "locator": "arXiv:2409.07686v2 §3 ISS 段第2句（Hancock+2019）",
+      "url": "https://arxiv.org/abs/2409.07686v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 230217A (Anderson+2024, arXiv:2409.07686v2 = ApJL 975, L13)",
+      "claim_zh": "5.5–6 GHz 处于强折射区，9 GHz 接近转变频率。",
+      "quote_en": "This places our $5.5-6$ GHz observations in the strong refractive regime and our 9 GHz observations near the transition frequency.",
+      "locator": "arXiv:2409.07686v2 §3 ISS 段",
+      "url": "https://arxiv.org/abs/2409.07686v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 230217A (Anderson+2024, arXiv:2409.07686v2 = ApJL 975, L13)",
+      "claim_zh": "按 Granot & van der Horst (2014) 表 1，预测调制指数可达 m=0.8（5.5 GHz）、m=1（9 GHz）。",
+      "quote_en": "the predicted modulation index is up to $m=0.8$ and $m=1$ at 5.5 and 9 GHz, respectively, for GRB 230217A.",
+      "locator": "arXiv:2409.07686v2 §3 ISS 段",
+      "url": "https://arxiv.org/abs/2409.07686v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 230217A (Anderson+2024, arXiv:2409.07686v2 = ApJL 975, L13)",
+      "claim_zh": "结论：ISS 可能有影响，但在该数据集中不显著到可辨别——即 230217A 并未把 ISS 用作尺寸约束。",
+      "quote_en": "While scintillation may affect the GRB radio afterglow, it is not significant enough to be distinguishable in our dataset.",
+      "locator": "arXiv:2409.07686v2 §3 ISS 段末句（χ² 检验 P=0.15 / P=0.5）",
+      "url": "https://arxiv.org/abs/2409.07686v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 230217A (Anderson+2024, arXiv:2409.07686v2 = ApJL 975, L13)",
+      "claim_zh": "讨论部分重申：1.2 d 前的射电探测没有显著的闪变证据。",
+      "quote_en": "our radio detections, which all occurred before 1.2 days post-burst, do not provide significant evidence for scintillation",
+      "locator": "arXiv:2409.07686v2 §4.1 Reverse shock emission 首段",
+      "url": "https://arxiv.org/abs/2409.07686v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 230217A (Anderson+2024, arXiv:2409.07686v2 = ApJL 975, L13)",
+      "claim_zh": "引言：RS 发射或闪变应有分钟–小时时标的显著变化，常被 ~1 h 快照观测漏掉。",
+      "quote_en": "This rapid evolution indicates there should be significant variability on minute-to-hour timescales from reverse shock emission or scintillation that is likely missed by the $\\sim 1$ h duration snapshot observations often obtained in the radio band",
+      "locator": "arXiv:2409.07686v2 §1 Introduction",
+      "url": "https://arxiv.org/abs/2409.07686v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 230217A (Anderson+2024, arXiv:2409.07686v2 = ApJL 975, L13)",
+      "claim_zh": "分时-bin 降低灵敏度（加上潜在闪变效应）使 RS 演化难以刻画。",
+      "quote_en": "However, the reduction in sensitivity caused by dividing the observation into smaller time bins (plus potential scintillation effects) makes it difficult to characterise the evolution of the reverse shock.",
+      "locator": "arXiv:2409.07686v2 §4.1",
+      "url": "https://arxiv.org/abs/2409.07686v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Taylor+2004, arXiv:astro-ph/0405300 = ApJ 609, L1; VLBI 直接测像)",
+      "claim_zh": "历史脉络：GRB 970508 的数小时射电起伏被归因于银河系 DISS（Goodman 1997），闪变'淬灭'给出 3 µas 尺寸——ISS 尺寸法的原型。",
+      "quote_en": "Large fluctuations in the radio flux density on timescales of several hours were attributed to diffractive scattering of the radio waves as they propagated through the turbulent ionized gas of our galaxy (Goodman 1997).",
+      "locator": "arXiv:astro-ph/0405300v1 §1 Introduction（其后：'quenching … at t∼2 weeks lead to a determination of a size of 3 μas'）",
+      "url": "https://arxiv.org/abs/astro-ph/0405300v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Taylor+2004, arXiv:astro-ph/0405300 = ApJ 609, L1; VLBI 直接测像)",
+      "claim_zh": "ISS 作为尺寸工具的局限：多数 GRB 只在数天内处于强 DISS 区，难以获得充分采样的光变（引 Goodman 1997; Walker 1998）。",
+      "quote_en": "Most GRBs are expected to remain in the strong diffractive regime for only a few days (Goodman 1997; Walker 1998), and hence there are practical difficulties obtaining well-sampled light curves.",
+      "locator": "arXiv:astro-ph/0405300v1 §1 Introduction",
+      "url": "https://arxiv.org/abs/astro-ph/0405300v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Taylor+2004, arXiv:astro-ph/0405300 = ApJ 609, L1; VLBI 直接测像)",
+      "claim_zh": "近邻 GRB（z<0.2）可用 VLBI 直接成像测膨胀/自行——与 ISS 间接推断形成对照。",
+      "quote_en": "Nearby GRBs ( $z<0.2$ ), although equally rare, enable us to image the afterglow directly, measuring the expansion or proper motion of the emitting region",
+      "locator": "arXiv:astro-ph/0405300v1 §1 Introduction",
+      "url": "https://arxiv.org/abs/astro-ph/0405300v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Taylor+2004, arXiv:astro-ph/0405300 = ApJ 609, L1; VLBI 直接测像)",
+      "claim_zh": "首批直接分辨 GRB 余辉的 VLBI 像：25 d 与 83 d，表观膨胀速度 3–5c，符合标准火球模型。",
+      "quote_en": "We present the first images directly resolving a GRB afterglow 25 and 83 days after the explosion. The observed expansion velocity of 3-5 $c$ can be fit with standard fireball models.",
+      "locator": "arXiv:astro-ph/0405300v1 §4 Conclusions 首句（Table 2：0.07 mas/0.2 pc @25 d，0.17 mas/0.5 pc @83 d）",
+      "url": "https://arxiv.org/abs/astro-ph/0405300v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Taylor+2004, arXiv:astro-ph/0405300 = ApJ 609, L1; VLBI 直接测像)",
+      "claim_zh": "由测得尺寸得平均表观横向膨胀速度 5c（24 d）与 3c（83 d）。",
+      "quote_en": "The measured sizes 24 and 83 days after the burst give average apparent perpendicular expansion velocities of 5 and 3 $c$ respectively.",
+      "locator": "arXiv:astro-ph/0405300v1 §3.1 Angular Size Measurements",
+      "url": "https://arxiv.org/abs/astro-ph/0405300v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Taylor+2004, arXiv:astro-ph/0405300 = ApJ 609, L1; VLBI 直接测像)",
+      "claim_zh": "VLBI 尺寸对环境模型的区分力：ISM 模型尺寸估计对 E52/n0 不敏感、更稳健。",
+      "quote_en": "The size estimates in the ISM model are more robust than the wind model in the sense that they are relatively insensitive to the ratio of $E_{52}/n_{\\circ}$",
+      "locator": "arXiv:astro-ph/0405300v1 §3.1（Eq.1–2：R_⟂(ISM)=3.9×10^16 (E52/n0)^{1/8} (td/1+z)^{5/8} cm 等）",
+      "url": "https://arxiv.org/abs/astro-ph/0405300v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Mesler+2012, arXiv:1208.3643v1 = ApJ 759, 4; VLBI 672–2032 d)",
+      "claim_zh": "030329 尺寸演化图中的 15 d 点来自闪变淬灭的模型依赖估计——VLBI 作者自己把 ISS 尺寸标注为 model-dependent。",
+      "quote_en": "The first measurement at 15 days comes from a model-dependent estimate of the quenching of the scintillation [2].",
+      "locator": "arXiv:1208.3643v1 §4.2 Size and Expansion Rate 首段（[2]=Berger+2003；Figure 2 说明）",
+      "url": "https://arxiv.org/abs/1208.3643v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Mesler+2012, arXiv:1208.3643v1 = ApJ 759, 4; VLBI 672–2032 d)",
+      "claim_zh": "VLBI 作者对 ISS 尺寸的系统误差评价：依赖对视线 ISM 性质的估计，不确定度大。",
+      "quote_en": "The uncertainties on this size estimate are large due to the dependence of the measurement on estimated properties of the interstellar medium along our line-of-sight.",
+      "locator": "arXiv:1208.3643v1 §4.2 首段",
+      "url": "https://arxiv.org/abs/1208.3643v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Mesler+2012, arXiv:1208.3643v1 = ApJ 759, 4; VLBI 672–2032 d)",
+      "claim_zh": "VLBI 尺寸序列：25 d 0.065±0.022 mas → 83 d 0.172±0.043 mas；806 d 0.347±0.090 mas（Pihlström+2007）。",
+      "quote_en": "The apparent diameter of the burst afterglow was shown to increase from $0.065\\pm 0.022$ mas to $0.172\\pm 0.043$ mas between day 25 and 83.",
+      "locator": "arXiv:1208.3643v1 §1 Introduction（1 mas = 2.85 pc, z=0.1685）",
+      "url": "https://arxiv.org/abs/1208.3643v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Mesler+2012, arXiv:1208.3643v1 = ApJ 759, 4; VLBI 672–2032 d)",
+      "claim_zh": "VLBI 像尺寸也有几何系统误差：临边增亮可引入 ~1.4 的直径修正因子。",
+      "quote_en": "The image may be limb-brightened [20, 23], which could suggest a possible correction factor to the values used in this paper of $\\sim 1.4$ .",
+      "locator": "arXiv:1208.3643v1 §4.2",
+      "url": "https://arxiv.org/abs/1208.3643v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Mesler+2012, arXiv:1208.3643v1 = ApJ 759, 4; VLBI 672–2032 d)",
+      "claim_zh": "030329 是首个有良好膨胀率测定的 GRB（Taylor+ 至 247 d，Pihlström+ 至 806 d）。",
+      "quote_en": "The afterglow from GRB 030329 was monitored by Taylor et al. [46] and Pihlström et al. [37] to obtain the first well-determined expansion rate for a GRB up to 247 and 806 days after the burst, respectively.",
+      "locator": "arXiv:1208.3643v1 §1 Introduction",
+      "url": "https://arxiv.org/abs/1208.3643v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Mesler & Pihlström 2013, arXiv:1304.3858v2 = ApJ 774, 77)",
+      "claim_zh": "多历元 VLBI 直接给出膨胀历史，用于约束初始洛伦兹因子。",
+      "quote_en": "With multiple epochs of observation, the expansion history of the burst can be determined directly, allowing us to place constraints on the initial Lorentz factor of the burst.",
+      "locator": "arXiv:1304.3858v2 §4.2 Determining the Initial Lorentz Factor（'GRB 030329 is unique in that its afterglow has been directly resolved using VLBI at 5 GHz'）",
+      "url": "https://arxiv.org/abs/1304.3858v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Mesler & Pihlström 2013, arXiv:1304.3858v2 = ApJ 774, 77)",
+      "claim_zh": "该文的 ISS 处理：用 Goodman (1997) 模型为 <10 GHz 数据加时变散射（误差项），而非反演尺寸。",
+      "quote_en": "We incorporate the Goodman [9] model of interstellar scintillation to account for the time-dependent scatter of the low-frequency ( $\\lesssim 10$ GHz) data.",
+      "locator": "arXiv:1304.3858v2 §6 Burst Calorimetry From the Broadband Afterglow（Table 2 / Fig.3 段）",
+      "url": "https://arxiv.org/abs/1304.3858v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 030329 (Mesler & Pihlström 2013, arXiv:1304.3858v2 = ApJ 774, 77)",
+      "claim_zh": "结论：<10 GHz 数据存在折射闪变与大尺度衍射效应造成的显著散射。",
+      "quote_en": "Refractive scintillation and large-scale diffractive effects produce a significant scatter in the data at $\\lesssim 10$ GHz",
+      "locator": "arXiv:1304.3858v2 §7 Conclusions",
+      "url": "https://arxiv.org/abs/1304.3858v2",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": "8.46 GHz 光变 10 d 前后突然跌落再峰，被称作 ISS 的标志。",
+      "quote_en": "Such erratic flux density variations are the hallmark of interstellar scintillation (ISS).",
+      "locator": "arXiv:astro-ph/0211221v1 §3 Results（Figure 1；峰值 ~2 mJy @~10 d）",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": "该文 ISS 分析的目标：估计 ISS 引起的通量调制随时间/频率的重要性（误差预算），不是反演尺寸。",
+      "quote_en": "Here we concern ourselves with estimating the importance of ISS-induced modulation of our flux density measurements as a function of time and frequency.",
+      "locator": "arXiv:astro-ph/0211221v1 §3.1 Interstellar Scintillation 首段",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": "理论框架引用 Goodman (1997) 与 Walker (1998)。",
+      "quote_en": "For more detailed treatments of ISS see Goodman (1997) and Walker (1998).",
+      "locator": "arXiv:astro-ph/0211221v1 §3.1 首段",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": "模型参数（TC93：SM=2.26×10^-4，d_scr=0.74 kpc → ν0=4.8 GHz，θ_F0=4.2 µas，Walker 1998）精度仅 ±30%。",
+      "quote_en": "The difficulties in obtaining accurate estimates of SM and $d_{scr}$ likely limit the accuracy of the $\\nu_{0}$ and $\\theta_{F_{0}}$ values to $\\pm$ 30%.",
+      "locator": "arXiv:astro-ph/0211221v1 §3.1（Figure 2）",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": "用 8.46 GHz 残差 RMS（扣线性趋势）检验预测：前两周 20–30%，提示该视线散射比预测略弱。",
+      "quote_en": "For different assumed curves we find within the first two weeks of observations an r.m.s. scatter of 20-30%, suggesting that the strength of scattering along this line-of-sight may be slightly weaker than we have predicted.",
+      "locator": "arXiv:astro-ph/0211221v1 §3.1",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": "ISS 对模型拟合的处理方式：直接把 m_4.86=0.5（后 m_4.86=0.40(t_d/15)^{-7/12}）作为附加误差项。",
+      "quote_en": "For the purposes of model fitting we adopt $m_{4.86}=0.5$",
+      "locator": "arXiv:astro-ph/0211221v1 §3.1",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": "VLBA 观测本为 ISS 实验设计，结果另文发表——本文只用时间平均通量。",
+      "quote_en": "These observations were designed for an interstellar scintillation experiment (requiring substantial time and frequency span), the results of which will be presented in a separate paper.",
+      "locator": "arXiv:astro-ph/0211221v1 §2.2（VLBA 观测小节）",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": ">15 GHz 时源已大于弱散射角尺度，变化由源演化与测量误差主导而非 ISS。",
+      "quote_en": "we expect that the observed variations will be dominated by source evolution and measurement error, not ISS",
+      "locator": "arXiv:astro-ph/0211221v1 §3.1（m_15=0.08(t_d/15)^{-7/12}）",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "GRB 991208 (Galama+2003, arXiv:astro-ph/0211221v1 = ApJ 585, 899)",
+      "claim_zh": "Walker (1998) 转换频率与菲涅尔角尺寸公式的早期应用实例：ν0=4.8 GHz，θ_F0=4.2 µas。",
+      "quote_en": "we compute $\\nu_{0}$ = 4.8 GHz and $\\theta_{F_{0}}=4.2$ $\\mu$ as (Walker 1998)",
+      "locator": "arXiv:astro-ph/0211221v1 §3.1",
+      "url": "https://arxiv.org/abs/astro-ph/0211221v1",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "Walker 1998 自己声明：TC93 模型结果不是确定预言，只是视线情况的指引。",
+      "quote_en": "It is therefore essential to regard the results we shall present not as firm predictions, but rather as a guide to the likely circumstance, on any line of sight.",
+      "locator": "Walker 1998 §2 A model for interstellar scintillation（OUP 全文 HTML；数学符号在该渲染中丢失）",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "转变频率处宽band闪变最强，RMS 分数涨落量级为 1——250702B 5.5 GHz 理论 m_p=0.89 的来源。",
+      "quote_en": "it is at this point that the broad-band scintillations are greatest, with rms fractional flux variations being of order unity.",
+      "locator": "Walker 1998 §2",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "菲涅尔区角尺寸构成深调制源尺寸的近似上限——250702B 'θ_scatt 即尺寸上限' 的来源。",
+      "quote_en": "These dimensions form approximate upper limits on source size for which deep modulations can arise from interstellar scintillation.",
+      "locator": "Walker 1998 §2（Figure 2 说明）",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "§3 的标度关系是渐近结果，仅在强/弱散射极限严格成立。",
+      "quote_en": "Readers should be aware that the results we shall quote here are asymptotic results",
+      "locator": "Walker 1998 §3 Scaling and usage of results 首段",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "折射式 ISS（强散射）：点源近似失效时调制指数按 (θ_r/θ_s)^{7/6} 压低、时标按 θ_s/θ_r 增大——与 250702B Eq.(4) 后一句逐项对应。",
+      "quote_en": "Again, where the point source approximation fails (for s r in this case) the modulation index is reduced by a factor ( r / s ) 7/6 , while the time-scale for variability simply increases as s / r .",
+      "locator": "Walker 1998 §3.2.1 Refractive scintillation（OUP HTML 丢失下标：θ_r、θ_s，7/6 为上标）",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "算例确认 Walker 1998 Eq.(11) 为强散射折射调制指数（算得 m_p≈0.22，等价于 (ν/ν0)^{17/30}）——即 250702B Eq.(2)。",
+      "quote_en": "In this case m p :0.22 (refractive variations; equation 11), which is easily sufficient to explain the observed modulation depth.",
+      "locator": "Walker 1998 §3.3 Two examples 第2例（同段：'the variability time-scale is proportional to … in refractive scintillation (equation 13)'，即 Eq.(13) 时标 ∝ ν^{-11/5}）",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "Walker 1998 提醒：预测与数据比较须容许宽包络，因 ISM 复杂性被 TC93 模型简化。",
+      "quote_en": "When assessing the role of scintillation from the results we have given, and in connection with real data, it is important to admit a broad envelope for what is held to be consistent between predictions and data.",
+      "locator": "Walker 1998 §3 末段",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "点源模型作为极限情形仍有意义：实际调制指数不会更大、时标不会更短。",
+      "quote_en": "Despite these complexities the point source model retains its relevance as a limiting case -the actual modulation index cannot be larger, and the time-scale cannot be shorter than would be the case for a point-like source.",
+      "locator": "Walker 1998 §4 Discussion",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "源有结构时观测调制指数总小于点源、时标总更长——意味着 ISS 反演尺寸天然偏向下限/上限的不对称。",
+      "quote_en": "In this case the observed modulation index is always smaller than for a point source, while the time-scale for variability is, of course, always longer.",
+      "locator": "Walker 1998 §3.1 Weak scattering",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "结论：ISS 作用强烈受源角尺寸影响，高频大幅闪变要求源尺寸远小于毫角秒。",
+      "quote_en": "The role played by interstellar scintillation is, however, strongly influenced by the angular size of the source, and large-amplitude scintillations at high frequencies are contingent on source dimensions much less than a milliarcsecond.",
+      "locator": "Walker 1998 §5 Conclusions",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "转变频率处闪变时标近似 t_F0≈2 h（对所有河外视线）——250702B Eq.(3) 前置系数 2 hr 的来源。",
+      "quote_en": "We will henceforth make use of the approximation t F0 #2 h for all lines of sight to the extragalactic sky.",
+      "locator": "Walker 1998 §2 Eq.(5) 后（原文 t_F0≈2 h；OUP HTML 将 '≈' 渲染为 '#'）",
+      "url": "https://doi.org/10.1046/j.1365-8711.1998.01238.x",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "Walker 1998 摘要：预测 1–20 GHz 在绝大部分河外天空都有大幅快速变化。",
+      "quote_en": "We find that large-amplitude, rapid, variability is predicted at commonly observed radio frequencies (1-20 GHz) over the vast majority of the extragalactic sky.",
+      "locator": "Walker 1998 Abstract（SciX/ADS 摘要页；OUP 全文页未含摘要）",
+      "url": "https://ui.adsabs.harvard.edu/abs/1998MNRAS.294..307W/abstract",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "勘误（MNRAS 321, 176, 2001）：Walker 1998 Eq.(1) 数值因子差 √π（OUP HTML 将 √π 渲染为 'p'）。",
+      "quote_en": "The numerical factor in equation (1) of that paper is in error by a factor of p; the correct formulation is",
+      "locator": "Walker 2001 Erratum, MNRAS 321, 176 正文第1段",
+      "url": "https://academic.oup.com/mnras/article/321/1/176/1399603",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "勘误影响：§2 的 ν0 数值应乘 1.9。",
+      "quote_en": "This error affects the numerical estimates, given in Section 2, of transition frequency between weak and strong scattering",
+      "locator": "Walker 2001 Erratum 第2句（后接 '—ν 0, which should be increased by a factor of 1.9'）",
+      "url": "https://academic.oup.com/mnras/article/321/1/176/1399603",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "勘误影响：转变频率处菲涅尔角半径 θ_F0 应乘 0.7（Eq.5 时标同）。",
+      "quote_en": "and the angular Fresnel radius at the transition frequency —θ F0, which should be decreased by a factor of 0.7.",
+      "locator": "Walker 2001 Erratum 第2句",
+      "url": "https://academic.oup.com/mnras/article/321/1/176/1399603",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "Walker (1998) MNRAS 294, 307 – ISS theory source for 250702B §3.1.2",
+      "claim_zh": "勘误不影响 §3 的标度关系（250702B Eq.2–4 所用者）及讨论/结论；250702B 的 ν0、θ_F 取自 NE2025 而非 Walker 1998 的 TC93 图，故勘误不直接波及——但引用 Walker 1998 时宜注明。",
+      "quote_en": "The error does not affect the scaling relations given in Section 3, nor the discussion and conclusions of the paper (Sections 4 and 5, respectively).",
+      "locator": "Walker 2001 Erratum 第2句末",
+      "url": "https://academic.oup.com/mnras/article/321/1/176/1399603",
+      "status": "verified_fulltext"
+    },
+    {
+      "burst": "NE2025 (Ocker & Cordes 2026, arXiv:2602.11838v2 = ApJ 1002, 3)",
+      "claim_zh": "NE2025 确为 NE2001 的更新版，散射预测中位改进 100%；但 GRB 250702B 视线的 ν0=6.7 GHz、θ_F=0.5 µas 系 Goodwin+ 用 NE2025 代码算得，NE2025 原文无法核实，须自行用 NE2025 复算。",
+      "quote_en": "The updated model, NE2025, provides a factor of $20\\times$ improvement in median distance prediction accuracy and $100\\%$ median improvement in scattering predictions based on DM, relative to NE2001.",
+      "locator": "arXiv:2602.11838v2 Abstract（仅摘要可及）",
+      "url": "https://arxiv.org/abs/2602.11838v2",
+      "status": "abstract_only"
+    },
+    {
+      "burst": "NE2025 (Ocker & Cordes 2026, arXiv:2602.11838v2 = ApJ 1002, 3)",
+      "claim_zh": "NE2025 的动机之一：修正 NE2001 对脉冲星距离与散射的系统性低估（支持 250702B 对 NE2001 类模型在高银纬不可靠的担忧，但不等于验证 6.7 GHz/0.5 µas）。",
+      "quote_en": "correcting NE2001's systematic underestimation of pulsar distance and scattering",
+      "locator": "arXiv:2602.11838v2 Abstract（仅摘要可及）",
+      "url": "https://arxiv.org/abs/2602.11838v2",
+      "status": "abstract_only"
+    }
+  ]
+}

@@ -1,294 +1,294 @@
-burst,page,panel,band,status,chi2,fvar_pct,agree,model,nu,regime,mp,tp_hr,theta_scatt_uas,size_1e16cm,fvar_over_mp,invertible
-970508,109/132,1.43 GHz,False,number,5.3,28.0,True,RISS19,1.43,SR,0.54,44.78,58.16,< 140.57,0.519,True
-970508,109/132,1.43 GHz,False,number,5.3,28.0,True,NE2025,1.43,SR,0.33,323.51,151.81,< 366.94,0.848,True
-970508,109/132,4.86 GHz,False,number,10.0,26.0,True,RISS19,4.86,W,0.83,3.8,4.93,< 11.93,0.313,True
-970508,109/132,4.86 GHz,False,number,10.0,26.0,True,NE2025,4.86,SR,0.66,21.93,10.29,< 24.87,0.394,True
-970508,109/132,8.46 GHz,False,number,11.0,24.0,True,RISS19,8.46,W,0.38,2.88,3.74,< 9.04,0.632,True
-970508,109/132,8.46 GHz,False,number,11.0,24.0,True,NE2025,8.46,SR,0.9,6.48,3.04,< 7.35,0.267,True
-980425,114/132,1.38 GHz,False,number,3.2,4.4,True,RISS19,1.4,SR,0.49,59.8,80.31,< 4.48,0.09,False
-980425,114/132,1.38 GHz,False,number,3.2,4.4,True,NE2025,1.4,SR,0.28,532.25,275.46,< 15.36,0.157,True
-980425,114/132,2.49 GHz,False,number,9.0,6.6,True,RISS19,2.3,SR,0.65,20.06,26.94,< 1.50,0.102,False
-980425,114/132,2.49 GHz,False,number,9.0,6.6,True,NE2025,2.3,SR,0.37,178.56,92.41,< 5.15,0.178,True
-980425,114/132,4.8 GHz,False,data only,,,True,RISS19,5.0,W,0.99,3.68,4.95,< 0.28,,False
-980425,114/132,4.8 GHz,False,data only,,,True,NE2025,5.0,SR,0.57,32.35,16.74,< 0.93,,False
-980425,114/132,8.64 GHz,False,data only,,,True,,,,,,,,,False
-980519,117/132,1.43 GHz,False,data only,,,True,,,,,,,,,False
-980519,117/132,4.86 GHz,False,data only,,,True,,,,,,,,,False
-980519,117/132,8.46 GHz,False,number,4.5,37.0,True,RISS19,8.46,W,0.67,3.76,2.86,−−,0.552,True
-980519,117/132,8.46 GHz,False,number,4.5,37.0,True,NE2025,8.46,SR,0.65,21.78,6.75,−−,0.569,True
-980519,117/132,100 GHz,False,data only,,,True,,,,,,,,,False
-980703,120/132,1.43 GHz,False,number,1.6,17.0,True,RISS19,1.43,SR,0.62,21.82,49.71,< 125.22,0.274,True
-980703,120/132,1.43 GHz,False,number,1.6,17.0,True,NE2025,1.43,SR,0.39,158.08,107.73,< 271.36,0.436,True
-980703,120/132,4.86 GHz,False,number,17.0,38.0,True,RISS19,4.86,W,0.58,2.87,6.54,< 16.46,0.655,True
-980703,120/132,4.86 GHz,False,number,17.0,38.0,True,NE2025,4.86,SR,0.79,10.72,7.3,< 18.39,0.481,True
-980703,120/132,8.46 GHz,False,number,2.7,8.9,True,RISS19,8.46,W,0.26,2.17,4.95,< 12.48,0.342,True
-980703,120/132,8.46 GHz,False,number,2.7,8.9,True,NE2025,8.46,W,0.83,3.98,2.71,< 6.82,0.107,False
-981226,123/132,4.86 GHz,False,data only,,,True,,,,,,,,,False
-981226,123/132,8.46 GHz,False,not detected,,,True,RISS19,8.46,W,0.13,1.98,5.43,< 14.09,,False
-981226,123/132,8.46 GHz,False,not detected,,,True,NE2025,8.46,W,0.75,3.51,3.07,< 7.97,,False
-990123,126/132,8.46 GHz,False,number,3.1,50.0,True,,,,,,,,,False
-990123,126/132,99.98 GHz,False,data only,,,True,,,,,,,,,False
-990123,126/132,222 GHz,False,data only,,,True,,,,,,,,,False
-990123,126/132,350 GHz,False,data only,,,True,,,,,,,,,False
-991208,129/132,1-2 GHz,True,not detected,,,True,RISS19,1.43,SR,0.64,22.06,43.11,< 98.19,,False
-991208,129/132,1-2 GHz,True,not detected,,,True,NE2025,1.43,SR,0.37,216.12,116.98,< 266.41,,False
-991208,129/132,4-6 GHz,True,data only,,,True,RISS19,4.86,W,0.55,3.1,6.05,< 13.79,,False
-991208,129/132,4-6 GHz,True,data only,,,True,NE2025,4.86,SR,0.74,14.65,7.93,< 18.06,,False
-991208,129/132,5-9 GHz,True,number,25.0,29.0,True,RISS19,8.46,W,0.25,2.35,4.59,< 10.45,1.16,False
-991208,129/132,5-9 GHz,True,number,25.0,29.0,True,RISS19,4.86,W,0.55,3.1,6.05,< 13.79,0.527,False
-991208,129/132,5-9 GHz,True,number,25.0,29.0,True,NE2025,8.46,W,0.97,4.46,2.41,< 5.50,0.299,False
-991208,129/132,5-9 GHz,True,number,25.0,29.0,True,NE2025,4.86,SR,0.74,14.65,7.93,< 18.06,0.392,False
-991208,129/132,13-18 GHz,True,data only,,,True,,,,,,,,,False
-991208,129/132,22.49 GHz,False,data only,,,True,,,,,,,,,False
-991208,129/132,30 GHz,False,data only,,,True,,,,,,,,,False
-991208,129/132,86.24 GHz,False,data only,,,True,,,,,,,,,False
-991208,129/132,100-300 GHz,True,data only,,,True,,,,,,,,,False
-991216,132/132,1.43 GHz,False,data only,,,True,,,,,,,,,False
-991216,132/132,4.86 GHz,False,data only,,,True,,,,,,,,,False
-991216,132/132,8.42-8.46 GHz,False,number,1.7,38.0,True,,,,,,,,,False
-991216,132/132,15 GHz,False,data only,,,True,,,,,,,,,False
-991216,132/132,99.9 GHz,False,data only,,,True,,,,,,,,,False
-991216,132/132,350 GHz,False,data only,,,True,,,,,,,,,False
-000301C,7/132,1.43 GHz,False,data only,,,True,,,,,,,,,False
-000301C,7/132,4.86 GHz,False,data only,,,True,RISS19,4.86,W,0.6,3.05,6.15,< 16.26,,False
-000301C,7/132,4.86 GHz,False,data only,,,True,NE2025,4.86,SR,0.75,14.85,7.36,< 19.45,,False
-000301C,7/132,8.46 GHz,False,number,2.2,12.0,True,RISS19,8.46,W,0.27,2.31,4.66,< 12.32,0.444,True
-000301C,7/132,8.46 GHz,False,number,2.2,12.0,True,NE2025,8.46,W,0.95,4.66,2.31,< 6.11,0.126,False
-000301C,7/132,15 GHz,False,data only,,,True,,,,,,,,,False
-000301C,7/132,22.5 GHz,False,data only,,,True,,,,,,,,,False
-000301C,7/132,100 GHz,False,data only,,,True,,,,,,,,,False
-000301C,7/132,250 GHz,False,data only,,,True,,,,,,,,,False
-000301C,7/132,350 GHz,False,data only,,,True,,,,,,,,,False
-000418,10/132,1.43 GHz,False,data only,,,True,,,,,,,,,False
-000418,10/132,4.86 GHz,False,number,42.0,46.0,True,RISS19,4.86,W,0.33,2.56,7.31,< 19.00,1.394,False
-000418,10/132,4.86 GHz,False,number,42.0,46.0,True,NE2025,4.86,SR,0.87,7.84,5.64,< 14.65,0.529,True
-000418,10/132,8.35-8.46 GHz,False,number,7.9,21.0,True,RISS19,8.46,W,0.15,1.94,5.54,< 14.40,1.4,False
-000418,10/132,8.35-8.46 GHz,False,number,7.9,21.0,True,NE2025,8.46,W,0.65,3.87,2.78,< 7.23,0.323,True
-000418,10/132,15 GHz,False,data only,,,True,RISS19,15.0,W,0.07,1.46,4.16,< 10.81,,False
-000418,10/132,15 GHz,False,data only,,,True,NE2025,15.0,W,0.29,2.91,2.09,< 5.43,,False
-000418,10/132,22.46 GHz,False,data only,,,True,RISS19,22.0,W,0.04,1.21,3.44,< 8.93,,False
-000418,10/132,22.46 GHz,False,data only,,,True,NE2025,22.0,W,0.17,2.4,1.73,< 4.49,,False
-000911,13/132,4.86 GHz,False,not detected,,,True,RISS19,4.86,W,0.4,2.93,6.4,< 16.47,,False
-000911,13/132,4.86 GHz,False,not detected,,,True,NE2025,4.86,SR,0.78,10.17,7.93,< 20.39,,False
-000911,13/132,8.46 GHz,False,not detected,,,True,RISS19,8.46,W,0.18,2.22,4.85,< 12.48,,False
-000911,13/132,8.46 GHz,False,not detected,,,True,NE2025,8.46,W,0.84,3.72,2.9,< 7.45,,False
-000926,16/132,1.43 GHz,False,data only,,,True,,,,,,,,,False
-000926,16/132,4.86 GHz,False,not detected,,,True,RISS19,4.86,W,0.63,3.27,5.73,< 15.11,,False
-000926,16/132,4.86 GHz,False,not detected,,,True,NE2025,4.86,SR,0.71,17.08,8.24,< 21.72,,False
-000926,16/132,8.46 GHz,False,number,7.3,44.0,True,RISS19,8.46,W,0.29,2.48,4.34,< 11.45,1.517,False
-000926,16/132,8.46 GHz,False,number,7.3,44.0,True,NE2025,8.46,SR,0.98,5.04,2.43,< 6.42,0.449,True
-000926,16/132,15 GHz,False,data only,,,True,RISS19,15.0,W,0.13,1.86,3.26,< 8.60,,False
-000926,16/132,15 GHz,False,data only,,,True,NE2025,15.0,W,0.47,3.55,1.71,< 4.51,,False
-000926,16/132,22.5 GHz,False,data only,,,False,,,,,,,,,False
-000926,16/132,98.48 GHz,False,data only,,44.0,False,,,,,,,,,False
-011121,19/132,4.8 GHz,False,number,10.0,12.0,True,,,,,,,,,False
-011121,19/132,8.7 GHz,False,number,3.8,11.0,True,RISS19,8.7,SR,0.9,5.29,3.66,< 5.86,0.122,False
-011121,19/132,8.7 GHz,False,number,3.8,11.0,True,NE2025,8.7,SR,0.54,33.03,13.23,< 21.18,0.204,True
-020405,22/132,1.43 GHz,False,data only,,,True,,,,,,,,,False
-020405,22/132,4.86 GHz,False,data only,,,True,,,,,,,,,False
-020405,22/132,8.46 GHz,False,number,4.2,61.0,True,RISS19,8.46,W,0.35,2.76,3.91,< 8.82,1.743,False
-020405,22/132,8.46 GHz,False,number,4.2,61.0,True,NE2025,8.46,SR,0.81,8.51,4.36,< 9.83,0.753,True
-020405,22/132,22.5 GHz,False,data only,,,True,,,,,,,,,False
-020819,25/132,1.43 GHz,False,data only,,,True,,,,,,,,,False
-020819,25/132,4.86 GHz,False,data only,,,True,,,,,,,,,False
-020819,25/132,8.46 GHz,False,number,5.3,18.0,True,,,,,,,,,False
-030329,28/132,1-2 GHz,True,number,82.0,28.0,True,,,,,,,,,False
-030329,28/132,2-6 GHz,True,number,140.0,22.0,True,,,,,,,,,False
-030329,28/132,6-10 GHz,True,number,300.0,17.0,True,,,,,,,,,False
-030329,28/132,10-16 GHz,True,number,21.0,5.6,True,,,,,,,,,False
-030329,28/132,16-25 GHz,True,number,130.0,7.1,True,,,,,,,,,False
-030329,28/132,25-45 GHz,True,number,42.0,10.0,True,,,,,,,,,False
-031203,31/132,1.43 GHz,False,data only,,,True,RISS19,1.4,SR,0.18,2826.34,683.2,< 419.58,,False
-031203,31/132,1.43 GHz,False,data only,,,True,NE2025,1.4,SR,0.09,8637.23,17733.01,< 10890.57,,False
-031203,31/132,4.86 GHz,False,number,3.1,12.0,True,RISS19,4.9,SR,0.37,179.59,43.41,< 26.66,0.324,True
-031203,31/132,4.86 GHz,False,number,3.1,12.0,True,NE2025,4.9,SR,0.18,548.81,1126.76,< 691.99,0.667,True
-031203,31/132,8.46 GHz,False,number,14.0,37.0,True,RISS19,8.5,SR,0.5,53.45,12.92,< 7.94,0.74,True
-031203,31/132,8.46 GHz,False,number,14.0,37.0,True,NE2025,8.5,SR,0.24,163.36,335.38,< 205.97,1.542,False
-031203,31/132,22.5 GHz,False,data only,,,True,RISS19,22.5,SR,0.87,6.28,1.52,< 0.93,,False
-031203,31/132,22.5 GHz,False,data only,,,True,NE2025,22.5,SR,0.42,19.19,39.4,< 24.20,,False
-070125,34/132,0.61 GHz,False,data only,,,True,,,,,,,,,False
-070125,34/132,1.46 GHz,False,data only,,,True,,,,,,,,,False
-070125,34/132,4.86 GHz,False,not detected,,,True,RISS19,4.86,SR,0.91,5.11,6.38,< 17.11,,False
-070125,34/132,4.86 GHz,False,not detected,,,True,NE2025,4.86,SR,0.64,21.79,12.43,< 33.31,,False
-070125,34/132,8.46 GHz,False,number,4.4,8.8,True,RISS19,8.46,W,0.57,2.94,3.67,< 9.83,0.154,True
-070125,34/132,8.46 GHz,False,number,4.4,8.8,True,NE2025,8.46,SR,0.88,6.44,3.67,< 9.84,0.1,False
-070125,34/132,14.94 GHz,False,number,2.9,15.0,True,RISS19,15.0,W,0.26,2.21,2.75,< 7.39,0.577,True
-070125,34/132,14.94 GHz,False,number,2.9,15.0,True,NE2025,15.0,W,0.62,3.26,1.86,< 4.99,0.242,True
-070125,34/132,22.5 GHz,False,not detected,,,True,RISS19,22.0,W,0.15,1.82,2.27,< 6.10,,False
-070125,34/132,22.5 GHz,False,not detected,,,True,NE2025,22.0,W,0.36,2.7,1.54,< 4.12,,False
-070125,34/132,95 GHz,False,data only,,,True,,,,,,,,,False
-070125,34/132,250 GHz,False,data only,,,True,,,,,,,,,False
-100418A,38/132,4.9 GHz,False,data only,,,True,RISS19,4.8,W,0.84,3.7,5.13,< 11.09,,False
-100418A,38/132,4.9 GHz,False,data only,,,True,NE2025,4.8,SR,0.61,30.16,11.79,< 25.49,,False
-100418A,38/132,4.95 GHz,False,data only,,,True,RISS19,4.8,W,0.84,3.7,5.13,< 11.09,,False
-100418A,38/132,4.95 GHz,False,data only,,,True,NE2025,4.8,SR,0.61,30.16,11.79,< 25.49,,False
-100418A,38/132,5.5 GHz,False,data only,,,True,,,,,,,,,False
-100418A,38/132,7.9 GHz,False,data only,,,True,,,,,,,,,False
-100418A,38/132,8.4 GHz,False,data only,,,True,RISS19,9.0,W,0.35,2.7,3.75,< 8.10,,False
-100418A,38/132,8.4 GHz,False,data only,,,True,NE2025,9.0,SR,0.88,7.57,2.96,< 6.39,,False
-100418A,38/132,8.43-8.8 GHz,False,number,68.0,53.0,True,RISS19,9.0,W,0.35,2.7,3.75,< 8.10,1.514,False
-100418A,38/132,8.43-8.8 GHz,False,number,68.0,53.0,True,NE2025,9.0,SR,0.88,7.57,2.96,< 6.39,0.602,True
-100418A,38/132,9 GHz,False,data only,,,True,RISS19,9.0,W,0.35,2.7,3.75,< 8.10,,False
-100418A,38/132,9 GHz,False,data only,,,True,NE2025,9.0,SR,0.88,7.57,2.96,< 6.39,,False
-111215A,41/132,1.4 GHz,False,data only,,,True,RISS19,1.4,SR,0.45,76.68,98.42,< 259.59,,False
-111215A,41/132,1.4 GHz,False,data only,,,True,NE2025,1.4,SR,0.32,380.2,145.84,< 384.67,,False
-111215A,41/132,4.8 GHz,False,number,19.0,32.0,True,RISS19,4.9,SR,0.92,4.87,6.25,< 16.49,0.348,True
-111215A,41/132,4.8 GHz,False,number,19.0,32.0,True,NE2025,4.9,SR,0.66,24.16,9.27,< 24.44,0.485,True
-111215A,41/132,15 GHz,False,number,3.1,13.0,True,RISS19,15.0,W,0.25,2.18,2.79,< 7.37,0.52,True
-111215A,41/132,15 GHz,False,number,3.1,13.0,True,NE2025,15.0,W,0.58,3.98,1.53,< 4.03,0.224,True
-140304A,46/132,1.45 GHz,False,data only,,,True,,,,,,,,,False
-140304A,46/132,2-4 GHz,True,data only,,,True,,,,,,,,,False
-140304A,46/132,4-6 GHz,True,number,22.0,32.0,True,,,,,,,,,False
-140304A,46/132,6-8 GHz,True,number,55.0,54.0,True,,,,,,,,,False
-140304A,46/132,8-10 GHz,True,number,24.0,19.0,True,RISS19,11.0,W,0.33,2.51,3.3,< 6.36,0.576,False
-140304A,46/132,8-10 GHz,True,number,24.0,19.0,True,NE2025,11.0,W,0.88,4.13,2.0,< 3.86,0.216,False
-140304A,46/132,10-13 GHz,True,not detected,,,True,RISS19,11.0,W,0.33,2.51,3.3,< 6.36,,False
-140304A,46/132,10-13 GHz,True,not detected,,,True,NE2025,11.0,W,0.88,4.13,2.0,< 3.86,,False
-140304A,46/132,13-18 GHz,True,number,2.2,13.0,True,,,,,,,,,False
-140304A,46/132,18-27 GHz,True,number,2.6,22.0,True,,,,,,,,,False
-140304A,46/132,27-40 GHz,True,data only,,,True,,,,,,,,,False
-140304A,46/132,85.5 GHz,False,data only,,,True,,,,,,,,,False
-140304A,47/132,1.45 GHz,False,data only,,,True,,,,,,,,,False
-140304A,47/132,2-4 GHz,True,data only,,,True,,,,,,,,,False
-140304A,47/132,4-6 GHz,True,number,27.0,75.0,True,,,,,,,,,False
-140304A,47/132,6-8 GHz,True,number,75.0,76.0,True,,,,,,,,,False
-140304A,47/132,8-10 GHz,True,number,7.1,22.0,True,RISS19,11.0,W,0.33,2.51,3.3,< 6.36,0.667,False
-140304A,47/132,8-10 GHz,True,number,7.1,22.0,True,NE2025,11.0,W,0.88,4.13,2.0,< 3.86,0.25,False
-140304A,47/132,10-13 GHz,True,number,16.0,41.0,True,RISS19,11.0,W,0.33,2.51,3.3,< 6.36,1.242,False
-140304A,47/132,10-13 GHz,True,number,16.0,41.0,True,NE2025,11.0,W,0.88,4.13,2.0,< 3.86,0.466,False
-140304A,47/132,13-18 GHz,True,number,31.0,41.0,True,,,,,,,,,False
-140304A,47/132,18-27 GHz,True,number,12.0,37.0,True,,,,,,,,,False
-140304A,47/132,27-40 GHz,True,data only,,,True,,,,,,,,,False
-140304A,47/132,85.5 GHz,False,data only,,,True,,,,,,,,,False
-140713A,50/132,4.9 GHz,False,number,12.0,20.0,True,RISS19,4.8,SR,0.95,4.72,5.54,< 13.85,0.211,True
-140713A,50/132,4.9 GHz,False,number,12.0,20.0,True,NE2025,4.8,SR,0.63,30.38,10.16,< 25.39,0.317,True
-140713A,50/132,7 GHz,False,number,53.0,1.1,True,,,,,,,,,False
-140713A,50/132,13.4 GHz,False,number,56.0,23.0,True,,,,,,,,,False
-140713A,50/132,15.9 GHz,False,number,24.0,16.0,True,RISS19,15.0,W,0.23,2.27,2.67,< 6.68,0.696,True
-140713A,50/132,15.9 GHz,False,number,24.0,16.0,True,NE2025,15.0,W,0.64,4.26,1.43,< 3.56,0.25,True
-140713A,50/132,85.5-86.7 GHz,False,number,3.0,17.0,True,,,,,,,,,False
-141121A,53/132,3 GHz,False,number,2.8,18.0,True,RISS19,3.0,SR,0.63,19.52,25.46,< 68.16,0.286,True
-141121A,53/132,3 GHz,False,number,2.8,18.0,True,NE2025,3.0,SR,0.51,56.95,31.5,< 84.32,0.353,True
-141121A,53/132,4.9-5 GHz,False,number,8.2,25.0,True,RISS19,5.0,SR,0.84,6.34,8.27,< 22.15,0.298,True
-141121A,53/132,4.9-5 GHz,False,number,8.2,25.0,True,NE2025,5.0,SR,0.68,18.51,10.24,< 27.41,0.368,True
-141121A,53/132,7 GHz,False,number,9.3,25.0,True,RISS19,7.0,W,0.96,3.16,4.12,< 11.03,0.26,True
-141121A,53/132,7 GHz,False,number,9.3,25.0,True,NE2025,7.0,SR,0.82,8.83,4.88,< 13.07,0.305,True
-141121A,53/132,13 GHz,False,number,3.3,9.7,True,RISS19,13.0,W,0.4,2.32,3.02,< 8.09,0.242,True
-141121A,53/132,13 GHz,False,number,3.3,9.7,True,NE2025,13.0,W,0.69,3.56,1.97,< 5.27,0.141,False
-141121A,53/132,15 GHz,False,number,3.6,12.0,True,RISS19,15.0,W,0.33,2.16,2.81,< 7.54,0.364,True
-141121A,53/132,15 GHz,False,number,3.6,12.0,True,NE2025,15.0,W,0.56,3.31,1.83,< 4.91,0.214,True
-141121A,53/132,93 GHz,False,data only,,,True,,,,,,,,,False
-160131A,56/132,0.61 GHz,False,data only,,,True,,,,,,,,,False
-160131A,56/132,1-2 GHz,True,data only,,,True,,,,,,,,,False
-160131A,56/132,4-6 GHz,True,number,1.9,36.0,True,,,,,,,,,False
-160131A,56/132,6-8 GHz,True,number,57.0,460.0,True,,,,,,,,,False
-160131A,56/132,8-10 GHz,True,number,26.0,30.0,True,RISS19,8.93,SR,0.85,4.62,5.67,< 14.31,0.353,False
-160131A,56/132,8-10 GHz,True,number,26.0,30.0,True,NE2025,8.93,SR,0.94,5.82,2.47,< 6.24,0.319,False
-160131A,56/132,10-13 GHz,True,number,7.3,120.0,True,RISS19,11.4,SR,0.98,2.7,3.31,< 8.36,1.224,False
-160131A,56/132,10-13 GHz,True,number,7.3,120.0,True,NE2025,11.4,W,0.82,4.34,1.84,< 4.65,1.463,False
-160131A,56/132,13-18 GHz,True,number,9.1,4.2,True,,,,,,,,,False
-160131A,56/132,18-27 GHz,True,number,2.7,7.9,True,RISS19,24.6,W,0.35,1.74,2.13,< 5.38,0.226,False
-160131A,56/132,18-27 GHz,True,number,2.7,7.9,True,NE2025,24.6,W,0.27,2.95,1.25,< 3.16,0.293,False
-160131A,56/132,27-40 GHz,True,number,2.2,8.2,True,RISS19,37.1,W,0.2,1.41,1.74,< 4.38,0.41,False
-160131A,56/132,27-40 GHz,True,number,2.2,8.2,True,RISS19,30.4,W,0.26,1.56,1.92,< 4.84,0.315,False
-160131A,56/132,27-40 GHz,True,number,2.2,8.2,True,RISS19,24.6,W,0.35,1.74,2.13,< 5.38,0.234,False
-160131A,56/132,27-40 GHz,True,number,2.2,8.2,True,NE2025,37.1,W,0.15,2.41,1.02,< 2.58,0.547,False
-160131A,56/132,27-40 GHz,True,number,2.2,8.2,True,NE2025,30.4,W,0.2,2.66,1.13,< 2.85,0.41,False
-160131A,56/132,27-40 GHz,True,number,2.2,8.2,True,NE2025,24.6,W,0.27,2.95,1.25,< 3.16,0.304,False
-160131A,56/132,92.5 GHz,False,data only,,,True,,,,,,,,,False
-160623A,59/132,15.5 GHz,False,number,7.4,72.0,True,,,,,,,,,False
-161219B,64/132,1-2 GHz,True,data only,,,True,,,,,,,,,False
-161219B,64/132,2-4 GHz,True,data only,,,True,RISS19,3.4,SR,0.6,24.1,24.99,< 20.54,,False
-161219B,64/132,2-4 GHz,True,data only,,,True,NE2025,3.4,SR,0.53,62.49,19.48,< 16.01,,False
-161219B,64/132,5 GHz,False,number,15.0,13.0,True,,,,,,,,,False
-161219B,64/132,7.4 GHz,False,number,4.8,7.8,True,,,,,,,,,False
-161219B,64/132,8.5 GHz,False,number,50.0,21.0,True,RISS19,8.5,W,1.0,3.22,3.33,< 2.74,0.21,True
-161219B,64/132,8.5 GHz,False,number,50.0,21.0,True,NE2025,8.5,SR,0.89,8.32,2.6,< 2.13,0.236,True
-161219B,64/132,11 GHz,False,number,53.0,32.0,True,,,,,,,,,False
-161219B,64/132,13.5-16 GHz,True,number,20.0,16.0,True,RISS19,16.0,W,0.41,2.34,2.43,< 2.00,0.39,False
-161219B,64/132,13.5-16 GHz,True,number,20.0,16.0,True,NE2025,16.0,W,0.55,4.27,1.33,< 1.10,0.291,False
-161219B,64/132,19-25 GHz,True,number,15.0,22.0,True,,,,,,,,,False
-161219B,64/132,27-40 GHz,True,data only,,,True,RISS19,30.0,W,0.17,1.71,1.77,< 1.46,,False
-161219B,64/132,27-40 GHz,True,data only,,,True,NE2025,30.0,W,0.22,3.12,0.97,< 0.80,,False
-161219B,64/132,91.5 GHz,False,not detected,,,True,RISS19,91.5,W,0.03,0.98,1.02,< 0.84,,False
-161219B,64/132,91.5 GHz,False,not detected,,,True,NE2025,91.5,W,0.05,1.79,0.56,< 0.46,,False
-161219B,64/132,103.5 GHz,False,not detected,,,True,,,,,,,,,False
-170105A,67/132,2.8 GHz,False,data only,,,True,,,,,,,,,False
-170105A,67/132,5 GHz,False,data only,,,True,,,,,,,,,False
-170105A,67/132,7.4 GHz,False,data only,,,True,,,,,,,,,False
-170105A,67/132,9 GHz,False,data only,,,True,,,,,,,,,False
-170105A,67/132,14-15.5 GHz,True,not detected,,,True,RISS19,15.5,W,0.12,1.77,3.32,−−,,False
-170105A,67/132,14-15.5 GHz,True,not detected,,,True,NE2025,15.5,W,0.4,2.92,2.01,−−,,False
-171010A,70/132,4-6 GHz,True,data only,,,True,,,,,,,,,False
-171010A,70/132,6-8 GHz,True,data only,,,True,,,,,,,,,False
-171010A,70/132,8-10 GHz,True,data only,,,True,,,,,,,,,False
-171010A,70/132,10-13 GHz,True,data only,,,True,,,,,,,,,False
-171010A,70/132,15.5 GHz,False,not detected,,,True,RISS19,15.5,W,0.28,1.84,3.19,< 4.82,,False
-171010A,70/132,15.5 GHz,False,not detected,,,True,NE2025,15.5,W,0.41,3.23,1.82,< 2.75,,False
-171010A,70/132,18-27 GHz,True,data only,,,True,,,,,,,,,False
-190829A,73/132,1.3 GHz,False,not detected,,,True,,,,,,,,,False
-190829A,73/132,15.5 GHz,False,number,20.0,33.0,True,,,,,,,,,False
-210702A,76/132,5.5 GHz,False,data only,,,True,RISS19,5.5,SR,0.83,6.85,7.47,< 19.52,,False
-210702A,76/132,5.5 GHz,False,data only,,,True,NE2025,5.5,SR,0.62,27.24,10.6,< 27.72,,False
-210702A,76/132,9 GHz,False,not detected,,,True,RISS19,9.0,W,0.8,3.05,3.32,< 8.68,,False
-210702A,76/132,9 GHz,False,not detected,,,True,NE2025,9.0,SR,0.82,9.22,3.59,< 9.38,,False
-210702A,76/132,16.7 GHz,False,not detected,,,True,RISS19,16.7,W,0.33,2.24,2.44,< 6.37,,False
-210702A,76/132,16.7 GHz,False,not detected,,,True,NE2025,16.7,W,0.68,3.74,1.46,< 3.81,,False
-210702A,76/132,21.2 GHz,False,number,2.3,8.8,True,RISS19,21.2,W,0.24,1.99,2.16,< 5.66,0.367,True
-210702A,76/132,21.2 GHz,False,number,2.3,8.8,True,NE2025,21.2,W,0.49,3.32,1.29,< 3.38,0.18,True
-210704A,79/132,15.5 GHz,False,number,12.0,28.0,True,,,,,,,,,False
-220101A,82/132,15.5 GHz,False,number,2.7,7.8,True,RISS19,15.0,W,0.17,2.05,2.97,< 6.11,0.459,True
-220101A,82/132,15.5 GHz,False,number,2.7,7.8,True,NE2025,15.0,W,0.52,3.68,1.65,< 3.40,0.15,False
-220101A,82/132,15.5 GHz,False,number,1.4,6.5,True,RISS19,15.0,W,0.17,2.05,2.97,< 6.11,0.382,True
-220101A,82/132,15.5 GHz,False,number,1.4,6.5,True,NE2025,15.0,W,0.52,3.68,1.65,< 3.40,0.125,False
-221009A,85/132,0.1-1 GHz,True,number,3.9,12.0,True,,,,,,,,,False
-221009A,85/132,1-2 GHz,True,number,16.0,17.0,True,,,,,,,,,False
-221009A,85/132,2-4 GHz,True,number,2.7,9.2,True,,,,,,,,,False
-221009A,85/132,4-7.5 GHz,True,number,5.0,28.0,True,,,,,,,,,False
-221009A,85/132,7.5-12 GHz,True,number,6.2,23.0,True,,,,,,,,,False
-221009A,85/132,12-19 GHz,True,number,5.3,21.0,True,,,,,,,,,False
-221009A,85/132,21.2 GHz,False,data only,,,True,,,,,,,,,False
-221009A,85/132,27-40 GHz,True,data only,,,True,,,,,,,,,False
-221009A,85/132,40-100 GHz,True,data only,,,True,,,,,,,,,False
-221009A,85/132,100-300 GHz,True,data only,,,True,,,,,,,,,False
-221009A,85/132,341 GHz,False,data only,,,True,,,,,,,,,False
-240205B,88/132,1.3 GHz,False,data only,,,True,,,,,,,,,False
-240205B,88/132,1.6 GHz,False,data only,,,True,,,,,,,,,False
-240205B,88/132,2.6 GHz,False,data only,,,True,,,,,,,,,False
-240205B,88/132,3.1 GHz,False,data only,,,True,,,,,,,,,False
-240205B,88/132,5.5 GHz,False,number,5.3,31.0,True,RISS19,5.5,W,0.19,2.6,6.37,< 15.33,1.632,False
-240205B,88/132,5.5 GHz,False,number,5.3,31.0,True,NE2025,5.5,SR,0.84,8.04,5.83,< 14.02,0.369,True
-240205B,88/132,9 GHz,False,number,3.8,68.0,True,RISS19,9.0,W,0.1,2.03,4.98,< 11.98,6.8,False
-240205B,88/132,9 GHz,False,number,3.8,68.0,True,NE2025,9.0,W,0.77,3.74,2.71,< 6.52,0.883,True
-240205B,88/132,16.7 GHz,False,data only,,,True,,,,,,,,,False
-240205B,88/132,21.2 GHz,False,data only,,,True,,,,,,,,,False
-240529A,91/132,15.5 GHz,False,number,61.0,14.0,True,,,,,,,,,False
-240619A,94/132,15.5 GHz,False,number,8.5,17.0,True,,,,,,,,,False
-241025A,97/132,5 GHz,False,number,14.0,34.0,True,,,,,,,,,False
-241025A,97/132,6 GHz,False,number,6.6,12.0,True,,,,,,,,,False
-241025A,97/132,7 GHz,False,number,4.8,4.4,True,,,,,,,,,False
-241025A,97/132,9 GHz,False,not detected,,,True,,,,,,,,,False
-241025A,97/132,10 GHz,False,number,9.3,9.3,True,,,,,,,,,False
-241025A,97/132,11 GHz,False,number,8.4,12.0,True,,,,,,,,,False
-241025A,97/132,13 GHz,False,not detected,,,True,,,,,,,,,False
-241025A,97/132,15 GHz,False,not detected,9.3,9.3,False,,,,,,,,,False
-241025A,97/132,17 GHz,False,not detected,8.4,12.0,False,,,,,,,,,False
-250419A,100/132,3 GHz,False,not detected,,,True,,,,,,,,,False
-250419A,100/132,6 GHz,False,number,60.0,30.0,True,,,,,,,,,False
-250419A,100/132,10 GHz,False,number,49.0,57.0,True,,,,,,,,,False
-250419A,100/132,15 GHz,False,number,12.0,23.0,True,,,,,,,,,False
-250419A,100/132,22 GHz,False,data only,,,True,,,,,,,,,False
-250419A,100/132,33 GHz,False,data only,,,True,,,,,,,,,False
-250419A,100/132,86 GHz,False,data only,12.0,23.0,False,,,,,,,,,False
-250419A,100/132,102 GHz,False,data only,,,True,,,,,,,,,False
-250702B,103/132,0.65 GHz,False,data only,,,True,,,,,,,,,False
-250702B,103/132,1-2 GHz,True,number,1.7,12.0,True,,,,,,,,,False
-250702B,103/132,2-4 GHz,True,number,2.2,4.5,True,,,,,,,,,False
-250702B,103/132,4-7.5 GHz,True,number,3.1,14.0,True,,,,,,,,,False
-250702B,103/132,7.5-12 GHz,True,number,3.9,13.0,True,,,,,,,,,False
-250702B,103/132,12-18 GHz,True,number,5.0,15.0,True,,,,,,,,,False
-250702B,103/132,18-27 GHz,True,number,4.9,16.0,True,,,,,,,,,False
-250702B,103/132,27-40 GHz,True,number,1.9,57.0,True,,,,,,,,,False
-250702B,103/132,80-115 GHz,True,not detected,,,True,,,,,,,,,False
-250702B,103/132,180-250 GHz,True,not detected,,,True,,,,,,,,,False
-251013C,106/132,15.5 GHz,False,number,35.0,29.0,True,,,,,,,,,False
+burst,page,panel,variant,band,status,chi2,fvar_pct,agree,model,nu,regime,mp,tp_hr,theta_scatt_uas,size_student_1e16cm,fvar_over_mp,theta_s_uas,size_inv_1e16cm,verdict
+970508,109/132,1.43 GHz,SBPL,False,number,5.3,28.0,True,RISS19,1.43,SR,0.54,44.78,58.16,< 140.57,0.519,102.12,247.3,invertible
+970508,109/132,1.43 GHz,SBPL,False,number,5.3,28.0,True,NE2025,1.43,SR,0.33,323.51,151.81,< 366.94,0.848,,,ceiling
+970508,109/132,4.86 GHz,SBPL,False,number,10.0,26.0,True,RISS19,4.86,W,0.83,3.8,4.93,< 11.93,0.313,13.333,32.29,invertible
+970508,109/132,4.86 GHz,SBPL,False,number,10.0,26.0,True,NE2025,4.86,SR,0.66,21.93,10.29,< 24.87,0.394,22.866,55.37,invertible
+970508,109/132,8.46 GHz,SBPL,False,number,11.0,24.0,True,RISS19,8.46,W,0.38,2.88,3.74,< 9.04,0.632,,,fit_failed
+970508,109/132,8.46 GHz,SBPL,False,number,11.0,24.0,True,NE2025,8.46,SR,0.9,6.48,3.04,< 7.35,0.267,,,fit_failed
+980425,114/132,1.38 GHz,SBPL,False,number,3.2,4.4,True,RISS19,1.4,SR,0.49,59.8,80.31,< 4.48,0.09,,,dilute
+980425,114/132,1.38 GHz,SBPL,False,number,3.2,4.4,True,NE2025,1.4,SR,0.28,532.25,275.46,< 15.36,0.157,1345.702,79.7,invertible
+980425,114/132,2.49 GHz,SBPL,False,number,9.0,6.6,True,RISS19,2.3,SR,0.65,20.06,26.94,< 1.50,0.102,,,dilute
+980425,114/132,2.49 GHz,SBPL,False,number,9.0,6.6,True,NE2025,2.3,SR,0.37,178.56,92.41,< 5.15,0.178,404.973,23.98,invertible
+980425,114/132,4.8 GHz,SBPL,False,data only,,,True,RISS19,5.0,W,0.99,3.68,4.95,< 0.28,,,,data_only
+980425,114/132,4.8 GHz,SBPL,False,data only,,,True,NE2025,5.0,SR,0.57,32.35,16.74,< 0.93,,,,data_only
+980425,114/132,8.64 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+980519,117/132,1.43 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+980519,117/132,4.86 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+980519,117/132,8.46 GHz,SBPL,False,number,4.5,37.0,True,RISS19,8.46,W,0.67,3.76,2.86,−−,0.552,4.758,,invertible
+980519,117/132,8.46 GHz,SBPL,False,number,4.5,37.0,True,NE2025,8.46,SR,0.65,21.78,6.75,−−,0.569,10.941,,invertible
+980519,117/132,100 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+980703,120/132,1.43 GHz,SBPL,False,number,1.6,17.0,True,RISS19,1.43,SR,0.62,21.82,49.71,< 125.22,0.274,150.699,380.24,invertible
+980703,120/132,1.43 GHz,SBPL,False,number,1.6,17.0,True,NE2025,1.43,SR,0.39,158.08,107.73,< 271.36,0.436,219.501,553.84,invertible
+980703,120/132,4.86 GHz,SBPL,False,number,17.0,38.0,True,RISS19,4.86,W,0.58,2.87,6.54,< 16.46,0.655,,,fit_failed
+980703,120/132,4.86 GHz,SBPL,False,number,17.0,38.0,True,NE2025,4.86,SR,0.79,10.72,7.3,< 18.39,0.481,,,fit_failed
+980703,120/132,8.46 GHz,SBPL,False,number,2.7,8.9,True,RISS19,8.46,W,0.26,2.17,4.95,< 12.48,0.342,12.407,31.31,invertible
+980703,120/132,8.46 GHz,SBPL,False,number,2.7,8.9,True,NE2025,8.46,W,0.83,3.98,2.71,< 6.82,0.107,,,dilute
+981226,123/132,4.86 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+981226,123/132,8.46 GHz,SBPL,False,not detected,,,True,RISS19,8.46,W,0.13,1.98,5.43,< 14.09,,,,not_detected
+981226,123/132,8.46 GHz,SBPL,False,not detected,,,True,NE2025,8.46,W,0.75,3.51,3.07,< 7.97,,,,not_detected
+990123,126/132,8.46 GHz,SPL,False,number,3.1,50.0,True,,,,,,,,,,,no_prediction
+990123,126/132,99.98 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+990123,126/132,222 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+990123,126/132,350 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+991208,129/132,1-2 GHz,Selected,True,not detected,,,True,RISS19,1.43,SR,0.64,22.06,43.11,< 98.19,,,,not_detected
+991208,129/132,1-2 GHz,Selected,True,not detected,,,True,NE2025,1.43,SR,0.37,216.12,116.98,< 266.41,,,,not_detected
+991208,129/132,4-6 GHz,Selected,True,data only,,,True,RISS19,4.86,W,0.55,3.1,6.05,< 13.79,,,,data_only
+991208,129/132,4-6 GHz,Selected,True,data only,,,True,NE2025,4.86,SR,0.74,14.65,7.93,< 18.06,,,,data_only
+991208,129/132,5-9 GHz,Selected,True,number,25.0,29.0,True,RISS19,8.46,W,0.25,2.35,4.59,< 10.45,1.16,,,fit_failed
+991208,129/132,5-9 GHz,Selected,True,number,25.0,29.0,True,RISS19,4.86,W,0.55,3.1,6.05,< 13.79,0.527,,,fit_failed
+991208,129/132,5-9 GHz,Selected,True,number,25.0,29.0,True,NE2025,8.46,W,0.97,4.46,2.41,< 5.50,0.299,,,fit_failed
+991208,129/132,5-9 GHz,Selected,True,number,25.0,29.0,True,NE2025,4.86,SR,0.74,14.65,7.93,< 18.06,0.392,,,fit_failed
+991208,129/132,13-18 GHz,Selected,True,data only,,,True,,,,,,,,,,,no_prediction
+991208,129/132,22.49 GHz,Selected,False,data only,,,True,,,,,,,,,,,no_prediction
+991208,129/132,30 GHz,Selected,False,data only,,,True,,,,,,,,,,,no_prediction
+991208,129/132,86.24 GHz,Selected,False,data only,,,True,,,,,,,,,,,no_prediction
+991208,129/132,100-300 GHz,Selected,True,data only,,,True,,,,,,,,,,,no_prediction
+991216,132/132,1.43 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+991216,132/132,4.86 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+991216,132/132,8.42-8.46 GHz,SPL,False,number,1.7,38.0,True,,,,,,,,,,,no_prediction
+991216,132/132,15 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+991216,132/132,99.9 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+991216,132/132,350 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000301C,7/132,1.43 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000301C,7/132,4.86 GHz,SBPL,False,data only,,,True,RISS19,4.86,W,0.6,3.05,6.15,< 16.26,,,,data_only
+000301C,7/132,4.86 GHz,SBPL,False,data only,,,True,NE2025,4.86,SR,0.75,14.85,7.36,< 19.45,,,,data_only
+000301C,7/132,8.46 GHz,SBPL,False,number,2.2,12.0,True,RISS19,8.46,W,0.27,2.31,4.66,< 12.32,0.444,9.338,24.69,invertible
+000301C,7/132,8.46 GHz,SBPL,False,number,2.2,12.0,True,NE2025,8.46,W,0.95,4.66,2.31,< 6.11,0.126,,,dilute
+000301C,7/132,15 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000301C,7/132,22.5 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000301C,7/132,100 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000301C,7/132,250 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000301C,7/132,350 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000418,10/132,1.43 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000418,10/132,4.86 GHz,SBPL,False,number,42.0,46.0,True,RISS19,4.86,W,0.33,2.56,7.31,< 19.00,1.394,,,fit_failed
+000418,10/132,4.86 GHz,SBPL,False,number,42.0,46.0,True,NE2025,4.86,SR,0.87,7.84,5.64,< 14.65,0.529,,,fit_failed
+000418,10/132,8.35-8.46 GHz,SBPL,False,number,7.9,21.0,True,RISS19,8.46,W,0.15,1.94,5.54,< 14.40,1.4,,,incompatible
+000418,10/132,8.35-8.46 GHz,SBPL,False,number,7.9,21.0,True,NE2025,8.46,W,0.65,3.87,2.78,< 7.23,0.323,7.322,19.06,invertible
+000418,10/132,15 GHz,SBPL,False,data only,,,True,RISS19,15.0,W,0.07,1.46,4.16,< 10.81,,,,data_only
+000418,10/132,15 GHz,SBPL,False,data only,,,True,NE2025,15.0,W,0.29,2.91,2.09,< 5.43,,,,data_only
+000418,10/132,22.46 GHz,SBPL,False,data only,,,True,RISS19,22.0,W,0.04,1.21,3.44,< 8.93,,,,data_only
+000418,10/132,22.46 GHz,SBPL,False,data only,,,True,NE2025,22.0,W,0.17,2.4,1.73,< 4.49,,,,data_only
+000911,13/132,4.86 GHz,Selected,False,not detected,,,True,RISS19,4.86,W,0.4,2.93,6.4,< 16.47,,,,not_detected
+000911,13/132,4.86 GHz,Selected,False,not detected,,,True,NE2025,4.86,SR,0.78,10.17,7.93,< 20.39,,,,not_detected
+000911,13/132,8.46 GHz,Selected,False,not detected,,,True,RISS19,8.46,W,0.18,2.22,4.85,< 12.48,,,,not_detected
+000911,13/132,8.46 GHz,Selected,False,not detected,,,True,NE2025,8.46,W,0.84,3.72,2.9,< 7.45,,,,not_detected
+000926,16/132,1.43 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+000926,16/132,4.86 GHz,SBPL,False,not detected,,,True,RISS19,4.86,W,0.63,3.27,5.73,< 15.11,,,,not_detected
+000926,16/132,4.86 GHz,SBPL,False,not detected,,,True,NE2025,4.86,SR,0.71,17.08,8.24,< 21.72,,,,not_detected
+000926,16/132,8.46 GHz,SBPL,False,number,7.3,44.0,True,RISS19,8.46,W,0.29,2.48,4.34,< 11.45,1.517,,,incompatible
+000926,16/132,8.46 GHz,SBPL,False,number,7.3,44.0,True,NE2025,8.46,SR,0.98,5.04,2.43,< 6.42,0.449,4.827,12.74,invertible
+000926,16/132,15 GHz,SBPL,False,data only,,,True,RISS19,15.0,W,0.13,1.86,3.26,< 8.60,,,,data_only
+000926,16/132,15 GHz,SBPL,False,data only,,,True,NE2025,15.0,W,0.47,3.55,1.71,< 4.51,,,,data_only
+000926,16/132,22.5 GHz,SBPL,False,data only,,,False,,,,,,,,,,,no_prediction
+000926,16/132,98.48 GHz,SBPL,False,data only,,44.0,False,,,,,,,,,,,no_prediction
+011121,19/132,4.8 GHz,SBPL,False,number,10.0,12.0,True,,,,,,,,,,,no_prediction
+011121,19/132,8.7 GHz,SBPL,False,number,3.8,11.0,True,RISS19,8.7,SR,0.9,5.29,3.66,< 5.86,0.122,,,dilute
+011121,19/132,8.7 GHz,SBPL,False,number,3.8,11.0,True,NE2025,8.7,SR,0.54,33.03,13.23,< 21.18,0.204,51.742,83.09,invertible
+020405,22/132,1.43 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+020405,22/132,4.86 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+020405,22/132,8.46 GHz,SPL,False,number,4.2,61.0,True,RISS19,8.46,W,0.35,2.76,3.91,< 8.82,1.743,,,incompatible
+020405,22/132,8.46 GHz,SPL,False,number,4.2,61.0,True,NE2025,8.46,SR,0.81,8.51,4.36,< 9.83,0.753,,,ceiling
+020405,22/132,22.5 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+020819,25/132,1.43 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+020819,25/132,4.86 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+020819,25/132,8.46 GHz,SPL,False,number,5.3,18.0,True,,,,,,,,,,,no_prediction
+030329,28/132,1-2 GHz,SBPL,True,number,82.0,28.0,True,,,,,,,,,,,no_prediction
+030329,28/132,2-6 GHz,SBPL,True,number,140.0,22.0,True,,,,,,,,,,,no_prediction
+030329,28/132,6-10 GHz,SBPL,True,number,300.0,17.0,True,,,,,,,,,,,no_prediction
+030329,28/132,10-16 GHz,SBPL,True,number,21.0,5.6,True,,,,,,,,,,,no_prediction
+030329,28/132,16-25 GHz,SBPL,True,number,130.0,7.1,True,,,,,,,,,,,no_prediction
+030329,28/132,25-45 GHz,SBPL,True,number,42.0,10.0,True,,,,,,,,,,,no_prediction
+031203,31/132,1.43 GHz,SPL,False,data only,,,True,RISS19,1.4,SR,0.18,2826.34,683.2,< 419.58,,,,data_only
+031203,31/132,1.43 GHz,SPL,False,data only,,,True,NE2025,1.4,SR,0.09,8637.23,17733.01,< 10890.57,,,,data_only
+031203,31/132,4.86 GHz,SPL,False,number,3.1,12.0,True,RISS19,4.9,SR,0.37,179.59,43.41,< 26.66,0.324,113.959,70.24,invertible
+031203,31/132,4.86 GHz,SPL,False,number,3.1,12.0,True,NE2025,4.9,SR,0.18,548.81,1126.76,< 691.99,0.667,1595.022,983.05,invertible
+031203,31/132,8.46 GHz,SPL,False,number,14.0,37.0,True,RISS19,8.5,SR,0.5,53.45,12.92,< 7.94,0.74,,,fit_failed
+031203,31/132,8.46 GHz,SPL,False,number,14.0,37.0,True,NE2025,8.5,SR,0.24,163.36,335.38,< 205.97,1.542,,,fit_failed
+031203,31/132,22.5 GHz,SPL,False,data only,,,True,RISS19,22.5,SR,0.87,6.28,1.52,< 0.93,,,,data_only
+031203,31/132,22.5 GHz,SPL,False,data only,,,True,NE2025,22.5,SR,0.42,19.19,39.4,< 24.20,,,,data_only
+070125,34/132,0.61 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+070125,34/132,1.46 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+070125,34/132,4.86 GHz,SBPL,False,not detected,,,True,RISS19,4.86,SR,0.91,5.11,6.38,< 17.11,,,,not_detected
+070125,34/132,4.86 GHz,SBPL,False,not detected,,,True,NE2025,4.86,SR,0.64,21.79,12.43,< 33.31,,,,not_detected
+070125,34/132,8.46 GHz,SBPL,False,number,4.4,8.8,True,RISS19,8.46,W,0.57,2.94,3.67,< 9.83,0.154,18.203,48.85,invertible
+070125,34/132,8.46 GHz,SBPL,False,number,4.4,8.8,True,NE2025,8.46,SR,0.88,6.44,3.67,< 9.84,0.1,,,dilute
+070125,34/132,14.94 GHz,SBPL,False,number,2.9,15.0,True,RISS19,15.0,W,0.26,2.21,2.75,< 7.39,0.577,4.406,11.83,invertible
+070125,34/132,14.94 GHz,SBPL,False,number,2.9,15.0,True,NE2025,15.0,W,0.62,3.26,1.86,< 4.99,0.242,6.277,16.85,invertible
+070125,34/132,22.5 GHz,SBPL,False,not detected,,,True,RISS19,22.0,W,0.15,1.82,2.27,< 6.10,,,,not_detected
+070125,34/132,22.5 GHz,SBPL,False,not detected,,,True,NE2025,22.0,W,0.36,2.7,1.54,< 4.12,,,,not_detected
+070125,34/132,95 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+070125,34/132,250 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+100418A,38/132,4.9 GHz,SBPL,False,data only,,,True,RISS19,4.8,W,0.84,3.7,5.13,< 11.09,,,,data_only
+100418A,38/132,4.9 GHz,SBPL,False,data only,,,True,NE2025,4.8,SR,0.61,30.16,11.79,< 25.49,,,,data_only
+100418A,38/132,4.95 GHz,SBPL,False,data only,,,True,RISS19,4.8,W,0.84,3.7,5.13,< 11.09,,,,data_only
+100418A,38/132,4.95 GHz,SBPL,False,data only,,,True,NE2025,4.8,SR,0.61,30.16,11.79,< 25.49,,,,data_only
+100418A,38/132,5.5 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+100418A,38/132,7.9 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+100418A,38/132,8.4 GHz,SBPL,False,data only,,,True,RISS19,9.0,W,0.35,2.7,3.75,< 8.10,,,,data_only
+100418A,38/132,8.4 GHz,SBPL,False,data only,,,True,NE2025,9.0,SR,0.88,7.57,2.96,< 6.39,,,,data_only
+100418A,38/132,8.43-8.8 GHz,SBPL,False,number,68.0,53.0,True,RISS19,9.0,W,0.35,2.7,3.75,< 8.10,1.514,,,fit_failed
+100418A,38/132,8.43-8.8 GHz,SBPL,False,number,68.0,53.0,True,NE2025,9.0,SR,0.88,7.57,2.96,< 6.39,0.602,,,fit_failed
+100418A,38/132,9 GHz,SBPL,False,data only,,,True,RISS19,9.0,W,0.35,2.7,3.75,< 8.10,,,,data_only
+100418A,38/132,9 GHz,SBPL,False,data only,,,True,NE2025,9.0,SR,0.88,7.57,2.96,< 6.39,,,,data_only
+111215A,41/132,1.4 GHz,SBPL,False,data only,,,True,RISS19,1.4,SR,0.45,76.68,98.42,< 259.59,,,,data_only
+111215A,41/132,1.4 GHz,SBPL,False,data only,,,True,NE2025,1.4,SR,0.32,380.2,145.84,< 384.67,,,,data_only
+111215A,41/132,4.8 GHz,SBPL,False,number,19.0,32.0,True,RISS19,4.9,SR,0.92,4.87,6.25,< 16.49,0.348,,,fit_failed
+111215A,41/132,4.8 GHz,SBPL,False,number,19.0,32.0,True,NE2025,4.9,SR,0.66,24.16,9.27,< 24.44,0.485,,,fit_failed
+111215A,41/132,15 GHz,SBPL,False,number,3.1,13.0,True,RISS19,15.0,W,0.25,2.18,2.79,< 7.37,0.52,4.887,12.9,invertible
+111215A,41/132,15 GHz,SBPL,False,number,3.1,13.0,True,NE2025,15.0,W,0.58,3.98,1.53,< 4.03,0.224,5.513,14.55,invertible
+140304A,46/132,1.45 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+140304A,46/132,2-4 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+140304A,46/132,4-6 GHz,SBPL,True,number,22.0,32.0,True,,,,,,,,,,,no_prediction
+140304A,46/132,6-8 GHz,SBPL,True,number,55.0,54.0,True,,,,,,,,,,,no_prediction
+140304A,46/132,8-10 GHz,SBPL,True,number,24.0,19.0,True,RISS19,11.0,W,0.33,2.51,3.3,< 6.36,0.576,,,fit_failed
+140304A,46/132,8-10 GHz,SBPL,True,number,24.0,19.0,True,NE2025,11.0,W,0.88,4.13,2.0,< 3.86,0.216,,,fit_failed
+140304A,46/132,10-13 GHz,SBPL,True,not detected,,,True,RISS19,11.0,W,0.33,2.51,3.3,< 6.36,,,,not_detected
+140304A,46/132,10-13 GHz,SBPL,True,not detected,,,True,NE2025,11.0,W,0.88,4.13,2.0,< 3.86,,,,not_detected
+140304A,46/132,13-18 GHz,SBPL,True,number,2.2,13.0,True,,,,,,,,,,,no_prediction
+140304A,46/132,18-27 GHz,SBPL,True,number,2.6,22.0,True,,,,,,,,,,,no_prediction
+140304A,46/132,27-40 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+140304A,46/132,85.5 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+140304A,47/132,1.45 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+140304A,47/132,2-4 GHz,SPL,True,data only,,,True,,,,,,,,,,,no_prediction
+140304A,47/132,4-6 GHz,SPL,True,number,27.0,75.0,True,,,,,,,,,,,no_prediction
+140304A,47/132,6-8 GHz,SPL,True,number,75.0,76.0,True,,,,,,,,,,,no_prediction
+140304A,47/132,8-10 GHz,SPL,True,number,7.1,22.0,True,RISS19,11.0,W,0.33,2.51,3.3,< 6.36,0.667,,,unresolved
+140304A,47/132,8-10 GHz,SPL,True,number,7.1,22.0,True,NE2025,11.0,W,0.88,4.13,2.0,< 3.86,0.25,,,unresolved
+140304A,47/132,10-13 GHz,SPL,True,number,16.0,41.0,True,RISS19,11.0,W,0.33,2.51,3.3,< 6.36,1.242,,,fit_failed
+140304A,47/132,10-13 GHz,SPL,True,number,16.0,41.0,True,NE2025,11.0,W,0.88,4.13,2.0,< 3.86,0.466,,,fit_failed
+140304A,47/132,13-18 GHz,SPL,True,number,31.0,41.0,True,,,,,,,,,,,no_prediction
+140304A,47/132,18-27 GHz,SPL,True,number,12.0,37.0,True,,,,,,,,,,,no_prediction
+140304A,47/132,27-40 GHz,SPL,True,data only,,,True,,,,,,,,,,,no_prediction
+140304A,47/132,85.5 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+140713A,50/132,4.9 GHz,SBPL,False,number,12.0,20.0,True,RISS19,4.8,SR,0.95,4.72,5.54,< 13.85,0.211,,,fit_failed
+140713A,50/132,4.9 GHz,SBPL,False,number,12.0,20.0,True,NE2025,4.8,SR,0.63,30.38,10.16,< 25.39,0.317,,,fit_failed
+140713A,50/132,7 GHz,SBPL,False,number,53.0,1.1,True,,,,,,,,,,,no_prediction
+140713A,50/132,13.4 GHz,SBPL,False,number,56.0,23.0,True,,,,,,,,,,,no_prediction
+140713A,50/132,15.9 GHz,SBPL,False,number,24.0,16.0,True,RISS19,15.0,W,0.23,2.27,2.67,< 6.68,0.696,,,fit_failed
+140713A,50/132,15.9 GHz,SBPL,False,number,24.0,16.0,True,NE2025,15.0,W,0.64,4.26,1.43,< 3.56,0.25,,,fit_failed
+140713A,50/132,85.5-86.7 GHz,SBPL,False,number,3.0,17.0,True,,,,,,,,,,,no_prediction
+141121A,53/132,3 GHz,SPL,False,number,2.8,18.0,True,RISS19,3.0,SR,0.63,19.52,25.46,< 68.16,0.286,74.508,199.7,invertible
+141121A,53/132,3 GHz,SPL,False,number,2.8,18.0,True,NE2025,3.0,SR,0.51,56.95,31.5,< 84.32,0.353,76.912,206.14,invertible
+141121A,53/132,4.9-5 GHz,SPL,False,number,8.2,25.0,True,RISS19,5.0,SR,0.84,6.34,8.27,< 22.15,0.298,23.37,62.64,invertible
+141121A,53/132,4.9-5 GHz,SPL,False,number,8.2,25.0,True,NE2025,5.0,SR,0.68,18.51,10.24,< 27.41,0.368,24.143,64.71,invertible
+141121A,53/132,7 GHz,SPL,False,number,9.3,25.0,True,RISS19,7.0,W,0.96,3.16,4.12,< 11.03,0.26,13.054,34.99,invertible
+141121A,53/132,7 GHz,SPL,False,number,9.3,25.0,True,NE2025,7.0,SR,0.82,8.83,4.88,< 13.07,0.305,13.508,36.2,invertible
+141121A,53/132,13 GHz,SPL,False,number,3.3,9.7,True,RISS19,13.0,W,0.4,2.32,3.02,< 8.09,0.242,10.172,27.26,invertible
+141121A,53/132,13 GHz,SPL,False,number,3.3,9.7,True,NE2025,13.0,W,0.69,3.56,1.97,< 5.27,0.141,,,dilute
+141121A,53/132,15 GHz,SPL,False,number,3.6,12.0,True,RISS19,15.0,W,0.33,2.16,2.81,< 7.54,0.364,6.688,17.92,invertible
+141121A,53/132,15 GHz,SPL,False,number,3.6,12.0,True,NE2025,15.0,W,0.56,3.31,1.83,< 4.91,0.214,6.853,18.37,invertible
+141121A,53/132,93 GHz,SPL,False,data only,,,True,,,,,,,,,,,no_prediction
+160131A,56/132,0.61 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+160131A,56/132,1-2 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+160131A,56/132,4-6 GHz,SBPL,True,number,1.9,36.0,True,,,,,,,,,,,no_prediction
+160131A,56/132,6-8 GHz,SBPL,True,number,57.0,460.0,True,,,,,,,,,,,no_prediction
+160131A,56/132,8-10 GHz,SBPL,True,number,26.0,30.0,True,RISS19,8.93,SR,0.85,4.62,5.67,< 14.31,0.353,,,fit_failed
+160131A,56/132,8-10 GHz,SBPL,True,number,26.0,30.0,True,NE2025,8.93,SR,0.94,5.82,2.47,< 6.24,0.319,,,fit_failed
+160131A,56/132,10-13 GHz,SBPL,True,number,7.3,120.0,True,RISS19,11.4,SR,0.98,2.7,3.31,< 8.36,1.224,,,incompatible
+160131A,56/132,10-13 GHz,SBPL,True,number,7.3,120.0,True,NE2025,11.4,W,0.82,4.34,1.84,< 4.65,1.463,,,incompatible
+160131A,56/132,13-18 GHz,SBPL,True,number,9.1,4.2,True,,,,,,,,,,,no_prediction
+160131A,56/132,18-27 GHz,SBPL,True,number,2.7,7.9,True,RISS19,24.6,W,0.35,1.74,2.13,< 5.38,0.226,,,unresolved
+160131A,56/132,18-27 GHz,SBPL,True,number,2.7,7.9,True,NE2025,24.6,W,0.27,2.95,1.25,< 3.16,0.293,,,unresolved
+160131A,56/132,27-40 GHz,SBPL,True,number,2.2,8.2,True,RISS19,37.1,W,0.2,1.41,1.74,< 4.38,0.41,,,unresolved
+160131A,56/132,27-40 GHz,SBPL,True,number,2.2,8.2,True,RISS19,30.4,W,0.26,1.56,1.92,< 4.84,0.315,,,unresolved
+160131A,56/132,27-40 GHz,SBPL,True,number,2.2,8.2,True,RISS19,24.6,W,0.35,1.74,2.13,< 5.38,0.234,,,unresolved
+160131A,56/132,27-40 GHz,SBPL,True,number,2.2,8.2,True,NE2025,37.1,W,0.15,2.41,1.02,< 2.58,0.547,,,unresolved
+160131A,56/132,27-40 GHz,SBPL,True,number,2.2,8.2,True,NE2025,30.4,W,0.2,2.66,1.13,< 2.85,0.41,,,unresolved
+160131A,56/132,27-40 GHz,SBPL,True,number,2.2,8.2,True,NE2025,24.6,W,0.27,2.95,1.25,< 3.16,0.304,,,unresolved
+160131A,56/132,92.5 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+160623A,59/132,15.5 GHz,SBPL,False,number,7.4,72.0,True,,,,,,,,,,,no_prediction
+161219B,64/132,1-2 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+161219B,64/132,2-4 GHz,SBPL,True,data only,,,True,RISS19,3.4,SR,0.6,24.1,24.99,< 20.54,,,,data_only
+161219B,64/132,2-4 GHz,SBPL,True,data only,,,True,NE2025,3.4,SR,0.53,62.49,19.48,< 16.01,,,,data_only
+161219B,64/132,5 GHz,SBPL,False,number,15.0,13.0,True,,,,,,,,,,,no_prediction
+161219B,64/132,7.4 GHz,SBPL,False,number,4.8,7.8,True,,,,,,,,,,,no_prediction
+161219B,64/132,8.5 GHz,SBPL,False,number,50.0,21.0,True,RISS19,8.5,W,1.0,3.22,3.33,< 2.74,0.21,,,fit_failed
+161219B,64/132,8.5 GHz,SBPL,False,number,50.0,21.0,True,NE2025,8.5,SR,0.89,8.32,2.6,< 2.13,0.236,,,fit_failed
+161219B,64/132,11 GHz,SBPL,False,number,53.0,32.0,True,,,,,,,,,,,no_prediction
+161219B,64/132,13.5-16 GHz,SBPL,True,number,20.0,16.0,True,RISS19,16.0,W,0.41,2.34,2.43,< 2.00,0.39,,,fit_failed
+161219B,64/132,13.5-16 GHz,SBPL,True,number,20.0,16.0,True,NE2025,16.0,W,0.55,4.27,1.33,< 1.10,0.291,,,fit_failed
+161219B,64/132,19-25 GHz,SBPL,True,number,15.0,22.0,True,,,,,,,,,,,no_prediction
+161219B,64/132,27-40 GHz,SBPL,True,data only,,,True,RISS19,30.0,W,0.17,1.71,1.77,< 1.46,,,,data_only
+161219B,64/132,27-40 GHz,SBPL,True,data only,,,True,NE2025,30.0,W,0.22,3.12,0.97,< 0.80,,,,data_only
+161219B,64/132,91.5 GHz,SBPL,False,not detected,,,True,RISS19,91.5,W,0.03,0.98,1.02,< 0.84,,,,not_detected
+161219B,64/132,91.5 GHz,SBPL,False,not detected,,,True,NE2025,91.5,W,0.05,1.79,0.56,< 0.46,,,,not_detected
+161219B,64/132,103.5 GHz,SBPL,False,not detected,,,True,,,,,,,,,,,no_prediction
+170105A,67/132,2.8 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+170105A,67/132,5 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+170105A,67/132,7.4 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+170105A,67/132,9 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+170105A,67/132,14-15.5 GHz,SBPL,True,not detected,,,True,RISS19,15.5,W,0.12,1.77,3.32,−−,,,,not_detected
+170105A,67/132,14-15.5 GHz,SBPL,True,not detected,,,True,NE2025,15.5,W,0.4,2.92,2.01,−−,,,,not_detected
+171010A,70/132,4-6 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+171010A,70/132,6-8 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+171010A,70/132,8-10 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+171010A,70/132,10-13 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+171010A,70/132,15.5 GHz,SBPL,False,not detected,,,True,RISS19,15.5,W,0.28,1.84,3.19,< 4.82,,,,not_detected
+171010A,70/132,15.5 GHz,SBPL,False,not detected,,,True,NE2025,15.5,W,0.41,3.23,1.82,< 2.75,,,,not_detected
+171010A,70/132,18-27 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+190829A,73/132,1.3 GHz,SBPL,False,not detected,,,True,,,,,,,,,,,no_prediction
+190829A,73/132,15.5 GHz,SBPL,False,number,20.0,33.0,True,,,,,,,,,,,no_prediction
+210702A,76/132,5.5 GHz,SBPL,False,data only,,,True,RISS19,5.5,SR,0.83,6.85,7.47,< 19.52,,,,data_only
+210702A,76/132,5.5 GHz,SBPL,False,data only,,,True,NE2025,5.5,SR,0.62,27.24,10.6,< 27.72,,,,data_only
+210702A,76/132,9 GHz,SBPL,False,not detected,,,True,RISS19,9.0,W,0.8,3.05,3.32,< 8.68,,,,not_detected
+210702A,76/132,9 GHz,SBPL,False,not detected,,,True,NE2025,9.0,SR,0.82,9.22,3.59,< 9.38,,,,not_detected
+210702A,76/132,16.7 GHz,SBPL,False,not detected,,,True,RISS19,16.7,W,0.33,2.24,2.44,< 6.37,,,,not_detected
+210702A,76/132,16.7 GHz,SBPL,False,not detected,,,True,NE2025,16.7,W,0.68,3.74,1.46,< 3.81,,,,not_detected
+210702A,76/132,21.2 GHz,SBPL,False,number,2.3,8.8,True,RISS19,21.2,W,0.24,1.99,2.16,< 5.66,0.367,5.104,13.37,invertible
+210702A,76/132,21.2 GHz,SBPL,False,number,2.3,8.8,True,NE2025,21.2,W,0.49,3.32,1.29,< 3.38,0.18,5.62,14.72,invertible
+210704A,79/132,15.5 GHz,SBPL,False,number,12.0,28.0,True,,,,,,,,,,,no_prediction
+220101A,82/132,15.5 GHz,SPL,False,number,2.7,7.8,True,RISS19,15.0,W,0.17,2.05,2.97,< 6.11,0.459,5.791,11.92,invertible
+220101A,82/132,15.5 GHz,SPL,False,number,2.7,7.8,True,NE2025,15.0,W,0.52,3.68,1.65,< 3.40,0.15,,,dilute
+220101A,82/132,15.5 GHz,SBPL,False,number,1.4,6.5,True,RISS19,15.0,W,0.17,2.05,2.97,< 6.11,0.382,6.771,13.94,invertible
+220101A,82/132,15.5 GHz,SBPL,False,number,1.4,6.5,True,NE2025,15.0,W,0.52,3.68,1.65,< 3.40,0.125,,,dilute
+221009A,85/132,0.1-1 GHz,SBPL,True,number,3.9,12.0,True,,,,,,,,,,,no_prediction
+221009A,85/132,1-2 GHz,SBPL,True,number,16.0,17.0,True,,,,,,,,,,,no_prediction
+221009A,85/132,2-4 GHz,SBPL,True,number,2.7,9.2,True,,,,,,,,,,,no_prediction
+221009A,85/132,4-7.5 GHz,SBPL,True,number,5.0,28.0,True,,,,,,,,,,,no_prediction
+221009A,85/132,7.5-12 GHz,SBPL,True,number,6.2,23.0,True,,,,,,,,,,,no_prediction
+221009A,85/132,12-19 GHz,SBPL,True,number,5.3,21.0,True,,,,,,,,,,,no_prediction
+221009A,85/132,21.2 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+221009A,85/132,27-40 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+221009A,85/132,40-100 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+221009A,85/132,100-300 GHz,SBPL,True,data only,,,True,,,,,,,,,,,no_prediction
+221009A,85/132,341 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+240205B,88/132,1.3 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+240205B,88/132,1.6 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+240205B,88/132,2.6 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+240205B,88/132,3.1 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+240205B,88/132,5.5 GHz,SBPL,False,number,5.3,31.0,True,RISS19,5.5,W,0.19,2.6,6.37,< 15.33,1.632,,,incompatible
+240205B,88/132,5.5 GHz,SBPL,False,number,5.3,31.0,True,NE2025,5.5,SR,0.84,8.04,5.83,< 14.02,0.369,13.701,33.04,invertible
+240205B,88/132,9 GHz,SBPL,False,number,3.8,68.0,True,RISS19,9.0,W,0.1,2.03,4.98,< 11.98,6.8,,,incompatible
+240205B,88/132,9 GHz,SBPL,False,number,3.8,68.0,True,NE2025,9.0,W,0.77,3.74,2.71,< 6.52,0.883,,,ceiling
+240205B,88/132,16.7 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+240205B,88/132,21.2 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+240529A,91/132,15.5 GHz,SBPL,False,number,61.0,14.0,True,,,,,,,,,,,no_prediction
+240619A,94/132,15.5 GHz,SPL,False,number,8.5,17.0,True,,,,,,,,,,,no_prediction
+241025A,97/132,5 GHz,SBPL,False,number,14.0,34.0,True,,,,,,,,,,,no_prediction
+241025A,97/132,6 GHz,SBPL,False,number,6.6,12.0,True,,,,,,,,,,,no_prediction
+241025A,97/132,7 GHz,SBPL,False,number,4.8,4.4,True,,,,,,,,,,,no_prediction
+241025A,97/132,9 GHz,SBPL,False,not detected,,,True,,,,,,,,,,,no_prediction
+241025A,97/132,10 GHz,SBPL,False,number,9.3,9.3,True,,,,,,,,,,,no_prediction
+241025A,97/132,11 GHz,SBPL,False,number,8.4,12.0,True,,,,,,,,,,,no_prediction
+241025A,97/132,13 GHz,SBPL,False,not detected,,,True,,,,,,,,,,,no_prediction
+241025A,97/132,15 GHz,SBPL,False,not detected,9.3,9.3,False,,,,,,,,,,,no_prediction
+241025A,97/132,17 GHz,SBPL,False,not detected,8.4,12.0,False,,,,,,,,,,,no_prediction
+250419A,100/132,3 GHz,SBPL,False,not detected,,,True,,,,,,,,,,,no_prediction
+250419A,100/132,6 GHz,SBPL,False,number,60.0,30.0,True,,,,,,,,,,,no_prediction
+250419A,100/132,10 GHz,SBPL,False,number,49.0,57.0,True,,,,,,,,,,,no_prediction
+250419A,100/132,15 GHz,SBPL,False,number,12.0,23.0,True,,,,,,,,,,,no_prediction
+250419A,100/132,22 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+250419A,100/132,33 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+250419A,100/132,86 GHz,SBPL,False,data only,12.0,23.0,False,,,,,,,,,,,no_prediction
+250419A,100/132,102 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+250702B,103/132,0.65 GHz,SBPL,False,data only,,,True,,,,,,,,,,,no_prediction
+250702B,103/132,1-2 GHz,SBPL,True,number,1.7,12.0,True,,,,,,,,,,,no_prediction
+250702B,103/132,2-4 GHz,SBPL,True,number,2.2,4.5,True,,,,,,,,,,,no_prediction
+250702B,103/132,4-7.5 GHz,SBPL,True,number,3.1,14.0,True,,,,,,,,,,,no_prediction
+250702B,103/132,7.5-12 GHz,SBPL,True,number,3.9,13.0,True,,,,,,,,,,,no_prediction
+250702B,103/132,12-18 GHz,SBPL,True,number,5.0,15.0,True,,,,,,,,,,,no_prediction
+250702B,103/132,18-27 GHz,SBPL,True,number,4.9,16.0,True,,,,,,,,,,,no_prediction
+250702B,103/132,27-40 GHz,SBPL,True,number,1.9,57.0,True,,,,,,,,,,,no_prediction
+250702B,103/132,80-115 GHz,SBPL,True,not detected,,,True,,,,,,,,,,,no_prediction
+250702B,103/132,180-250 GHz,SBPL,True,not detected,,,True,,,,,,,,,,,no_prediction
+251013C,106/132,15.5 GHz,SBPL,False,number,35.0,29.0,True,,,,,,,,,,,no_prediction
