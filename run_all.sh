@@ -14,6 +14,7 @@ else
 fi
 
 python scripts/iss.py --test
+python scripts/make_bursts.py
 python scripts/parse_october.py
 python scripts/audit_october.py
 python scripts/compare.py
